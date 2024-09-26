@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<div>
-    dd
+<div id="homeid">
+
 </div>
 <?php get_footer() ?>

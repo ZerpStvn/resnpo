@@ -1,5 +1,7 @@
 <?php get_header() ?>
-<div class="aboutid">
+<div>
+    <section>
 
+    </section>
 </div>
 <?php get_footer() ?>

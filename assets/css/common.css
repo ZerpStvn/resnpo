@@ -7,6 +7,15 @@ body,
 html {
   scroll-behavior: smooth;
 }
+
+.global_width {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+.global_padding {
+  padding: 20px 35px;
+}
 .sg_title {
   font-family: var(--kiak);
   font-size: 60px;
