@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "kiak";
+  src: url("../fonts/Kiak-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "readex";
+  src: url("../fonts/ReadexPro-Regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "NotoSansJP";
+  src: url("../fonts/NotoSansJP-Regular.ttf") format("opentype");
+}
+
+:root {
+  --kiak: "kiak", sans-serif;
+  --notsansjp: "NotoSansJP", sans-serif;
+  --readex: "readex", sans-serif;
+  /* color  */
+  --primarycolor: #2e88aa80;
+  --secondarycolor: #4f7c91;
+  --buttoncolor: #81bf24;
+}
