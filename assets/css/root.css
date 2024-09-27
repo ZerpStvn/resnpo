@@ -12,13 +12,22 @@
   font-family: "NotoSansJP";
   src: url("../fonts/NotoSansJP-Regular.ttf") format("opentype");
 }
-
+@font-face {
+  font-family: "inter";
+  src: url("../fonts/Inter-VariableFont_opsz,wght.ttf") format("opentype");
+}
 :root {
   --kiak: "kiak", sans-serif;
   --notsansjp: "NotoSansJP", sans-serif;
   --readex: "readex", sans-serif;
+  --inter: "inter", sans-serif;
   /* color  */
   --primarycolor: #2e88aa80;
   --secondarycolor: #4f7c91;
   --buttoncolor: #81bf24;
+  --footertextcolor: #2b4e64;
+  --darkblue: #0d3046;
+  --hoverColor: #2e6583;
+  --tertiaryColor: #a2bfc780;
+  --prevnextcolor: #083f75;
 }
