@@ -1,13 +1,13 @@
-<?php get_header() ?>
+<?php get_header('sdg') ?>
 
 
 <!-- SECTION 1: FRONT -->
 <section class="front-section">
   <div class="front-section-content">
     <h1>
-      RESのSDGs甲子園とは
+      RESのSDGs<br>甲子園とは
     </h1>
-    <p>
+    <p class="text-justified">
       新学習指導要綱に記載されている「持続可能な社会の創り手」を育成するために、地域社会のSDGs課題に焦点を当て、その解決に向けて研究や活動を行う高校生たちが、その取り組みの経過や成果をプレゼンテーション等で競う場を提供します。私たちが求めるのは単なる知識の獲得や表彰の場ではありません。ESD持続可能な開発のための教育実践の場として、「世代や立場を超えた交流」「一緒に取り組む仲間との交流」「自ら考え行動する大切さ」「行動実体験による学び」「情報発信と新たな関係の構築」の経験やその価値観を深める機会を通じて、未来を担う若者たちの成長を促します。
       します
   </div>
@@ -28,11 +28,11 @@
       </div>
       <div class="feature-card">
         <img src="<?php echo RESNPO_IMAGE . '/feature2.png' ?>" alt="Project Image 2">
-        <p class="p-bold-25-white">他校の生徒と共同プロジェクト</p>
+        <p class="p-bold-25-white">実際の活動を行い、知識がより深まる</p>
       </div>
       <div class="feature-card">
         <img src="<?php echo RESNPO_IMAGE . '/feature3.png' ?>" alt="Project Image 3">
-        <p class="p-bold-25-white">他校の生徒と共同プロジェクト</p>
+        <p class="p-bold-22-white">効果的なプレゼンテーションの作り方、話し方を学ぶ</p>
       </div>
     </div>
   </div>
@@ -102,8 +102,7 @@
 <section class="photo-gallery global-width">
   <div class="photo-gallery-texts">
     <div class="photo-gallery-title">
-      <h2 class="txt-shadow">PHOTO</h2>
-      <h1 class="txt-shadow">GALLERY</h2>
+      <img src="<?php echo RESNPO_IMAGE . '/photo-gallery.png'?>" alt="photogal">
     </div>
     <div class="photo-gallery-content">
       <p class="p-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -295,9 +294,8 @@
   <div class="contact-content">
     <h1>Want to provide many opportunities for
       children for a bright future?</h1>
-    <a href="donation.php">
-      <button class="contact-button">スポンサーになる</button></a>
-  </div>s
+    <button class="contact-button"><a href="donation.php">スポンサーになる</a></button>
+  </div>
 </section>
 
 <!-- END SECTION 7 -->

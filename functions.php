@@ -8,6 +8,14 @@ define("RESNPO_IMAGE", RESNPO_ASSET . '/image');
 define("RESNPO_SVG", RESNPO_ASSET . '/svg');
 define('RESNPO_CSS', RESNPO_ASSET . '/css');
 
+function enqueue_swiperjs()
+{
+    wp_enqueue_style('swiper-css', 'https://unpkg.com/swiper/swiper-bundle.min.css', array(), null);
+    wp_enqueue_script('swiper-js', 'https://unpkg.com/swiper/swiper-bundle.min.js', array(), null, true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_swiperjs');
+
+
 function auto_enqueue_assets()
 {
     $css_dir = RESNPO_DIR . '/assets/css';
@@ -44,6 +52,7 @@ function theme_add_elementor_support()
     add_post_type_support('editorial', 'elementor');
 }
 add_action('init', 'theme_add_elementor_support');
+
 
 // Include custom main.php file
 require_once(RESNPO_DIR . '/custom/main.php');
