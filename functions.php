@@ -4,7 +4,7 @@ define("RESNPO_DIR", get_template_directory());
 define("RESNPO_URI", get_template_directory_uri());
 define("RESNPO_ASSET", RESNPO_URI . "/assets");
 define("RESNPO_JS", RESNPO_ASSET . "/js");
-define("RESNPO_IMAGE", RESNPO_ASSET . '/image');
+define("RESNPO_IMAGE", RESNPO_ASSET . '/img');
 define("RESNPO_SVG", RESNPO_ASSET . '/svg');
 define('RESNPO_CSS', RESNPO_ASSET . '/css');
 
