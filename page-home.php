@@ -1,6 +1,9 @@
 <?php get_header() ?>
 <div id="homeid">
 
+    <section class="section_1">
+      
+    </section>
 
     <section class="section_2 relative">
         <ul class="flex main-ul">

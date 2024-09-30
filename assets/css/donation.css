@@ -1,0 +1,147 @@
+/* header {
+  background: #56b0d2;
+  padding: 31px 27px;
+} */
+
+nav {
+  top: 32px;
+  right: 68px;
+}
+
+.border {
+  border: 5px solid #f9edeb;
+  padding-right: 40px;
+  padding-bottom: 131px;
+}
+
+.donation-container {
+  margin-top: 50px;
+  margin-left: 200px;
+  width: 820px;
+}
+
+.donation-container p {
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 130.94px;
+  letter-spacing: 10px;
+  color: #22637b; /* Set the text color */
+  font-family: "NotoSansJP";
+}
+
+.text-deco p {
+  color: #56b0d2; /* Set the text color */
+  text-shadow: -2px -2px 0 #22637b, 2px -2px 0 #22637b, -2px 2px 0 #22637b,
+    2px 2px 0 #22637b; /* Creates the outline effect */
+  font-family: "NotoSansJP";
+}
+
+.social-icons {
+  top: 150px;
+}
+
+.social-icons-ul {
+  gap: 16px;
+  transform: rotate(90deg);
+}
+
+.social-icons-ul img {
+  transform: rotate(-90deg);
+}
+
+.header-txt-container {
+  top: 200px;
+}
+
+.header-txt-container p {
+  color: #ffffff;
+  font-size: 100px;
+  font-family: "NotoSansJP";
+}
+
+.res-txt-container {
+  right: -315px;
+  bottom: 65px;
+  font-family: "NotoSansJP";
+}
+
+.res-txt-container p {
+  letter-spacing: 1px;
+  font-size: 14px;
+  letter-spacing: 5px;
+  line-height: 16px;
+  font-family: "NotoSansJP";
+  color: #fff;
+}
+
+.donation-bottom-container {
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  bottom: -250px;
+  padding-top: 35px;
+}
+
+.donation-bottom-text {
+  width: 500px;
+  padding-left: 140px;
+  padding-right: 30px;
+}
+
+.donation-bottom-text p:first-child {
+  margin-bottom: 30px;
+}
+
+.donation-bottom-donate {
+  text-align: right;
+  padding-right: 35px;
+}
+
+/* SECTION -----1  */
+
+.donation-header {
+  background: #56b0d2;
+  padding: 31px 27px;
+}
+
+.section_1_don {
+  width: 100%;
+}
+
+.section_2_don {
+  padding: 315px 118px 30px;
+  background: #91adb1;
+}
+
+.donation-video {
+  height: 600px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.section_2_don ul li:first-child {
+  flex: 0 0 40%;
+}
+
+.section_2_don ul li:last-child {
+  flex: 0 0 65%;
+}
+
+.donation-details {
+  margin-bottom: 40px;
+  padding-left: 80px;
+}
+
+.donation-details p {
+  font-weight: 350;
+  font-size: 16px;
+  color: #0d3046;
+}
+
+.donation-details p:first-child {
+  color: #0d3046;
+  font-size: 20px;
+  font-weight: 900;
+}
