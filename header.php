@@ -10,4 +10,24 @@
 </head>
 
 <body>
+
+    <header>
+      <nav>
+        <ul class="ul-nav-menu flex">
+          <li>
+            <img
+              src="<?php echo RESNPO_URI . '/assets/image/homepage/header/top_nav_txt.png' ?>"
+              alt=""
+            />
+          </li>
+          <li>
+            <img src="<?php echo RESNPO_URI . '/assets/image/homepage/header/nav-icon.png' ?>" alt="" />
+          </li>
+        </ul>
+        <hr />
+      </nav>
+    </header>
+
     <main>
+
+
