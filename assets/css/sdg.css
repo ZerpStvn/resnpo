@@ -11,7 +11,6 @@
   height: 100%; /* Ensure full height */
 }
 
-
 .txt-shadow {
   font-family: var(--mainFont);
   color: #fff;
@@ -60,7 +59,6 @@
   line-height: 84.36px;
   letter-spacing: 0.05em;
   text-align: left;
-
 }
 
 .front-section-content p {
@@ -120,7 +118,6 @@
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.5s ease-in-out, box-shadow 0.1s ease-in-out;
-
 }
 
 .feature-card:hover {
@@ -166,14 +163,13 @@
   text-align: left;
 }
 
-.p-bold-22-white{
+.p-bold-22-white {
   font-family: var(--notsansjp);
   font-size: 22px;
   font-weight: 700;
   line-height: 30.94px;
   letter-spacing: 0.1em;
   text-align: left;
-
 }
 
 /* SCREENING SECTION */
@@ -344,52 +340,162 @@
 }
 /* Upcoming Section */
 .upcoming-events {
+  height: 100vh;
+  background: rgba(46, 136, 170);
   position: relative;
-  /* height: 100vh; */
 }
 
-.upcoming-events-container {
-  background-color: rgba(46, 136, 170);
-  position: relative;
-  padding: 20px;
-  overflow: hidden;
+.ue-container {
+  margin-top: 55px;
 }
 
-.upcoming-events-title {
-  font-size: 120px;
-  font-weight: 700;
-  line-height: 110px;
-  letter-spacing: 0.1em;
+.ue-title {
   text-align: center;
+  padding-top: 20px;
+}
+
+.ue-details-title {
+  font-family: var(--notsansjp);
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
   color: #fff;
-  z-index: 1;
-  position: relative;
-  margin-bottom: 20px;
+  width: 157px;
 }
 
-.upcoming-slide {
-  z-index: 10;
+.ue-swiper {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden; /* Ensure the container handles overflow */
+  position: absolute;
+  top: 120px;
+  left: -90px;
+  z-index: 2;
 }
 
-.swiper-container {
-  width: 526px; /* Adjust the width as needed */
-  margin: 0;
+.ue-details-box {
+  position: absolute;
+  top: 200px;
+  left: 1100px;
+  width: 236px;
 }
 
-/* .swiper-slide img {
+.hr-pointer {
+  position: absolute;
+  top: 222px;
+  left: 900px;
+  width: 190px;
+  z-index: 3;
+}
+
+.ue-details-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+}
+
+.monthyear {
+  font-family: var(--notsansjp);
+  font-size: 18px;
+  font-weight: 350;
+  /* line-height: 110px; */
+  letter-spacing: 0.1em;
+  /* text-align: left; */
+}
+
+.monthday {
+  font-family: var(--notsansjp);
+  font-size: 50px;
+  font-weight: 700;
+  /* line-height: 110px; */
+  letter-spacing: 0.1em;
+  /* text-align: left; */
+}
+
+.ue-date {
+  text-align: right;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.ue-details-content {
+  font-family: var(--notsansjp);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+}
+
+.ue-swiper .swiper {
+  width: 100%;
+}
+
+.ue-swiper .swiper-wrapper {
+  display: flex;
+  width: 100%; /* Ensure the wrapper takes full width */
+}
+
+.ue-swiper .swiper-slide {
   width: 471px;
   height: 419px;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+  transform: scale(0.9);
+}
+
+.ue-swiper .swiper-ue img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  width: 311px;
+  height: 419px;
   top: 130px;
-  left: 527px;
-  gap: 0px;
+  left: 184px;
   border-radius: 5px 0px 0px 0px;
-  opacity: 0px;
-} */
+  opacity: 1px;
+}
+
+.ue-swiper .swiper-slide-next {
+  opacity: 1;
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.swiper-slide-active img {
+  opacity: 1;
+}
+
+.swiper-navs {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 10px;
+  position: relative;
+}
 
 /* Photo-gallery Section */
 
 .photo-gallery {
   margin-top: 77px;
+  /* padding-bottom: 60px; */
+}
+.photo-gallery-images {
+  width: 70%;
+  display: flex;
+  margin-left: auto;
 }
 
 .photo-gallery-title h2 {
@@ -427,9 +533,9 @@
 
 .gallery-images {
   display: flex;
-  gap: 46px;
+  gap: 200px;
   margin-top: 41px;
-  max-width: 100%;
+  max-width: 50%;
 }
 
 .gallery-image {
@@ -566,9 +672,8 @@
 .pp-vertical-slider {
   width: 544px;
   height: 1044px;
-  opacity: 1;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow-y: auto;
+  overflow: hidden;
+  position: relative;
   margin-left: 20px;
 }
 
@@ -576,9 +681,18 @@
   width: 100%;
   height: auto;
   display: block;
-  margin-bottom: 10px;
+  position: absolute;
+  top: 0;
+  animation: scroll-vertical 12s linear infinite;
 }
-
+@keyframes scroll-vertical {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -100%;
+  }
+}
 /* pagination */
 
 .pagination {
@@ -631,7 +745,7 @@
 
 .joined-schools-title {
   align-content: center;
-  color: #fff
+  color: #fff;
 }
 
 .joined-schools-title h1 {
@@ -651,7 +765,6 @@
   letter-spacing: 0.1em;
   text-align: left;
 }
-
 
 .schools {
   display: flex;
@@ -691,7 +804,7 @@
   bottom: 46px;
   left: 37px;
   border: 5px solid white; /* Inner border */
-  pointer-events: none; /* Ensure it doesn't interfere with other elements */
+  pointer-events: none;
 }
 
 .contact-opp h1 {
@@ -702,7 +815,7 @@
   letter-spacing: 0.05em;
   text-align: center;
   color: #fff;
-  width: 85%
+  width: 85%;
 }
 
 .contact-content {
@@ -727,7 +840,6 @@
   padding: 15px 64px 24px 65px;
   cursor: pointer;
   transition: transform 0.2s ease-out;
-
 }
 
 .contact-button:hover {

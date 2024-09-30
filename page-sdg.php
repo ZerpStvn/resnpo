@@ -102,63 +102,97 @@
 <section class="photo-gallery global-width">
   <div class="photo-gallery-texts">
     <div class="photo-gallery-title">
-      <img src="<?php echo RESNPO_IMAGE . '/photo-gallery.png'?>" alt="photogal">
+      <img src="<?php echo RESNPO_IMAGE . '/photo-gallery.png' ?>" alt="photogal">
     </div>
     <div class="photo-gallery-content">
       <p class="p-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
     </div>
   </div>
 
-  <div class="photo-gallery-images swiper-pg mySwiper">
+  <div class="photo-gallery-images swiper-pg mySwiperpg">
     <div class="gallery-images swiper-wrapper">
       <div class="swiper-slide gallery-images">
-        <img src="<?php echo RESNPO_IMAGE . '/gal1.png' ?>" alt="">
+        <img class="gallery-image" src="<?php echo RESNPO_IMAGE . '/gal1.png' ?>" alt="">
       </div>
       <div class="swiper-slide gallery-images">
-        <img src="<?php echo RESNPO_IMAGE . '/gal2.png' ?>" alt="">
+        <img class="gallery-image" src="<?php echo RESNPO_IMAGE . '/gal2.png' ?>" alt="">
       </div>
       <div class="swiper-slide gallery-images">
-        <img src="<?php echo RESNPO_IMAGE . '/gal3.png' ?>" alt="">
+        <img class="gallery-image" src="<?php echo RESNPO_IMAGE . '/gal3.png' ?>" alt="">
       </div>
       <div class="swiper-slide gallery-images">
-        <img src="<?php echo RESNPO_IMAGE . '/gal2.png' ?>" alt="">
+        <img class="gallery-image" src="<?php echo RESNPO_IMAGE . '/gal1.png' ?>" alt="">
       </div>
       <div class="swiper-slide gallery-images">
-        <img src="<?php echo RESNPO_IMAGE . '/gal2.png' ?>" alt="">
+        <img class="gallery-image" src="<?php echo RESNPO_IMAGE . '/gal2.png' ?>" alt="">
       </div>
       <div class="swiper-slide gallery-images">
-        <img src="<?php echo RESNPO_IMAGE . '/gal2.png' ?>" alt="">
+        <img class="gallery-image" src="<?php echo RESNPO_IMAGE . '/gal3.png' ?>" alt="">
       </div>
       <div class="swiper-slide gallery-images">
-        <img src="<?php echo RESNPO_IMAGE . '/gal2.png' ?>" alt="">
+        <img class="gallery-image" src="<?php echo RESNPO_IMAGE . '/gal1.png' ?>" alt="">
       </div>
     </div>
   </div>
 </section>
 <section class="upcoming-events">
-  <div class="upcoming-events-container">
-    <h2 class="txt-shadow upcoming-events-title">
-      UPCOMING EVENTS
-    </h2>
-    <div class="swiper-container custom-swiper-width">
-      <div class="swiper-wrapper">
+  <div class="ue-container">
+    <div class="ue-title">
+      <svg viewbox="0 0 10 2">
+        <text
+          x="5"
+          y="1"
+          text-anchor="middle"
+          font-size="1"
+          fill="none"
+          stroke-width=".015"
+          stroke="#fff"
+          font-family="var(--notsansjp)"
+          stroke-opacity="0.8">
+          UPCOMING EVENTS
+        </text>
+      </svg>
+    </div>
 
-        <div class="swiper-slide" data-description="2nd Japan  Immersion">
-          <img src="<?php echo RESNPO_IMAGE . '/gal1.png' ?>" alt="Image 1" />
-        </div>
-        <div class="swiper-slide" data-description="This is description 2">
-          <img src="<?php echo RESNPO_IMAGE . '/gal2.png' ?>" alt="Image 2" />
-        </div>
-        <div class="swiper-slide" data-description="This is description 3">
-          <img src="<?php echo RESNPO_IMAGE . '/gal3.png' ?>" alt="Image 3" />
+    <div class="ue-details">
+      <hr class="hr-pointer">
+      <div class="ue-details-box">
+        <div class="ue-details-text">
+          <h1 class="ue-details-title"></h1>
+          <p class="ue-details-content"></p>
+          <div class="ue-date">
+            <p class="monthyear"></p>
+            <p class="monthday"></p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
 
+    <div class="ue-swiper">
+      <div class="swiper mySwiperue">
+        <div class="swiper-wrapper">
+          <?php
+          $upcomingeventquery = new WP_Query(
+            array(
+              'post_type' => 'upcomingevent',
+              'posts_per_page' => -1,
+            )
+          );
+          if ($upcomingeventquery->have_posts()) {
+            while ($upcomingeventquery->have_posts()):
+              $upcomingeventquery->the_post();
+              $monthyear = get_post_meta(get_the_ID(), "monthyear", true);
+              $monthday = get_post_meta(get_the_ID(), "monthday", true);
+          ?>
+              <div class="swiper-slide swiper-ue" data-title="<?php the_title() ?>" data-content="<?php the_content() ?>" data-monthyear="<?php echo $monthyear ?>" data-monthday="<?php echo $monthday ?>">
+                <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="" />
+              </div>
+          <?php
+            endwhile;
+            wp_reset_postdata();
+          }
+          ?>
+        </div>
 </section>
 <!-- END SECTION 4 -->
 
@@ -240,8 +274,6 @@
         </div>
         <div class="pp-vertical-slider">
           <img src="<?php echo RESNPO_IMAGE . '/hap.png' ?>" alt="Image 1" class="slider-image">
-          <img src="<?php echo RESNPO_IMAGE . '/hap.png' ?>" alt="Image 2" class="slider-image">
-          <img src="<?php echo RESNPO_IMAGE . '/hap.png' ?>" alt="Image 3" class="slider-image">
         </div>
       </div>
       <div class="pagination">

@@ -10,8 +10,8 @@ body {
   height: 100vh;
   box-sizing: border-box;
   background: linear-gradient(rgba(46, 136, 170, 0.5), rgba(46, 136, 170, 0.5));
-  position: relative; /* Ensure .sdg-title is positioned relative to .sdg-home */
-  overflow: hidden; /* Ensure the video does not overflow */
+  position: relative;
+  overflow: hidden;
 }
 
 #background-video {
@@ -21,26 +21,24 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1; /* Ensure the video is behind other content */
-  transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Smooth transition for transform and opacity */
+  z-index: -1;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .slide-in {
-  transform: translateX(0); /* Video is in view */
-  opacity: 1; /* Fully visible */
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .slide-out {
-  transform: translateX(-100%); /* Slide out of view */
-  opacity: 0; /* Fades out */
+  transform: translateX(-100%);
+  opacity: 0;
 }
-
-
 
 .bg-border {
   height: 100%;
   border: 5px solid #f9edeb;
-  position: relative; /* Ensure .sdg-title is positioned relative to .bg-border */
+  position: relative;
 }
 
 header {
@@ -78,7 +76,7 @@ header img {
   -webkit-transform-origin: 20px;
   transform-origin: 20px;
   transform: rotate(-90deg);
-  white-space: nowrap; /* Prevent text wrapping */
+  white-space: nowrap;
   flex-direction: row;
 
   width: 400px;
@@ -112,9 +110,8 @@ header img {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  bottom: 50px; /* Fixed margin from the bottom */
-  width: 100%; /* Ensure it takes the full width */
-
+  bottom: 50px;
+  width: 100%;
 }
 
 .side-logo {
@@ -124,13 +121,11 @@ header img {
   left: 24px;
   gap: 0px;
   opacity: 0px;
-  /* angle: 89.49 deg; */
   transform: rotate(90deg);
 }
 
 .main-title {
   margin-right: 40px;
-  
 }
 
 .navigation-dots {

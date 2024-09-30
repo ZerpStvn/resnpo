@@ -39,3 +39,8 @@ nextBtn.addEventListener("click", () => {
 
 // Initialize the slider
 updateSlider();
+
+// Automatically click the next button every 3 seconds
+setInterval(() => {
+  nextBtn.click();
+}, 3000); // Adjust the interval as needed (3000ms = 3 seconds)
