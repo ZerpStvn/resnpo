@@ -48,6 +48,7 @@
   margin-left: 98px;
   margin-right: 100px;
   margin-bottom: 76px;
+  flex: 0 0 35%;
 }
 
 .front-section-content h1 {
@@ -62,10 +63,11 @@
 }
 
 .front-section-content p {
-  font-size: 25px;
+  font-family: var(--notsansjp);
+  font-size: 20px;
   font-weight: 500;
-  line-height: 35.16px;
-  letter-spacing: 0.1em;
+  line-height: 28.13px;
+  letter-spacing: 0.05em;
   text-align: left;
   color: #fff;
 }
@@ -87,7 +89,7 @@
 /* FEATURE SECTION */
 .features-section {
   height: 100vh;
-  background-color: #2e88aa;
+  background-color: #56b0d2;
   /* padding-bottom: 180px; */
 }
 
@@ -345,9 +347,9 @@
   position: relative;
 }
 
-.ue-container {
+/* .ue-container {
   margin-top: 55px;
-}
+} */
 
 .ue-title {
   text-align: center;
@@ -442,8 +444,6 @@
   width: 471px;
   height: 419px;
   transition: all 0.3s ease;
-  opacity: 0.7;
-  transform: scale(0.9);
 }
 
 .ue-swiper .swiper-ue img {
@@ -452,7 +452,7 @@
   object-fit: cover;
   border-radius: 5px;
   transition: all 0.3s ease;
-  width: 311px;
+  width: 350px;
   height: 419px;
   top: 130px;
   left: 184px;
@@ -475,6 +475,8 @@
   justify-content: left;
   margin-top: 20px;
   margin-left: 100px;
+  position: absolute;
+  top: 525px;
 }
 
 .swiper-button-prev,
@@ -489,7 +491,7 @@
 /* Photo-gallery Section */
 
 .photo-gallery {
-  margin-top: 77px;
+  padding: 77px 0;
   /* padding-bottom: 60px; */
 }
 .photo-gallery-images {

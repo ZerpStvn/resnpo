@@ -7,7 +7,7 @@ body {
 
 .sdg-home {
   padding: 30px;
-  height: 100vh;
+  height: calc(100vh - 30px);
   box-sizing: border-box;
   background: linear-gradient(rgba(46, 136, 170, 0.5), rgba(46, 136, 170, 0.5));
   position: relative;

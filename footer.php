@@ -48,9 +48,17 @@
         <p class="p-blue-16 w-369">
           子どもたちに一つでも多くの機会を届けるため 皆様の寄付を私たちの活動に利用させていただきます。
         </p>
-        <button class="green-button">
-          詳しく見る
-        </button>
+        <div class="relative btn-container">
+          <a href="">
+            <button class="main-button relative">
+              代表メッセージ
+            </button>
+            <img
+              class="icon-button absolute"
+              src="<?php echo RESNPO_IMAGE . '/leaves.png' ?>"
+              alt="" />
+          </a>
+        </div>
       </div>
     </div>
   </div>
