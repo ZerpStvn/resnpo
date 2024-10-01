@@ -101,6 +101,10 @@ html {
   color: #898989;
 }
 
+.light-blue {
+  color: #56b0d2;
+}
+
 /* Font Size */
 
 .p-12 {
@@ -139,6 +143,10 @@ html {
   font-size: 22px;
 }
 
+.p-25 {
+  font-size: 25px;
+}
+
 .p-30 {
   font-size: 30px;
 }
@@ -163,6 +171,10 @@ html {
   font-size: 100px;
 }
 
+.p-150 {
+  font-size: 150px;
+}
+
 .p-175 {
   font-size: 175px;
 }
@@ -171,11 +183,19 @@ html {
   font-size: 13.889vw; /** 200px */
 }
 
+.p-250 {
+  font-size: 250px;
+}
+
 .p-300 {
   font-size: 300px;
 }
 
 /* Font Weight */
+
+.w-400 {
+  font-weight: 400;
+}
 
 .w-500 {
   font-weight: 500;
@@ -229,6 +249,10 @@ html {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
 }
 
 .gap-15 {
