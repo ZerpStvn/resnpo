@@ -1,6 +1,5 @@
-</main>
 <footer>
-  <div class="footer-container
+  <div class="footer-container">
 
     <div class="upper-footer">
       <div class="uf-c1">
@@ -54,10 +53,7 @@
             <button class="main-button relative">
               代表メッセージ
             </button>
-            <img
-              class="icon-button absolute"
-              src="<?php echo RESNPO_IMAGE . '/leaves.png' ?>"
-              alt="" />
+            <img class="icon-button absolute" src="<?php echo RESNPO_IMAGE . '/leaves.png' ?>" alt="" />
           </a>
         </div>
       </div>
