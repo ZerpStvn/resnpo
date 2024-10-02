@@ -1,4 +1,6 @@
 footer {
+  height: 50vh;
+  background: orange;
   /* height: 100vh; */
   margin-top: 25px;
 }
