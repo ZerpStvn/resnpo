@@ -634,7 +634,7 @@
 }
 
 .past-performance {
-  margin-top: 80px;
+  margin: 98px 0;
 }
 
 .content-box {
@@ -735,7 +735,7 @@
 /* JOINED SCHOOLS */
 
 .joined-schools {
-  margin-top: 98px;
+  /* margin-top: 98px; */
   background-color: #005f8f;
   display: flex;
   justify-content: space-around;
