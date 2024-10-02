@@ -92,9 +92,12 @@ document.addEventListener("DOMContentLoaded", function () {
       const content = activeSlide.getAttribute("data-content");
       const monthyear = activeSlide.getAttribute("data-monthyear");
       const monthday = activeSlide.getAttribute("data-monthday");
+      const subdescription = activeSlide.getAttribute("data-subdescription");
 
       document.querySelector(".ue-details-title").textContent = title;
       document.querySelector(".ue-details-content").textContent = content;
+      document.querySelector(".ue-details-subdescription").textContent =
+        subdescription;
       document.querySelector(".monthyear").textContent = monthyear;
       document.querySelector(".monthday").textContent = monthday;
     }
@@ -104,6 +107,10 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: 3,
     loop: true,
     centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -113,4 +120,54 @@ document.addEventListener("DOMContentLoaded", function () {
       slideChange: updateDetails,
     },
   });
+});
+document.addEventListener("DOMContentLoaded", function () {
+  // Observer for the first element
+  const element = document.querySelector(".scaleIn"); // Replace with the actual class or ID
+  if (element) {
+    const observer1 = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            console.log("First element is intersecting"); // Debugging: Log when the element intersects
+            element.classList.add("on");
+            observer1.unobserve(element); // Stop observing after adding the class
+          }
+        });
+      },
+      {
+        threshold: 0.1, // Adjust the threshold as needed
+      }
+    );
+
+    observer1.observe(element);
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(() => {
+    const element2 = document.querySelector(".slideright");
+    if (element2) {
+      const observer2 = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            console.log("Observing slideright:", entry.isIntersecting);
+            if (entry.isIntersecting) {
+              console.log("Slideright element is intersecting");
+              element2.classList.add("on");
+              observer2.unobserve(element2);
+            }
+          });
+        },
+        {
+          threshold: 0,
+          rootMargin: "0px 0px -50% 0px", // Trigger when element is halfway into view
+        }
+      );
+
+      observer2.observe(element2);
+    } else {
+      console.error("Slideright element not found");
+    }
+  }, 100);
 });
