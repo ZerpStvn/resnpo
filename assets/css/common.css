@@ -6,6 +6,7 @@
 body,
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .global_width {
@@ -297,4 +298,8 @@ ul {
 
 button {
   cursor: pointer;
+}
+
+.flex {
+  display: flex;
 }
