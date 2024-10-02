@@ -1,6 +1,5 @@
 <?php get_header() ?>
 <div id="homeid">
-
     <section class="section_1">
       
     </section>
@@ -340,6 +339,5 @@
           <img src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
         </div>
       </section>
-
 </div>
 <?php get_footer() ?>

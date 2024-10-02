@@ -431,4 +431,13 @@ hr {
 .side-supporter {
   right: -7%;
   top: 5%;
+  
+@media (max-width: 1999px) {
+  #homeid .maintop {
+    height: 75vh;
+  }
 }
+@media (max-width: 1660px) {
+  #homeid .maintop {
+    height: 82vh;
+  }

@@ -6,6 +6,7 @@
 body,
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .global_width {
@@ -62,8 +63,6 @@ html {
   line-height: 16px;
   letter-spacing: 0.1em;
 }
-
-/* Colors */
 
 .sub-head-clr {
   color: #81bf24 !important;
@@ -297,4 +296,7 @@ ul {
 
 button {
   cursor: pointer;
+}
+.flex {
+  display: flex;
 }
