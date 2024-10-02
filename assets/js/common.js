@@ -1,3 +1,5 @@
-const jquery = require("./jquery");
-
-jquery(document).ready(function ($) {});
+jquery(document).ready(function ($) {
+  $(".sliderfade img").on("click", function () {
+    alert(hello);
+  });
+});

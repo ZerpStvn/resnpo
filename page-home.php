@@ -18,7 +18,7 @@
                                         loading="lazy" alt="contact"></a>
                             </ul>
                         </div>
-                        <div class="sliderview">
+                        <div class="sliderview sliderfade">
                             <img src="<?php echo RESNPO_IMAGE . "/slider/first2.png" ?>" loading="lazy" alt="slider">
                             <img src="<?php echo RESNPO_IMAGE . "/slider/second.png" ?>" loading="lazy" alt="slider">
                         </div>
