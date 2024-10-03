@@ -88,7 +88,7 @@
 
 /* FEATURE SECTION */
 .features-section {
-  padding: 100px 0;
+  padding: 115px 0 180px 0;
   background-color: #56b0d2;
   /* padding-bottom: 180px; */
 }
@@ -129,6 +129,7 @@
 .feature-card img {
   width: 100%;
   height: auto;
+  max-height: 397px;
   object-fit: cover;
   display: block;
 }

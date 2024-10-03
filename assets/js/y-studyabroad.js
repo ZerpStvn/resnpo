@@ -1,3 +1,5 @@
+let $ = jQuery.noConflict();
+
 $(document).ready(function () {
   $(".impressions-slider").slick({
     centerMode: true,
@@ -5,9 +7,10 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 1000,
     dots: true,
     arrows: true,
+    // pauseOnHover: false,
     responsive: [
       {
         breakpoint: 768,

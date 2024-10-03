@@ -1,0 +1,143 @@
+.partner-schools {
+  position: relative;
+  padding: 98px 0;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.ps-container {
+  flex-direction: column;
+}
+
+.ps-title {
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 64px;
+}
+
+.ps-images-wrapper {
+  flex-direction: row;
+  gap: 46px;
+}
+
+#partner_schools svg {
+  position: absolute;
+  top: -180px;
+}
+
+.flow-studying-abroad {
+  width: 100%;
+  margin: 0 auto;
+  /* padding: 20px; */
+}
+
+.fsa-slider-wrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  gap: 20px;
+}
+.fsa-slide-container {
+  flex-direction: row;
+  gap: 0;
+  width: 100%;
+}
+.fsa-slide {
+  width: 183px;
+  background-color: #fff;
+  padding: 83px 73px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  transition: width 0.3s;
+  overflow: hidden;
+  height: 552px;
+}
+.fsa-slide.active {
+  width: 100%;
+}
+.fsa-slide-display {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.fsa-slide.active .fsa-slide-display {
+  flex-direction: row;
+  gap: 20px;
+}
+.fsa-slide-content {
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+.fsa-slide.active .fsa-slide-content {
+  flex-direction: column-reverse;
+}
+
+.fsa-slide-title h3 {
+  white-space: nowrap;
+  transform: rotate(-90deg);
+  margin: 0 auto;
+  transform-origin: left top;
+}
+
+.fsa-slide.active .fsa-slide-title h3 {
+  transform: rotate(0deg);
+  white-space: unset;
+}
+
+.fsa-slide-desc {
+  display: none;
+}
+.fsa-slide.active .fsa-slide-desc {
+  display: block;
+}
+.fsa-slide-desc p {
+  font-family: var(--readex);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 42.19px;
+  text-align: left;
+  max-width: 90%;
+}
+.fsa-nav-button {
+  background-color: #fff;
+  color: var(--footertextcolor);
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: auto;
+  flex-shrink: 0;
+}
+.fsa-nav-button:hover {
+  background-color: #2980b9;
+}
+
+/* Individual slide colors */
+.fsa-slide:nth-child(1) {
+  background-color: #8cceee;
+}
+.fsa-slide:nth-child(2) {
+  background-color: #56b0d2;
+}
+.fsa-slide:nth-child(3) {
+  background-color: #2e88aa;
+}
+.fsa-slide:nth-child(4) {
+  background-color: #005f8f;
+}
+.fsa-slide:nth-child(5) {
+  background-color: #083f75;
+}
+
+/* Adjusting text color for better contrast */
+.fsa-slide .fsa-slide-title h3,
+.fsa-slide .fsa-slide-desc p {
+  color: #ffffff;
+}
