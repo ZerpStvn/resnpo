@@ -6,7 +6,8 @@
 body,
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  /* For AOS Animation to effect properly, disable overflow-x: hidden */
+  /* overflow-x: hidden; */
 }
 
 .global_width {
@@ -298,8 +299,4 @@ ul {
 
 button {
   cursor: pointer;
-}
-
-.flex {
-  display: flex;
 }
