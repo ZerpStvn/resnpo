@@ -1,173 +1,72 @@
-.footer-container {
-  position: relative;
-  overflow: hidden;
-  /* height: 100%; */
-  display: flex;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  color: #fff;
-  /* text-transform: uppercase; */
-  font-size: 20px;
-}
+<footer>
+  <div class="footer-container">
 
-.footer-container:before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: -50%;
-  top: 0;
-  width: 200%;
-  bottom: 0;
-  background-color: #d9d9d9;
-  border-radius: 50% 50% 0 0;
-  z-index: -1;
-}
+    <div class="upper-footer">
+      <div class="uf-c1">
+        <div class="footer-logo">
+          <img src="<?php echo RESNPO_IMAGE . '/green-logo.png' ?>" alt="green-logo">
+          <img src="<?php echo RESNPO_IMAGE . '/res.png' ?>" alt="res">
+        </div>
+        <h1 class="p-blue-16">愛媛県松山市平井町1426番地2</h1>
+        <table>
+          <tr>
+            <td><img src="<?php echo RESNPO_IMAGE . '/yt-blue.png' ?>" alt="YouTube"></td>
+            <td><img src="<?php echo RESNPO_IMAGE . '/fb-blue.png' ?>" alt="Facebook"></td>
+            <td><img class="line" src="<?php echo RESNPO_IMAGE . '/line-blue.png' ?>" alt="Line"></td>
+            <td class="contact-text">Contact</td>
+          </tr>
+        </table>
+      </div>
 
-.p-blue-16 {
-  color: var(--footertextcolor);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.15em;
-  text-align: left;
-}
-table {
-  border-collapse: collapse;
-}
-table td {
-  border: 2px solid var(--footertextcolor);
-  padding: 6px 8px 5px 10px;
-}
+      <div class="uf-c2">
+        <h2 class="footer-col-title">
+          QUICK LINKS
+        </h2>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About US</a></li>
+          <li><a href="#">Join Us</a></li>
+          <li><a href="#">Corporate/Schools</a></li>
+      </div>
 
-.contact-text {
-  font-family: var(--secondFont);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.1em;
-  text-align: left;
-  color: var(--footertextcolor);
-  padding: 13px 15px 13px 20px;
-  margin: 0;
-}
+      <div class="uf-c3">
+        <h2 class="footer-col-title">
+          ACTIVITIES
+        </h2>
+        <ul class="footer-links">
+          <li><a href="#">SDG's</a></li>
+          <li><a href="#">海外留学</a></li>
+          <li><a href="#">海外進学</a></li>
+        </ul>
+      </div>
 
-table tr img {
-  width: 30px;
-  height: 30px;
-}
+      <div class="uf-c4">
+        <h1 class="footer-col-title-huge">
+          サポートする
+        </h1>
+        <p class="p-blue-16 w-369">
+          子どもたちに一つでも多くの機会を届けるため 皆様の寄付を私たちの活動に利用させていただきます。
+        </p>
+        <div class="relative btn-container">
+          <a href="">
+            <button class="main-button relative">
+              代表メッセージ
+            </button>
+            <img class="icon-button absolute" src="<?php echo RESNPO_IMAGE . '/leaves.png' ?>" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="hr-footer">
 
-.line {
-  width: 30px;
-  height: 29.94px;
-  top: 326.32px;
-  left: 191.9px;
-  gap: 0px;
-  opacity: 0px;
-}
-.footer-links {
-  color: var(--footertextcolor);
-  font-family: var(--fourthFont);
-}
+  <div class="lower-footer">
+    <p class="p-blue-16">© 2020 NPO RES.</p>
+  </div>
 
-.footer-links li:last-child {
-  margin-bottom: 0; /* Remove margin from the last item */
-}
-.footer-links li {
-  list-style: none;
-  margin-bottom: 12px; /* Add margin to create the gap */
-}
+  </main>
+  </body>
 
-.footer-links li a {
-  text-decoration: none;
-  font-family: var(--inter);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 19.36px;
-  text-align: left;
-  color: var(--footertextcolor);
-}
-.footer-links li a:visited {
-  color: inherit;
-}
-
-.footer-col-title {
-  font-family: var(--thirdFont);
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 22.9px;
-  letter-spacing: 0.05em;
-  text-align: left;
-  color: var(--footertextcolor);
-  margin-bottom: 5px;
-}
-
-.upper-footer {
-  padding: 40px;
-  display: flex;
-  gap: 66px;
-}
-
-.footer-col-title-huge {
-  font-family: var(--kiak);
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 56.24px;
-  letter-spacing: 0.05em;
-  text-align: left;
-  color: var(--footertextcolor);
-}
-
-.uf-c4 {
-  margin-left: 52px;
-}
-
-.w-369 {
-  width: 369px;
-}
-
-.lower-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #d9d9d9;
-  height: 75px;
-}
-
-.hr-footer {
-  border: 1px solid #ffffff;
-}
-
-.green-button {
-  margin-top: 12px;
-  width: 295.67px;
-  height: 80px;
-  top: 295px;
-  left: 924px;
-  gap: 0px;
-  opacity: 0px;
-}
-
-.main-button {
-  background: var(--buttoncolor);
-  outline: none;
-  border: none;
-  padding: 5px 35px;
-  border-radius: 0px 10px 0px 0px;
-  color: #fff;
-  width: 267px;
-  height: 56px;
-}
-.icon-button {
-  rotate: 52deg;
-  left: 330px;
-  top: -18px;
-  position: absolute;
-}
-.btn-container {
-  margin-top: 5%;
-  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
-}
-
-.relative {
-  position: relative;
-}
+  </html>
+  <?php wp_footer() ?>
