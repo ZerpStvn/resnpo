@@ -4,10 +4,10 @@ header {
 header::before {
 }
 
-header nav {
+/* header nav {
   position: relative;
   z-index: 2;
-}
+} */
 
 .ul-nav-menu {
   justify-content: space-between;
@@ -281,17 +281,17 @@ hr {
 }
 
 .main-button {
-  background: var(--sub-head-clr);
+  background: var(--buttoncolor);
   outline: none;
   border: none;
   padding: 5px 35px;
   border-radius: 0px 10px 0px 0px;
-  color: var(--white-clr);
+  color: white;
 }
 
 .icon-button {
   rotate: 52deg;
-  left: 155px;
+  right: 0;
   top: -18px;
 }
 
