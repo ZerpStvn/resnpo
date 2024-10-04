@@ -353,6 +353,13 @@
   text-align: center;
   padding-top: 20px;
 }
+.upcoming-events-title {
+  position: relative;
+  font-size: 120px; /* Adjust font size as needed */
+  font-family: var(--notsansjp);
+  text-align: center;
+  letter-spacing: 10px;
+}
 
 .ue-details {
   justify-content: flex-end;
@@ -392,10 +399,17 @@
 .ue-details-content {
   font-family: var(--notsansjp);
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 700;
   line-height: 22.5px;
   letter-spacing: 0.05em;
   text-align: left;
+}
+.ue-details-subdescription {
+  font-family: var(--notsansjp);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22.5px;
+  letter-spacing: 0.05em;
 }
 
 .ue-date {
@@ -506,6 +520,7 @@
 }
 
 .photo-gallery-title h2 {
+  font-family: var(--notsansjp);
   font-size: 100px;
   font-weight: 700;
   line-height: 110px;
@@ -513,7 +528,13 @@
   text-align: left;
 }
 
+.outline-blue {
+  color: var(--darkblue);
+  filter: url(#stroke-text-svg-filter-blue);
+}
+
 .photo-gallery-title h1 {
+  font-family: var(--notsansjp);
   font-size: 120px;
   font-weight: 700;
   line-height: 110px;
@@ -533,6 +554,7 @@
   padding-right: 49px;
 }
 .photo-gallery-content p {
+  font-family: var(--notsansjp);
   color: #083f75;
   padding-bottom: 68px;
   border-bottom: 2px solid var(--darkblue);

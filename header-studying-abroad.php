@@ -12,4 +12,4 @@
 <body>
 
   <main>
-    <?php landing_sdg_page_template('海外留学') ?>
+    <?php landing_sdg_page_template('海外進学') ?>

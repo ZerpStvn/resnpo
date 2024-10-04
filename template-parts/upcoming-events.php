@@ -2,21 +2,17 @@
 <section id="upcoming_event" class="upcoming-events">
   <div class="ue-container">
     <div class="ue-title">
-      <svg viewbox="0 0 10 1">
-        <text
-          x="5"
-          y="1"
-          text-anchor="middle"
-          font-size="1"
-          fill="none"
-          stroke-width=".015"
-          stroke="#fff"
-          font-family="var(--notsansjp)"
-          stroke-opacity="0.8">
-          UPCOMING EVENTS
-        </text>
-      </svg>
+      <h1 class="upcoming-events-title outline">UPCOMING EVENTS</h1>
     </div>
+
+    <svg version="1.1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" style="display:none;">
+      <defs>
+        <filter id="stroke-text-svg-filter">
+          <feMorphology operator="dilate" radius="3"></feMorphology>
+          <feComposite operator="xor" in="SourceGraphic" />
+        </filter>
+      </defs>
+    </svg>
 
     <div class="ue-details flex">
       <hr class="hr-pointer">

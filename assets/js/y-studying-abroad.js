@@ -50,3 +50,24 @@ document.addEventListener("DOMContentLoaded", function () {
     autoplayInterval = setInterval(nextSlide, intervalTime);
   }
 });
+
+const inquireTitles = document.querySelectorAll(".inq-title");
+let InqcurrentIndex = 0;
+
+function animateInquire() {
+  inquireTitles.forEach((title, index) => {
+    if (index === InqcurrentIndex) {
+      title.classList.remove("outline");
+    } else {
+      title.classList.add("outline");
+    }
+  });
+
+  InqcurrentIndex = (InqcurrentIndex + 1) % inquireTitles.length;
+}
+
+// Initial animation
+animateInquire();
+
+// Set interval for continuous animation
+setInterval(animateInquire, 200);
