@@ -1,0 +1,44 @@
+#joinusid p {
+  font-family: "NotoSansJP";
+}
+
+#joinusid .section-project-header {
+  background: url("../image/project/header/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 778px;
+}
+
+#joinusid .text-deco {
+  color: none; /* Set the text color */
+  -webkit-text-stroke: 2px black;
+  font-size: 200px;
+}
+
+#joinusid .header-text-items .header-item-text {
+  color: var(--buttoncolor);
+  font-size: 70px;
+  font-weight: 700;
+  font-family: var(--readex);
+  margin-bottom: 80px;
+}
+
+#joinusid .header-text {
+  line-height: 170px;
+}
+
+#joinusid .header-text-items {
+  z-index: 3;
+  padding-left: 100px;
+  padding-right: 80px;
+  margin-top: -150px;
+}
+
+#joinusid .ul-text-items {
+  width: 80%;
+}
+
+#joinusid .header-text-item p:first-child {
+  margin-right: 55%;
+}
