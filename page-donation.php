@@ -27,7 +27,7 @@
               </ul>
           </div>
           </div>
-          <div class="social-icons absolute" data-aos="fade-right">
+          <div class="social-icons absolute" data-aos="fade-down">
             <ul class="social-icons-ul flex align-items-center">
               <li>
                 <img
@@ -56,7 +56,7 @@
             子どもたちに一つでも多くの機会を届けるため 皆様の寄付を私たちの活動に利用させていただきます
           </p>
         </div>
-        <div class="donation-bottom-donate" >
+        <div class="donation-bottom-donate" data-aos="fade-left">
           <p class="w-900 p-100 section-head-clr">DONATION</p>
         </div>
       </div>
@@ -64,12 +64,12 @@
 
         <section class="section_2_don">
           <ul class="flex gap-15">
-            <li>
+            <li data-aos="fade-right">
               <video class="donation-video" controls>
                 <source src="<?php echo RESNPO_URI .'/assets/videos/video.mp4' ?>" type="video/mp4">
               </video>
             </li>
-            <li >
+            <li data-aos="fade-left">
               <p class="w-900 p-40 mb-5 white-clr text-center">
                 寄付によって <br>
                 子どもたちに与えることができる機会
@@ -126,19 +126,19 @@
           <div class="fieldset-container">
             <ul class="flex">
               <li>
-                <fieldset>
+                <fieldset data-aos="zoom-in" data-aos-delay="400">
                 <legend><p class="w-900 p-50 head-clr">01</p></legend>
                 <p class="w-500 p-20 head-clr fieldset-text">団体よりお礼のお手紙を郵送いたします</p>
                </fieldset>
               </li>
               <li>
-                <fieldset>
+                <fieldset data-aos="zoom-in" data-aos-delay="800">
                 <legend><p class="w-900 p-50 head-clr">02</p></legend>
                 <p class="w-500 p-20 head-clr fieldset-text">毎年4月末ごろ、前年度の活動報告書をお送りいたします</p>
                 </fieldset>
               </li>
               <li>
-                <fieldset>
+                <fieldset data-aos="zoom-in" data-aos-delay="1200">
                 <legend><p class="w-900 p-50 head-clr">03</p></legend>
                 <p class="w-500 p-20 head-clr fieldset-text">支援者ページにお名前を一定期間掲載させていただきます</p>
                 </fieldset>
@@ -148,16 +148,18 @@
           </div>
         </section>
 
-        <section class="section_4_don">
+        <section class="section_4_don"  data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="800">
           <div class="title-top relative">
             <p class="w-500 p-150 text-center relative">HOW TO HELP</p>
             <p class="w-900 p-60 light-blue absolute">お気持ちにあった寄付をお選びください</p>
           </div>
           
-          <div class="payment-container">
+          <div class="payment-container" data-aos="zoom-in">
             <div class="flex btn-payment-container">
               <div>
-                <a href="#A" data-hash="A" class="hash-donation"><button class=""><p>毎月寄付をする</p></button></a>
+                <a href="#A" data-hash="A" class="hash-donation "><button class=""><p>毎月寄付をする</p></button></a>
               </div>
               <div>
                 <a href="#B" data-hash="B" class="hash-donation"><button class=""><p>1回の寄付をする</p></button></a>

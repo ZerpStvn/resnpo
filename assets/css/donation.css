@@ -30,6 +30,7 @@
 
 .social-icons {
   top: 150px;
+  left: -25px;
 }
 
 .social-icons-ul {
@@ -384,4 +385,94 @@
 }
 .detail-payment-container#C {
   border: 4px solid #56c3e6;
+}
+
+@media screen and (max-width: 1300px) {
+  .p-250 {
+    font-size: 19.231vw;
+  }
+
+  .p-150 {
+    font-size: 11.538vw;
+  }
+
+  .p-100 {
+    font-size: 7.692vw;
+  }
+
+  .donation-container {
+    margin-top: 50px;
+    margin-left: 13.889vw; /* 200px */
+    width: 58.077vw;
+  }
+
+  .donation-container p {
+    font-size: 10.417vw;
+    line-height: 9.093vw;
+  }
+
+  .header-txt-container {
+    top: 15.385vw;
+  }
+
+  .header-txt-container p {
+    font-size: 6.944vw;
+  }
+
+  .res-txt-container {
+    right: -16.154vw;
+  }
+
+  .res-txt-container p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .social-icons {
+    top: 11.538vw;
+  }
+
+  /* RESPO:1300 SECTION ----2: Donation */
+  .section_2_don {
+    padding: 315px 9.077vw 30px;
+  }
+
+  .donation-details {
+    padding-left: 6.154vw;
+  }
+
+  /* RESPO:1300 SECTION ----2: BENEFITS */
+
+  /* RESPO:1300 SECTION ----3: HOW TO HELP */
+  .title-top p:last-child {
+    font-size: 4.615vw;
+  }
+
+  .fieldset-container ul {
+    display: block;
+  }
+
+  .fieldset-container ul li:nth-child(2) {
+    margin-left: 20%;
+  }
+
+  .fieldset-container ul li:nth-child(3) {
+    margin-top: 40px;
+    margin-left: 40%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* RESPO:1000 SECTION ----2: Donation */
+  .section_2_don > ul {
+    display: block;
+  }
+
+  .donation-video {
+    max-width: 100%;
+  }
+
+  .title-top p:first-child {
+    line-height: 20.769vw;
+  }
 }

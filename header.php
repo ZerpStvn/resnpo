@@ -12,7 +12,7 @@
 <body>
 
     <header class="relative">
-      <nav class="absolute">
+      <nav class="absolute" data-aos="fade-left">
         <img src="<?php echo RESNPO_URI .  '/assets/image/donation/header/nav-icon.png' ?>" alt="" />
       </nav>
     </header>

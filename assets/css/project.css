@@ -62,6 +62,8 @@
   font-weight: 700;
   font-family: var(--readex);
   margin-bottom: 80px;
+  text-shadow: -1.5px -1.5px 0 #fff, 1.5px -1.5px 0 #fff, -1.5px 1.5px 0 #fff,
+    1.5px 1px 0 #fff; /* Creates the outline effect */
 }
 
 .header-text-item p:first-child {

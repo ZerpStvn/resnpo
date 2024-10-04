@@ -22,6 +22,8 @@
   font-weight: 700;
   font-family: var(--readex);
   margin-bottom: 80px;
+  text-shadow: -1.5px -1.5px 0 #fff, 1.5px -1.5px 0 #fff, -1.5px 1.5px 0 #fff,
+    1.5px 1px 0 #fff; /* Creates the outline effect */
 }
 
 #joinusid .header-text {
@@ -39,8 +41,13 @@
   width: 80%;
 }
 
-#joinusid .header-text-item p:first-child {
-  margin-right: 55%;
+#joinusid .header-text-item label {
+  color: var(--yellowgreen);
+  background: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 5px 35px;
+  border-radius: 0 5px 5px 0;
 }
 
 /* SECTION ---- MARQUEE */
@@ -90,4 +97,126 @@
 
 /* SECTION ---- 1: JoinUs-Donate */
 
-.section-joinus-donate
+.section-join-donation {
+  background: #56b0d2;
+  min-height: 944px;
+}
+
+.section-join-donation img {
+  vertical-align: bottom;
+  bottom: 0;
+}
+
+.section-join-donation > ul {
+  padding-top: 123px;
+  /* padding-right: 167px; */
+}
+
+.section-join-donation ul li {
+  flex: 1;
+}
+
+.section-join-donation ul li:first-child {
+  align-content: end;
+}
+
+.section-join-donation ul li:first-child p {
+  /* writing-mode: vertical-rl; */
+  transform: rotate(90deg);
+  white-space: nowrap;
+  width: 200px;
+}
+
+.section-join-donation ul li:last-child {
+  background-color: #fff;
+  padding: 60px;
+  position: relative;
+  margin-right: 167px;
+  margin-left: 120px;
+}
+
+#joinusid .donate-title {
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+#joinusid .btn-container {
+  text-align: center;
+}
+
+/* SECTION -----2: Benefits */
+
+#joinusid fieldset {
+  border: 1px solid #56b0d2;
+  padding: 30px 30px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+#joinusid .fieldset-container ul li:nth-child(2) {
+  margin-top: 0;
+}
+
+#joinusid .fieldset-container ul li:nth-child(3) {
+  margin-top: 0;
+}
+
+/* SECTION ------3: Membership */
+
+.section-join-membership {
+  background: url("../image/joinus/section-three/main-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 964px;
+  margin-top: 88px;
+  margin-bottom: 25px;
+}
+
+.section-join-membership::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(13, 48, 70, 0.8); /* This is the overlay color */
+  z-index: 0;
+}
+
+.img-bg-membership {
+  left: -25px;
+}
+
+.section-join-membership > ul {
+  padding-top: 123px;
+  /* padding-right: 167px; */
+}
+
+.section-join-membership ul li {
+  flex: 1;
+}
+
+.section-join-membership ul li:first-child {
+  align-content: baseline;
+}
+
+.section-join-membership ul li:first-child p {
+  /* writing-mode: vertical-rl; */
+  transform: rotate(90deg);
+  white-space: nowrap;
+  width: 200px;
+}
+
+.section-join-membership ul li:last-child {
+  background-color: #fff;
+  padding: 60px;
+  position: relative;
+  margin-right: 167px;
+  margin-left: 120px;
+}
+
+/* SECTION ---- 5: INQUIRE */
+
+.section-inquire {
+}
