@@ -53,5 +53,8 @@
     </div>
   </div>
 
+  <section class="section-join-donation">
+    
+  </section>
 </div>
 <?php get_footer() ?>
