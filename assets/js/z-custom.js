@@ -1,4 +1,16 @@
 let $ = jQuery.noConflict();
+
+// START: AOS ANIMATION EFFECTS
+jQuery(document).ready(() => {
+  AOS.init({
+    duration: 600,
+    once: true,
+  });
+
+  window.addEventListener("load", AOS.refresh);
+});
+// END: AOS ANIMATION EFFECTS
+
 $(window).on("hashchange", function () {
   $("div.tab").hide();
   $(location.hash).fadeIn("slow");

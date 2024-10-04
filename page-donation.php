@@ -5,9 +5,9 @@
 
     <section class="donation-header">
       <div class="border relative">
-          <div class="donation-container relative">
+          <div class="donation-container relative0" data-aos="fade-up">
             <p>DONATION</p>
-            <div class="text-deco">
+            <div class="text-deco" data-aos="fade-up">
               <p>DONATION</p>
               <p>DONATION</p>
               <p>DONATION</p>
@@ -27,7 +27,7 @@
               </ul>
           </div>
           </div>
-          <div class="social-icons absolute">
+          <div class="social-icons absolute" data-aos="fade-right">
             <ul class="social-icons-ul flex align-items-center">
               <li>
                 <img
@@ -49,14 +49,14 @@
 
     <section class="section_1_don relative">
       <div class="donation-bottom-container absolute">
-        <div class="donation-bottom-text">
+        <div class="donation-bottom-text" data-aos="flip-left" data-aos-delay=400>
           <p class="w-700 p-40 head-clr">あなたの寄付が子どもたちの世界を拡げ輝かせます</p>
           <p class="w-500 p-20 head-clr">
             刻一刻と変化する今の時代。子どもたちは、私たちがそうだった頃とは異なる環境に身を置き多種多様なスキルや能力を身につけることを求められています。
             子どもたちに一つでも多くの機会を届けるため 皆様の寄付を私たちの活動に利用させていただきます
           </p>
         </div>
-        <div class="donation-bottom-donate">
+        <div class="donation-bottom-donate" >
           <p class="w-900 p-100 section-head-clr">DONATION</p>
         </div>
       </div>
@@ -69,12 +69,12 @@
                 <source src="<?php echo RESNPO_URI .'/assets/videos/video.mp4' ?>" type="video/mp4">
               </video>
             </li>
-            <li>
+            <li >
               <p class="w-900 p-40 mb-5 white-clr text-center">
                 寄付によって <br>
                 子どもたちに与えることができる機会
               </p>
-              <div class="flex gap-35 donation-details">
+              <div class="flex gap-35 donation-details" >
                 <div>
                   <img src="<?php echo RESNPO_URI . '/assets/image/donation/section-two/icon-1.png' ?>" alt="">
                 </div>
@@ -118,7 +118,7 @@
         </section>
 
         <section class="section_3_don">
-          <div class="title-top relative">
+          <div class="title-top relative" data-aos="flip-left">
             <p class="w-500 p-250 text-center relative">BENEFITS</p>
             <p class="w-900 p-100 light-blue absolute">ご寄付いただいた方には</p>
           </div>

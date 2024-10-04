@@ -25,7 +25,7 @@ function add_custom_page()
             'post_status' => 'publish',
             'post_author' => 1,
             'post_type' => 'page',
-            'post_name' => 'about'
+            'post_name' => 'project'
         ),
         array(
             'post_title' => 'SDG',
@@ -34,6 +34,14 @@ function add_custom_page()
             'post_author' => 1,
             'post_type' => 'page',
             'post_name' => 'sdg'
+        ),
+        array(
+            'post_title' => 'Join Us',
+            'post_content' => 'joinus',
+            'post_status' => 'publish',
+            'post_author' => 1,
+            'post_type' => 'page',
+            'post_name' => 'joinus'
         ),
 
         array(

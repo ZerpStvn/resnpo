@@ -1,0 +1,265 @@
+#projectid p {
+  font-family: "NotoSansJP";
+}
+
+#projectid .section-project-header {
+  background: url("../image/project/header/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 778px;
+}
+
+.section-project-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(13, 48, 70, 0.8); /* This is the overlay color */
+  z-index: 0;
+}
+
+.project-header-content {
+  z-index: 1;
+  color: #fff;
+  padding-top: 50px;
+  padding-left: 100px;
+  /* height: calc(100% - 80px); */
+}
+
+#projectid .text-deco {
+  color: none; /* Set the text color */
+  -webkit-text-stroke: 2px black;
+  font-size: 200px;
+}
+
+.header-text {
+  margin: auto;
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+  font-size: 200px;
+  font-family: var(--readex) !important;
+}
+
+.section-project-header .img-people {
+  bottom: 0;
+  right: 50px;
+  z-index: 2;
+}
+
+.header-text-items {
+  z-index: 3;
+  padding-left: 100px;
+  padding-right: 80px;
+  padding-top: 100px;
+}
+
+#projectid .header-text-items .header-item-text {
+  color: var(--buttoncolor);
+  font-size: 70px;
+  font-weight: 700;
+  font-family: var(--readex);
+  margin-bottom: 80px;
+}
+
+.header-text-item p:first-child {
+  font-weight: 700;
+  font-size: 25px;
+  color: var(--buttoncolor);
+  background: #fff;
+  margin-right: 60%;
+  padding-left: 30px;
+  border-radius: 0 5px 5px 0;
+}
+
+.header-text-item p:nth-child(2) {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  margin-right: 35%;
+  padding-left: 30px;
+}
+
+.ul-text-items {
+  display: flex;
+  gap: 30px;
+}
+
+.ul-text-items li {
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  padding-top: 15px;
+  padding-bottom: 18px;
+}
+
+.header-text-item img {
+  top: -45px;
+  right: 15px;
+}
+
+.header-text-item .front-img {
+  z-index: 3;
+}
+
+.header-text-item .back-img {
+  z-index: 2;
+}
+
+/* SECTION ---- MARQUEE */
+
+#projectid .marquee-container {
+  height: 118px;
+  width: 100%; /* Full width */
+  overflow: hidden; /* Hide the overflowing content */
+  background-color: #2e88aa; /* Background color for the marquee */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#projectid .marquee {
+  display: inline-flex; /* Ensure that ul items flow horizontally */
+  white-space: nowrap; /* Prevent line breaks */
+  animation: marquee 25s linear infinite;
+}
+
+#projectid .marquee-container p {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+#projectid .marquee-container ul {
+  display: inline-flex; /* Change to inline-flex to avoid wrapping */
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+#projectid .marquee-container ul li {
+  list-style: none; /* Remove default bullet points */
+  margin: 0 25px; /* Adjust margin for spacing */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  } /* Start off-screen to the right */
+  100% {
+    transform: translateX(-100%);
+  } /* End off-screen to the left */
+}
+
+/* SECTION ------ 1 */
+
+.section-project-sgds {
+  background: url("../image/project/section-one/bg-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 821px;
+  padding-top: 65px;
+}
+
+.section-project-sgds::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(8, 63, 117, 0.8); /* This is the overlay color */
+  z-index: 0;
+}
+
+.project-sgds-container {
+  z-index: 2;
+  height: 821px;
+}
+
+.overlay-arc {
+  background: url("../image/project/section-one/arc-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+  height: 76%;
+  /* width: 100%; */
+}
+
+.project-sgds-container .section-title {
+  text-align: right;
+  padding-right: 100px;
+  z-index: -1;
+  line-height: 200px;
+}
+
+.overlay-arc .arc-img-side {
+  right: 0;
+  top: -150px;
+  z-index: -1;
+}
+
+.overlay-arc ul,
+.overlay-arc-study ul {
+  padding-left: 60px;
+  padding-right: 40px;
+  padding-top: 150px;
+}
+
+.overlay-arc li,
+.overlay-arc-study li {
+  flex: 1;
+}
+
+.overlay-arc li:first-child,
+.overlay-arc-study li:first-child {
+  text-align: center;
+  text-shadow: -1.5px -1.5px 0 #fff, 1.5px -1.5px 0 #fff, -1.5px 1.5px 0 #fff,
+    1.5px 1px 0 #fff; /* Creates the outline effect */
+}
+
+.overlay-arc li:last-child,
+.overlay-arc-study li:last-child {
+  padding-top: 70px;
+}
+
+#projectid .main-button {
+  padding: 5px 15px;
+}
+
+#projectid .icon-button {
+  left: 290px;
+}
+
+/* SECTION -----2 */
+
+.section-project-study {
+  min-height: 821px;
+  padding-top: 25px;
+  margin-bottom: 86px;
+}
+
+.section-title-study {
+  padding-left: 30px;
+  letter-spacing: 10px;
+}
+
+.overlay-arc-study {
+  background: url("../image/project/section-two/arc-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+  height: 73%;
+  /* width: 100%; */
+}
+
+.overlay-arc-study .arc-img-side {
+  right: 0;
+  top: -325px;
+  z-index: -1;
+}
+
+/* SECTION -----3 */
