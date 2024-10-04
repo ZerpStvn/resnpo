@@ -59,7 +59,9 @@
                                     <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
                                 </filter>
                             </defs>
-                            <text x="20" y="100" font-family="var(--notsansjp)" font-size="80" font-weight="bold" fill="none" stroke="white" stroke-width="1" letter-spacing="0.1em" filter="url(#shadow)">
+                            <text x="20" y="100" font-family="var(--notsansjp)" font-size="80" font-weight="bold"
+                                fill="none" stroke="white" stroke-width="1" letter-spacing="0.1em"
+                                filter="url(#shadow)">
                                 SDGs 甲子園
                             </text>
                         </svg>
@@ -74,5 +76,8 @@
                 </video>
             </div>
             <!-- Hidden div to store video paths -->
-            <div id="video-paths" data-video1="<?php echo RESNPO_IMAGE . '/vid1.mp4' ?>" data-video2="<?php echo RESNPO_IMAGE . '/vid2.mp4' ?>" data-video3="<?php echo RESNPO_IMAGE . '/vid3.mp4' ?>" data-video4="<?php echo RESNPO_IMAGE . '/vid4.mp4' ?>"></div>
+            <div id="video-paths" data-video1="<?php echo RESNPO_IMAGE . '/vid1.mp4' ?>"
+                data-video2="<?php echo RESNPO_IMAGE . '/vid2.mp4' ?>"
+                data-video3="<?php echo RESNPO_IMAGE . '/vid3.mp4' ?>"
+                data-video4="<?php echo RESNPO_IMAGE . '/vid4.mp4' ?>"></div>
         </section>
