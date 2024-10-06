@@ -38,7 +38,6 @@ function featurefront($feature_location = null)
           wp_reset_postdata();
         }
         ?>
-
       </div>
     </div>
   </section>

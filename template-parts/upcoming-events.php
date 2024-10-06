@@ -46,8 +46,8 @@
               $monthyear = get_post_meta(get_the_ID(), "monthyear", true);
               $monthday = get_post_meta(get_the_ID(), "monthday", true);
           ?>
-              <div class="swiper-slide swiper-ue" data-title="<?php the_title() ?>" data-content="<?php echo esc_attr(html_entity_decode(wp_strip_all_tags(get_the_content()))); ?>" data-subdescription="<?php echo esc_attr($subdescription); ?>" data-monthyear="<?php echo esc_attr($monthyear); ?>" data-monthday="<?php echo esc_attr($monthday); ?>">
-                <img src="<?php echo esc_url(get_the_post_thumbnail_url()); ?>" alt="" />
+              <div class="swiper-slide swiper-ue" data-title="<?php the_title(); ?>" data-content="<?php echo esc_attr(html_entity_decode(wp_strip_all_tags(get_the_content()))); ?>" data-subdescription="<?php echo esc_attr($subdescription); ?>" data-monthyear="<?php echo esc_attr($monthyear); ?>" data-monthday="<?php echo esc_attr($monthday); ?>">
+                <img src="<?php echo esc_url(get_the_post_thumbnail_url()); ?>" alt="<?php the_title(); ?>" />
               </div>
           <?php
             endwhile;
@@ -61,5 +61,6 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
+  </div>
 </section>
 <!-- END SECTION 4 -->
