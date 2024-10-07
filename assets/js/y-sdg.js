@@ -69,21 +69,27 @@ document.addEventListener("DOMContentLoaded", function () {
   let swiper;
 
   function updateDetails() {
-    if (!swiper) return;
-    const activeIndex = swiper.realIndex;
-    const activeSlide = swiper.slides[activeIndex];
-    if (activeSlide) {
-      const title = activeSlide.getAttribute("data-title");
-      const content = activeSlide.getAttribute("data-content");
-      const monthyear = activeSlide.getAttribute("data-monthyear");
-      const monthday = activeSlide.getAttribute("data-monthday");
-      const subdescription = activeSlide.getAttribute("data-subdescription");
+    if (!swiper || !swiper.slides || !Array.isArray(swiper.slides)) return;
+    let activeIndex = (swiper.realIndex + 1) % swiper.slides.length; // Add 1 and use modulo to wrap around
 
-      document.querySelector(".ue-details-title").textContent = title;
-      document.querySelector(".ue-details-content").textContent = content;
-      document.querySelector(".ue-details-subdescription").textContent = subdescription;
-      document.querySelector(".monthyear").textContent = monthyear;
-      document.querySelector(".monthday").textContent = monthday;
+    if (activeIndex >= 0 && activeIndex < swiper.slides.length) {
+      const activeSlide = swiper.slides[swiper.activeIndex + 1]; // Use activeIndex + 1 to get the next slide
+      if (activeSlide) {
+        const title = activeSlide.getAttribute("data-title");
+        const content = activeSlide.getAttribute("data-content");
+        const monthyear = activeSlide.getAttribute("data-monthyear");
+        const monthday = activeSlide.getAttribute("data-monthday");
+        const subdescription = activeSlide.getAttribute("data-subdescription");
+
+        document.querySelector(".ue-details-title").textContent = title;
+        document.querySelector(".ue-details-content").textContent = content;
+        document.querySelector(".ue-details-subdescription").textContent =
+          subdescription;
+        document.querySelector(".monthyear").textContent = monthyear;
+        document.querySelector(".monthday").textContent = monthday;
+      }
+    } else {
+      console.error("activeIndex is out of bounds");
     }
   }
 
@@ -91,19 +97,16 @@ document.addEventListener("DOMContentLoaded", function () {
     swiper = new Swiper(".mySwiperue", {
       slidesPerView: 3,
       spaceBetween: 20,
-      // loop: true,
       centeredSlides: true,
-
-      // loopedSlides:4,
-      speed: 500, // Set transition duration to 500ms
+      loop: true,
+      speed: 500,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
       breakpoints: {
         480: {
-          // slidesPerView: 3,
-          centeredSlides:true,
+          centeredSlides: true,
           loop: true,
         },
         768: {
@@ -111,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         1024: {
           slidesPerView: 3,
-        }
+        },
       },
       on: {
         init: updateDetails,
@@ -122,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   initSwiper();
 
-  window.addEventListener('resize', () => {
+  window.addEventListener("resize", () => {
     if (swiper) {
       swiper.destroy(true, true);
     }
@@ -161,9 +164,9 @@ document.addEventListener("DOMContentLoaded", function () {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             element2.classList.add("on");
-            const images = element2.querySelectorAll('img');
-            images.forEach(img => {
-              img.style.opacity = '1';
+            const images = element2.querySelectorAll("img");
+            images.forEach((img) => {
+              img.style.opacity = "1";
             });
             observer2.unobserve(element2);
           }
@@ -194,8 +197,8 @@ jQuery(document).ready(function ($) {
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
-          centerPadding: '20%',
-        }
+          centerPadding: "20%",
+        },
       },
       {
         breakpoint: 480,
@@ -203,14 +206,14 @@ jQuery(document).ready(function ($) {
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
-          centerPadding: '20%',
+          centerPadding: "20%",
           arrows: false,
-        }
-      }
-    ]
+        },
+      },
+    ],
   });
 
-  $(window).on('resize', function () {
-    $slider.slick('setPosition');
+  $(window).on("resize", function () {
+    $slider.slick("setPosition");
   });
 });

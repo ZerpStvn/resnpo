@@ -192,3 +192,60 @@ table tr img {
 .relative {
   position: relative;
 }
+
+.center-columns {
+  gap: 20px;
+}
+
+@media (max-width: 480px) {
+  .upper-footer {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .uf-c4 {
+    order: 1;
+    margin-left: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .uf-c1 {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+  }
+  .center-columns {
+    order: 3;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .table-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-logo img {
+    height: 54px;
+  }
+  .footer-logo {
+    display: flex;
+  }
+  .uf-c1 .tbl-col .p-blue-16 {
+    font-size: 14px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  table tr img,
+  .line {
+    width: auto;
+    height: 20px;
+  }
+  .uf-c4 p {
+    text-align: center;
+  }
+}

@@ -123,6 +123,10 @@
   align-items: flex-start;
 }
 
+.pp-rows .p-green-20 {
+  text-wrap: nowrap;
+}
+
 .pp-slider {
   width: 554px;
   height: 812px; /* Adjust height as needed */
@@ -203,7 +207,7 @@
   padding: 0;
 }
 
-@media(max-width: 480px) {
+@media (max-width: 480px) {
   /* Past Performance  */
   .sub-title {
     display: block;
@@ -268,9 +272,8 @@
     animation: scroll-horizontal 12s linear infinite;
     gap: 20px;
   }
-    .past-performance-box {
-      padding: 0 0 160px 0;
-
+  .past-performance-box {
+    padding: 0 0 160px 0;
   }
 
   @keyframes scroll-horizontal {
@@ -281,14 +284,8 @@
       transform: translateX(-100%);
     }
   }
-
-
 }
-
 
 .past-performance-box > * {
   transform: skewY(5deg);
 }
-
-
-

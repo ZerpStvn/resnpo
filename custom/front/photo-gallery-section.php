@@ -18,7 +18,7 @@ function photogallerysection($gallery_title = null)
     <svg version="1.1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" style="display:none;">
       <defs>
         <filter id="stroke-text-svg-filter-blue">
-          <feMorphology operator="dilate" radius="1"></feMorphology>
+          <feMorphology operator="dilate" radius="2"></feMorphology>
           <feComposite operator="xor" in="SourceGraphic" />
         </filter>
       </defs>

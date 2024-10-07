@@ -150,7 +150,13 @@
   padding: 6.86px 17.78px 6.86px 13.12px;
 }
 
-@media(max-width: 480px) {
+@media (max-width: 1240px) {
+  .upcoming-events-title {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 480px) {
   .upcoming-events-title {
     font-size: 70px;
   }
@@ -158,8 +164,9 @@
   .ue-swiper {
     position: relative;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200%; /* Make the container wider than the viewport */
   }
 
   .ue-details {
@@ -176,24 +183,31 @@
 
   .ue-date {
     text-align: center;
+    margin-left: unset;
   }
 
   .swiper-ue {
-    width: 100%;
-    height: auto;
+    width: 300px; /* Fixed width */
+    height: 300px; /* Fixed height */
     display: flex;
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
+    justify-content: center;
+    align-items: center;
   }
 
   .ue-swiper .swiper-ue img {
-    width: 300px; /* Fixed width */
-    height: 300px; /* Fixed height */
+    width: 300px;
+    height: 300px;
     object-fit: cover;
-    max-height: none;
   }
 
   .mySwiperue {
     overflow: visible;
+  }
+
+  .swiper-navs {
+    margin-left: 50px;
+    position: absolute;
+    top: 490px;
+    gap: 180px;
   }
 }
