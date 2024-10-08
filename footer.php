@@ -1,5 +1,6 @@
+</main>
 <footer>
-  <div class="footer-container">
+  <div class="footer-container
 
     <div class="upper-footer">
       <div class="uf-c1">
