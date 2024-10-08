@@ -151,15 +151,31 @@ table tr img {
   background: var(--buttoncolor);
   outline: none;
   border: none;
-  padding: 5px 35px;
+  /* padding: 5px 35px; */
   border-radius: 0px 10px 0px 0px;
   color: #fff;
   width: 267px;
   height: 56px;
+  transition: transform 0.2s;
 }
+
+.main-button:hover {
+  animation: wiggle 0.2s ease-in-out;
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
 .icon-button {
   rotate: 52deg;
-  left: 330px;
+  left: 260px;
   top: -18px;
   position: absolute;
 }
@@ -170,4 +186,61 @@ table tr img {
 
 .relative {
   position: relative;
+}
+
+.center-columns {
+  gap: 20px;
+}
+
+@media (max-width: 480px) {
+  .upper-footer {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .uf-c4 {
+    order: 1;
+    margin-left: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .uf-c1 {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+  }
+  .center-columns {
+    order: 3;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .table-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-logo img {
+    height: 54px;
+  }
+  .footer-logo {
+    display: flex;
+  }
+  .uf-c1 .tbl-col .p-blue-16 {
+    font-size: 14px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  table tr img,
+  .line {
+    width: auto;
+    height: 20px;
+  }
+  .uf-c4 p {
+    text-align: center;
+  }
 }
