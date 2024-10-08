@@ -32,14 +32,14 @@
   </section>
 
 
-  <div class="vma-title">
+  <div class="vma-title scaleIn">
     <h1>ひとりでも多くの子どもたちが、<br>未来の可能性を芸術で表現できる社会を目指して</h1>
   </div>
 
   <section id="vision-section" class="diagonal-section">
     <div class="rotated-text">VISION</div>
     <div class="section-content head-clr flex-rr head-clr">
-      <div class="image-placeholder">
+      <div class="image-placeholder slideleft">
         <img src=" <?php echo RESNPO_IMAGE . '/about/vision1.png' ?>" alt="">
       </div>
       <div class="section-text">
@@ -73,7 +73,7 @@
   <section id="mission-section" class="diagonal-section">
     <div class="rotated-text">MISSION</div>
     <div class="section-content head-clr flex-row">
-      <div class="image-placeholder">
+      <div class="image-placeholder slideright">
         <img src="<?php echo RESNPO_IMAGE . '/about/mission1.png' ?>" alt="">
       </div>
       <div class="section-text">
@@ -95,7 +95,7 @@
   <section id="action-section" class="diagonal-section">
     <div class="rotated-text">ACTION</div>
     <div class="section-content head-clr head-clr flex-rr">
-      <div class="image-placeholder">
+      <div class="image-placeholder slideleft">
         <img src="<?php echo RESNPO_IMAGE . '/about/action1.png' ?>" alt="">
       </div>
       <div class="section-text">

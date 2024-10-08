@@ -100,6 +100,10 @@ document.addEventListener("DOMContentLoaded", function () {
       centeredSlides: true,
       loop: true,
       speed: 500,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -157,18 +161,19 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const element2 = document.querySelector(".slideright");
-  if (element2) {
-    const observer2 = new IntersectionObserver(
+  const elements = document.querySelectorAll(".slideleft, .slideright");
+
+  elements.forEach((element) => {
+    const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            element2.classList.add("on");
-            const images = element2.querySelectorAll("img");
+            element.classList.add("on");
+            const images = element.querySelectorAll("img");
             images.forEach((img) => {
               img.style.opacity = "1";
             });
-            observer2.unobserve(element2);
+            observer.unobserve(element);
           }
         });
       },
@@ -178,10 +183,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     );
 
-    observer2.observe(element2);
-  } else {
-    console.error("Slideright element not found");
-  }
+    observer.observe(element);
+  });
 });
 
 jQuery(document).ready(function ($) {
