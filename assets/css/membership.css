@@ -1,0 +1,255 @@
+#membershipid p {
+  font-family: "NotoSansJP";
+}
+
+#membershipid nav {
+  top: 32px;
+  right: 68px;
+}
+
+#membershipid .border {
+  border: 5px solid #f9edeb;
+  padding-right: 40px;
+  padding-bottom: 131px;
+}
+
+#membershipid .donation-container {
+  margin-top: 50px;
+  margin-left: 200px;
+  width: 820px;
+}
+
+#membershipid.donation-container p {
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 130.94px;
+  letter-spacing: 10px;
+  color: #22637b; /* Set the text color */
+}
+
+#membershipid .text-deco p {
+  color: #56b0d2; /* Set the text color */
+  text-shadow: -2px -2px 0 #22637b, 2px -2px 0 #22637b, -2px 2px 0 #22637b,
+    2px 2px 0 #22637b; /* Creates the outline effect */
+}
+
+#membershipid .social-icons {
+  top: 150px;
+}
+
+#membershipid .social-icons-ul {
+  gap: 16px;
+  transform: rotate(90deg);
+}
+
+#membershipid .social-icons-ul img {
+  transform: rotate(-90deg);
+}
+
+#membershipid .header-txt-container {
+  top: 200px;
+}
+
+#membershipid .header-txt-container p {
+  color: #ffffff;
+  font-size: 100px;
+}
+
+#membershipid .res-txt-container {
+  right: -210px;
+  bottom: 65px;
+}
+
+#membershipid .res-txt-container p {
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}
+
+#membershipid .donation-bottom-container {
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  bottom: -250px;
+  padding-top: 35px;
+}
+
+#membershipid .donation-bottom-text {
+  width: 500px;
+  padding-left: 140px;
+  padding-right: 30px;
+}
+
+#membershipid .donation-bottom-text p:first-child {
+  margin-bottom: 30px;
+}
+
+#membershipid .donation-bottom-donate {
+  text-align: right;
+  padding-right: 35px;
+}
+
+/* SECTION -----2  */
+
+#membershipid .ul-benefits li:first-child {
+  flex: 0 0 30%;
+  align-content: end;
+}
+#membershipid .ul-benefits li:last-child {
+  flex: 0 0 50%;
+}
+
+#membershipid li img {
+  vertical-align: bottom;
+}
+
+#membershipid .section_2 {
+  padding-top: 315px;
+  background: #91adb1;
+}
+
+#membershipid .benefits-grid {
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 70px;
+}
+
+#membershipid .benefits-container {
+  background: #fff;
+  padding: 40px 40px 60px 40px;
+  /* width: 30%; */
+  margin-right: 40px;
+  margin-top: 45px;
+  border-radius: 20px;
+}
+
+#membershipid .benefits-container .benefits-title {
+  margin-bottom: 20px;
+}
+
+#membershipid .benefits-container:hover,
+#membershipid .benefits-container:hover p,
+#membershipid .benefits-container:hover svg path {
+  background: #0d3046;
+  color: #ffd966;
+  fill: #ffd966;
+}
+
+#membershipid fieldset {
+  border: 1px solid #56b0d2;
+  padding: 30px 30px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+@media screen and (max-width: 1300px) {
+  #membershipid .donation-container {
+    margin-top: 50px;
+    margin-left: 13.889vw; /* 200px */
+    width: 58.077vw;
+  }
+
+  #membershipid .header-txt-container p {
+    font-size: 6.692vw;
+  }
+
+  #membershipid .header-txt-container {
+    top: 15.385vw;
+  }
+
+  #membershipid .res-txt-container {
+    right: -16.154vw;
+    bottom: 5vw;
+  }
+
+  #membershipid .social-icons {
+    top: 11.538vw;
+  }
+
+  #membershipid .ul-benefits {
+    position: relative;
+    z-index: 1;
+  }
+
+  #membershipid .ul-benefits li:first-child {
+    flex: 0 0 0%;
+  }
+
+  #membershipid .ul-benefits li:first-child img {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    /* width: 100%; */
+  }
+
+  #membershipid .ul-benefits li:last-child {
+    flex: 0 0 95%;
+    padding-left: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #membershipid .donation-bottom-text {
+    width: auto;
+    padding-left: 10.229vw;
+  }
+
+  #membershipid .header-txt-container {
+    top: 11.385vw;
+  }
+
+  #membershipid .donation-container p.p-membership {
+    font-size: 8.417vw;
+    line-height: 8.093vw;
+  }
+
+  #membershipid .donation-bottom-container {
+    bottom: -185px;
+  }
+}
+
+@media screen and (max-width: 637px) {
+  #membershipid .ul-benefits li:first-child img {
+    width: 100%;
+  }
+
+  #membershipid .header-txt-container p {
+    font-size: 5.692vw;
+  }
+
+  #membershipid .donation-bottom-container {
+    bottom: -210px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #membershipid .donation-bottom-container {
+    bottom: -290px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #membershipid .donation-container p.p-membership {
+    font-size: 7.417vw;
+    line-height: 7.093vw;
+    letter-spacing: 8px;
+  }
+
+  #membershipid .donation-container {
+    margin-top: 30px;
+  }
+
+  #membershipid .benefits-grid {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+
+  #membershipid .benefits-container {
+    width: auto;
+    margin-right: 40px;
+  }
+
+  #membershipid .ul-benefits li:last-child {
+    flex: 100%;
+  }
+}
