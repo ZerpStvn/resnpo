@@ -107,6 +107,10 @@ html {
   color: #56b0d2;
 }
 
+.white-blue {
+  background-color: #edf8fd;
+}
+
 /* Font Size */
 
 .p-12 {
@@ -307,4 +311,13 @@ ul {
 
 button {
   cursor: pointer;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+.jc-center {
+  justify-content: center;
 }

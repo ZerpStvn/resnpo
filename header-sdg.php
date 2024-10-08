@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php wp_title('-', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><?php wp_title('-', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 
-    <?php wp_head() ?>
+  <?php wp_head() ?>
 </head>
 
 <body>
-
-    <main>
+  <main>
+    <?php //landing_sdg_page_template('SDGs 甲子園') ?>
         <section class="sdg-home">
             <div class="bg-border">
                 <header>
@@ -59,7 +59,9 @@
                                     <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
                                 </filter>
                             </defs>
-                            <text x="20" y="100" font-family="var(--notsansjp)" font-size="80" font-weight="bold" fill="none" stroke="white" stroke-width="1" letter-spacing="0.1em" filter="url(#shadow)">
+                            <text x="20" y="100" font-family="var(--notsansjp)" font-size="80" font-weight="bold"
+                                fill="none" stroke="white" stroke-width="1" letter-spacing="0.1em"
+                                filter="url(#shadow)">
                                 SDGs 甲子園
                             </text>
                         </svg>
@@ -74,5 +76,8 @@
                 </video>
             </div>
             <!-- Hidden div to store video paths -->
-            <div id="video-paths" data-video1="<?php echo RESNPO_IMAGE . '/vid1.mp4' ?>" data-video2="<?php echo RESNPO_IMAGE . '/vid2.mp4' ?>" data-video3="<?php echo RESNPO_IMAGE . '/vid3.mp4' ?>" data-video4="<?php echo RESNPO_IMAGE . '/vid4.mp4' ?>"></div>
+            <div id="video-paths" data-video1="<?php echo RESNPO_IMAGE . '/vid1.mp4' ?>"
+                data-video2="<?php echo RESNPO_IMAGE . '/vid2.mp4' ?>"
+                data-video3="<?php echo RESNPO_IMAGE . '/vid3.mp4' ?>"
+                data-video4="<?php echo RESNPO_IMAGE . '/vid4.mp4' ?>"></div>
         </section>
