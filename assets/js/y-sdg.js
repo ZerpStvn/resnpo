@@ -65,62 +65,74 @@ var swiperPG = new Swiper(".mySwiperpg", {
   },
 });
 
-// const swiperUC = new Swiper(".swiper-container", {
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   on: {
-//     slideChange: function () {
-//       const activeSlide = swiper.slides[swiper.activeIndex];
-//       const description = activeSlide.getAttribute("data-description");
-//       document.getElementById("image-description").textContent = description;
-//     },
-//   },
-// });
 document.addEventListener("DOMContentLoaded", function () {
   let swiper;
 
   function updateDetails() {
-    if (!swiper) return;
-    // Calculate the index of the third visible slide
-    // +4 because: +1 (to next set) +3 (to third child of that set)
-    const activeIndex = (swiper.activeIndex + 1) % swiper.slides.length;
-    const activeSlide = swiper.slides[activeIndex];
-    if (activeSlide) {
-      const title = activeSlide.getAttribute("data-title");
-      const content = activeSlide.getAttribute("data-content");
-      const monthyear = activeSlide.getAttribute("data-monthyear");
-      const monthday = activeSlide.getAttribute("data-monthday");
-      const subdescription = activeSlide.getAttribute("data-subdescription");
+    if (!swiper || !swiper.slides || !Array.isArray(swiper.slides)) return;
+    let activeIndex = (swiper.realIndex + 1) % swiper.slides.length; // Add 1 and use modulo to wrap around
 
-      document.querySelector(".ue-details-title").textContent = title;
-      document.querySelector(".ue-details-content").textContent = content;
-      document.querySelector(".ue-details-subdescription").textContent =
-        subdescription;
-      document.querySelector(".monthyear").textContent = monthyear;
-      document.querySelector(".monthday").textContent = monthday;
+    if (activeIndex >= 0 && activeIndex < swiper.slides.length) {
+      const activeSlide = swiper.slides[swiper.activeIndex + 1]; // Use activeIndex + 1 to get the next slide
+      if (activeSlide) {
+        const title = activeSlide.getAttribute("data-title");
+        const content = activeSlide.getAttribute("data-content");
+        const monthyear = activeSlide.getAttribute("data-monthyear");
+        const monthday = activeSlide.getAttribute("data-monthday");
+        const subdescription = activeSlide.getAttribute("data-subdescription");
+
+        document.querySelector(".ue-details-title").textContent = title;
+        document.querySelector(".ue-details-content").textContent = content;
+        document.querySelector(".ue-details-subdescription").textContent =
+          subdescription;
+        document.querySelector(".monthyear").textContent = monthyear;
+        document.querySelector(".monthday").textContent = monthday;
+      }
+    } else {
+      console.error("activeIndex is out of bounds");
     }
   }
 
-  swiper = new Swiper(".mySwiperue", {
-    slidesPerView: 3,
-    loop: true,
-    centeredSlides: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    on: {
-      init: updateDetails,
-      slideChange: updateDetails,
-    },
+  function initSwiper() {
+    swiper = new Swiper(".mySwiperue", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      centeredSlides: true,
+      loop: true,
+      speed: 500,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        480: {
+          centeredSlides: true,
+          loop: true,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+      on: {
+        init: updateDetails,
+        slideChange: updateDetails,
+      },
+    });
+  }
+
+  initSwiper();
+
+  window.addEventListener("resize", () => {
+    if (swiper) {
+      swiper.destroy(true, true);
+    }
+    initSwiper();
   });
 });
+
 document.addEventListener("DOMContentLoaded", function () {
   // Observer for the first element
   const element = document.querySelector(".scaleIn"); // Replace with the actual class or ID
@@ -145,29 +157,63 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(() => {
-    const element2 = document.querySelector(".slideright");
-    if (element2) {
-      const observer2 = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            console.log("Observing slideright:", entry.isIntersecting);
-            if (entry.isIntersecting) {
-              console.log("Slideright element is intersecting");
-              element2.classList.add("on");
-              observer2.unobserve(element2);
-            }
-          });
-        },
-        {
-          threshold: 0,
-          rootMargin: "0px 0px -50% 0px", // Trigger when element is halfway into view
-        }
-      );
+  const element2 = document.querySelector(".slideright");
+  if (element2) {
+    const observer2 = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            element2.classList.add("on");
+            const images = element2.querySelectorAll("img");
+            images.forEach((img) => {
+              img.style.opacity = "1";
+            });
+            observer2.unobserve(element2);
+          }
+        });
+      },
+      {
+        threshold: 0,
+        rootMargin: "0px 0px -10% 0px",
+      }
+    );
 
-      observer2.observe(element2);
-    } else {
-      console.error("Slideright element not found");
-    }
-  }, 100);
+    observer2.observe(element2);
+  } else {
+    console.error("Slideright element not found");
+  }
+});
+
+jQuery(document).ready(function ($) {
+  var $slider = $(".feature-card-container");
+
+  $slider.slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "20%",
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "20%",
+          arrows: false,
+        },
+      },
+    ],
+  });
+
+  $(window).on("resize", function () {
+    $slider.slick("setPosition");
+  });
 });
