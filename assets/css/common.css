@@ -312,6 +312,12 @@ button {
 .flex-column {
   flex-direction: column;
 }
+.flex-rr {
+  flex-direction: row-reverse;
+}
+.flex-cr {
+  flex-direction: column-reverse;
+}
 .jc-center {
   justify-content: center;
 }

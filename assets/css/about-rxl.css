@@ -1,0 +1,73 @@
+#realxlink {
+  background: rgba(0, 95, 143, 0.85);
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.qt {
+  font-family: var(--notsansjp);
+  font-size: 300px;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #fff;
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-top: 100px;
+}
+
+.rxl-ur {
+  justify-content: center;
+  padding-inline: 100px;
+}
+
+.realxlink .content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow content to wrap to the next line if it overflows */
+}
+
+.realxlink .content p {
+  max-width: 600px;
+  margin: 0;
+}
+
+.realxlink .content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  justify-content: space-between;
+}
+
+.content p {
+  font-family: var(--kiak);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  text-wrap: balance;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+#realxlink .rotated-text {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  transform-origin: left top;
+  font-size: 16px; /* Adjust the font size as needed */
+  font-weight: bold;
+  color: #000; /* Adjust the color as needed */
+}
