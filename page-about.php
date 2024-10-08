@@ -122,18 +122,15 @@
           未来の国際社会で活躍できる社会を目指し、
           自ら考え行動できる人材を育成する活動をしています。
         </p>
-        <div class="image-container">
-          <img src="<?php echo RESNPO_IMAGE . '/about/message.png' ?>" alt="">
-          <div class="rotated-text">MESSAGE</div>
-        </div>
+        <img src="<?php echo RESNPO_IMAGE . '/about/message.png' ?>" alt="">
       </div>
     </div>
 
-    <div class="rxl-lr">
+    <div class="rxl-lr flex">
       <img src="<?php echo RESNPO_IMAGE . '/about/mori.jpeg' ?>" alt="">
       <div class="rxl-lr-txt">
-        <h1 class="sb_title text-centered">新時代の学びのカタチ「REAL✕LINK」</h1>
-        <p>
+        <h1 class="sb_title text-center white-clr">新時代の学びのカタチ<br>「REAL✕LINK」</h1>
+        <p class="white-clr">
           新しい時代「令和」が始まりました。 新しい元号のもと、日本にとどまらず世界中から争いごとや飢えや難病が無くなっていくことを心から願っています。  さて、いつの時代においても最も重要な事業のひとつに位置づけられるのが「教育」です。 先進国も発展途上国も、大きな国も小さな地域も、都会でも田舎でも、「教育」はとても大切です。 
           <br><br>
 
@@ -152,6 +149,60 @@
 
   </section>
 
+  <?php get_template_part('template-parts/adviser') ?>
+
+
+
+  <section class="section_4">
+    <p class="p-30 w-700 head-clr">団体概要</p>
+    <p class="p-20 sub-head-clr">Outline</p>
+    <div class="list-contact">
+      <div class="flex gap-15">
+        <p class="p-16 sub-head-clr">団体名</p>
+        <p class="p-16 head-clr">NPO法人 RES(旧名：地域教育サポートの会)</p>
+      </div>
+      <div class="flex gap-15">
+        <p class="p-16 sub-head-clr">代表者</p>
+        <p class="p-16 head-clr">森章</p>
+      </div>
+      <div class="flex gap-15">
+        <p class="p-16 sub-head-clr">設立年</p>
+        <p class="p-16 head-clr">2003年02月18日</p>
+      </div>
+      <div class="flex gap-15">
+        <p class="p-16 sub-head-clr">所在地</p>
+        <p class="p-16 head-clr">〒791-0243 愛媛県松山市平井町1426番地2</p>
+      </div>
+      <div class="flex gap-15">
+        <p class="p-16 sub-head-clr">連絡先</p>
+        <p class="p-16 head-clr">TEL:089-970-9210　FAX:089-970-9210</p>
+      </div>
+      <div class="flex gap-15">
+        <p class="p-16 sub-head-clr">法人番号</p>
+        <p class="p-16 head-clr">1500005001859 （※内閣府Webサイトが開きます）</p>
+      </div>
+      <div class="flex gap-15">
+        <p class="p-16 sub-head-clr">目的</p>
+        <p class="p-16 head-clr">自ら考え、行動できる人材を育てる</p>
+      </div>
+    </div>
+
+    <p class="p-30 w-700 head-clr">前年度事業報告</p>
+    <p class="sg_description">Reports</p>
+
+    <div class="relative btn-container">
+      <a href="">
+        <button class="main-button relative">
+          詳しく見る
+        </button>
+        <img
+          class="icon-button absolute"
+          src="<?php echo RESNPO_IMAGE . '/leaves.png' ?>"
+          alt="" />
+      </a>
+    </div>
+
+  </section>
 
 </div>
 

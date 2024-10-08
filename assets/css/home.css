@@ -1,0 +1,23 @@
+#advisor_home {
+  background-color: #e4f6ff;
+  border-radius: 10px;
+  padding-block: 40px;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.av-container {
+  height: 75%;
+  width: 100%;
+  background-color: rgba(43, 78, 100, 0.2);
+}
+#advisor_home .av-title {
+  text-align: right;
+  font-family: var(--notsansjp);
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 168.75px;
+  letter-spacing: 0.05em;
+  color: rgba(43, 78, 100, 0.2);
+  margin-right: 20px;
+}
