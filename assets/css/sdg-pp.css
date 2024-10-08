@@ -8,7 +8,7 @@
   text-align: left;
   transform: rotate(-8.13deg);
   margin-top: 100px;
-  overflow: hidden;
+  /* overflow: hidden; */
   color: #005f8f;
   padding-bottom: 50px;
   text-wrap: nowrap;
@@ -130,7 +130,7 @@
 .pp-slider {
   width: 554px;
   height: 812px; /* Adjust height as needed */
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
   margin-left: 20px;
   /* display: flex; */
@@ -141,7 +141,7 @@
 
 .scroll-container {
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
 }
 

@@ -12,7 +12,7 @@ body {
   box-sizing: border-box;
   background: linear-gradient(rgba(46, 136, 170, 0.5), rgba(46, 136, 170, 0.5));
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #background-video {

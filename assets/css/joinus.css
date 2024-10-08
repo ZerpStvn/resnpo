@@ -55,7 +55,7 @@
 #joinusid .marquee-container {
   height: 118px;
   width: 100%; /* Full width */
-  overflow: hidden; /* Hide the overflowing content */
+  /* overflow: hidden; Hide the overflowing content */
   background-color: #2e88aa; /* Background color for the marquee */
   display: flex;
   justify-content: center;

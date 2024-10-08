@@ -94,7 +94,7 @@
 .ue-swiper {
   width: 80%;
   margin: 0 auto;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: absolute;
   top: 95px;
   left: -90px;
@@ -118,7 +118,7 @@
   border-radius: 5px 0px 0px 0px;
   opacity: 1;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .ue-swiper .swiper-ue img {

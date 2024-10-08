@@ -9,7 +9,7 @@
 
 .wave-container {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .wave-container .features-section .main-feature-container {
   padding-bottom: 100px;
@@ -67,7 +67,7 @@
   padding: 83px 73px;
   /* box-adow: 0 0 10px rgba(0, 0, 0, 0.1); */
   transition: width 0.3s;
-  overflow: hidden;
+  /* overflow: hidden; */
   height: 552px;
 }
 .fsa-slide.active {
@@ -215,7 +215,7 @@ details {
   border-radius: 5px;
   margin-bottom: 10px;
   background-color: #fff;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: all 0.3s ease;
 }
 
@@ -351,7 +351,7 @@ details[open] .detail-content {
   height: 300px;
   justify-content: center;
   flex-direction: column;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 @keyframes carousel-animate-vertical {
@@ -492,7 +492,7 @@ details[open] .detail-content {
   padding: 50px;
   position: relative;
   height: 120vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .inq-titles {
@@ -638,7 +638,7 @@ details[open] .detail-content {
   .carousel-container {
     position: relative;
     height: 100%; /* Adjust as needed */
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   .as-cred {

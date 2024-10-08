@@ -5,7 +5,7 @@ footer {
 
 .footer-container {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* height: 100%; */
   display: flex;
   padding-top: 100px;
