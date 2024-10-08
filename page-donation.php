@@ -13,7 +13,7 @@
               <p>DONATION</p>
             </div>
             <div class="header-txt-container absolute">
-              <p>キフ</p>
+              <p>寄付</p>
             </div>
             <div class="res-txt-container absolute">
               <ul class="flex gap-15">
@@ -25,7 +25,7 @@
                   <p class="w-700 p-14 white-clr">REGIONAL EDUCATION SUPPORT</p>
                 </li>
               </ul>
-          </div>
+            </div>
           </div>
           <div class="social-icons absolute" data-aos="fade-down">
             <ul class="social-icons-ul flex align-items-center">
@@ -40,6 +40,20 @@
               </li>
               <li>
                 <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-yt-icon.png' ?>" alt="" />
+              </li>
+
+              <li>
+              <div class="res-txt-container-side">
+              <ul class="flex gap-15">
+                <li>
+                  <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/resnpo-ico.png' ?>" alt="" />
+                </li>
+                <li>
+                  <p class="w-700 p-14 white-clr">NPO法人</p>
+                  <p class="w-700 p-14 white-clr">REGIONAL EDUCATION SUPPORT</p>
+                </li>
+              </ul>
+            </div>
               </li>
             </ul>
           </div>
@@ -157,7 +171,7 @@
           </div>
           
           <div class="payment-container" data-aos="zoom-in">
-            <div class="flex btn-payment-container">
+            <div class="flex gap-15 btn-payment-container">
               <div>
                 <a href="#A" data-hash="A" class="hash-donation "><button class=""><p>毎月寄付をする</p></button></a>
               </div>
@@ -224,7 +238,7 @@
             <div class="detail-payment-container tab hidden" id="B">
               <div class="text-center first-payment-section">
                 <p class="p-15">私たちと一緒に子どもたちの成長を見守りませんか？<br> 毎月1,000円～継続的にご寄付いただけます。</p>
-                <button><p>お使いいただけるカード</p></button>
+                <a href=""><button><p>お使いいただけるカード</p></button></a>
                 <div>
                   <img src="<?php echo RESNPO_URI . '/assets/image/donation/last-section/img-1.png' ?>" alt="">
                 </div>
@@ -233,27 +247,27 @@
               <div class="second-payment-section">
                 <ul class="flex ul-first-payment gap-15">
                   <li>
-                    <button><p class="w-500 p-25">3,000円</p></button>
+                    <a href=""><button><p class="w-500 p-25">3,000円</p></button></a>
                   </li>
                   <li>
-                    <button><p class="w-500 p-25">10,000円</p></button>
+                    <a href=""><button><p class="w-500 p-25">10,000円</p></button></a>
                   </li>
                 </ul>
                 <ul class="flex ul-second-payment gap-15">
                   <li>
-                    <button><p>1,000円</p></button>
+                    <a href=""><button><p>1,000円</p></button></a>
                   </li>
                   <li>
-                    <button><p>5,000円</p></button>
+                    <a href=""><button><p>5,000円</p></button></a>
                   </li>
                   <li>
-                    <button><p>30,000円</p></button>
+                    <a href=""><button><p>30,000円</p></button></a>
                   </li>
                   <li>
-                    <button><p>50,000円</p></button>
+                    <a href=""><button><p>50,000円</p></button></a>
                   </li>
                   <li>
-                    <button><p>100,000円</p></button>
+                    <a href=""><button><p>100,000円</p></button></a>
                   </li>
                 </ul>
               </div>

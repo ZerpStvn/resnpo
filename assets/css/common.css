@@ -203,6 +203,10 @@ html {
   font-weight: 500;
 }
 
+.w-600 {
+  font-weight: 600;
+}
+
 .w-700 {
   font-weight: 700;
 }

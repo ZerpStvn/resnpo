@@ -5,11 +5,11 @@
     <section class="donation-header">
       <div class="border relative">
           <div class="donation-container relative">
-            <p>MEMBERSHIP</p>
+            <p class="p-membership">MEMBERSHIP</p>
             <div class="text-deco">
-              <p>MEMBERSHIP</p>
-              <p>MEMBERSHIP</p>
-              <p>MEMBERSHIP</p>
+              <p class="p-membership">MEMBERSHIP</p>
+              <p class="p-membership">MEMBERSHIP</p>
+              <p class="p-membership">MEMBERSHIP</p>
             </div>
             <div class="header-txt-container absolute">
               <p>メンバーシップ</p>

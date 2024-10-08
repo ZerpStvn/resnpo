@@ -3,13 +3,13 @@
 
   <section class="section-project-header relative">
     <div class="project-header-content relative">
-      <p class="header-text" >PROJECTS</p>
+      <p class="header-text" >PRO<br class="br-display">JECTS</p>
     </div>
     <img class="absolute img-people" src="<?php echo RESNPO_URI . '/assets/image/project/header/people-img.png' ?>" alt="">
   
     <div class="header-text-items relative">
       <p class="header-item-text">Explore our projects</p>
-      <ul class="ul-text-items">
+      <ul class="ul-text-items" style="display:none;">
         <li>
           <div class="header-text-item relative">
             <p>SGDs</p>
@@ -42,6 +42,34 @@
         </li>
       </ul>
     </div>
+
+    <div class="social-icons absolute" data-aos="fade-down">
+            <ul class="social-icons-ul flex align-items-center">
+              <li>
+                <img
+                  src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-line-icon.png' ?>"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-fb-icon.png' ?>" alt="" />
+              </li>
+              <li>
+                <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-yt-icon.png' ?>" alt="" />
+              </li>
+
+              <li>
+              <div class="res-txt-container-side">
+              <ul class="flex gap-15">
+                <li>
+                  <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/resnpo-ico.png' ?>" alt="" />
+                </li>
+                <li>
+                  <p class="w-700 p-14 white-clr">NPO法人</p>
+                  <p class="w-700 p-14 white-clr">REGIONAL EDUCATION SUPPORT</p>
+                </li>
+              </ul>
+            </div>
   </section>
 
   <div class="marquee-container">

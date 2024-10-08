@@ -43,6 +43,10 @@
   font-family: var(--readex) !important;
 }
 
+.br-display {
+  display: none;
+}
+
 .section-project-header .img-people {
   bottom: 0;
   right: 50px;
@@ -265,3 +269,21 @@
 }
 
 /* SECTION -----3 */
+
+@media screen and (max-width: 1300px) {
+  .br-display {
+    display: block;
+  }
+
+  .header-text {
+    line-height: 175px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .section-project-header .img-people {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+}
