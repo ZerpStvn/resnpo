@@ -67,7 +67,7 @@
           <p class="w-700 p-40 head-clr">あなたの寄付が子どもたちの世界を拡げ輝かせます</p>
           <p class="w-500 p-20 head-clr">
             刻一刻と変化する今の時代。子どもたちは、私たちがそうだった頃とは異なる環境に身を置き多種多様なスキルや能力を身につけることを求められています。
-            子どもたちに一つでも多くの機会を届けるため 皆様の寄付を私たちの活動に利用させていただきます
+            子どもたちに一つでも多くの機会を届けるため皆様の寄付を私たちの活動に利用させていただきます
           </p>
         </div>
         <div class="donation-bottom-donate" data-aos="fade-left">
@@ -186,7 +186,7 @@
             <!-- TAB 1 -->
             <div class="detail-payment-container tab" id="A">
               <div class="text-center first-payment-section">
-                <p class="p-15">私たちと一緒に子どもたちの成長を見守りませんか？<br> 毎月1,000円～継続的にご寄付いただけます。</p>
+                <p class="p-15">私たちと一緒に子どもたちの成長を見守りませんか？<br>毎月1,000円～継続的にご寄付いただけます。</p>
                 <button><p>お使いいただけるカード</p></button>
                 <div>
                   <img src="<?php echo RESNPO_URI . '/assets/image/donation/last-section/img-1.png' ?>" alt="">
@@ -237,7 +237,7 @@
             <!-- TAB 2 -->
             <div class="detail-payment-container tab hidden" id="B">
               <div class="text-center first-payment-section">
-                <p class="p-15">私たちと一緒に子どもたちの成長を見守りませんか？<br> 毎月1,000円～継続的にご寄付いただけます。</p>
+                <p class="p-15">私たちと一緒に子どもたちの成長を見守りませんか？<br>毎月1,000円～継続的にご寄付いただけます。</p>
                 <a href=""><button><p>お使いいただけるカード</p></button></a>
                 <div>
                   <img src="<?php echo RESNPO_URI . '/assets/image/donation/last-section/img-1.png' ?>" alt="">
