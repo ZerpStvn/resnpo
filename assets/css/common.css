@@ -173,6 +173,10 @@ html {
   font-size: 100px;
 }
 
+.p-120 {
+  font-size: 120px;
+}
+
 .p-150 {
   font-size: 150px;
 }
@@ -183,6 +187,10 @@ html {
 
 .p-200 {
   font-size: 13.889vw; /** 200px */
+}
+
+.p-230 {
+  font-size: 230px;
 }
 
 .p-250 {
