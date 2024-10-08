@@ -43,6 +43,10 @@
   font-family: var(--readex) !important;
 }
 
+.br-display {
+  display: none;
+}
+
 .section-project-header .img-people {
   bottom: 0;
   right: 50px;
@@ -62,6 +66,8 @@
   font-weight: 700;
   font-family: var(--readex);
   margin-bottom: 80px;
+  text-shadow: -1.5px -1.5px 0 #fff, 1.5px -1.5px 0 #fff, -1.5px 1.5px 0 #fff,
+    1.5px 1px 0 #fff; /* Creates the outline effect */
 }
 
 .header-text-item p:first-child {
@@ -263,3 +269,21 @@
 }
 
 /* SECTION -----3 */
+
+@media screen and (max-width: 1300px) {
+  .br-display {
+    display: block;
+  }
+
+  .header-text {
+    line-height: 175px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .section-project-header .img-people {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+}

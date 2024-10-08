@@ -13,7 +13,7 @@
               <p>DONATION</p>
             </div>
             <div class="header-txt-container absolute">
-              <p>キフ</p>
+              <p>寄付</p>
             </div>
             <div class="res-txt-container absolute">
               <ul class="flex gap-15">
@@ -25,9 +25,9 @@
                   <p class="w-700 p-14 white-clr">REGIONAL EDUCATION SUPPORT</p>
                 </li>
               </ul>
+            </div>
           </div>
-          </div>
-          <div class="social-icons absolute" data-aos="fade-right">
+          <div class="social-icons absolute" data-aos="fade-down">
             <ul class="social-icons-ul flex align-items-center">
               <li>
                 <img
@@ -40,6 +40,20 @@
               </li>
               <li>
                 <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-yt-icon.png' ?>" alt="" />
+              </li>
+
+              <li>
+              <div class="res-txt-container-side">
+              <ul class="flex gap-15">
+                <li>
+                  <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/resnpo-ico.png' ?>" alt="" />
+                </li>
+                <li>
+                  <p class="w-700 p-14 white-clr">NPO法人</p>
+                  <p class="w-700 p-14 white-clr">REGIONAL EDUCATION SUPPORT</p>
+                </li>
+              </ul>
+            </div>
               </li>
             </ul>
           </div>
@@ -56,7 +70,7 @@
             子どもたちに一つでも多くの機会を届けるため 皆様の寄付を私たちの活動に利用させていただきます
           </p>
         </div>
-        <div class="donation-bottom-donate" >
+        <div class="donation-bottom-donate" data-aos="fade-left">
           <p class="w-900 p-100 section-head-clr">DONATION</p>
         </div>
       </div>
@@ -64,12 +78,12 @@
 
         <section class="section_2_don">
           <ul class="flex gap-15">
-            <li>
+            <li data-aos="fade-right">
               <video class="donation-video" controls>
                 <source src="<?php echo RESNPO_URI .'/assets/videos/video.mp4' ?>" type="video/mp4">
               </video>
             </li>
-            <li >
+            <li data-aos="fade-left">
               <p class="w-900 p-40 mb-5 white-clr text-center">
                 寄付によって <br>
                 子どもたちに与えることができる機会
@@ -126,19 +140,19 @@
           <div class="fieldset-container">
             <ul class="flex">
               <li>
-                <fieldset>
+                <fieldset data-aos="zoom-in" data-aos-delay="400">
                 <legend><p class="w-900 p-50 head-clr">01</p></legend>
                 <p class="w-500 p-20 head-clr fieldset-text">団体よりお礼のお手紙を郵送いたします</p>
                </fieldset>
               </li>
               <li>
-                <fieldset>
+                <fieldset data-aos="zoom-in" data-aos-delay="800">
                 <legend><p class="w-900 p-50 head-clr">02</p></legend>
                 <p class="w-500 p-20 head-clr fieldset-text">毎年4月末ごろ、前年度の活動報告書をお送りいたします</p>
                 </fieldset>
               </li>
               <li>
-                <fieldset>
+                <fieldset data-aos="zoom-in" data-aos-delay="1200">
                 <legend><p class="w-900 p-50 head-clr">03</p></legend>
                 <p class="w-500 p-20 head-clr fieldset-text">支援者ページにお名前を一定期間掲載させていただきます</p>
                 </fieldset>
@@ -148,16 +162,18 @@
           </div>
         </section>
 
-        <section class="section_4_don">
+        <section class="section_4_don"  data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="800">
           <div class="title-top relative">
             <p class="w-500 p-150 text-center relative">HOW TO HELP</p>
             <p class="w-900 p-60 light-blue absolute">お気持ちにあった寄付をお選びください</p>
           </div>
           
-          <div class="payment-container">
-            <div class="flex btn-payment-container">
+          <div class="payment-container" data-aos="zoom-in">
+            <div class="flex gap-15 btn-payment-container">
               <div>
-                <a href="#A" data-hash="A" class="hash-donation"><button class=""><p>毎月寄付をする</p></button></a>
+                <a href="#A" data-hash="A" class="hash-donation "><button class=""><p>毎月寄付をする</p></button></a>
               </div>
               <div>
                 <a href="#B" data-hash="B" class="hash-donation"><button class=""><p>1回の寄付をする</p></button></a>
@@ -222,7 +238,7 @@
             <div class="detail-payment-container tab hidden" id="B">
               <div class="text-center first-payment-section">
                 <p class="p-15">私たちと一緒に子どもたちの成長を見守りませんか？<br> 毎月1,000円～継続的にご寄付いただけます。</p>
-                <button><p>お使いいただけるカード</p></button>
+                <a href=""><button><p>お使いいただけるカード</p></button></a>
                 <div>
                   <img src="<?php echo RESNPO_URI . '/assets/image/donation/last-section/img-1.png' ?>" alt="">
                 </div>
@@ -231,27 +247,27 @@
               <div class="second-payment-section">
                 <ul class="flex ul-first-payment gap-15">
                   <li>
-                    <button><p class="w-500 p-25">3,000円</p></button>
+                    <a href=""><button><p class="w-500 p-25">3,000円</p></button></a>
                   </li>
                   <li>
-                    <button><p class="w-500 p-25">10,000円</p></button>
+                    <a href=""><button><p class="w-500 p-25">10,000円</p></button></a>
                   </li>
                 </ul>
                 <ul class="flex ul-second-payment gap-15">
                   <li>
-                    <button><p>1,000円</p></button>
+                    <a href=""><button><p>1,000円</p></button></a>
                   </li>
                   <li>
-                    <button><p>5,000円</p></button>
+                    <a href=""><button><p>5,000円</p></button></a>
                   </li>
                   <li>
-                    <button><p>30,000円</p></button>
+                    <a href=""><button><p>30,000円</p></button></a>
                   </li>
                   <li>
-                    <button><p>50,000円</p></button>
+                    <a href=""><button><p>50,000円</p></button></a>
                   </li>
                   <li>
-                    <button><p>100,000円</p></button>
+                    <a href=""><button><p>100,000円</p></button></a>
                   </li>
                 </ul>
               </div>

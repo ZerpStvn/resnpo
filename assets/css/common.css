@@ -203,6 +203,10 @@ html {
   font-weight: 500;
 }
 
+.w-600 {
+  font-weight: 600;
+}
+
 .w-700 {
   font-weight: 700;
 }
@@ -215,11 +219,13 @@ html {
   font-weight: 900;
 }
 
-/* Margin */
+/* Margin - Top */
 
 .mt-15 {
   margin-top: 15%;
 }
+
+/* Margin - Bottom */
 
 .mb-3 {
   margin-bottom: 3%;
@@ -237,7 +243,9 @@ html {
   margin-bottom: 25%;
 }
 
-.ml-10 {
+/* Margin - Left */
+
+.ml-8 {
   margin-left: 8%;
 }
 

@@ -13,8 +13,8 @@
 
     <header class="relative">
       <nav class="absolute" data-aos="fade-left">
-        <div class="nav-icon-container">
-          <img src="<?php echo RESNPO_URI .  '/assets/image/donation/header/nav-icon.png' ?>" alt="" />
+        <div class="nav-icon-container-home">
+          <img class="home-nav-ico" src="<?php echo RESNPO_URI .  '/assets/image/homepage/header/home-nav.png' ?>" alt="" />
         </div>
       </nav>
     </header>

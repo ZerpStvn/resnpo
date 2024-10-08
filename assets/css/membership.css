@@ -141,3 +141,115 @@
   border-radius: 10px;
   width: 300px;
 }
+
+@media screen and (max-width: 1300px) {
+  #membershipid .donation-container {
+    margin-top: 50px;
+    margin-left: 13.889vw; /* 200px */
+    width: 58.077vw;
+  }
+
+  #membershipid .header-txt-container p {
+    font-size: 6.692vw;
+  }
+
+  #membershipid .header-txt-container {
+    top: 15.385vw;
+  }
+
+  #membershipid .res-txt-container {
+    right: -16.154vw;
+    bottom: 5vw;
+  }
+
+  #membershipid .social-icons {
+    top: 11.538vw;
+  }
+
+  #membershipid .ul-benefits {
+    position: relative;
+    z-index: 1;
+  }
+
+  #membershipid .ul-benefits li:first-child {
+    flex: 0 0 0%;
+  }
+
+  #membershipid .ul-benefits li:first-child img {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    /* width: 100%; */
+  }
+
+  #membershipid .ul-benefits li:last-child {
+    flex: 0 0 95%;
+    padding-left: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #membershipid .donation-bottom-text {
+    width: auto;
+    padding-left: 10.229vw;
+  }
+
+  #membershipid .header-txt-container {
+    top: 11.385vw;
+  }
+
+  #membershipid .donation-container p.p-membership {
+    font-size: 8.417vw;
+    line-height: 8.093vw;
+  }
+
+  #membershipid .donation-bottom-container {
+    bottom: -185px;
+  }
+}
+
+@media screen and (max-width: 637px) {
+  #membershipid .ul-benefits li:first-child img {
+    width: 100%;
+  }
+
+  #membershipid .header-txt-container p {
+    font-size: 5.692vw;
+  }
+
+  #membershipid .donation-bottom-container {
+    bottom: -210px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #membershipid .donation-bottom-container {
+    bottom: -290px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #membershipid .donation-container p.p-membership {
+    font-size: 7.417vw;
+    line-height: 7.093vw;
+    letter-spacing: 8px;
+  }
+
+  #membershipid .donation-container {
+    margin-top: 30px;
+  }
+
+  #membershipid .benefits-grid {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+
+  #membershipid .benefits-container {
+    width: auto;
+    margin-right: 40px;
+  }
+
+  #membershipid .ul-benefits li:last-child {
+    flex: 100%;
+  }
+}
