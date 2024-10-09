@@ -67,3 +67,27 @@ $(".hash-donation").on("click", function (e) {
       .css({ "background-color": "#56C3E6", color: "#ffffff" });
   }
 });
+
+// NAVBAR SECTION
+
+$(document).ready(function () {
+  $("#nav-icon").click(function () {
+    $("#nav-menu").toggleClass("active");
+  });
+});
+
+// SLICK SLIDER: HOMEPAGE->Head Section
+
+jQuery(document).ready(function ($) {
+  $(document).ready(function () {
+    $(".slider").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      dots: false,
+      // Add more settings as needed
+    });
+  });
+});
