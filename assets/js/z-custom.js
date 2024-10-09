@@ -74,6 +74,10 @@ $(document).ready(function () {
   $("#nav-icon").click(function () {
     $("#nav-menu").toggleClass("active");
   });
+
+  $(".btn-close").click(function () {
+    $("#nav-menu").removeClass("active");
+  });
 });
 
 // SLICK SLIDER: HOMEPAGE->Head Section

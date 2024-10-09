@@ -77,7 +77,7 @@
   </section>
 
   <section class="section_3_don">
-    <div class="title-top relative" data-aos="flip-left">
+    <div class="title-top relative"> <!-- data-aos="flip-left" -->
       <p class="w-500 p-250 text-center relative">BENEFITS</p>
       <p class="w-900 p-100 light-blue absolute">ご寄付いただいた方には</p>
     </div>

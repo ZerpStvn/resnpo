@@ -1,5 +1,4 @@
 <?php
-
 function add_custom_page()
 {
     $pages = array(
@@ -43,7 +42,6 @@ function add_custom_page()
             'post_type' => 'page',
             'post_name' => 'joinus'
         ),
-
         array(
             'post_title' => 'Donation',
             'post_content' => 'donation',
@@ -68,11 +66,23 @@ function add_custom_page()
             'post_type' => 'page',
             'post_name' => 'whatsnew'
         ),
-
-
-
+        array(
+            'post_title' => 'Study Abroad',
+            'post_content' => 'Study Abroad',
+            'post_status' => 'publish',
+            'post_author' => 1,
+            'post_type' => 'page',
+            'post_name' => 'study-abroad'
+        ),
+        array(
+            'post_title' => 'Studying Abroad',
+            'post_content' => 'Studying Abroad',
+            'post_status' => 'publish',
+            'post_author' => 1,
+            'post_type' => 'page',
+            'post_name' => 'studying-abroad'
+        ),
     );
-
     foreach ($pages as $page) {
         $existing_page = get_page_by_path($page['post_name']);
         if (is_null($existing_page)) {
