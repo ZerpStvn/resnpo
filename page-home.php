@@ -288,8 +288,8 @@
               <div class="scl head-clr">
                 <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/iba.png' ?>" alt="">
                 <div class="scl-cntnt">
-                  <h1>博士号（PhD） </h1>
-                  <h3>国際経営学・経済学アカデミー　経営学 </h3>
+                  <h1>博士号（PhD）</h1>
+                  <h3>国際経営学・経済学アカデミー　経営学</h3>
                 </div>
               </div>
             </div>
