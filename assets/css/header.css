@@ -41,11 +41,11 @@ nav {
 
 .nav-menu ul {
   list-style-type: none;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .nav-menu li {
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .nav-menu a {
@@ -53,6 +53,7 @@ nav {
   text-decoration: none;
   padding-left: 30px;
   position: relative;
+  font-size: 30px;
 }
 
 .nav-menu a:before {
@@ -81,6 +82,14 @@ nav {
 
 .btn-close p {
   right: 50px;
+}
+
+.nav-container {
+  /* padding: 50px; */
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-left: -70px;
 }
 
 @media screen and (max-width: 768px) {

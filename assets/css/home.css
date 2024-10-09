@@ -220,7 +220,7 @@ hr {
 }
 
 .sect-head {
-  bottom: 0;
+  bottom: 15px;
   width: 100%;
   text-align: center;
 }
@@ -228,7 +228,7 @@ hr {
 .act-txt-section {
   font-size: 230px;
   line-height: 309.38px;
-  letter-spacing: 10px;
+  letter-spacing: 25px;
   z-index: 1;
   font-family: var(--notsansjp);
 }

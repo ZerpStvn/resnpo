@@ -20,17 +20,27 @@
         <div class="nav-menu" id="nav-menu">
 
           <div class="btn-close relative">
-            <p class="p-absolute btn-close">X</p>
+            <p class="p-25 absolute btn-close">X</p>
           </div>
 
-          <ul class="flex">
-            <li>Company Details</li>
+          <ul class="nav-container flex">
+            <li>
+              <div class="nav-company-details">
+                <img src="<?php echo RESNPO_URI . '/assets/image/homepage/header/res-img-txt.png' ?>" alt="">
+              </div>
+            </li>
             <li>
               <ul>
-                  <li><a href="#home">Home</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#services">Services</a></li>
-                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="<?php echo get_site_url() ?>">Home</a></li>
+                  <li><a href="<?php echo get_site_url() . '/about' ?>">About Us</a></li>
+                  <li><a href="<?php echo get_site_url() . '/project' ?>">Project</a></li>
+                  <li><a href="<?php echo get_site_url() . '/sdg' ?>">SDGs</a></li>
+                  <li><a href="<?php echo get_site_url() . '/study-abroad' ?>">海外留学</a></li>
+                  <li><a href="<?php echo get_site_url() . '/studying-abroad' ?>">海外留学</a></li>
+                  <li><a href="<?php echo get_site_url() . '/joinus' ?>">Join Us</a></li>
+                  <li><a href="<?php echo get_site_url() . '/donation' ?>">Donation</a></li>
+                  <li><a href="<?php echo get_site_url() . '/membership' ?>">Membership</a></li>
+                  <li><a href="<?php echo get_site_url() . '/whatsnew' ?>">What's New</a></li>
               </ul>
             </li>
           </ul>
