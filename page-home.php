@@ -111,6 +111,17 @@
               <p class="p-16 details">
                 愛媛県内の高校から29のチームがエントリーした「えひめSDGs甲子園2024」の予選審査が終了し、本選出場チームが発表されました。・・・
               </p>
+
+              <div class="relative btn-container" id="btn-news">
+                <a href="">
+                  <button class="main-button-logo relative">支援者様</button>
+                  <img
+                    class="home-icon-button absolute"
+                    src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>"
+                    alt=""
+                  />
+                </a>
+              </div>
             </div>
           </li>
           <li>
@@ -194,6 +205,45 @@
           <img src="<?php echo RESNPO_URI .'/assets/image/homepage/side-section-img.png' ?>" alt="" />
         </div>
       </section>
+
+      <!-- SECTION: NEWS/RESPRESENTATIVE -->
+      
+      <section class="section-representative">
+        <div class="top-title-news relative">
+          <p class="p-230 w-700">NEWS</p>
+        </div>
+        <div class="relative rep-container-main">
+          <img class="absolute" style="z-index:66; bottom:0" src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/representative-img.png' ?>" alt="">
+          <div class="top-title-rep relative">
+            <p class="p-120 w-700">RESPRESENTATIVE</p>
+          </div>
+          <div class="bot-content-rep relative">
+            <div class="bot-content-rep-container">
+              <ul class="flex gap-15 bot-ul-rep">
+                <li>
+                  <p class="p-16 w-500 white-clr">NPO法人 RESは、ひとりでも多くの子どもたちが、未来の国際社会で活躍できる社会を目指し、自ら考え行動できる人材を育成する活動をしています。</p>
+                  <div class="relative btn-container" >
+                    <a href="">
+                      <button class="main-button-logo relative" id="btn-logo">支援者様</button>
+                      <img class="home-icon-button absolute"
+                      src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>"
+                      ="" />
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="li-real-container">
+                    <p class="p-120 w-700">“</p>
+                    <p class="p-40 w-700">新時代の学びのカタチ<br>「REAL✕LINK」</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: NEWS/RESPRESENTATIVE -->
 
 
       <section class="section_5 relative">
@@ -299,11 +349,11 @@
               <p class="p-20 w-500 head-clr logo-text">
                 活動に賛同し、支持してくださる全ての皆様に厚く御礼申し上げます。
               </p>
-              <div class="relative btn-container">
+              <div class="relative btn-container" >
                 <a href="">
-                  <button class="main-button-logo relative">支援者様</button>
+                  <button class="main-button-logo relative" id="btn-logo">支援者様</button>
                   <img
-                    class="icon-button absolute"
+                    class="home-icon-button absolute"
                     src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>"
                     alt=""
                   />
