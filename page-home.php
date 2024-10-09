@@ -2,7 +2,7 @@
 <div id="homeid">
 
     <section class="section_1">
-      <div class="header-container">
+      <div class="header-container global-width">
         <img src="<?php echo RESNPO_URI . '/assets/image/homepage/header/top_nav_txt.png' ?>" alt="">
         <hr>
         <div>
@@ -67,7 +67,7 @@
       </div>
     </section>
 
-    <section class="section_2 relative">
+    <section class="section_2 relative global-width">
         <ul class="flex main-ul">
           <li>
             <div class="img-container">
@@ -128,7 +128,7 @@
     <!-- END SECTION -->
 
     <!-- SECTION: RECENT NEWS -->
-    <section class="section_3 relative">
+    <section class="section_3 relative global-width">
       <ul class="flex ul-news">
           <li>
             <div class="img-container-news">
@@ -139,7 +139,7 @@
             </div>
             <div class="news-detils">
               <p class="p-16 sub-head-clr">August 8, 2024</p>
-              <p class="p-50 head-clr">
+              <p class="p-40 head-clr">
                 【えひめSDGs甲子園2024】本選出場チームが決定しました。
               </p>
               <p class="p-16 details">
@@ -234,7 +234,7 @@
           </li>
         </ul>
 
-        <div class="side-text absolute">
+        <div class="side-text absolute" id="side-text-news">
           <p class="inline-txt w-600 p-30 head-clr">NEWS</p>
           <img src="<?php echo RESNPO_URI .'/assets/image/homepage/side-section-img.png' ?>" alt="" />
         </div>
