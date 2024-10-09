@@ -24,9 +24,9 @@
 
 .hr-pointer {
   position: absolute;
-  top: 222px;
+  top: 245px;
   left: 900px;
-  width: 140px;
+  width: 250px;
   z-index: 3;
 }
 
@@ -96,7 +96,7 @@
   margin: 0 auto;
   overflow: hidden;
   position: absolute;
-  top: 95px;
+  top: 120px;
   left: -90px;
   z-index: 2;
 }
@@ -133,7 +133,7 @@
 .swiper-navs {
   display: flex;
   justify-content: left;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-left: 50px;
   position: absolute;
   top: 525px;

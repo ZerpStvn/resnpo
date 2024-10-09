@@ -1,74 +1,73 @@
 /* JOINED SCHOOLS */
 
 .joined-schools {
-    /* margin-top: 98px; */
-    background-color: #005f8f;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 298px;
+  /* margin-top: 98px; */
+  background-color: #005f8f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 298px;
 }
 
 .joined-schools-title {
-    align-content: center;
-    color: #fff;
+  align-content: center;
+  color: #fff;
 }
 
 .joined-schools-title h1 {
-    font-family: var(--readex);
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 70.31px;
-    letter-spacing: 0.1em;
-    text-align: left;
+  font-family: var(--readex);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 70.31px;
+  letter-spacing: 0.1em;
+  text-align: left;
 }
 
 .joined-schools-title h2 {
-    font-family: var(--notsansjp);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 28.13px;
-    letter-spacing: 0.1em;
-    text-align: left;
-    color: #81BF24;
-
+  font-family: var(--notsansjp);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28.13px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #fff;
 }
 
 .schools {
-    display: flex;
-    gap: 30px;
-    align-content: center;
-    overflow-x: hidden;
+  display: flex;
+  gap: 30px;
+  align-content: center;
+  overflow-x: hidden;
 }
 
 .school img {
-    width: 150px;
-    height: 150px;
-    flex-wrap: wrap;
-    opacity: 0px;
+  width: 150px;
+  height: 150px;
+  flex-wrap: wrap;
+  opacity: 0px;
 }
 
 @media (max-width: 480px) {
-    .joined-schools {
-        flex-direction: column;
-        height: auto;
-        padding: 20px 0;
-        gap:40px;
-    }
+  .joined-schools {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    gap: 40px;
+  }
 
-    .schools {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 10px;
-        gap: 22px;
-    }
+  .schools {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    gap: 22px;
+  }
 
-    .schools .school img {
-        width: 60px; /* Increase specificity */
-        height: 60px; /* Increase specificity */
-    }
+  .schools .school img {
+    width: 60px; /* Increase specificity */
+    height: 60px; /* Increase specificity */
+  }
 
-    .slideright.on .school img {
-        opacity: 1;
-    }
+  .slideright.on .school img {
+    opacity: 1;
+  }
 }

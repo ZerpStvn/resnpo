@@ -7,7 +7,7 @@
 
 
 <!-- SECTION 2: Feature -->
-<?php featurefront('sdg') ?>
+<?php featurefront('study-abroad') ?>
 <!-- END SECTION -->
 
 

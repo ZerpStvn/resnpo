@@ -89,7 +89,7 @@
 } */
 
 .past-performance {
-  margin: 98px 0;
+  margin: 65px 0;
 }
 
 .content-box {
@@ -130,7 +130,7 @@
 
 .pp-slider {
   width: 554px;
-  height: 812px; /* Adjust height as needed */
+  height: 1004px; /* Adjust height as needed */
   overflow: hidden;
   position: relative;
   margin-left: 20px;

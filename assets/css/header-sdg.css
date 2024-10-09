@@ -79,7 +79,7 @@ header img {
   transform: rotate(-90deg);
   white-space: nowrap;
   flex-direction: row;
-
+  gap: 11px;
   width: 400px;
   margin-top: auto;
 }

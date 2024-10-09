@@ -1,10 +1,24 @@
+<?php
+function display_title()
+{
+  if (is_page()) {
+    $slug = get_post_field('post_name', get_post());
+    if ($slug === 'sdg') {
+      echo 'SDGs甲子園';
+    } elseif ($slug === 'study-abroad') {
+      echo '海外留学';
+    }
+  }
+}
+?>
 <section class="past-performance ">
   <h1 class="past-performance-title">
     <span class="dark-blue">「</span>
-    <span class="pp-main-title">SDGs甲子園</span>
+    <span class="pp-main-title"><?php echo display_title() ?></span>
     <span class="dark-blue">」</span>
     <span class="sub-title head-clr">の過去実績をご紹介します。</span>
   </h1>
+
 
   <div class="past-performance-box flex">
     <div class="pp-container">
