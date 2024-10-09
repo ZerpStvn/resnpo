@@ -44,6 +44,30 @@ function add_custom_page()
             'post_name' => 'joinus'
         ),
 
+        array(
+            'post_title' => 'Donation',
+            'post_content' => 'donation',
+            'post_status' => 'publish',
+            'post_author' => 1,
+            'post_type' => 'page',
+            'post_name' => 'donation'
+        ),
+        array(
+            'post_title' => 'Membership',
+            'post_content' => 'membership',
+            'post_status' => 'publish',
+            'post_author' => 1,
+            'post_type' => 'page',
+            'post_name' => 'membership'
+        ),
+        array(
+            'post_title' => 'What\'s New',
+            'post_content' => 'wahtsnew',
+            'post_status' => 'publish',
+            'post_author' => 1,
+            'post_type' => 'page',
+            'post_name' => 'whatsnew'
+        ),
 
 
 
