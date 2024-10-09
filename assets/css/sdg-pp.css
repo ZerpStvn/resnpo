@@ -1,6 +1,7 @@
 /* Past Performance Section */
 
 .past-performance-title {
+  font-family: var(--notsansjp);
   font-size: 70px;
   /* font-weight: 500; */
   line-height: 98.44px;

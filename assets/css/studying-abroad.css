@@ -572,6 +572,7 @@ details[open] .detail-content {
     text-align: center; /* Center text content */
   }
 
+  /* ADVISOR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
   #advisor_section {
     padding: 30px;
   }
@@ -653,7 +654,12 @@ details[open] .detail-content {
     box-sizing: border-box;
     padding-block: 15px;
   }
-
+  .as-text-col {
+    flex: 1;
+    min-width: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
   .summary-title {
     width: 100%;
     min-width: unset;

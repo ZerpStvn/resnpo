@@ -6,9 +6,9 @@
 
 
       <div class="av-img-col border-advisor">
-        <div class="advisor-img-container"> <!--Make container -->
+        <div class="advisor-img-container "> <!--Make container -->
           <!-- <p>TEXT TRANSFORM HERE --Absolute</p> -->
-          <img src="<?php echo RESNPO_IMAGE . '/studyingabroad/maria2.png' ?>" alt="">
+          <div class="scaleIn"><img src="<?php echo RESNPO_IMAGE . '/studyingabroad/maria2.png' ?>" alt=""></div>
         </div>
         <div class="advisor-txt-container">
           <p class="p-16 w-500 head-clr">MARIA JADE CATALAN-OPULENCIA, PhD</p>
