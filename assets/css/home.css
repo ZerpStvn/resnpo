@@ -101,7 +101,9 @@ hr {
 .home-side-sm li {
   border: 1px solid #fff;
   padding: 10px;
-  height: 50px;
+  height: 35px;
+  text-align: center;
+  align-content: center;
 }
 
 .home-side-sm img {
@@ -111,6 +113,40 @@ hr {
 .header-second {
   padding-top: 100px;
   align-items: end;
+}
+
+/* Pagination: side */
+.pg-main-container {
+  right: -70px;
+  top: 40%;
+}
+
+.pg-active {
+  color: #81bf24bb;
+}
+
+.hr-pagination {
+  display: none;
+}
+
+.hr-pagination {
+  border: 1px solid #ffffff;
+  width: 69px;
+}
+
+.pg-flex-container {
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 15px;
+}
+
+.pg-active p {
+  font-size: 20px;
+  color: #81bf24bb;
+}
+
+.pg-active hr {
+  display: block;
 }
 
 /* START: SLICK SLIDER STYLE */
@@ -184,7 +220,7 @@ hr {
 }
 
 .sect-head {
-  bottom: 0;
+  bottom: 15px;
   width: 100%;
   text-align: center;
 }
@@ -192,7 +228,7 @@ hr {
 .act-txt-section {
   font-size: 230px;
   line-height: 309.38px;
-  letter-spacing: 10px;
+  letter-spacing: 25px;
   z-index: 1;
   font-family: var(--notsansjp);
 }
