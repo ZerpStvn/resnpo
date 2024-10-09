@@ -2,11 +2,7 @@
 <div id="aboutid" class="aboutid">
 
   <section class="landing-about">
-    <header>
-      <a href="#">
-        <img src="<?php echo RESNPO_IMAGE . '/menu-button.png' ?>" alt="">
-      </a>
-    </header>
+
 
     <div class="landing-fg">
       <img src="<?php echo RESNPO_IMAGE . '/about/landing-fg.png' ?>" alt="">
@@ -43,13 +39,13 @@
   </div>
 
   <section id="vision-section" class="diagonal-section">
-    <div class="rotated-text">VISION</div>
+    <div class="rotated-text outline">VISION</div>
     <div class="section-content head-clr flex-rr head-clr">
       <div class="image-placeholder slideleft">
         <img src=" <?php echo RESNPO_IMAGE . '/about/vision1.png' ?>" alt="">
       </div>
       <div class="section-text">
-        <h2 class="section-title">実現したい社会</h2>
+        <h2 class="section-title scaleIn">実現したい社会</h2>
         <p>
           人の役に立ちたい！人に必要とされたい！ そんな想いをきっかけに、ご縁があって2003年にこのNPO法人を立ち上げました。そして、フィリピンへ幼稚園の寄付、ボランティア活動などを行っていく中で湧いてきた新たな想い。
 
@@ -77,13 +73,13 @@
   </section>
 
   <section id="mission-section" class="diagonal-section">
-    <div class="rotated-text">MISSION</div>
+    <div class="rotated-text outline">MISSION</div>
     <div class="section-content head-clr flex-row">
       <div class="image-placeholder slideright">
         <img src="<?php echo RESNPO_IMAGE . '/about/mission1.png' ?>" alt="">
       </div>
       <div class="section-text">
-        <h2 class="section-title">私たちの使命</h2>
+        <h2 class="section-title scaleIn">私たちの使命</h2>
         <p>
           あたり前のことをあたり前だからと思考停止するのではなく、なぜなんだろう？と考え、自分なりの答えを持つ。 間違っていてもいい
 
@@ -98,14 +94,14 @@
     </div>
   </section>
 
-  <section id="action-section" class="diagonal-section">
-    <div class="rotated-text">ACTION</div>
+  <section id="action-section" class="diagonal-section">s
+    <div class="rotated-text outline">ACTION</div>
     <div class="section-content head-clr head-clr flex-rr">
       <div class="image-placeholder slideleft">
         <img src="<?php echo RESNPO_IMAGE . '/about/action1.png' ?>" alt="">
       </div>
       <div class="section-text">
-        <h2 class="section-title">私たちの行動</h2>
+        <h2 class="section-title scaleIn">私たちの行動</h2>
         <p>
           あたり前のことをあたり前だからと思考停止するのではなく、なぜなんだろう？と考え、自分なりの答えを持つ。
           <br><br>
@@ -216,7 +212,7 @@
 <svg version="1.1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" style="display:none;">
   <defs>
     <filter id="stroke-text-svg-filter">
-      <feMorphology operator="dilate" radius=""></feMorphology>
+      <feMorphology operator="dilate" radius="2"></feMorphology>
       <feComposite operator="xor" in="SourceGraphic" />
     </filter>
   </defs>

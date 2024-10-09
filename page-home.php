@@ -12,7 +12,7 @@
                 <div class="slick-slider-container">
                   <div class="slider-img-container slider">
                     <!-- <div class="flex slider"> -->
-                    <img class="header-people relative" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/people-2.png' ?>" alt="">
+                    <img class="header-people relative" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/people-1.png' ?>" alt="">
                     <!-- <img class="header-people relative" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/people-2.png' ?>" alt="">
                     <img class="header-people relative" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/people-3.png' ?>" alt=""> -->
                     <!-- </div> -->
@@ -39,6 +39,30 @@
             </li>
           </ul>
         </div>
+
+        <div class="absolute pg-main-container">
+          <ul>
+            <li>
+              <div class="flex pg-flex-container pg-active">
+                  <p class="w-500 white-clr">01</p>
+                  <hr class="hr-pagination active">
+              </div>
+            </li>
+            <li>
+              <div class="flex pg-flex-container ">
+                  <p class="w-500 white-clr">02</p>
+                  <hr class="hr-pagination">
+              </div>
+            </li>
+            <li>
+              <div class="flex pg-flex-container">
+                  <p class="w-500 white-clr">03</p>
+                  <hr class="hr-pagination">
+              </div>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </section>
 
