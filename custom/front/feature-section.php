@@ -4,8 +4,9 @@ function featurefront($feature_location = null)
 {
 ?>
   <section id="features-section" class="features-section">
+    <h2 class="feature-section-title">特徴</h2>
+
     <div class="main-feature-container">
-      <h2 class="feature-section-title">特徴</h2>
       <div class="feature-card-container">
         <?php
         $featurecontentquery = new WP_Query(
@@ -38,7 +39,6 @@ function featurefront($feature_location = null)
           wp_reset_postdata();
         }
         ?>
-
       </div>
     </div>
   </section>

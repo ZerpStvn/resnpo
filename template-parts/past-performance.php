@@ -1,29 +1,44 @@
-<section class="past-performance">
+<?php
+function display_title()
+{
+  if (is_page()) {
+    $slug = get_post_field('post_name', get_post());
+    if ($slug === 'sdg') {
+      echo 'SDGs甲子園';
+    } elseif ($slug === 'study-abroad') {
+      echo '海外留学';
+    }
+  }
+}
+?>
+<section class="past-performance ">
   <h1 class="past-performance-title">
     <span class="dark-blue">「</span>
-    SDGs甲子園
-    <span class="dark-blue">」</span><span class="sub-title">の過去実績をご紹介します。</span>
+    <span class="pp-main-title"><?php echo display_title() ?></span>
+    <span class="dark-blue">」</span>
+    <span class="sub-title head-clr">の過去実績をご紹介します。</span>
   </h1>
 
-  <div class="past-performance-box">
+
+  <div class="past-performance-box flex">
     <div class="pp-container">
-      <div class="pp-content-box">
+      <div class="pp-content-box flex">
 
         <div class="past-performance-texts">
           <div class="column">
-            <div class="row-1 pp-rows">
+            <div class="row-1 pp-rows flex">
               <p class="p-green-20">カテゴリ</p>
               <p class="p-white-16">海外支援</p>
             </div>
-            <div class="row-2 pp-rows">
+            <div class="row-2 pp-rows flex">
               <p class="p-green-20">開催日時</p>
               <p class="p-white-16">2024年3月20日～3月28日</p>
             </div>
-            <div class="row-3 pp-rows">
+            <div class="row-3 pp-rows flex">
               <p class="p-green-20">開催場所</p>
               <p class="p-white-16">フィリピン　イロイロ市</p>
             </div>
-            <div class="row-4 pp-rows">
+            <div class="row-4 pp-rows flex">
               <p class="p-green-20">主な内容</p>
               <p class="p-white-16">
                 フィリピンのイロイロ市を滞在拠点にし、様々なボランティア活動や、
@@ -73,11 +88,18 @@
             </div>
           </div>
         </div>
-        <div class="pp-vertical-slider">
-          <img src="<?php echo RESNPO_IMAGE . '/hap.png' ?>" alt="Image 1" class="slider-image">
+        <div class="pp-slider flex">
+          <div class="scroll-container">
+            <div class="scroll-content">
+              <img src="<?php echo RESNPO_IMAGE . '/pp-1.png' ?>" alt="Image 1" class="slider-image">
+              <img src="<?php echo RESNPO_IMAGE . '/pp-2.png' ?>" alt="Image 2" class="slider-image">
+              <img src="<?php echo RESNPO_IMAGE . '/pp-3.png' ?>" alt="Image 3" class="slider-image">
+              <img src="<?php echo RESNPO_IMAGE . '/pp-1.png' ?>" alt="Image 4" class="slider-image">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="pagination">
+      <div class="pagination flex">
         <a class="mr-r-87" href="#">&laquo;</a>
         <a href="#" class="active">1</a>
         <a href="#">2</a>
@@ -85,7 +107,6 @@
         <a href="#">...</a>
         <a class="mr-l-87" href="#">&raquo;</a>
       </div>
-
     </div>
   </div>
 </section>

@@ -1,29 +1,26 @@
 <!-- SECTION: UPCOMING EVENTS -->
-<section class="upcoming-events">
+<section id="upcoming_event" class="upcoming-events">
   <div class="ue-container">
     <div class="ue-title">
-      <svg viewbox="0 0 10 2">
-        <text
-          x="5"
-          y="1"
-          text-anchor="middle"
-          font-size="1"
-          fill="none"
-          stroke-width=".015"
-          stroke="#fff"
-          font-family="var(--notsansjp)"
-          stroke-opacity="0.8">
-          UPCOMING EVENTS
-        </text>
-      </svg>
+      <h1 class="upcoming-events-title outline">UPCOMING EVENTS</h1>
     </div>
 
-    <div class="ue-details">
+    <svg version="1.1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" style="display:none;">
+      <defs>
+        <filter id="stroke-text-svg-filter">
+          <feMorphology operator="dilate" radius="3"></feMorphology>
+          <feComposite operator="xor" in="SourceGraphic" />
+        </filter>
+      </defs>
+    </svg>
+
+    <div class="ue-details flex">
       <hr class="hr-pointer">
       <div class="ue-details-box">
         <div class="ue-details-text">
           <h1 class="ue-details-title"></h1>
           <p class="ue-details-content"></p>
+          <p class="ue-details-subdescription"></p>
           <div class="ue-date">
             <p class="monthyear"></p>
             <p class="monthday"></p>
@@ -45,11 +42,12 @@
           if ($upcomingeventquery->have_posts()) {
             while ($upcomingeventquery->have_posts()):
               $upcomingeventquery->the_post();
+              $subdescription = get_post_meta(get_the_ID(), "subdescription", true);
               $monthyear = get_post_meta(get_the_ID(), "monthyear", true);
               $monthday = get_post_meta(get_the_ID(), "monthday", true);
           ?>
-              <div class="swiper-slide swiper-ue" data-title="<?php the_title() ?>" data-content="<?php the_content() ?>" data-monthyear="<?php echo $monthyear ?>" data-monthday="<?php echo $monthday ?>">
-                <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="" />
+              <div class="swiper-slide swiper-ue" data-title="<?php the_title(); ?>" data-content="<?php echo esc_attr(html_entity_decode(wp_strip_all_tags(get_the_content()))); ?>" data-subdescription="<?php echo esc_attr($subdescription); ?>" data-monthyear="<?php echo esc_attr($monthyear); ?>" data-monthday="<?php echo esc_attr($monthday); ?>">
+                <img src="<?php echo esc_url(get_the_post_thumbnail_url()); ?>" alt="<?php the_title(); ?>" />
               </div>
           <?php
             endwhile;
@@ -61,9 +59,8 @@
     </div>
     <div class="swiper-navs">
       <div class="swiper-button-prev"></div>
-
       <div class="swiper-button-next"></div>
     </div>
-
+  </div>
 </section>
 <!-- END SECTION 4 -->
