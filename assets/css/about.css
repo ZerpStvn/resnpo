@@ -12,9 +12,15 @@
   background-size: cover;
 }
 
-.landing-fg {
-  /* margin-left: -60px; */
-  overflow: hidden;
+.landing-fg img {
+  display: block; /* Remove default inline spacing */
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  object-fit: contain;
+}
+.landing-fg img {
 }
 
 #aboutid .side-content {

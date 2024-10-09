@@ -8,6 +8,9 @@
       </a>
     </header>
 
+    <div class="landing-fg">
+      <img src="<?php echo RESNPO_IMAGE . '/about/landing-fg.png' ?>" alt="">
+    </div>
 
     <div class="side-content">
       <div class="social">
@@ -31,9 +34,6 @@
       <h3 class="au-sub-title sub-head-clr scaleIn">What is RES?</h3>
     </div>
 
-    <div class="landing-fg">
-      <img src="<?php echo RESNPO_IMAGE . '/about/landing-fg.png' ?>" alt="">
-    </div>
 
   </section>
 
