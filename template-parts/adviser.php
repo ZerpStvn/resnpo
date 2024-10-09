@@ -1,8 +1,24 @@
 <!-- SECTION: ADVSIOR-->
-<section id="advisor_section" class="advisor-section white-blue">
-  <div class="as-container flex flex-row">
+<section id="advisor_section" class="advisor-section white-blue ">
+  <div class="as-container flex flex-row global-width">
     <div class="as-img-col flex-column flex">
-      <img class="as-prof-img" src="<?php echo  RESNPO_IMAGE . '/studyingabroad/maria.png' ?>" alt="">
+
+
+
+      <div class="av-img-col border-advisor">
+        <div class="advisor-img-container"> <!--Make container -->
+          <!-- <p>TEXT TRANSFORM HERE --Absolute</p> -->
+          <img src="<?php echo RESNPO_IMAGE . '/studyingabroad/maria2.png' ?>" alt="">
+        </div>
+        <div class="advisor-txt-container">
+          <p class="p-16 w-500 head-clr">MARIA JADE CATALAN-OPULENCIA, PhD</p>
+          <p class="p-16 w-500 head-clr">特別顧問</p>
+        </div>
+      </div>
+
+
+
+
       <div class="as-cred-wrapper">
         <div class="as-carousel flex">
           <div class="as-cred flex flex-row head-clr">

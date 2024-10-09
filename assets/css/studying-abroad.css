@@ -725,3 +725,19 @@ details[open] .detail-content {
     font-size: 18px;
   }
 }
+
+.border-advisor {
+  background: #fff;
+  padding: 25px;
+}
+.advisor-img-container {
+  background: #2b4e64;
+}
+.advisor-img-container img {
+  vertical-align: bottom;
+  margin-top: -90px;
+}
+.advisor-txt-container {
+  text-align: center;
+  padding-top: 25px;
+}

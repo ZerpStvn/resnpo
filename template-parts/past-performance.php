@@ -1,4 +1,4 @@
-<section class="past-performance">
+<section class="past-performance ">
   <h1 class="past-performance-title">
     <span class="dark-blue">「</span>
     <span class="pp-main-title">SDGs甲子園</span>
@@ -75,15 +75,15 @@
           </div>
         </div>
         <div class="pp-slider flex">
-        <div class="scroll-container">
+          <div class="scroll-container">
             <div class="scroll-content">
-                <img src="<?php echo RESNPO_IMAGE . '/pp-1.png' ?>" alt="Image 1" class="slider-image">
-                <img src="<?php echo RESNPO_IMAGE . '/pp-2.png' ?>" alt="Image 2" class="slider-image">
-                <img src="<?php echo RESNPO_IMAGE . '/pp-3.png' ?>" alt="Image 3" class="slider-image">
-                <img src="<?php echo RESNPO_IMAGE . '/pp-1.png' ?>" alt="Image 4" class="slider-image">
+              <img src="<?php echo RESNPO_IMAGE . '/pp-1.png' ?>" alt="Image 1" class="slider-image">
+              <img src="<?php echo RESNPO_IMAGE . '/pp-2.png' ?>" alt="Image 2" class="slider-image">
+              <img src="<?php echo RESNPO_IMAGE . '/pp-3.png' ?>" alt="Image 3" class="slider-image">
+              <img src="<?php echo RESNPO_IMAGE . '/pp-1.png' ?>" alt="Image 4" class="slider-image">
             </div>
+          </div>
         </div>
-    </div>
       </div>
       <div class="pagination flex">
         <a class="mr-r-87" href="#">&laquo;</a>

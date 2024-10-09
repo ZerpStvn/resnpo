@@ -29,6 +29,7 @@ footer {
 }
 
 .p-blue-16 {
+  font-family: var(--notsansjp);
   color: var(--footertextcolor);
   font-size: 16px;
   font-weight: 700;
@@ -45,7 +46,7 @@ table td {
 }
 
 .contact-text {
-  font-family: var(--secondFont);
+  font-family: var(--readex);
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
@@ -96,7 +97,7 @@ table tr img {
 }
 
 .footer-col-title {
-  font-family: var(--thirdFont);
+  font-family: var(--kiak);
   font-size: 20px;
   font-weight: 700;
   line-height: 22.9px;

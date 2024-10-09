@@ -29,10 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
     videoElement.classList.add("slide-out");
     setTimeout(() => {
       videoElement.querySelector("source").src = videos[currentSlide];
-      videoElement.load(); // Reload the video to apply the new source
+      videoElement.load();
       videoElement.classList.remove("slide-out");
       videoElement.classList.add("slide-in");
-    }, 1000); // Match the transition duration
+    }, 1000);
   }
 
   function prevSlide() {
@@ -65,15 +65,16 @@ var swiperPG = new Swiper(".mySwiperpg", {
   },
 });
 
+// Upcoming Events Slider
 document.addEventListener("DOMContentLoaded", function () {
   let swiper;
 
   function updateDetails() {
     if (!swiper || !swiper.slides || !Array.isArray(swiper.slides)) return;
-    let activeIndex = (swiper.realIndex + 1) % swiper.slides.length; // Add 1 and use modulo to wrap around
+    let activeIndex = (swiper.realIndex + 1) % swiper.slides.length;
 
     if (activeIndex >= 0 && activeIndex < swiper.slides.length) {
-      const activeSlide = swiper.slides[swiper.activeIndex + 1]; // Use activeIndex + 1 to get the next slide
+      const activeSlide = swiper.slides[swiper.activeIndex + 1];
       if (activeSlide) {
         const title = activeSlide.getAttribute("data-title");
         const content = activeSlide.getAttribute("data-content");
@@ -137,29 +138,30 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Animation Scale In
 document.addEventListener("DOMContentLoaded", function () {
-  // Observer for the first element
-  const element = document.querySelector(".scaleIn"); // Replace with the actual class or ID
-  if (element) {
-    const observer1 = new IntersectionObserver(
+  const elements = document.querySelectorAll(".scaleIn");
+  elements.forEach((element) => {
+    const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            console.log("First element is intersecting"); // Debugging: Log when the element intersects
+            console.log("Element is intersecting");
             element.classList.add("on");
-            observer1.unobserve(element); // Stop observing after adding the class
+            observer.unobserve(element);
           }
         });
       },
       {
-        threshold: 0.1, // Adjust the threshold as needed
+        threshold: 0.1,
       }
     );
 
-    observer1.observe(element);
-  }
+    observer.observe(element);
+  });
 });
 
+// Animation Slide Left and Right
 document.addEventListener("DOMContentLoaded", function () {
   const elements = document.querySelectorAll(".slideleft, .slideright");
 
@@ -182,7 +184,6 @@ document.addEventListener("DOMContentLoaded", function () {
         rootMargin: "0px 0px -10% 0px",
       }
     );
-
     observer.observe(element);
   });
 });

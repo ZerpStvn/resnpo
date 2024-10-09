@@ -68,12 +68,12 @@
 }
 
 #info-session .info-image {
-  width: 669px;
+  max-width: 669px;
 }
 
 #info-session .info-image img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 #info-session .info-content {

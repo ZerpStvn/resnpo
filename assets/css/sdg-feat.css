@@ -20,12 +20,22 @@
 
 .feature-card {
   position: relative;
-  width: 300px;
+  width: 300px !important;
   height: 300px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 0 15px;
+}
+
+.features-section .slick-track {
+  display: flex;
+  justify-content: center;
+}
+
+.feature-card:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.2s;
 }
 
 .feature-card img {
