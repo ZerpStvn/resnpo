@@ -1,4 +1,4 @@
-<?php get_header() ?>
+<?php get_header('home') ?>
 <div id="homeid">
     <div class="homewrapper">
         <div class="maintop">
@@ -6,7 +6,35 @@
                 <section class="maintopcontent ">
 
     <section class="section_1">
-      
+      <div class="header-container">
+        <img src="<?php echo RESNPO_URI . '/assets/image/homepage/header/top_nav_txt.png' ?>" alt="">
+        <hr>
+        <div>
+          <ul class="flex">
+            <li>
+              <div class="header-first relative">
+                <img class="header-people relative" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/people-1.png' ?>" alt="">
+                <img class="header-border absolute" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/img-border.png' ?>" alt="">
+                <p class="p-35 w-700 white-clr absolute realxlink-txt">「REAL✕LINK」</p>
+                <p class="p-25 w-700 absolute border-text">世界で活躍する</p>
+                <ul class="flex absolute home-side-sm">
+                  <li><p class="p-16 w-700 white-clr">CONTACT</p></li>
+                  <li><img src="<?php echo RESNPO_URI . '/assets/image/homepage/header/sm-line-icon.png' ?>" alt=""></li>
+                  <li><img src="<?php echo RESNPO_URI . '/assets/image/homepage/header/sm-fb-icon.png' ?>" alt=""></li>
+                  <li><img src="<?php echo RESNPO_URI . '/assets/image/homepage/header/sm-yt-icon.png' ?>" alt=""></li>
+                </ul>
+              </div>
+
+            </li>
+            <li>
+              <div class="flex relative header-second">
+                <img class="header-green-icon" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/header-green-icon.png' ?>" alt="">
+                <img class="header-res-img" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/res-img-txt.png' ?>" alt="">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section class="section_2 relative">
@@ -21,7 +49,7 @@
           </li>
           <li>
             <p class="p-16 sub-head-clr">Activities</p>
-            <p class="p-40 mb-3 head-clr">SDGs甲子園</p>
+            <p class="p-40 w-700 mb-3 head-clr">SDGs甲子園</p>
             <p class="p-16 head-clr">
               地域社会のSDGs課題に焦点を当て、その解決に向けて研究や活動を行う高校生たちが<br />その取り組みの経過や成果をプレゼンテーション等で競います。
             </p>
@@ -56,129 +84,175 @@
         </ul>
 
         <div class="side-text absolute">
-          <p class="inline-txt p-30 head-clr">ACTIVITIES</p>
+          <p class="inline-txt p-30 w-600 head-clr">ACTIVITIES</p>
           <img src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
         </div>
 
         <div class="absolute sect-head">
-          <p class="w-800 act-txt-section section-head-clr">ACTIVITIES</p>
+          <p class="w-900 act-txt-section section-head-clr">ACTIVITIES</p>
         </div>
-      </section>
+    </section>
 
+    <!-- SECTION: UPCOMING EVENTS -->
+    <?php get_template_part('template-parts/upcoming-events') ?>
+    <!-- END SECTION -->
 
-      <section class="section_4 relative">
-        <div class="absolute sect-news">
-          <p class="w-800 act-txt-section">NEWS</p>
-        </div>
-        <div>
-          <div class="section-context">
-            <ul class="flex representative-ul">
+    <!-- SECTION: RECENT NEWS -->
+    <section class="section_3 relative">
+      <ul class="flex ul-news">
+          <li>
+            <div class="img-container-news">
+              <img
+                src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fourth/main-img.png' ?>"
+                alt=""
+              />
+            </div>
+            <div class="news-detils">
+              <p class="p-16 sub-head-clr">August 8, 2024</p>
+              <p class="p-50 head-clr">
+                【えひめSDGs甲子園2024】本選出場チームが決定しました。
+              </p>
+              <p class="p-16 details">
+                愛媛県内の高校から29のチームがエントリーした「えひめSDGs甲子園2024」の予選審査が終了し、本選出場チームが発表されました。・・・
+              </p>
+
+              <div class="relative btn-container" id="btn-news">
+                <a href="">
+                  <button class="main-button-logo relative">支援者様</button>
+                  <img
+                    class="home-icon-button absolute"
+                    src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <p class="p-20 mb-5 recents">RECENTS</p>
+            <ul class="ul-recents">
               <li>
-                <div class="img-container-team flex">
-                  <p class="inline-txt text-deco">REPRESENTATIVE</p>
-                  <div class="image-back-shadow relative">
-                    <div class="background-color"></div>
+                <div class="flex with-img">
+                  <div class="img-container-news-recent">
                     <img
-                      class="image-front"
-                      src="../assets/images/homepage/section-fifth/img-1.png"
+                      src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fourth/sub-img-1.png' ?>"
                       alt=""
                     />
                   </div>
-                </div>
-              </li>
-              <li>
-                <div class="representative-detail-container">
-                  <p class="p-40 news-main-clr">
-                    新時代の学びのカタチ「REAL✕LINK
-                  </p>
-                  <p class="p-22 text-clr rep-details">
-                    NPO法人
-                    RESは、ひとりでも多くの子どもたちが、未来の国際社会で活躍できる社会を目指し、自ら考え行動できる人材を育成する活動をしています。
-                  </p>
-                  <p class="p-50 news-main-clr">森 章</p>
-                  <p class="p-20 text-clr">代表理事</p>
-                  <div class="relative btn-container">
-                    <a href="">
-                      <button class="main-button relative">
-                        代表メッセージ
-                      </button>
+                  <div>
+                    <p class="p-14 head-clr">
+                      小中学生が過去最少、大学生は過去最多…学校基本調査
+                    </p>
+                    <p class="p-14 read-more">
+                      READ MORE
                       <img
-                        class="icon-button absolute"
-                        src="../assets/images/homepage/side-section-img.png"
+                        src="<?php echo RESNPO_URI . '/assets/images/homepage/section-fourth/Vector.png' ?>"
                         alt=""
                       />
-                    </a>
+                    </p>
+                    <p class="p-12 text-clr">2024/09/02</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="flex with-img">
+                  <div class="img-container-news-recent">
+                    <img
+                      src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fourth/sub-img-2.png' ?>"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <p class="p-14 head-clr">
+                      優勝は「くまもるず」（上浮穴高等学校）
+                    </p>
+                    <p class="p-14 read-more">
+                      READ MORE
+                      <img
+                        src="<?php echo RESNPO_URI . '/assets/images/homepage/section-fourth/Vector.png' ?>"
+                        alt=""
+                      />
+                    </p>
+                    <p class="p-12 text-clr">2024/08/27</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="flex with-img">
+                  <div class="img-container-news-recent">
+                    <img
+                      src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fourth/sub-img-3.png' ?>"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <p class="p-14 head-clr">
+                      都道府県別・学習時間ランキング、都会が多い傾向
+                    </p>
+                    <p class="p-14 read-more">
+                      READ MORE
+                      <img
+                        src="<?php echo RESNPO_URI . 'assets/images/homepage/section-fourth/Vector.png' ?>"
+                        alt=""
+                      />
+                    </p>
+                    <p class="p-12 text-clr">2024/08/19</p>
                   </div>
                 </div>
               </li>
             </ul>
-
-            <ul class="flex representative-ul-next">
-              <li>
-                <p class="w-900 news-main-clr">
-                  ムルシア・カトリック大学（スペイン）
-                </p>
-                <p>副学長-教務担当</p>
-                <p class="w-900 news-main-clr">博士号（PhD）</p>
-                <p class="w-500 text-clr">
-                  リバプール大学　 • 経営学/人事管理/情報学
-                </p>
-                <p class="w-900 news-main-clr">博士号（PhD）</p>
-                <p class="w-500 text-clr">
-                  国際経営学・経済学アカデミー　経営学  
-                </p>
-                <p class="w-900 news-main-clr">経営学修士  </p>
-                <p class="w-500 text-clr">フィリピン大学　公共経営  </p>
-                <p class="w-900 news-main-clr">経営学修士</p>
-                <p class="w-500 text-clr">フィリピン大学　マーケティング</p>
-
-                <p class="w-500 news-main-clr mt-15">
-                  MARIA JADE CATALAN-OPULENCIA, PhD
-                </p>
-                <p class="p-20 w-500 text-clr">特別顧問</p>
-
-                <div class="relative btn-container">
-                  <a href="">
-                    <button class="main-button relative">詳しくはこちら</button>
-                    <img
-                      class="icon-button absolute"
-                      src="../assets/images/homepage/side-section-img.png"
-                      alt=""
-                    />
-                  </a>
-                </div>
-              </li>
-              <li>
-                <div class="img-container-team flex">
-                  <div class="image-back-shadow relative">
-                    <div class="background-color-next"></div>
-                    <img
-                      class="image-front"
-                      src="../assets/images/homepage/section-fifth/img-2.png"
-                      alt=""
-                    />
-                  </div>
-                  <p class="inline-txt-advisor text-deco-advisor">ADVISOR</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+          </li>
+        </ul>
 
         <div class="side-text absolute">
-          <p class="inline-txt p-30">REPRESENTATIVE</p>
-          <img src="../assets/images/homepage/side-section-img.png" alt="" />
-        </div>
-
-        <div class="side-text side-advisor absolute">
-          <p class="inline-txt p-30">ADVISOR</p>
-          <img src="../assets/images/homepage/side-section-img.png" alt="" />
+          <p class="inline-txt w-600 p-30 head-clr">NEWS</p>
+          <img src="<?php echo RESNPO_URI .'/assets/image/homepage/side-section-img.png' ?>" alt="" />
         </div>
       </section>
+
+      <!-- SECTION: NEWS/RESPRESENTATIVE -->
+      
+      <section class="section-representative">
+        <div class="top-title-news relative">
+          <p class="p-230 w-700">NEWS</p>
+        </div>
+        <div class="relative rep-container-main">
+          <img class="absolute" style="z-index:66; bottom:0" src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/representative-img.png' ?>" alt="">
+          <div class="top-title-rep relative">
+            <p class="p-120 w-700">RESPRESENTATIVE</p>
+          </div>
+          <div class="bot-content-rep relative">
+            <div class="bot-content-rep-container">
+              <ul class="flex gap-15 bot-ul-rep">
+                <li>
+                  <p class="p-16 w-500 white-clr">NPO法人 RESは、ひとりでも多くの子どもたちが、未来の国際社会で活躍できる社会を目指し、自ら考え行動できる人材を育成する活動をしています。</p>
+                  <div class="relative btn-container" >
+                    <a href="">
+                      <button class="main-button-logo relative" id="btn-logo">支援者様</button>
+                      <img class="home-icon-button absolute"
+                      src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>"
+                      ="" />
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="li-real-container">
+                    <p class="p-120 w-700">“</p>
+                    <p class="p-40 w-700">新時代の学びのカタチ<br>「REAL✕LINK」</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: NEWS/RESPRESENTATIVE -->
+
 
       <section class="section_5 relative">
         <div class="absolute sect-location">
-          <p class="w-800 loc-txt-section">LOCATION</p>
+          <p class="w-800 loc-txt-section section-head-clr">LOCATION</p>
         </div>
 
         <ul class="flex">
@@ -213,7 +287,7 @@
               </div>
               <div class="mb-25">
                 <a href="#C" data-hash="C" class="hash">
-                  <div class="flex map-link map-link-active">
+                  <div class="flex map-link">
                     <img
                       src="<?php echo RESNPO_URI . '/assets/image/homepage/section-sixth/img-loc-3.png' ?>"
                       alt=""
@@ -279,11 +353,11 @@
               <p class="p-20 w-500 head-clr logo-text">
                 活動に賛同し、支持してくださる全ての皆様に厚く御礼申し上げます。
               </p>
-              <div class="relative btn-container">
+              <div class="relative btn-container" >
                 <a href="">
-                  <button class="main-button-logo relative">支援者様</button>
+                  <button class="main-button-logo relative" id="btn-logo">支援者様</button>
                   <img
-                    class="icon-button absolute"
+                    class="home-icon-button absolute"
                     src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>"
                     alt=""
                   />

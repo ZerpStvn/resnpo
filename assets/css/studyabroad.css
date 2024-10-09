@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh; /* Adjust as needed */
   margin-top: 76px;
   padding-bottom: 116px;
   padding-top: 116px;
@@ -16,7 +15,7 @@
 
 #impressions .impression-image {
   width: 494px;
-  height: 574px;
+  height: min(auto, 574px);
 }
 
 #impressions .impression-image img {
@@ -34,28 +33,21 @@
   text-align: center; /* Center the content inside each slide */
   margin: 20px;
 }
+
 .impressions-slider {
   width: 90%;
   margin: 0 auto;
 }
+
 .impression-image img {
   width: 100%;
   height: auto;
 }
+
 .slick-center {
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
-/* .slick-prev,
-.slick-next {
-  z-index: 1;
-}
-.slick-prev {
-  left: 10px;
-}
-.slick-next {
-  right: 10px;
-} */
 
 #impressions .impressions-title {
   font-family: var(--readex);
@@ -76,12 +68,12 @@
 }
 
 #info-session .info-image {
-  width: 669px;
+  max-width: 669px;
 }
 
 #info-session .info-image img {
   width: 100%;
-  height: 10 0%;
+  /* height: 100%; */
 }
 
 #info-session .info-content {
@@ -91,4 +83,39 @@
 #info-session .info-texts {
   flex-direction: column;
   gap: 23px;
+}
+
+#info-session .info-list {
+  margin: 30px 0;
+}
+
+@media (max-width: 480px) {
+  #info-session {
+    padding: 46px;
+    flex-direction: column-reverse;
+    gap: 10px;
+    color: var(--darkblue);
+    align-items: center;
+  }
+
+  #info-session .info-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Set a maximum width for mobile */
+    max-height: 300px; /* Set a maximum height for mobile */
+    overflow: hidden; /* Ensure the image does not overflow */
+  }
+
+  #info-session .info-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the container */
+  }
+  #info-session .btn-container {
+    text-align: center;
+  }
+  #info-session .sb_title {
+    font-size: 30px;
+    text-align: center;
+  }
 }

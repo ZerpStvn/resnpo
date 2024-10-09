@@ -7,7 +7,7 @@ body,
 html {
   scroll-behavior: smooth;
   /* For AOS Animation to effect properly, disable overflow-x: hidden */
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .global_width {
@@ -107,6 +107,10 @@ html {
   color: #56b0d2;
 }
 
+.white-blue {
+  background-color: #edf8fd;
+}
+
 /* Font Size */
 
 .p-12 {
@@ -173,6 +177,10 @@ html {
   font-size: 100px;
 }
 
+.p-120 {
+  font-size: 120px;
+}
+
 .p-150 {
   font-size: 150px;
 }
@@ -183,6 +191,10 @@ html {
 
 .p-200 {
   font-size: 13.889vw; /** 200px */
+}
+
+.p-230 {
+  font-size: 230px;
 }
 
 .p-250 {
@@ -203,6 +215,10 @@ html {
   font-weight: 500;
 }
 
+.w-600 {
+  font-weight: 600;
+}
+
 .w-700 {
   font-weight: 700;
 }
@@ -214,8 +230,6 @@ html {
 .w-900 {
   font-weight: 900;
 }
-
-/* Margin */
 
 .mt-15 {
   margin-top: 15%;
@@ -238,6 +252,8 @@ html {
 }
 
 .ml-10 {
+}
+.ml-8 {
   margin-left: 8%;
 }
 
@@ -245,6 +261,79 @@ html {
 
 /* Display */
 
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+.gap-25 {
+  gap: 25px;
+}
+
+.gap-35 {
+  gap: 35px;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-rr {
+  flex-direction: row-reverse;
+}
+.flex-cr {
+  flex-direction: column-reverse;
+}
+.jc-center {
+  justify-content: center;
+}
 .flex {
   display: flex;
 }

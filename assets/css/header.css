@@ -3,3 +3,36 @@ nav {
   right: 68px;
   z-index: 888;
 }
+
+.nav-icon-container {
+  width: 88.13px;
+  height: 94.71px;
+}
+
+.nav-icon-container img {
+  width: 100%;
+}
+
+.nav-icon-container-home .home-nav-icon {
+  height: 50px;
+  width: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-icon-container {
+    width: 11.475vw;
+    height: 12.332vw;
+  }
+
+  nav {
+    top: 33px;
+    right: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-icon-container {
+    width: 30px;
+    height: 30px;
+  }
+}
