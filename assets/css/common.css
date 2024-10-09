@@ -7,7 +7,7 @@ body,
 html {
   scroll-behavior: smooth;
   /* For AOS Animation to effect properly, disable overflow-x: hidden */
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .global_width {
@@ -231,12 +231,9 @@ html {
   font-weight: 900;
 }
 
-
-
 .mt-15 {
   margin-top: 15%;
 }
-
 
 .mb-3 {
   margin-bottom: 3%;
