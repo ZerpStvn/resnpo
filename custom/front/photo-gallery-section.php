@@ -56,7 +56,6 @@ function photogallerysection($gallery_title = null)
             endwhile;
             wp_reset_postdata();
           } catch (Exception $e) {
-            // Handle the exception
             echo '<div class="error-message">An error occurred: ' . esc_html($e->getMessage()) . '</div>';
           }
         else :

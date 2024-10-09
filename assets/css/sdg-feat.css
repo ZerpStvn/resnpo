@@ -4,13 +4,19 @@
 }
 
 .main-feature-container {
-  max-width: 1200px;
+  max-width: 1350px;
   margin: 0 auto;
 }
 
 .feature-section-title {
+  font-family: var(--kiak);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 84.38px;
+  letter-spacing: 0.1em;
+  text-align: left;
+
   color: white;
-  font-size: 36px;
   padding-bottom: 20px;
   border-left: 4px solid #fff;
   padding-left: 22px;
@@ -20,8 +26,8 @@
 
 .feature-card {
   position: relative;
-  width: 300px !important;
-  height: 300px;
+  width: 333px !important;
+  height: 397px !important;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -30,7 +36,7 @@
 
 .features-section .slick-track {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .feature-card:hover {
@@ -66,8 +72,9 @@
   font-family: var(--notsansjp);
   font-size: 25px;
   font-weight: 700;
-  line-height: 1.4;
+  line-height: 35.16px;
   letter-spacing: 0.1em;
+  text-align: left;
 }
 
 .slick-dots {
