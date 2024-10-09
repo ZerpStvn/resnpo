@@ -12,9 +12,18 @@
 <body>
 
     <header class="relative">
-      <nav class="absolute" data-aos="fade-left">
-        <div class="nav-icon-container-home">
+      <nav class="absolute navbar" > <!--data-aos="fade-left" -->
+        <div class="nav-icon-container-home nav-icon" id="nav-icon">
           <img class="home-nav-ico" src="<?php echo RESNPO_URI .  '/assets/image/homepage/header/home-nav.png' ?>" alt="" />
+        </div>
+
+        <div class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
       </nav>
     </header>
