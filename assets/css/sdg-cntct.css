@@ -57,7 +57,7 @@
   letter-spacing: 0.05em;
   text-align: center;
   color: #fff;
-  max-width: 383px;
+  /* max-width: 383px; */
   margin: 64px;
   padding: 15px 64px 24px 65px;
   cursor: pointer;
@@ -99,6 +99,20 @@
   opacity: 1 !important;
 }
 
+.slideleft {
+  position: relative;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+    opacity 0.5s ease-out;
+  will-change: transform, opacity;
+}
+
+.slideleft.on {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+}
+
 @media (max-width: 480px) {
   .contact-opp h1 {
     font-size: 30px;
@@ -111,12 +125,12 @@
     right: 42px;
     bottom: 68px;
     left: 42px;
-    border: 5px solid white; /* Inner border */
+    border: 5px solid white;
     pointer-events: none;
   }
   .contact-button {
     font-size: 20px;
     padding: 0 50px;
-    margin: 32px; /* Adjust margin for mobile */
+    margin: 32px;
   }
 }
