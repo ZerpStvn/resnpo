@@ -1,4 +1,4 @@
-let $ = jQuery.noConflict();
+// let $ = jQuery.noConflict();
 
 // START: AOS ANIMATION EFFECTS
 jQuery(document).ready(() => {

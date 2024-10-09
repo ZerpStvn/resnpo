@@ -2,11 +2,7 @@
 <div id="aboutid" class="aboutid">
 
   <section class="landing-about">
-    <header class=au-header>
-      <a href="#">
-        <img src="<?php echo RESNPO_IMAGE . '/menu-button.png' ?>" alt="">
-      </a>
-    </header>
+
 
     <div class="landing-fg">
       <img src="<?php echo RESNPO_IMAGE . '/about/landing-fg.png' ?>" alt="">
