@@ -5,7 +5,7 @@ function photogallerysection($gallery_title = null)
   <!-- SECTION 4: PHOTO GALLERY -->
   <section class="photo-gallery global-width">
     <div class="photo-gallery-texts">
-      <div class="photo-gallery-title">
+      <div class="photo-gallery-title slideleft">
         <!-- <img src="<?php //echo RESNPO_IMAGE . '/photo-gallery.png' 
                         ?>" alt="photogal"> -->
         <h2 class="outline-blue">PHOTO</h2>

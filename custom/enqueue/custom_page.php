@@ -91,8 +91,9 @@ function add_custom_page()
             wp_insert_post($page);
         }
     }
-    $homepage = get_page_by_path('home');
-    update_option('page_on_front', $homepage->ID);
-    update_option('show_on_front', 'page');
+  }
+  $homepage = get_page_by_path('home');
+  update_option('page_on_front', $homepage->ID);
+  update_option('show_on_front', 'page');
 }
 add_action('init', 'add_custom_page');
