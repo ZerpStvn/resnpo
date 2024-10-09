@@ -27,7 +27,7 @@
   /* top: 50px; */
   height: 80%;
   width: 90%;
-
+}
 .landing-fg img {
   display: block; /* Remove default inline spacing */
   max-width: 100%;
@@ -37,7 +37,7 @@
   object-fit: contain;
 }
 .landing-fg img {
-
+  height: 100%;
 }
 
 #aboutid .side-content {
