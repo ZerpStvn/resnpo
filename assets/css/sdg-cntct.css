@@ -89,8 +89,8 @@
   position: relative;
   transform: translateX(100%);
   opacity: 0;
-  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55),
-    opacity 0.5s ease-out;
+  transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1),
+    opacity 1s ease-in-out;
   will-change: transform, opacity;
 }
 
@@ -103,8 +103,8 @@
   position: relative;
   transform: translateX(-100%);
   opacity: 0;
-  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55),
-    opacity 0.5s ease-out;
+  transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1),
+    opacity 1s ease-in-out;
   will-change: transform, opacity;
 }
 
