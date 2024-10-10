@@ -109,3 +109,16 @@ animateInquire();
 
 // Set interval for continuous animation
 setInterval(animateInquire, 200);
+
+document.querySelectorAll('details').forEach((details) => {
+  details.addEventListener('click', (e) => {
+    if (details.open) {
+      e.preventDefault();
+      details.classList.add('closing');
+      setTimeout(() => {
+        details.open = false;
+        details.classList.remove('closing');
+      }, 300); // This should match the transition duration in your CSS
+    }
+  });
+});
