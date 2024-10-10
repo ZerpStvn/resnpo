@@ -2,12 +2,11 @@
 <div id="aboutid" class="aboutid">
 
   <section class="landing-about">
-    <header>
-      <a href="#">
-        <img src="<?php echo RESNPO_IMAGE . '/menu-button.png' ?>" alt="">
-      </a>
-    </header>
 
+
+    <div class="landing-fg">
+      <img src="<?php echo RESNPO_IMAGE . '/about/landing-fg.png' ?>" alt="">
+    </div>
 
     <div class="side-content">
       <div class="social">
@@ -38,14 +37,14 @@
     <h1>ひとりでも多くの子どもたちが、<br>未来の可能性を芸術で表現できる社会を目指して</h1>
   </div>
 
-  <section id="vision-section" class="diagonal-section">
-    <div class="rotated-text">VISION</div>
+  <section id="vision-section" class="diagonal-section global-width">
+    <div class="rotated-text outline">VISION</div>
     <div class="section-content head-clr flex-rr head-clr">
       <div class="image-placeholder slideleft">
         <img src=" <?php echo RESNPO_IMAGE . '/about/vision1.png' ?>" alt="">
       </div>
       <div class="section-text">
-        <h2 class="section-title">実現したい社会</h2>
+        <h2 class="section-title scaleIn">実現したい社会</h2>
         <p>
           人の役に立ちたい！人に必要とされたい！ そんな想いをきっかけに、ご縁があって2003年にこのNPO法人を立ち上げました。そして、フィリピンへ幼稚園の寄付、ボランティア活動などを行っていく中で湧いてきた新たな想い。
 
@@ -72,16 +71,18 @@
     </div>
   </section>
 
-  <section id="mission-section" class="diagonal-section">
-    <div class="rotated-text">MISSION</div>
+  <section id="mission-section" class="diagonal-section global-width">
+    <div class="rotated-text outline">MISSION</div>
     <div class="section-content head-clr flex-row">
       <div class="image-placeholder slideright">
         <img src="<?php echo RESNPO_IMAGE . '/about/mission1.png' ?>" alt="">
       </div>
       <div class="section-text">
-        <h2 class="section-title">私たちの使命</h2>
+        <h2 class="section-title scaleIn">私たちの使命</h2>
         <p>
-          あたり前のことをあたり前だからと思考停止するのではなく、なぜなんだろう？と考え、自分なりの答えを持つ。 間違っていてもいい
+          あたり前のことをあたり前だからと思考停止するのではなく、なぜなんだろう？と考え、自分なりの答えを持つ。
+          <br>
+           間違っていてもいい
 
           <br><br>
 
@@ -94,14 +95,14 @@
     </div>
   </section>
 
-  <section id="action-section" class="diagonal-section">
-    <div class="rotated-text">ACTION</div>
+  <section id="action-section" class="diagonal-section global-width">
+    <div class="rotated-text outline">ACTION</div>
     <div class="section-content head-clr head-clr flex-rr">
       <div class="image-placeholder slideleft">
         <img src="<?php echo RESNPO_IMAGE . '/about/action1.png' ?>" alt="">
       </div>
       <div class="section-text">
-        <h2 class="section-title">私たちの行動</h2>
+        <h2 class="section-title scaleIn">私たちの行動</h2>
         <p>
           あたり前のことをあたり前だからと思考停止するのではなく、なぜなんだろう？と考え、自分なりの答えを持つ。
           <br><br>
@@ -120,12 +121,12 @@
       <div class="rxl-ur">
         <h1 class="qt flex">“</h1>
         <div class="content flex flex-row">
-          <p>
+          <p class="scaleIn">
             NPO法人 RESは、ひとりでも多くの子どもたちが、
             未来の国際社会で活躍できる社会を目指し、
             自ら考え行動できる人材を育成する活動をしています。
           </p>
-          <div class="message-cont">
+          <div class="message-cont slideright">
             <h1 class="outline">MESSAGE</h1>
             <img src="<?php echo RESNPO_IMAGE . '/about/message.png' ?>" alt="">
           </div>
@@ -134,15 +135,16 @@
       <div class="rxl-lr flex">
         <img src="<?php echo RESNPO_IMAGE . '/about/mori.jpeg' ?>" alt="">
         <div class="rxl-lr-txt">
-          <h1 class="sb_title text-center white-clr">新時代の学びのカタチ<br>「REAL✕LINK」</h1>
+          <h1 class="sb_title text-center white-clr slideup">新時代の学びのカタチ<br>「REAL✕LINK」</h1>
           <p class="white-clr">
-            新しい時代「令和」が始まりました。 新しい元号のもと、日本にとどまらず世界中から争いごとや飢えや難病が無くなっていくことを心から願っています。  さて、いつの時代においても最も重要な事業のひとつに位置づけられるのが「教育」です。 先進国も発展途上国も、大きな国も小さな地域も、都会でも田舎でも、「教育」はとても大切です。
+            新しい時代「令和」が始まりました。 新しい元号のもと、日本にとどまらず世界中から争いごとや飢えや難病が無くなっていくことを心から願っています。
             <br><br>
+            さて、いつの時代においても最も重要な事業のひとつに位置づけられるのが「教育」です。 先進国も発展途上国も、大きな国も小さな地域も、都会でも田舎でも、「教育」はとても大切です。
             しかし現状では、将来を担う子供たちに人間形成の土台となる基礎知識や手法を伝え、 さらに創造性や思考力を育むのは「公的機関」だけでは不充分だと思います。
             <br><br>
-              私たちは、身近な地域の子供たちに何かの手助けができないか、「民間」の利を活かした教育ができないかと考えました。
+            私たちは、身近な地域の子供たちに何かの手助けができないか、「民間」の利を活かした教育ができないかと考えました。
             <br><br>
-              ますますグローバル化するこのREALな世界で生きる子供たちが、年齢や地域を越えてLINKし、いろんな人と繋がることで、 お互いを知り、「学ぶ心」や「人を想いやる心」を醸成し、共に考え共に成長する。 そんな新しい時代の学びの場（カタチ）をみんなで創って行きたいと思っています。 そして、その事を通して、一人でも多くの「自ら考え行動できる人」が育ってくれれば幸いです。
+            ますますグローバル化するこのREALな世界で生きる子供たちが、年齢や地域を越えてLINKし、いろんな人と繋がることで、 お互いを知り、「学ぶ心」や「人を想いやる心」を醸成し、共に考え共に成長する。 そんな新しい時代の学びの場（カタチ）をみんなで創って行きたいと思っています。 そして、その事を通して、一人でも多くの「自ら考え行動できる人」が育ってくれれば幸いです。
           </p>
         </div>
       </div>
@@ -155,7 +157,7 @@
 
 
 
-  <section class="section_4">
+  <section id="org_overview" class="org_overview">
     <p class="p-30 w-700 head-clr">団体概要</p>
     <p class="p-20 sub-head-clr">Outline</p>
     <div class="list-contact">
@@ -212,7 +214,7 @@
 <svg version="1.1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" style="display:none;">
   <defs>
     <filter id="stroke-text-svg-filter">
-      <feMorphology operator="dilate" radius=""></feMorphology>
+      <feMorphology operator="dilate" radius="2"></feMorphology>
       <feComposite operator="xor" in="SourceGraphic" />
     </filter>
   </defs>

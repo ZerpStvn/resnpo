@@ -8,13 +8,42 @@
     url("../image/about/landing-bg.png");
   background-repeat: no-repeat;
   position: relative;
-  height: 100vh;
+  height: 779px;
+  background-size: cover;
+}
+
+.au-header {
+  position: relative;
+}
+
+.landing-fg img {
+  height: 100%;
+}
+
+.landing-fg {
+  position: absolute;
+  bottom: 0;
+  left: 150px;
+  /* top: 50px; */
+  height: 80%;
+  width: 90%;
+}
+.landing-fg img {
+  display: block; /* Remove default inline spacing */
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  object-fit: cover;
+}
+.landing-fg img {
+  height: 100%;
 }
 
 #aboutid .side-content {
   display: flex;
   flex-direction: column;
-  gap: 300px;
+  gap: 450px;
   position: absolute;
   top: 10vh;
   left: 30px;
@@ -24,7 +53,7 @@
   position: absolute;
   width: 623px;
   height: 131px;
-  top: 20px;
+  top: 50px;
   left: 119px;
   gap: 0px;
   border: 2px 0px 0px 0px;
@@ -42,18 +71,18 @@
 }
 
 .au-sub-title {
-  font-family: Readex Pro;
+  font-family: "Readex Pro", sans-serif;
   font-size: 70px;
   font-weight: 700;
   line-height: 180px;
   letter-spacing: 0.05em;
   text-align: left;
   position: absolute;
-  top: 300px;
-  text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+  top: 400px;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
     2px 2px 0 #fff;
 }
-
 /* VISION MISSION ACTION */
 .vma-title {
   position: relative;
@@ -135,12 +164,13 @@
 
 #mission-section::before {
   background: radial-gradient(circle, #f9edeb 0.21%, #938c8b 100.91%);
-  transform: skewY(-5deg);
+  transform: skewY(-4deg);
   transform-origin: 100%;
 }
 
 #action-section::before {
   background: radial-gradient(circle, #56b0d2 -1.46%, #2c5b6c 100%);
+  z-index: 1; /* Ensure the diagonal background has a lower z-index */
 }
 
 .background-image {
@@ -172,11 +202,12 @@
 
 .section-content p {
   font-family: var(--notsansjp);
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
   line-height: 22.5px;
   letter-spacing: 0.05em;
   text-align: left;
+  width: 629px;
 }
 
 .image-placeholder {
@@ -185,9 +216,8 @@
   left: 0;
   width: 100%;
   height: auto;
-
   overflow: hidden;
-  z-index: 1;
+  z-index: 2; /* Ensure the image has a higher z-index */
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
@@ -211,7 +241,7 @@
   top: 50%;
   transform: rotate(90deg) translateX(-50%);
   transform-origin: left top;
-  font-size: 120px;
+  font-size: 150px;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.2);
   z-index: 3;
@@ -222,25 +252,28 @@
 }
 
 #mission-section .rotated-text {
-  left: auto;
-  right: 140px;
+  left: 794px;
+  right: 120px;
   transform: rotate(-90deg) translateX(50%);
   transform-origin: right top;
 }
 
 #mission-section .section-content {
   justify-content: flex-end;
+  width: 89%;
 }
 
 #mission-section .section-content .image-placeholder {
   position: absolute;
   bottom: -20px;
   right: 0;
-  width: 50%;
+  width: 58%;
   height: auto;
   overflow: hidden;
   z-index: 1;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  height: 100%;
+  left: -70px;
 }
 
 #mission-section .section-content .image-placeholder img {
@@ -251,22 +284,34 @@
   object-position: center;
 }
 
+#mission-section .section-content p {
+  font-size: 16px;
+}
+
 #action-section .section-content .image-placeholder {
   position: absolute;
   bottom: 0;
   left: 200px;
-  width: 100%;
+  width: 95%;
   height: 100%;
   overflow: hidden;
-  z-index: 1;
+  z-index: 2;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  top: 30px;
 }
+
 #action-section .section-content .image-placeholder img {
   width: 100%;
   height: 100%;
   max-width: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+#action-section .section-text {
+  flex: 0 0 50%;
+  padding: 0 50px;
+  z-index: 2;
 }
 
 #vision-section .section-content .image-placeholder {
@@ -294,12 +339,16 @@
   letter-spacing: 0.03em;
   text-align: left;
   margin-bottom: 20px;
+  color: #0d3046; /* Text color */
+  -webkit-text-stroke: 0.5px #0d3046; /* Outline for WebKit-based browsers */
+  text-shadow: -0.5px -0.5px 0 #0d3046, 0.5px -0.5px 0 #0d3046,
+    -0.5px 0.5px 0 #0d3046, 0.5px 0.5px 0 #0d3046; /* Simulated outline for other browsers */
 }
 
 .section-title p {
   font-family: var(--notsansjp);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 19.69px;
   letter-spacing: 0.03em;
   text-align: left;
@@ -316,7 +365,7 @@
   left: -229px;
   font-family: var(--notsansjp);
   font-size: 70px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 98.44px;
   letter-spacing: 0.1em;
   text-align: left;

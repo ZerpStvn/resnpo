@@ -5,11 +5,11 @@
     <section class="donation-header">
       <div class="border relative">
           <div class="donation-container relative">
-            <p>WHAT’S NEW</p>
-            <div class="text-deco">
-              <p>WHAT’S NEW</p>
-              <p>WHAT’S NEW</p>
-              <p>WHAT’S NEW</p>
+            <p class="wk-s-5">WHAT’S NEW</p>
+            <div class="text-deco-donation">
+              <p class="wk-s-5">WHAT’S NEW</p>
+              <p class="wk-s-5">WHAT’S NEW</p>
+              <p class="wk-s-5">WHAT’S NEW</p>
             </div>
             <div class="header-txt-container absolute">
               <p>RESニュース</p>

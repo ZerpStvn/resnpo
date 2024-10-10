@@ -3,11 +3,11 @@
   overflow: hidden;
   /* height: 100%; */
   display: flex;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
   color: #fff;
   /* text-transform: uppercase; */
   font-size: 20px;
+  margin-top: 30px;
 }
 
 .footer-container:before {
@@ -17,9 +17,9 @@
   left: -50%;
   top: 0;
   width: 200%;
-  bottom: 0;
+  height: 100%; /* Adjust the height to control the arch */
   background-color: #d9d9d9;
-  border-radius: 50% 50% 0 0;
+  border-radius: 100% 100% 0 0; /* Increased the border-radius to make the arch more pronounced */
   z-index: -1;
 }
 
@@ -80,15 +80,18 @@ table tr img {
 
 .footer-links li a {
   text-decoration: none;
-  font-family: var(--inter);
+  font-family: var(--notsansjp);
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 19.36px;
   text-align: left;
   color: var(--footertextcolor);
 }
 .footer-links li a:visited {
   color: inherit;
+}
+.footer-links li a:hover {
+  color: var(--buttoncolor);
 }
 
 .footer-col-title {
@@ -106,6 +109,7 @@ table tr img {
   padding: 40px;
   display: flex;
   gap: 66px;
+  /* width: 100%; */
 }
 
 .footer-col-title-huge {
@@ -158,11 +162,13 @@ table tr img {
   width: 267px;
   height: 56px;
   transition: transform 0.2s;
+  font-family: var(--notsansjp);
+  font-size: 18px;
 }
 
-.main-button:hover {
+/* .main-button:hover {
   animation: wiggle 0.2s ease-in-out;
-}
+} */
 
 @keyframes wiggle {
   0%,
@@ -190,7 +196,12 @@ table tr img {
 }
 
 .center-columns {
-  gap: 20px;
+  gap: 80px;
+}
+
+.fns-col {
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 @media (max-width: 480px) {

@@ -48,16 +48,17 @@ header {
   /* padding: 10px; */
 }
 
-header img {
+/* header img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 .social {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-left: 14px;
+  margin-left: 16px;
+  margin-top: 5%;
 }
 
 .social img {
@@ -79,7 +80,7 @@ header img {
   transform: rotate(-90deg);
   white-space: nowrap;
   flex-direction: row;
-
+  gap: 11px;
   width: 400px;
   margin-top: auto;
 }

@@ -38,6 +38,19 @@
   gap: 46px;
 }
 
+.ps-image {
+  max-width: 500px;
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.2;
+}
+
+.ps-image:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
 #partner_schools svg {
   position: absolute;
   top: -180px;
@@ -187,7 +200,7 @@
   align-items: center;
   padding: 10px 15px;
   font-weight: bold;
-  min-width: 425px;
+  /* min-width: 425px; */
   color: #fff;
   border-radius: 5px;
   background-color: #4f7c91;
@@ -216,7 +229,8 @@ details {
   margin-bottom: 10px;
   background-color: #fff;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: max-height 0.9s ease-in-out, opacity 0.9s ease,
+    transform 0.9s ease;
 }
 
 details:not([open]) {
@@ -236,6 +250,16 @@ details[open] {
 details[open] .detail-content {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* New styles for closing animation */
+details.closing {
+  max-height: 43px; /* Height of the summary */
+}
+
+details.closing .detail-content {
+  opacity: 0;
+  transform: translateY(-10px);
 }
 
 .as-details {
@@ -292,7 +316,7 @@ details[open] .detail-content {
   width: 100%;
   padding: 0 12px;
   opacity: 0;
-  filter: drop-shadow(0 2px 2px #555);
+  /* filter: drop-shadow(0 2px 2px #555); */
   will-change: transform, opacity;
   animation: carousel-animate-vertical 9s linear infinite;
   gap: 20px;
@@ -321,7 +345,7 @@ details[open] .detail-content {
 
 .as-cred img {
   border-radius: 50%;
-  background-color: #d7f7fc;
+  /* background-color: #d7f7fc; */
   width: 70px;
   height: 70px;
   padding: 14px;
@@ -588,7 +612,6 @@ details[open] .detail-content {
   .as-img-col {
     flex-direction: row;
   }
-
   .as-cred img {
     width: 40px;
     height: 40px;
@@ -731,19 +754,43 @@ details[open] .detail-content {
     font-size: 18px;
   }
 }
-
+/* 
 .border-advisor {
   background: #fff;
   padding: 25px;
 }
+
 .advisor-img-container {
   background: #2b4e64;
+  position: relative;
 }
+
 .advisor-img-container img {
   vertical-align: bottom;
   margin-top: -90px;
 }
-.advisor-txt-container {
-  text-align: center;
-  padding-top: 25px;
+
+.text-container {
+  color: white;
 }
+.advisor-txt-container {
+  text-align: b;
+  padding-top: 25px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.advisor-txt-container p {
+  color: white;
+  text-align: right;
+}
+
+.img-col {
+  margin-top: -60px;
+}
+#advisor_section .sg_description {
+  font-weight: 700;
+} */

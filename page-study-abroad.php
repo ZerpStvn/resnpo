@@ -1,13 +1,14 @@
-<?php get_header('study-abroad') ?>
+<?php get_header() ?>
+<?php landing_sdg_page_template('海外留学') ?>
 
 <!-- SECTION 1: FRONT -->
 <?php articlefront('RESのSDGs<br>甲子園とは
-', 'SDGsの17の目標に沿って学校や地域社会の課題解決を考え、実際の行動に繋げます。<br> SDGsの取り組み事例を学んだり、ゲームを通じてSDGsの理念について考えたりします。<br> 学校同士の交流も図りながら、それぞれの課題を掘り下げていきます。', '/studyabroad/study-front.png') ?>
+', 'SDGsの17の目標に沿って学校や地域社会の課題解決を考え、実際の行動に繋げます。<br>SDGsの取り組み事例を学んだり、ゲームを通じてSDGsの理念について考えたりします。<br>学校同士の交流も図りながら、それぞれの課題を掘り下げていきます。', '/studyabroad/study-front.png') ?>
 <!-- END SECTION 1 -->
 
 
 <!-- SECTION 2: Feature -->
-<?php featurefront('sdg') ?>
+<?php featurefront('study-abroad') ?>
 <!-- END SECTION -->
 
 
@@ -59,7 +60,7 @@
 <section id="info-session" class="info-session flex">
   <div class="info-texts flex">
     <h1 class="info-title sb_title">留学プログラム説明会</h1>
-    <p class="info-content sg_description">高校生ボランティア留学の詳しい内容を知りたい方を対象に説明会を行います。 応募に迷っている方はもちろん、申し込みを済まされている方もご参加いただけます。
+    <p class="info-content sg_description">高校生ボランティア留学の詳しい内容を知りたい方を対象に説明会を行います。応募に迷っている方はもちろん、申し込みを済まされている方もご参加いただけます。
     </p>
     <div class="info-list">
       <li class="sg_description">※参加には予約が必要です。 </li>
