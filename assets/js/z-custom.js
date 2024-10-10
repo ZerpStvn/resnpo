@@ -1,4 +1,4 @@
-let $ = jQuery.noConflict();
+jQuery.noConflict();
 
 // START: AOS ANIMATION EFFECTS
 jQuery(document).ready(() => {
@@ -11,58 +11,58 @@ jQuery(document).ready(() => {
 });
 // END: AOS ANIMATION EFFECTS
 
-$(window).on("hashchange", function () {
-  $("div.tab").hide();
-  $(location.hash).fadeIn("slow");
+jQuery(window).on("hashchange", function () {
+  jQuery("div.tab").hide();
+  jQuery(location.hash).fadeIn("slow");
 });
 
-$("a.hash").on("click", function (e) {
+jQuery("a.hash").on("click", function (e) {
   e.preventDefault();
-  location.hash = $(this).data("hash");
+  location.hash = jQuery(this).data("hash");
 });
 
 // Highlight link when it's Active
 
-$(".hash").on("click", function () {
-  var activeLink = $(".map-link-active");
+jQuery(".hash").on("click", function () {
+  var activeLink = jQuery(".map-link-active");
   activeLink.removeClass("map-link-active");
-  $(this).parent().addClass("map-link-active");
+  jQuery(this).parent().addClass("map-link-active");
 });
 
-$("a.hash-donation").on("click", function (e) {
+jQuery("a.hash-donation").on("click", function (e) {
   e.preventDefault();
-  location.hash = $(this).data("hash");
+  location.hash = jQuery(this).data("hash");
 });
 // END: GOOGLE MAP LOCATION NAV TAB
 
-// Higlight link when it's Active Donations Page
+// Highlight link when it's Active Donations Page
 
-$(".hash-donation").on("click", function (e) {
+jQuery(".hash-donation").on("click", function (e) {
   e.preventDefault(); // Prevent the default behavior of the anchor tag
 
   // Remove active class from all buttons
-  $(".donation-link-active").removeClass("donation-link-active");
+  jQuery(".donation-link-active").removeClass("donation-link-active");
 
   // Add active class to the clicked button's parent div
-  $(this).parent().addClass("donation-link-active");
+  jQuery(this).parent().addClass("donation-link-active");
 
   // Reset background color for all buttons
-  $("button").css({ "background-color": "", color: "#8c8c8c" });
+  jQuery("button").css({ "background-color": "", color: "#8c8c8c" });
 
   // Get the data-hash attribute value
-  var hash = $(this).data("hash");
+  var hash = jQuery(this).data("hash");
 
   // Change the background color based on the data-hash value
   if (hash === "A") {
-    $(this)
+    jQuery(this)
       .find("button")
       .css({ "background-color": "#53B9B5", color: "#ffffff" });
   } else if (hash === "B") {
-    $(this)
+    jQuery(this)
       .find("button")
       .css({ "background-color": "#FFBB54", color: "#ffffff" });
   } else if (hash === "C") {
-    $(this)
+    jQuery(this)
       .find("button")
       .css({ "background-color": "#56C3E6", color: "#ffffff" });
   }
@@ -70,28 +70,12 @@ $(".hash-donation").on("click", function (e) {
 
 // NAVBAR SECTION
 
-$(document).ready(function () {
-  $("#nav-icon").click(function () {
-    $("#nav-menu").toggleClass("active");
+jQuery(document).ready(function () {
+  jQuery("#nav-icon").click(function () {
+    jQuery("#nav-menu").toggleClass("active");
   });
 
-  $(".btn-close").click(function () {
-    $("#nav-menu").removeClass("active");
-  });
-});
-
-// SLICK SLIDER: HOMEPAGE->Head Section
-
-jQuery(document).ready(function ($) {
-  $(document).ready(function () {
-    $(".slider").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      arrows: false,
-      dots: false,
-      // Add more settings as needed
-    });
+  jQuery(".btn-close").click(function () {
+    jQuery("#nav-menu").removeClass("active");
   });
 });

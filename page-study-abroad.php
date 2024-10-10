@@ -7,7 +7,8 @@
 
 
 <!-- SECTION 2: Feature -->
-<?php featurefront('sdg') ?>
+<?php featurefront('study-abroad') ?>
+<!-- END SECTION -->
 
 
 <!-- SECTION: UPCOMING EVENTS -->
@@ -50,31 +51,7 @@
 <!-- END PHOTO GALLERY -->
 
 <!-- SECTION 6: JOINED SCHOOLS -->
-
-<section class="joined-schools">
-  <div class="joined-schools-title">
-    <h1>参加校</h1>
-    <h2>Joined Schools</h2>
-  </div>
-  <div class="schools">
-    <div class="school">
-      <img src="<?php echo RESNPO_IMAGE . '/lasalle.png' ?>" alt="">
-    </div>
-    <div class="school">
-      <img src="<?php echo RESNPO_IMAGE . '/cpu.png' ?>" alt="">
-    </div>
-    <div class="school">
-      <img src="<?php echo RESNPO_IMAGE . '/huasiong.png' ?>" alt="">
-    </div>
-    <div class="school">
-      <img src="<?php echo RESNPO_IMAGE . '/sun-yat-sen.png' ?>" alt="">
-    </div>
-    <div class="school">
-      <img src="<?php echo RESNPO_IMAGE . '/paref.png' ?>" alt="">
-    </div>
-  </div>
-</section>
-
+<?php get_template_part('template-parts/joined-schools') ?>
 <!-- END SECTION 6 -->
 
 

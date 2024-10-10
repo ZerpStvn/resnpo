@@ -5,13 +5,24 @@ function photogallerysection($gallery_title = null)
   <!-- SECTION 4: PHOTO GALLERY -->
   <section class="photo-gallery global-width">
     <div class="photo-gallery-texts">
-      <div class="photo-gallery-title">
-        <img src="<?php echo RESNPO_IMAGE . '/photo-gallery.png' ?>" alt="photogal">
+      <div class="photo-gallery-title slideleft">
+        <!-- <img src="<?php //echo RESNPO_IMAGE . '/photo-gallery.png' 
+                        ?>" alt="photogal"> -->
+        <h2 class="outline-blue">PHOTO</h2>
+        <h1 class="outline-blue">GALLERY</h1>
       </div>
       <div class="photo-gallery-content">
         <p class="p-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
       </div>
     </div>
+    <svg version="1.1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" style="display:none;">
+      <defs>
+        <filter id="stroke-text-svg-filter-blue">
+          <feMorphology operator="dilate" radius="2"></feMorphology>
+          <feComposite operator="xor" in="SourceGraphic" />
+        </filter>
+      </defs>
+    </svg>
 
     <div class="photo-gallery-images swiper-pg mySwiperpg">
       <div class="gallery-images swiper-wrapper">
@@ -23,29 +34,25 @@ function photogallerysection($gallery_title = null)
             'title' => $gallery_title
           )
         );
+
         if ($photogallerycontentquery->have_posts()) :
           try {
             while ($photogallerycontentquery->have_posts()) : $photogallerycontentquery->the_post();
-              $content = get_the_content();
-              $dom = new DOMDocument();
-              @$dom->loadHTML(mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8'));
-              $images = $dom->getElementsByTagName('img');
+              $images = get_post_meta(get_the_ID(), '_photo_gallery_images', true);
 
-              if ($images->length > 0) {
+              if (!empty($images)) {
                 foreach ($images as $image) {
-                  $src = $image->getAttribute('src');
-                  $alt = $image->getAttribute('alt');
+                  $src = esc_url($image);
                   echo '<div class="swiper-slide gallery-images">';
-                  echo '<img class="gallery-image"src="' . esc_url($src) . '" alt="' . esc_attr($alt) . '">';
+                  echo '<img class="gallery-image" src="' . $src . '" alt="">';
                   echo '</div>';
                 }
               } else {
-                echo '<div class="error-message">No images found in the post content: ' . esc_html(get_the_title()) . '</div>';
+                echo '<div class="error-message">No images found in the gallery: ' . esc_html(get_the_title()) . '</div>';
               }
             endwhile;
             wp_reset_postdata();
           } catch (Exception $e) {
-            // Handle the exception
             echo '<div class="error-message">An error occurred: ' . esc_html($e->getMessage()) . '</div>';
           }
         else :

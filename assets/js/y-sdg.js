@@ -29,10 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
     videoElement.classList.add("slide-out");
     setTimeout(() => {
       videoElement.querySelector("source").src = videos[currentSlide];
-      videoElement.load(); // Reload the video to apply the new source
+      videoElement.load();
       videoElement.classList.remove("slide-out");
       videoElement.classList.add("slide-in");
-    }, 1000); // Match the transition duration
+    }, 1000);
   }
 
   function prevSlide() {
@@ -65,52 +65,161 @@ var swiperPG = new Swiper(".mySwiperpg", {
   },
 });
 
-// const swiperUC = new Swiper(".swiper-container", {
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   on: {
-//     slideChange: function () {
-//       const activeSlide = swiper.slides[swiper.activeIndex];
-//       const description = activeSlide.getAttribute("data-description");
-//       document.getElementById("image-description").textContent = description;
-//     },
-//   },
-// });
+// Upcoming Events Slider
 document.addEventListener("DOMContentLoaded", function () {
   let swiper;
 
   function updateDetails() {
-    if (!swiper) return;
-    // Calculate the index of the third visible slide
-    // +4 because: +1 (to next set) +3 (to third child of that set)
-    const activeIndex = (swiper.activeIndex + 1) % swiper.slides.length;
-    const activeSlide = swiper.slides[activeIndex];
-    if (activeSlide) {
-      const title = activeSlide.getAttribute("data-title");
-      const content = activeSlide.getAttribute("data-content");
-      const monthyear = activeSlide.getAttribute("data-monthyear");
-      const monthday = activeSlide.getAttribute("data-monthday");
+    if (!swiper || !swiper.slides || !Array.isArray(swiper.slides)) return;
+    let activeIndex = (swiper.realIndex + 1) % swiper.slides.length;
 
-      document.querySelector(".ue-details-title").textContent = title;
-      document.querySelector(".ue-details-content").textContent = content;
-      document.querySelector(".monthyear").textContent = monthyear;
-      document.querySelector(".monthday").textContent = monthday;
+    if (activeIndex >= 0 && activeIndex < swiper.slides.length) {
+      const activeSlide = swiper.slides[swiper.activeIndex + 1];
+      if (activeSlide) {
+        const title = activeSlide.getAttribute("data-title");
+        const content = activeSlide.getAttribute("data-content");
+        const monthyear = activeSlide.getAttribute("data-monthyear");
+        const monthday = activeSlide.getAttribute("data-monthday");
+        const subdescription = activeSlide.getAttribute("data-subdescription");
+
+        document.querySelector(".ue-details-title").textContent = title;
+        document.querySelector(".ue-details-content").textContent = content;
+        document.querySelector(".ue-details-subdescription").textContent =
+          subdescription;
+        document.querySelector(".monthyear").textContent = monthyear;
+        document.querySelector(".monthday").textContent = monthday;
+      }
+    } else {
+      console.error("activeIndex is out of bounds");
     }
   }
 
-  swiper = new Swiper(".mySwiperue", {
-    slidesPerView: 3,
-    loop: true,
-    centeredSlides: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    on: {
-      init: updateDetails,
-      slideChange: updateDetails,
-    },
+  function initSwiper() {
+    swiper = new Swiper(".mySwiperue", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      centeredSlides: true,
+      loop: true,
+      speed: 500,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        480: {
+          centeredSlides: true,
+          loop: true,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+      on: {
+        init: updateDetails,
+        slideChange: updateDetails,
+      },
+    });
+  }
+
+  initSwiper();
+
+  window.addEventListener("resize", () => {
+    if (swiper) {
+      swiper.destroy(true, true);
+    }
+    initSwiper();
+  });
+});
+
+// Animation Scale In
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".scaleIn");
+  elements.forEach((element) => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            console.log("Element is intersecting");
+            element.classList.add("on");
+            observer.unobserve(element);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    observer.observe(element);
+  });
+});
+
+// Animation Slide Left and Right
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(
+    ".slideleft, .slideright, .slideup, .slidedown"
+  );
+
+  elements.forEach((element) => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            element.classList.add("on");
+            const images = element.querySelectorAll("img");
+            images.forEach((img) => {
+              img.style.opacity = "1";
+            });
+            observer.unobserve(element);
+          }
+        });
+      },
+      {
+        threshold: 0,
+        rootMargin: "0px 0px -10% 0px",
+      }
+    );
+    observer.observe(element);
+  });
+});
+
+jQuery(document).ready(function ($) {
+  var $slider = $(".feature-card-container");
+
+  $slider.slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "20%",
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "20%",
+          arrows: false,
+        },
+      },
+    ],
+  });
+
+  $(window).on("resize", function () {
+    $slider.slick("setPosition");
   });
 });

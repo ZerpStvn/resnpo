@@ -5,12 +5,21 @@
 
     <section class="donation-header">
       <div class="border relative">
+
           <div class="donation-container relative0" data-aos="fade-up">
           <p class="wk-s-5">DONATION</p>
             <div class="text-deco-donation"> <!--  data-aos="fade-up" -->
               <p class="wk-s-5">DONATION</p>
               <p class="wk-s-5">DONATION</p>
               <p class="wk-s-5">DONATION</p>
+
+          <div class="donation-container relative0" >
+            <p>DONATION</p>
+            <div class="text-deco" >
+              <p>DONATION</p>
+              <p>DONATION</p>
+              <p>DONATION</p>
+
             </div>
             <div class="header-txt-container absolute">
               <p>寄付</p>
@@ -27,7 +36,7 @@
               </ul>
             </div>
           </div>
-          <div class="social-icons absolute" data-aos="fade-down">
+          <div class="social-icons absolute" >
             <ul class="social-icons-ul flex align-items-center">
               <li>
                 <img
@@ -63,7 +72,7 @@
 
     <section class="section_1_don relative">
       <div class="donation-bottom-container absolute">
-        <div class="donation-bottom-text" data-aos="flip-left" data-aos-delay=400>
+        <div class="donation-bottom-text">
           <p class="w-700 p-40 head-clr">あなたの寄付が子どもたちの世界を拡げ輝かせます</p>
           <p class="w-500 p-20 head-clr">
             刻一刻と変化する今の時代。子どもたちは、私たちがそうだった頃とは異なる環境に身を置き多種多様なスキルや能力を身につけることを求められています。<br>
@@ -72,18 +81,24 @@
         </div>
         <div class="donation-bottom-donate" data-aos="fade-left">
           <p class="w-900 p-100 section-head-clr wk-s-5">DONATION</p>
+            刻一刻と変化する今の時代。子どもたちは、私たちがそうだった頃とは異なる環境に身を置き多種多様なスキルや能力を身につけることを求められています。
+            子どもたちに一つでも多くの機会を届けるため皆様の寄付を私たちの活動に利用させていただきます
+          </p>
+        </div>
+        <div class="donation-bottom-donate">
+          <p class="w-900 p-100 section-head-clr">DONATION</p>
         </div>
       </div>
     </section>
 
         <section class="section_2_don">
           <ul class="flex gap-15">
-            <li data-aos="fade-right">
+            <li >
               <video class="donation-video" controls>
                 <source src="<?php echo RESNPO_URI .'/assets/videos/video.mp4' ?>" type="video/mp4">
               </video>
             </li>
-            <li data-aos="fade-left">
+            <li >
               <p class="w-900 p-40 mb-5 white-clr text-center">
                 寄付によって <br>
                 子どもたちに与えることができる機会
@@ -132,7 +147,7 @@
         </section>
 
         <section class="section_3_don">
-          <div class="title-top relative" data-aos="flip-left">
+          <div class="title-top relative" >
             <p class="w-500 p-250 text-center relative">BENEFITS</p>
             <p class="w-900 p-100 light-blue absolute">ご寄付いただいた方には</p>
           </div>
@@ -140,19 +155,19 @@
           <div class="fieldset-container">
             <ul class="flex">
               <li>
-                <fieldset data-aos="zoom-in" data-aos-delay="400">
+                <fieldset >
                 <legend><p class="w-900 p-50 head-clr">01</p></legend>
                 <p class="w-500 p-20 head-clr fieldset-text">団体よりお礼のお手紙を郵送いたします</p>
                </fieldset>
               </li>
               <li>
-                <fieldset data-aos="zoom-in" data-aos-delay="800">
+                <fieldset >
                 <legend><p class="w-900 p-50 head-clr">02</p></legend>
                 <p class="w-500 p-20 head-clr fieldset-text">毎年4月末ごろ、前年度の活動報告書をお送りいたします</p>
                 </fieldset>
               </li>
               <li>
-                <fieldset data-aos="zoom-in" data-aos-delay="1200">
+                <fieldset >
                 <legend><p class="w-900 p-50 head-clr">03</p></legend>
                 <p class="w-500 p-20 head-clr fieldset-text">支援者ページにお名前を一定期間掲載させていただきます</p>
                 </fieldset>
@@ -162,15 +177,13 @@
           </div>
         </section>
 
-        <section class="section_4_don"  data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="800">
+        <section class="section_4_don"  >
           <div class="title-top relative">
             <p class="w-500 p-150 text-center relative">HOW TO HELP</p>
             <p class="w-900 p-60 light-blue absolute">お気持ちにあった寄付をお選びください</p>
           </div>
           
-          <div class="payment-container" data-aos="zoom-in">
+          <div class="payment-container">
             <div class="flex gap-15 btn-payment-container">
               <div>
                 <a href="#A" data-hash="A" class="hash-donation "><button class=""><p>毎月寄付をする</p></button></a>

@@ -1,3 +1,5 @@
+// let $ = jQuery.noConflict();
+
 const slider = document.querySelector(".slider");
 const slides = document.querySelectorAll(".slide");
 const prevBtn = document.getElementById("prevBtn");
@@ -15,13 +17,20 @@ function updateSlider() {
     let offset = (index - currentIndex + totalSlides) % totalSlides;
     if (offset > halfTotal) offset -= totalSlides;
 
-    const xOffset = offset * (SLIDE_WIDTH + 20); // Add 30px for the margin
+    const xOffset = offset * (SLIDE_WIDTH + 20); // Add 20px for the margin
     const yOffset = Math.abs(offset) * VERTICAL_OFFSET;
     const zIndex = halfTotal - Math.abs(offset);
     const scale = 1 - Math.abs(offset) * 0.1;
     const opacity = 1 - Math.abs(offset) * 0.2;
 
-    slide.style.transform = `translateX(${xOffset}px) translateY(-${yOffset}px) scale(${scale})`;
+    slide.style.transform =
+      "translateX(" +
+      xOffset +
+      "px) translateY(-" +
+      yOffset +
+      "px) scale(" +
+      scale +
+      ")";
     slide.style.zIndex = zIndex;
     slide.style.opacity = opacity;
   });
