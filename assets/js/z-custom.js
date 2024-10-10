@@ -1,5 +1,13 @@
 jQuery.noConflict();
 
+$(document).ready(function () {
+  // Toggle the sub-menu when SDGs link is clicked
+  $(".sdg-link").click(function (e) {
+    e.preventDefault(); // Prevent the default link behavior
+    $(this).siblings(".sub-menu").slideToggle(); // Toggle the visibility of the sub-menu
+  });
+});
+
 // START: AOS ANIMATION EFFECTS
 jQuery(document).ready(() => {
   AOS.init({
@@ -125,4 +133,18 @@ function changeMainContent(index) {
 // Attach click event listeners to each sub list item
 subListItems.forEach((item, index) => {
   item.addEventListener("click", () => changeMainContent(index));
+});
+
+jQuery(document).ready(function ($) {
+  $(document).ready(function () {
+    $(".slider").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      dots: false,
+      // Add more settings as needed
+    });
+  });
 });

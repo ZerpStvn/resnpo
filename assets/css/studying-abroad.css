@@ -39,16 +39,16 @@
 }
 
 .ps-image {
-  max-width: 500px;
-  width: 200px;
-  height: auto;
-  object-fit: contain;
-  opacity: 0.3;
+  max-width: 500px !important;
+  width: 200px !important;
+  height: auto !important;
+  object-fit: contain !important;
+  opacity: 0.3 !important;
 }
 
 .ps-image:hover {
-  transform: scale(1.1);
-  opacity: 1;
+  transform: scale(1.1) !important;
+  opacity: 1 !important;
 }
 
 #partner_schools svg {
@@ -754,26 +754,7 @@ details.closing .detail-content {
     font-size: 18px;
   }
 }
-/* 
-.border-advisor {
-  background: #fff;
-  padding: 25px;
-}
-
-.advisor-img-container {
-  background: #2b4e64;
-  position: relative;
-}
-
-.advisor-img-container img {
-  vertical-align: bottom;
-  margin-top: -90px;
-}
-
-.text-container {
-  color: white;
-}
-.advisor-txt-container {
+/* .advisor-txt-container {
   text-align: b;
   padding-top: 25px;
   position: absolute;
@@ -786,11 +767,11 @@ details.closing .detail-content {
 .advisor-txt-container p {
   color: white;
   text-align: right;
-}
+} */
 
 .img-col {
   margin-top: -60px;
 }
 #advisor_section .sg_description {
   font-weight: 700;
-} */
+}
