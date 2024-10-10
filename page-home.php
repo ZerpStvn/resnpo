@@ -1,7 +1,7 @@
 <?php get_header('home') ?>
 <div id="homeid">
     <section class="section_1">
-      <div class="header-container">
+      <div class="header-container global-width">
         <img src="<?php echo RESNPO_URI . '/assets/image/homepage/header/top_nav_txt.png' ?>" alt="">
         <hr>
         <div>
@@ -66,7 +66,7 @@
       </div>
     </section>
 
-    <section class="section_2 relative">
+    <section class="section_2 relative global-width">
         <ul class="flex main-ul">
           <li>
             <div class="img-container">
@@ -127,7 +127,7 @@
     <!-- END SECTION -->
 
     <!-- SECTION: RECENT NEWS -->
-    <section class="section_3 relative">
+    <section class="section_3 relative global-width">
       <ul class="flex ul-news">
           <li>
             <div class="img-container-news">
@@ -138,7 +138,7 @@
             </div>
             <div class="news-detils">
               <p class="p-16 sub-head-clr">August 8, 2024</p>
-              <p class="p-50 head-clr">
+              <p class="p-40 head-clr">
                 【えひめSDGs甲子園2024】本選出場チームが決定しました。
               </p>
               <p class="p-16 details">
@@ -147,7 +147,7 @@
 
               <div class="relative btn-container" id="btn-news">
                 <a href="">
-                  <button class="main-button-logo relative">支援者様</button>
+                  <button type="button" class="main-button-logo relative">支援者様</button>
                   <img
                     class="home-icon-button absolute"
                     src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>"
@@ -169,7 +169,7 @@
                     />
                   </div>
                   <div>
-                    <p class="p-14 head-clr">
+                    <p class="p-14 w-700 head-clr">
                       小中学生が過去最少、大学生は過去最多…学校基本調査
                     </p>
                     <p class="p-14 read-more">
@@ -192,7 +192,7 @@
                     />
                   </div>
                   <div>
-                    <p class="p-14 head-clr">
+                    <p class="p-14 w-700 head-clr">
                       優勝は「くまもるず」（上浮穴高等学校）
                     </p>
                     <p class="p-14 read-more">
@@ -215,7 +215,7 @@
                     />
                   </div>
                   <div>
-                    <p class="p-14 head-clr">
+                    <p class="p-14 w-700 head-clr">
                       都道府県別・学習時間ランキング、都会が多い傾向
                     </p>
                     <p class="p-14 read-more">
@@ -233,7 +233,7 @@
           </li>
         </ul>
 
-        <div class="side-text absolute">
+        <div class="side-text absolute" id="side-text-news">
           <p class="inline-txt w-600 p-30 head-clr">NEWS</p>
           <img src="<?php echo RESNPO_URI .'/assets/image/homepage/side-section-img.png' ?>" alt="" />
         </div>
@@ -249,7 +249,7 @@
           <img class="absolute" style="z-index:66; bottom:0" src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/representative-img.png' ?>" alt="">
           
           <div class="side-text absolute" id="side-text-rep">
-            <p class="inline-txt w-600 p-30 head-clr">RESPRESENTATIVE</p>
+            <p class="inline-txt w-600 p-30 head-clr">REPRESENTATIVE</p>
             <img src="<?php echo RESNPO_URI .'/assets/image/homepage/side-section-img.png' ?>" alt="" />
           </div>
           
@@ -258,12 +258,12 @@
           </div>
           <div class="bot-content-rep relative">
             <div class="bot-content-rep-container">
-              <ul class="flex gap-15 bot-ul-rep">
+              <ul class="flex bot-ul-rep">
                 <li>
                   <p class="p-16 w-500 white-clr">NPO法人 RESは、ひとりでも多くの子どもたちが、未来の国際社会で活躍できる社会を目指し、自ら考え行動できる人材を育成する活動をしています。</p>
                   <div class="relative btn-container" >
                     <a href="">
-                      <button class="main-button-logo relative" id="btn-logo">支援者様</button>
+                      <button class="main-button-logo relative" id="btn-logo">代表メッセージ</button>
                       <img class="home-icon-button absolute"
                       src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>"
                       ="" />
@@ -391,20 +391,6 @@
                 <a href="#A" data-hash="A" class="hash">
                   <div class="flex map-link map-link-active">
                     <img
-                      src="<?php echo RESNPO_URI . '/assets/image/homepage/section-sixth/img-loc-1.png' ?>"
-                      alt=""
-                    />
-                    <p>
-                      5/F PAFCPIC Building, Taft North, Brgy. Buhang,
-                      Mandurriao, Iloilo City, Iloilo, Philippines
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="mb-3">
-                <a href="#B" data-hash="B" class="hash">
-                  <div class="flex map-link">
-                    <img
                       src="<?php echo RESNPO_URI . '/assets/image/homepage/section-sixth/img-loc-2.png' ?>"
                       alt=""
                     />
@@ -412,14 +398,28 @@
                   </div>
                 </a>
               </div>
-              <div class="mb-25">
-                <a href="#C" data-hash="C" class="hash">
+              <div class="mb-3">
+                <a href="#B" data-hash="B" class="hash">
                   <div class="flex map-link">
                     <img
                       src="<?php echo RESNPO_URI . '/assets/image/homepage/section-sixth/img-loc-3.png' ?>"
                       alt=""
                     />
                     <p>島根県隠岐郡西ノ島町大字浦郷３１</p>
+                  </div>
+                </a>
+              </div>
+              <div class="mb-25">
+                <a href="#C" data-hash="C" class="hash">
+                  <div class="flex map-link">
+                    <img
+                      src="<?php echo RESNPO_URI . '/assets/image/homepage/section-sixth/img-loc-1.png' ?>"
+                      alt=""
+                    />
+                    <p>
+                      5/F PAFCPIC Building, Taft North, Brgy. Buhang,
+                      Mandurriao, Iloilo City, Iloilo, Philippines
+                    </p>
                   </div>
                 </a>
               </div>
@@ -434,37 +434,23 @@
           <li>
             <div class="map-content">
               <div id="A" class="tab">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.191698563597!2d122.55011257369502!3d10.719692760240388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aee520fcd35de7%3A0x28de841d5567073a!2sGrow%20Forward%20Jp%20Inc.!5e0!3m2!1sen!2sph!4v1727060277501!5m2!1sen!2sph"
-                  width="100%"
-                  height="100%"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.1385860027253!2d132.82725647447157!3d33.808736530551116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354fe7d15e36a9db%3A0x9145c8f931ad73a7!2s1426-2%20Hiraimachi%2C%20Matsuyama%2C%20Ehime%20791-0243%2C%20Japan!5e0!3m2!1sen!2sph!4v1728528895897!5m2!1sen!2sph" 
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
               <div id="B" class="tab hidden">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31361.61365486175!2d122.55731747276351!3d10.718920040542097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aee508bcc075c3%3A0x7f47e3a00fc75b26!2sLa%20Paz%2C%20Iloilo%20City%2C%20Iloilo!5e0!3m2!1sen!2sph!4v1727062902920!5m2!1sen!2sph"
-                  width="100%"
-                  height="100%"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51597.20844859636!2d132.9345302028991!3d36.07335942608796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3557db1c8f922801%3A0xfbc3f618c462bc47!2sUrago%2C%20Nishinoshima%2C%20Oki%20District%2C%20Shimane%20684-0211%2C%20Japan!5e0!3m2!1sen!2sph!4v1728528948937!5m2!1sen!2sph" 
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
               <div id="C" class="tab hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31361.61365486175!2d122.55731747276351!3d10.718920040542097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aee508bcc075c3%3A0x7f47e3a00fc75b26!2sLa%20Paz%2C%20Iloilo%20City%2C%20Iloilo!5e0!3m2!1sen!2sph!4v1727062902920!5m2!1sen!2sph"
-                  width="100%"
-                  height="100%"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.191698563597!2d122.55011257369502!3d10.719692760240388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aee520fcd35de7%3A0x28de841d5567073a!2sGrow%20Forward%20Jp%20Inc.!5e0!3m2!1sen!2sph!4v1727060277501!5m2!1sen!2sph"
+                    width="100%"
+                    height="100%"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
               </div>
             </div>
           </li>

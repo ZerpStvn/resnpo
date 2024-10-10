@@ -231,6 +231,20 @@ html {
   font-weight: 900;
 }
 
+
+/* Webkit Stroke  */
+
+.wk-s-2 {
+  -webkit-text-stroke-width: 2px;
+}
+
+.wk-s-5 {
+  -webkit-text-stroke-width: 5px;
+}
+
+/* Margin - Top */
+
+
 .mt-15 {
   margin-top: 15%;
 }

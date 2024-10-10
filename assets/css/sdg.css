@@ -198,6 +198,155 @@
   padding-left: 10px;
 }
 
+/* Upcoming Section */
+.upcoming-events {
+  height: 100vh;
+  background: #005f8f;
+  position: relative;
+}
+
+/* .ue-container {
+  margin-top: 55px;
+} */
+
+.ue-title {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.ue-details-title {
+  font-family: var(--notsansjp);
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
+  color: #fff;
+  width: 157px;
+}
+
+.ue-swiper {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden; /* Ensure the container handles overflow */
+  position: absolute;
+  top: 120px;
+  left: -90px;
+  z-index: 2;
+}
+
+.ue-details-box {
+  position: absolute;
+  top: 200px;
+  left: 1100px;
+  width: 236px;
+}
+
+.hr-pointer {
+  position: absolute;
+  top: 222px;
+  left: 900px;
+  width: 190px;
+  z-index: 3;
+}
+
+.ue-details-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+}
+
+.monthyear {
+  font-family: var(--notsansjp);
+  font-size: 18px;
+  font-weight: 350;
+  /* line-height: 110px; */
+  letter-spacing: 0.1em;
+  /* text-align: left; */
+}
+
+.monthday {
+  font-family: var(--notsansjp);
+  font-size: 50px;
+  font-weight: 700;
+  /* line-height: 110px; */
+  letter-spacing: 0.1em;
+  /* text-align: left; */
+}
+
+.ue-date {
+  text-align: right;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.ue-details-content {
+  font-family: var(--notsansjp);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+}
+
+.ue-swiper .swiper {
+  width: 100%;
+}
+
+.ue-swiper .swiper-wrapper {
+  display: flex;
+  width: 100%; /* Ensure the wrapper takes full width */
+}
+
+.ue-swiper .swiper-slide {
+  width: 471px;
+  height: 419px;
+  transition: all 0.3s ease;
+}
+
+.ue-swiper .swiper-ue img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  width: 350px;
+  height: 419px;
+  top: 130px;
+  left: 184px;
+  border-radius: 5px 0px 0px 0px;
+  opacity: 1px;
+}
+
+.ue-swiper .swiper-slide-next {
+  opacity: 1;
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.swiper-slide-active img {
+  opacity: 1;
+}
+
+.swiper-navs {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+  margin-left: 100px;
+  position: absolute;
+  top: 525px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 10px;
+  position: relative;
+}
+
+
 /* Photo-gallery Section */
 
 .photo-gallery {

@@ -5,12 +5,21 @@
 
     <section class="donation-header">
       <div class="border relative">
+
+          <div class="donation-container relative0" data-aos="fade-up">
+          <p class="wk-s-5">DONATION</p>
+            <div class="text-deco-donation"> <!--  data-aos="fade-up" -->
+              <p class="wk-s-5">DONATION</p>
+              <p class="wk-s-5">DONATION</p>
+              <p class="wk-s-5">DONATION</p>
+
           <div class="donation-container relative0" >
             <p>DONATION</p>
             <div class="text-deco" >
               <p>DONATION</p>
               <p>DONATION</p>
               <p>DONATION</p>
+
             </div>
             <div class="header-txt-container absolute">
               <p>寄付</p>
@@ -66,6 +75,12 @@
         <div class="donation-bottom-text">
           <p class="w-700 p-40 head-clr">あなたの寄付が子どもたちの世界を拡げ輝かせます</p>
           <p class="w-500 p-20 head-clr">
+            刻一刻と変化する今の時代。子どもたちは、私たちがそうだった頃とは異なる環境に身を置き多種多様なスキルや能力を身につけることを求められています。<br>
+            子どもたちに一つでも多くの機会を届けるため皆様の寄付を私たちの活動に利用させていただきます
+          </p>
+        </div>
+        <div class="donation-bottom-donate" data-aos="fade-left">
+          <p class="w-900 p-100 section-head-clr wk-s-5">DONATION</p>
             刻一刻と変化する今の時代。子どもたちは、私たちがそうだった頃とは異なる環境に身を置き多種多様なスキルや能力を身につけることを求められています。
             子どもたちに一つでも多くの機会を届けるため皆様の寄付を私たちの活動に利用させていただきます
           </p>
