@@ -12,9 +12,15 @@
 
       <div class="side-content">
         <div class="social">
-          <img src="<?php echo RESNPO_IMAGE . '/line.png' ?>" alt="">
-          <img src="<?php echo RESNPO_IMAGE . '/facebook.png' ?>" alt="">
-          <img src="<?php echo RESNPO_IMAGE . '/youtube.png' ?>" alt="">
+          <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=601qwusa">
+            <img src="<?php echo RESNPO_IMAGE . '/line.png' ?>" alt="Line">
+          </a>
+          <a href="https://www.facebook.com/ChiikiKyouiku/">
+            <img src="<?php echo RESNPO_IMAGE . '/facebook.png' ?>" alt="Facebook">
+          </a>
+          <a href="https://www.youtube.com/channel/UCEJ3QcF3DZ9o_MYbhMxgV4Q">
+            <img src="<?php echo RESNPO_IMAGE . '/youtube.png' ?>" alt="YouTube">
+          </a>
         </div>
         <div class="about-title">
           <div class="side-title">

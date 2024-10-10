@@ -4,6 +4,7 @@
 <?php articlefront('RESの海外進学サポートとは', '日本の高校で学ぶあなたが世界各地にあるRESの提携大学で学べるようにサポートします。<br>夢に近づける学校・学部・学科のアドバイス、英語力向上、入学方法や手続き書類、現地の生活や住居まで現地教授監修のもと最適なプランをご提案します。', '/studyingabroad/studying-front.jpeg') ?>
 
 
+
 <div class="wave-container">
   <!-- Placeholder SDG -->
   <?php featurefront('studying-abroad') ?>
