@@ -253,9 +253,11 @@
 
 #mission-section .rotated-text {
   left: 794px;
-  right: 120px;
+  right: 146px;
   transform: rotate(-90deg) translateX(50%);
   transform-origin: right top;
+  top: 310px;
+  font-size: 130px;
 }
 
 #mission-section .section-content {
@@ -331,7 +333,7 @@
   object-fit: cover;
   object-position: center;
 }
-.section-title {
+#aboutid.section-title {
   font-family: var(--notsansjp);
   font-size: 60px;
   font-weight: 700;

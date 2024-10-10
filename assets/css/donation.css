@@ -104,7 +104,7 @@
 }
 
 .section_2_don {
-  padding: 315px 118px 30px;
+  padding: 315px 118px 65px;
   background: #91adb1;
 }
 
@@ -124,9 +124,30 @@
   flex: 0 0 65%;
 }
 
-.donation-details {
+/* .donation-details {
   margin-bottom: 40px;
   padding-left: 80px;
+} */
+
+.section_2_oppor {
+  gap: 100px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .donation-details p {
