@@ -71,7 +71,7 @@
   <section class="section_2 relative global-width">
     <ul class="flex main-ul">
       <li>
-        <div class="img-container">
+        <div class="img-container slideleft">
           <img
             src="<?php echo RESNPO_URI . '/assets/image/homepage/section-third/main-img.png' ?>"
             alt="" />
@@ -89,7 +89,7 @@
     </ul>
 
     <ul class="flex sub-ul absolute text-center">
-      <li>
+      <li class="slideup">
         <img
           src="<?php echo RESNPO_URI . '/assets/image/homepage/section-third/sub-img-1.png' ?>"
           alt="" />
@@ -100,7 +100,7 @@
           <p class="p-18 mt-15 w-700">海外留学/ツアー</p>
         </div>
       </li>
-      <li>
+      <li class="slideup">
         <img
           src="<?php echo RESNPO_URI . '/assets/image/homepage/section-third/sub-img-2.png' ?>"
           alt="" />
@@ -133,12 +133,13 @@
       <li>
         <div class="img-container-news">
           <img
+            class="scaleIn"
             src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fourth/main-img.png' ?>"
             alt="" />
         </div>
         <div class="news-detils">
           <p class="p-16 sub-head-clr">August 8, 2024</p>
-          <p class="p-40 head-clr">
+          <p class="p-40 head-clr scaleIn">
             【えひめSDGs甲子園2024】本選出場チームが決定しました。
           </p>
           <p class="p-16 details">
@@ -158,7 +159,7 @@
       </li>
       <li>
         <p class="p-20 mb-5 recents">RECENTS</p>
-        <ul class="ul-recents">
+        <ul class="ul-recents slideup">
           <li>
             <div class="flex with-img">
               <div class="img-container-news-recent">
@@ -236,7 +237,7 @@
 
   <section class="section-representative">
     <div class="top-title-news relative">
-      <p class="p-230 w-700">NEWS</p>
+      <p class="p-230 w-700 slideright">NEWS</p>
     </div>
     <div class="relative rep-container-main">
       <img class="absolute" style="z-index:66; bottom:0" src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/representative-img.png' ?>" alt="">
@@ -247,7 +248,7 @@
       </div>
 
       <div class="top-title-rep relative">
-        <p class="p-120 w-700">RESPRESENTATIVE</p>
+        <p class="p-120 w-700  slideleft">RESPRESENTATIVE</p>
       </div>
       <div class="bot-content-rep relative">
         <div class="bot-content-rep-container">
@@ -263,7 +264,7 @@
               </div>
             </li>
             <li>
-              <div class="li-real-container">
+              <div class="li-real-container scaleIn">
                 <p class="p-120 w-700">“</p>
                 <p class="p-40 w-700">新時代の学びのカタチ<br>「REAL✕LINK」</p>
               </div>
@@ -278,7 +279,7 @@
 
   <!-- SECTION: ADVISOR -->
   <section id="advisor_home" class="flex flex-column relative">
-    <h1 class="head-clr av-title ">ADVISOR</h1>
+    <h1 class="head-clr av-title slideright ">ADVISOR</h1>
     <div class="av-container flex">
       <div class="av-schools flex">
         <div class="scl-col-1">
@@ -371,7 +372,7 @@
 
   <section class="section_5 relative">
     <div class="absolute sect-location">
-      <p class="w-800 loc-txt-section section-head-clr">LOCATION</p>
+      <p class="w-800 loc-txt-section section-head-clr slideup">LOCATION</p>
     </div>
 
     <ul class="flex">
@@ -449,7 +450,7 @@
     <ul class="flex ul-logo">
       <li>
         <div class="logo-details">
-          <p class="p-40 w-700 head-clr">支援者の皆様</p>
+          <p class="p-40 w-700 head-clr scaleIn">支援者の皆様</p>
           <p class="p-20 w-500 head-clr logo-text">
             活動に賛同し、支持してくださる全ての皆様に厚く御礼申し上げます。
           </p>

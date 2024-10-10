@@ -35,12 +35,13 @@
             <ul>
               <li><a href="<?php echo get_site_url() ?>">Home</a></li>
               <li><a href="<?php echo get_site_url() . '/about' ?>">About Us</a></li>
-              <li><a href="<?php echo get_site_url() . '/project' ?>">Project</a></li>
 
               <!-- SDGs Section with clickable submenu -->
               <li class="sdg-toggle">
-                <a href="<?php echo get_site_url() . '/sdg' ?>" class="sdg-link">SDGs</a>
-                <ul class="sub-menu" style="display: none;">
+                <a href="<?php echo get_site_url() . '/project' ?>" class="sdg-link">Project</a>
+                <ul class=" sub-menu" style="display: none;">
+                  <li><a href="<?php echo get_site_url() . '/sdg' ?>">SDGs</a></li>
+
                   <li><a href="<?php echo get_site_url() . '/study-abroad' ?>">海外留学</a></li>
                   <li><a href="<?php echo get_site_url() . '/studying-abroad' ?>">海外進学</a></li>
                 </ul>
