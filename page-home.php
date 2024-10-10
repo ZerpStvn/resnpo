@@ -11,11 +11,11 @@
 
               <div class="slick-slider-container">
                 <div class="slider-img-container slider">
-                  <!-- <div class="flex slider"> -->
-                  <img class="header-people relative" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/people-1.png' ?>" alt="">
-                  <!-- <img class="header-people relative" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/people-2.png' ?>" alt="">
-                    <img class="header-people relative" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/people-3.png' ?>" alt=""> -->
-                  <!-- </div> -->
+                  <div class="flex slider">
+                    <img class="header-people relative" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/people-1.png' ?>" alt="">
+                    <img class="header-people relative" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/people-2.png' ?>" alt="">
+                    <img class="header-people relative" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/people-3.png' ?>" alt="">
+                  </div>
                 </div>
               </div>
 

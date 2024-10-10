@@ -134,3 +134,16 @@ function changeMainContent(index) {
 subListItems.forEach((item, index) => {
   item.addEventListener("click", () => changeMainContent(index));
 });
+
+$(document).ready(function () {
+  $(".slider-img-container").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: true,
+    dots: true,
+    infinite: true,
+    variableWidth: false,
+  });
+});
