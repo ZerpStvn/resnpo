@@ -11,11 +11,11 @@
 
                 <div class="slick-slider-container">
                   <div class="slider-img-container slider">
-                    <!-- <div class="flex slider"> -->
+                    <div class="flex slider">
                     <img class="header-people relative" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/people-1.png' ?>" alt="">
-                    <!-- <img class="header-people relative" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/people-2.png' ?>" alt="">
-                    <img class="header-people relative" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/people-3.png' ?>" alt=""> -->
-                    <!-- </div> -->
+                    <img class="header-people relative" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/people-2.png' ?>" alt="">
+                    <img class="header-people relative" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/people-3.png' ?>" alt="">
+                    </div>
                   </div>
                 </div>
 
@@ -79,8 +79,8 @@
           <li>
             <p class="p-16 sub-head-clr">Activities</p>
             <div class="activity-content-details">
-              <p class="p-40 w-700 mb-3 head-clr">SDGs甲子園</p>
-              <p class="p-16 head-clr">
+              <p class="p-40 w-700 mb-3 head-clr p-act-title">SDGs甲子園</p>
+              <p class="p-16 head-clr p-act-desc">
               地域社会のSDGs課題に焦点を当て、その解決に向けて研究や活動を行う高校生たちが<br />その取り組みの経過や成果をプレゼンテーション等で競います。
               </p>
             </div>
@@ -94,10 +94,10 @@
               alt=""
             />
             <div class="sub-ul-details">
-              <p class="p-12">
+              <p class="p-12 p-act-desc">
                 同年代の仲間たちとの様々な活動や異文化体験を通じて、国内では経験できない多様性に触れ、自国や自分自身の新たな面に気づかされます。
               </p>
-              <p class="p-18 mt-15 w-700">海外留学/ツアー</p>
+              <p class="p-18 mt-15 w-700 p-act-title">海外留学/ツアー</p>
             </div>
           </li>
           <li>
@@ -106,10 +106,10 @@
               alt=""
             />
             <div class="sub-ul-details">
-              <p class="p-12">
+              <p class="p-12 p-act-desc">
                 海外の大学への進学を徹底サポートします。言語の違いや距離を理由に選択肢から外していませんか？その挑戦がなりたい自分への近道かもしれません。
               </p>
-              <p class="p-18 mt-15 w-700">海外進学サポート</p>
+              <p class="p-18 mt-15 w-700 p-act-title">海外進学サポート</p>
             </div>
           </li>
         </ul>
@@ -161,18 +161,34 @@
           </li>
           <li>
             <p class="p-20 mb-5 recents">RECENTS</p>
+
+              <?php
+
+                $query_args = array(
+                  'post_type' => 'post',
+                  'posts_per_page' => 3,
+                  'order' => 'DESC',
+                  );
+                $query = new WP_Query( $query_args );
+
+              ?>
+
             <ul class="ul-recents">
+
+            <?php if ( $query->have_posts() ) :?>
+
+              <?php while ( $query->have_posts() ) : $query->the_post(); ?>  
               <li>
                 <div class="flex with-img">
                   <div class="img-container-news-recent">
                     <img
-                      src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fourth/sub-img-1.png' ?>"
+                      src="<?php the_post_thumbnail_url(); ?>"
                       alt=""
                     />
                   </div>
                   <div>
                     <p class="p-14 w-700 head-clr">
-                      小中学生が過去最少、大学生は過去最多…学校基本調査
+                      <?php echo esc_html( get_the_title() );?>
                     </p>
                     <p class="p-14 read-more">
                       READ MORE
@@ -181,56 +197,14 @@
                         alt=""
                       />
                     </p>
-                    <p class="p-12 text-clr">2024/09/02</p>
+                    <p class="p-12 text-clr"><?php the_date('Y/m/d'); ?></p>
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="flex with-img">
-                  <div class="img-container-news-recent">
-                    <img
-                      src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fourth/sub-img-2.png' ?>"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <p class="p-14 w-700 head-clr">
-                      優勝は「くまもるず」（上浮穴高等学校）
-                    </p>
-                    <p class="p-14 read-more">
-                      READ MORE
-                      <img
-                        src="<?php echo RESNPO_URI . '/assets/images/homepage/section-fourth/Vector.png' ?>"
-                        alt=""
-                      />
-                    </p>
-                    <p class="p-12 text-clr">2024/08/27</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="flex with-img">
-                  <div class="img-container-news-recent">
-                    <img
-                      src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fourth/sub-img-3.png' ?>"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <p class="p-14 w-700 head-clr">
-                      都道府県別・学習時間ランキング、都会が多い傾向
-                    </p>
-                    <p class="p-14 read-more">
-                      READ MORE
-                      <img
-                        src="<?php echo RESNPO_URI . 'assets/images/homepage/section-fourth/Vector.png' ?>"
-                        alt=""
-                      />
-                    </p>
-                    <p class="p-12 text-clr">2024/08/19</p>
-                  </div>
-                </div>
-              </li>
+
+            <?php endwhile;?>
+          <?php endif;?>
+
             </ul>
           </li>
         </ul>

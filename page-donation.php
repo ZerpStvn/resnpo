@@ -6,7 +6,7 @@
     <section class="donation-header">
       <div class="border relative">
 
-          <div class="donation-container relative0" data-aos="fade-up">
+          <div class="donation-container relative\" data-aos="fade-up">
           <p class="wk-s-5">DONATION</p>
             <div class="text-deco-donation"> <!--  data-aos="fade-up" -->
               <p class="wk-s-5">DONATION</p>
@@ -157,13 +157,13 @@
           <div class="payment-container">
             <div class="flex gap-15 btn-payment-container">
               <div>
-                <a href="#A" data-hash="A" class="hash-donation "><button class=""><p>毎月寄付をする</p></button></a>
+                <a href="#A" data-hash="A" class="hash-donation "><button class="tab-btn-donation"><p>毎月寄付をする</p></button></a>
               </div>
               <div>
-                <a href="#B" data-hash="B" class="hash-donation"><button class=""><p>1回の寄付をする</p></button></a>
+                <a href="#B" data-hash="B" class="hash-donation"><button class="tab-btn-donation"><p>1回の寄付をする</p></button></a>
               </div>
               <div>
-                <a href="#C" data-hash="C" class="hash-donation"><button class=""><p>物品の寄付をする</p></button></a>
+                <a href="#C" data-hash="C" class="hash-donation"><button class="tab-btn-donation"><p>物品の寄付をする</p></button></a>
               </div>
             </div>
 

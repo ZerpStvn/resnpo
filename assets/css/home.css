@@ -215,6 +215,7 @@ hr {
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  cursor: pointer;
 }
 
 .section_2 .sub-ul > li img {
@@ -311,10 +312,11 @@ hr {
 
 .img-container-news-recent {
   width: 80px;
+  height: 80px;
 }
 
 .img-container-news-recent img {
-  /* width: 100%; */
+  width: 100%;
   height: 100%;
 }
 

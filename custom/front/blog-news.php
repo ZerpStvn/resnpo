@@ -3,7 +3,7 @@ class BlogNewsMetabox
 {
   public function __construct()
   {
-    add_action('add_meta_boxes', [$this, 'add_blog_post_date']);
+    // add_action('add_meta_boxes', [$this, 'add_blog_post_date']);
     add_action('save_post', [$this, 'save_meta_boxes']);
   }
 
