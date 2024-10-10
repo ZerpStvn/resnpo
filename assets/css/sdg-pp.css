@@ -7,7 +7,7 @@
   line-height: 98.44px;
   letter-spacing: 0.1em;
   text-align: left;
-  transform: rotate(-8.13deg);
+  transform: rotate(-5.13deg);
   margin-top: 100px;
   overflow: hidden;
   color: #005f8f;
@@ -144,6 +144,9 @@
   height: 100%;
   overflow: hidden;
   position: relative;
+  display: flex;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 .scroll-content {
