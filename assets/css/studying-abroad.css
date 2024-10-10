@@ -38,6 +38,19 @@
   gap: 46px;
 }
 
+.ps-image {
+  max-width: 500px;
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.2;
+}
+
+.ps-image:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
 #partner_schools svg {
   position: absolute;
   top: -180px;
@@ -303,7 +316,7 @@ details.closing .detail-content {
   width: 100%;
   padding: 0 12px;
   opacity: 0;
-  filter: drop-shadow(0 2px 2px #555);
+  /* filter: drop-shadow(0 2px 2px #555); */
   will-change: transform, opacity;
   animation: carousel-animate-vertical 9s linear infinite;
   gap: 20px;
@@ -741,7 +754,7 @@ details.closing .detail-content {
     font-size: 18px;
   }
 }
-
+/* 
 .border-advisor {
   background: #fff;
   padding: 25px;
@@ -749,13 +762,12 @@ details.closing .detail-content {
 
 .advisor-img-container {
   background: #2b4e64;
-  position: relative; /* Add this */
+  position: relative;
 }
 
 .advisor-img-container img {
   vertical-align: bottom;
   margin-top: -90px;
-  /* Remove width: 100%; to retain the original size of the image */
 }
 
 .text-container {
@@ -769,7 +781,6 @@ details.closing .detail-content {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  /* bottom: -3px; */
 }
 
 .advisor-txt-container p {
@@ -782,4 +793,4 @@ details.closing .detail-content {
 }
 #advisor_section .sg_description {
   font-weight: 700;
-}
+} */

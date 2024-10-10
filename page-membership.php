@@ -5,11 +5,11 @@
     <section class="donation-header">
       <div class="border relative">
           <div class="donation-container relative">
-            <p class="p-membership">MEMBERSHIP</p>
-            <div class="text-deco">
-              <p class="p-membership">MEMBERSHIP</p>
-              <p class="p-membership">MEMBERSHIP</p>
-              <p class="p-membership">MEMBERSHIP</p>
+            <p class="p-membership wk-s-5">MEMBERSHIP</p>
+            <div class="text-deco-donation">
+              <p class="p-membership wk-s-5">MEMBERSHIP</p>
+              <p class="p-membership wk-s-5">MEMBERSHIP</p>
+              <p class="p-membership wk-s-5">MEMBERSHIP</p>
             </div>
             <div class="header-txt-container absolute">
               <p>メンバーシップ</p>
@@ -51,12 +51,12 @@
         <div class="donation-bottom-text">
           <p class="w-700 p-40 head-clr">あなたの寄付が子どもたちの世界を拡げ輝かせます</p>
           <p class="w-500 p-20 head-clr">
-            刻一刻と変化する今の時代。子どもたちは、私たちがそうだった頃とは異なる環境に身を置き多種多様なスキルや能力を身につけることを求められています。
-            子どもたちに一つでも多くの機会を届けるため 皆様の寄付を私たちの活動に利用させていただきます
+            刻一刻と変化する今の時代。子どもたちは、私たちがそうだった頃とは異なる環境に身を置き多種多様なスキルや能力を身につけることを求められています。<br>
+            子どもたちに一つでも多くの機会を届けるため皆様の寄付を私たちの活動に利用させていただきます
           </p>
         </div>
         <div class="donation-bottom-donate">
-          <p class="w-900 p-100 section-head-clr">MEMBERSHIP</p>
+          <p class="w-900 p-100 wk-s-5 section-head-clr">MEMBERSHIP</p>
         </div>
       </div>
     </section>

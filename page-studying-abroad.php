@@ -1,12 +1,14 @@
 <?php get_header('studying-abroad') ?>
 
 <?php articlefront('RESの海外進学
+サポートとは', '日本の高校で学ぶあなたが世界各地にあるRESの提携大学で学べるようにサポートします。<br>夢に近づける学校・学部・学科のアドバイス、英語力向上、入学方法や手続き書類、現地の生活や住居まで現地教授監修のもと最適なプランをご提案します。', '/studyingabroad/studying-front.jpeg') ?>
+=======
 サポートとは', '日本の高校で学ぶあなたが世界各地にあるRESの提携大学で学べるようにサポートします。夢に近づける学校・学部・学科のアドバイス、英語力向上、入学方法や手続き書類、現地の生活や住居まで現地教授監修のもと最適なプランをご提案します。', '/studyingabroad/studying-front.jpeg') ?>
 
 
 <div class="wave-container">
   <!-- Placeholder SDG -->
-  <?php featurefront('sdg') ?>
+  <?php featurefront('studying-abroad') ?>
   <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 250" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
     <defs>
       <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
@@ -28,9 +30,9 @@
     </div>
 
     <div class="ps-images-wrapper flex">
-      <img class="ps-image" src="<?php echo RESNPO_IMAGE . '/studyingabroad/cumberland.png' ?>" alt="">
-      <img class="ps-image" src="<?php echo RESNPO_IMAGE . '/studyingabroad/la-salle.png' ?>" alt="">
-      <img class="ps-image" src="<?php echo RESNPO_IMAGE . '/studyingabroad/golden-gate.png' ?>" alt="">
+      <img class="ps-image scaleIn" src="<?php echo RESNPO_IMAGE . '/studyingabroad/cumberland.png' ?>" alt="">
+      <img class="ps-image scaleIn" src="<?php echo RESNPO_IMAGE . '/studyingabroad/la-salle.png' ?>" alt="">
+      <img class="ps-image scaleIn" src="<?php echo RESNPO_IMAGE . '/studyingabroad/golden-gate.png' ?>" alt="">
     </div>
   </div>
 </section>
@@ -67,21 +69,21 @@
   <div class="rp-container flex flex-row">
     <div class="rp-col-1">
       <div class="image-container">
-        <img src="<?php echo RESNPO_IMAGE . '/studyingabroad/bg-recruit.png' ?>" alt=" ">
-        <h1 class="p-100 outline">提携高校募集</h1>
+        <img class="" src="<?php echo RESNPO_IMAGE . '/studyingabroad/bg-recruit.png' ?>" alt=" ">
+        <h1 class="p-100 outline scaleIn">提携高校募集</h1>
       </div>
     </div>
     <div class="rp-col-2 flex flex-column">
       <div class="flex flex-row rp-card-wrapper head-clr">
-        <div class="rp-card flex flex-column jc-center">
+        <div class="rp-card flex flex-column jc-center slideright">
           <img src="<?php echo RESNPO_IMAGE . '/studyingabroad/recruit-1.png' ?>" alt="">
           <h3 class="text-center">Inter-School Collaborative Project</h3>
         </div>
-        <div class="rp-card flex flex-column jc-center">
+        <div class="rp-card flex flex-column jc-center slideright">
           <img src="<?php echo RESNPO_IMAGE . '/studyingabroad/recruit-2.png' ?>" alt="">
           <h3 class="text-center">Cross-School Teamwork Program</h3>
         </div>
-        <div class="rp-card flex flex-column jc-centers">
+        <div class="rp-card flex flex-column jc-centers slideright">
           <img src="<?php echo RESNPO_IMAGE . '/studyingabroad/recruit-3.png' ?>" alt="">
           <h3 class="text-center">Multi-School Joint Project</h3>
         </div>
