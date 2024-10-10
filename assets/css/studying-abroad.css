@@ -38,6 +38,10 @@
   gap: 46px;
 }
 
+.ps-image:hover {
+  transform: scale(1.1);
+}
+
 #partner_schools svg {
   position: absolute;
   top: -180px;

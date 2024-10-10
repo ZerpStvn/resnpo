@@ -166,9 +166,9 @@ table tr img {
   font-size: 18px;
 }
 
-.main-button:hover {
+/* .main-button:hover {
   animation: wiggle 0.2s ease-in-out;
-}
+} */
 
 @keyframes wiggle {
   0%,
