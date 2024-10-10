@@ -741,7 +741,7 @@ details.closing .detail-content {
     font-size: 18px;
   }
 }
-
+/* 
 .border-advisor {
   background: #fff;
   padding: 25px;
@@ -749,13 +749,12 @@ details.closing .detail-content {
 
 .advisor-img-container {
   background: #2b4e64;
-  position: relative; /* Add this */
+  position: relative;
 }
 
 .advisor-img-container img {
   vertical-align: bottom;
   margin-top: -90px;
-  /* Remove width: 100%; to retain the original size of the image */
 }
 
 .text-container {
@@ -769,7 +768,6 @@ details.closing .detail-content {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  /* bottom: -3px; */
 }
 
 .advisor-txt-container p {
@@ -782,4 +780,4 @@ details.closing .detail-content {
 }
 #advisor_section .sg_description {
   font-weight: 700;
-}
+} */
