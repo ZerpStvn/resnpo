@@ -57,7 +57,8 @@ header {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-left: 14px;
+  margin-left: 16px;
+  margin-top: 5%;
 }
 
 .social img {

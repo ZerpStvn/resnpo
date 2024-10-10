@@ -1,4 +1,5 @@
-<?php get_header('study-abroad') ?>
+<?php get_header() ?>
+<?php landing_sdg_page_template('海外留学') ?>
 
 <!-- SECTION 1: FRONT -->
 <?php articlefront('RESのSDGs<br>甲子園とは

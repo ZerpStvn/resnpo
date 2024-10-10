@@ -1,4 +1,5 @@
-<?php get_header('sdg') ?>
+<?php get_header() ?>
+<?php landing_sdg_page_template('SDGs 甲子園') ?>
 
 <div id="sdg-page-id">
 

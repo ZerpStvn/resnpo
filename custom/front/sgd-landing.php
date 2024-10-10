@@ -5,9 +5,9 @@ function landing_sdg_page_template($page_title = null)
 ?>
   <section class="sdg-home">
     <div class="bg-border">
-      <header>
+      <!-- <header>
         <img src="<?php echo RESNPO_IMAGE . '/menu-button.png' ?>" alt="">
-      </header>
+      </header> -->
 
 
       <div class="social">
