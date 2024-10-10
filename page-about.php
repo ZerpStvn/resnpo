@@ -135,7 +135,7 @@
       <div class="rxl-lr flex">
         <img src="<?php echo RESNPO_IMAGE . '/about/mori.jpeg' ?>" alt="">
         <div class="rxl-lr-txt">
-          <h1 class="sb_title text-center white-clr">新時代の学びのカタチ<br>「REAL✕LINK」</h1>
+          <h1 class="sb_title text-center white-clr slideup">新時代の学びのカタチ<br>「REAL✕LINK」</h1>
           <p class="white-clr">
             新しい時代「令和」が始まりました。 新しい元号のもと、日本にとどまらず世界中から争いごとや飢えや難病が無くなっていくことを心から願っています。
             <br><br>

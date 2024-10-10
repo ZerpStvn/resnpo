@@ -158,6 +158,8 @@ table tr img {
   width: 267px;
   height: 56px;
   transition: transform 0.2s;
+  font-family: var(--notsansjp);
+  font-size: 18px;
 }
 
 .main-button:hover {
