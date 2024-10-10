@@ -1,6 +1,8 @@
 jQuery.noConflict();
 
-// START: AOS ANIMATION EFFECTS
+// ******************************************//
+//       START: AOS ANIMATION EFFECTS        //
+// ******************************************//
 jQuery(document).ready(() => {
   AOS.init({
     duration: 600,
@@ -68,7 +70,9 @@ jQuery(".hash-donation").on("click", function (e) {
   }
 });
 
-// NAVBAR SECTION
+// ******************************************//
+//               NAVBAR SECTION              //
+// ******************************************//
 
 jQuery(document).ready(function () {
   jQuery("#nav-icon").click(function () {
@@ -80,7 +84,9 @@ jQuery(document).ready(function () {
   });
 });
 
-//------------------HOME: Activities Section Function
+// ******************************************//
+//     HOME: Activities Section Function     //
+// ******************************************//
 
 // Select the necessary elements
 const mainListItems = document.querySelector(".main-ul");
@@ -149,7 +155,9 @@ function attachClickListeners() {
 // Initial attachment of event listeners
 attachClickListeners();
 
-// ********** SLICK SLIDER ***************//
+// ***************************************//
+//               SLICK SLIDER             //
+// ***************************************//
 
 jQuery(document).ready(function ($) {
   $(document).ready(function () {
