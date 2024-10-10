@@ -92,6 +92,15 @@ nav {
   margin-left: -70px;
 }
 
+.text-logo {
+  width: 50%;
+}
+
+.logo-green {
+  height: 250px;
+  width: 250px;
+}
+
 @media screen and (max-width: 768px) {
   .nav-icon-container {
     width: 11.475vw;

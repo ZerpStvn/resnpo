@@ -1,36 +1,48 @@
 <?php get_header() ?>
 <div id="aboutid" class="aboutid">
 
-  <section class="landing-about">
-
-
-    <div class="landing-fg">
-      <img src="<?php echo RESNPO_IMAGE . '/about/landing-fg.png' ?>" alt="">
-    </div>
-
-    <div class="side-content">
-      <div class="social">
-        <img src="<?php echo RESNPO_IMAGE . '/line.png' ?>" alt="">
-        <img src="<?php echo RESNPO_IMAGE . '/facebook.png' ?>" alt="">
-        <img src="<?php echo RESNPO_IMAGE . '/youtube.png' ?>" alt="">
+  <?php
+  function render_about_section($sectiontitle, $subtitle)
+  {
+  ?>
+    <section class="landing-about">
+      <div class="landing-fg">
+        <img src="<?php echo RESNPO_IMAGE . '/about/landing-fg.png' ?>" alt="">
       </div>
-      <div class="about-title">
-        <div class="side-title">
-          <img class="side-logo" src="<?php echo RESNPO_IMAGE . '/logo.png' ?>" alt="">
-          <div class="side-title-text">
-            <h1>NPO法人</h1>
-            <h3>REGIONAL EDUCATION SUPPORT</h3>
+
+      <div class="side-content">
+        <div class="social">
+          <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=601qwusa">
+            <img src="<?php echo RESNPO_IMAGE . '/line.png' ?>" alt="Line">
+          </a>
+          <a href="https://www.facebook.com/ChiikiKyouiku/">
+            <img src="<?php echo RESNPO_IMAGE . '/facebook.png' ?>" alt="Facebook">
+          </a>
+          <a href="https://www.youtube.com/channel/UCEJ3QcF3DZ9o_MYbhMxgV4Q">
+            <img src="<?php echo RESNPO_IMAGE . '/youtube.png' ?>" alt="YouTube">
+          </a>
+        </div>
+        <div class="about-title">
+          <div class="side-title">
+            <img class="side-logo" src="<?php echo RESNPO_IMAGE . '/logo.png' ?>" alt="">
+            <div class="side-title-text">
+              <h1>NPO法人</h1>
+              <h3>REGIONAL EDUCATION SUPPORT</h3>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="au-title">
-      <h1 class="outline au-main-title scaleIn">ABOUT US</h1>
-      <h3 class="au-sub-title sub-head-clr scaleIn">What is RES?</h3>
-    </div>
+      <div class="au-title">
+        <h1 class="outline au-main-title scaleIn"><?php echo $sectiontitle; ?></h1>
+        <h3 class="au-sub-title sub-head-clr scaleIn"><?php echo $subtitle; ?></h3>
+      </div>
+    </section>
+  <?php
+  }
+  ?>
 
-  </section>
+  <?php render_about_section('ABOUT US', 'What is RES?'); ?>
 
 
   <div class="vma-title scaleIn">
@@ -46,11 +58,11 @@
       <div class="section-text">
         <h2 class="section-title scaleIn">実現したい社会</h2>
         <p>
-          人の役に立ちたい！人に必要とされたい！ そんな想いをきっかけに、ご縁があって2003年にこのNPO法人を立ち上げました。そして、フィリピンへ幼稚園の寄付、ボランティア活動などを行っていく中で湧いてきた新たな想い。
+          人の役に立ちたい！人に必要とされたい！そんな想いをきっかけに、ご縁があって2003年にこのNPO法人を立ち上げました。そして、フィリピンへ幼稚園の寄付、ボランティア活動などを行っていく中で湧いてきた新たな想い。
 
           <br><br>
 
-          それは、「<span class="white-clr">このままではまずい…</span>」。 
+          それは、「<span class="white-clr">このままではまずい…</span>」。
 
           <br>
 
@@ -82,7 +94,7 @@
         <p>
           あたり前のことをあたり前だからと思考停止するのではなく、なぜなんだろう？と考え、自分なりの答えを持つ。
           <br>
-           間違っていてもいい
+          間違っていてもいい
 
           <br><br>
 
@@ -106,7 +118,7 @@
         <p>
           あたり前のことをあたり前だからと思考停止するのではなく、なぜなんだろう？と考え、自分なりの答えを持つ。
           <br><br>
-           間違っていてもいい
+          間違っていてもいい
           <br><br>
           間違いに気づけば考えを改めればいい。そして、考えて終わりではなく、行動する。
           <br><br>
@@ -195,7 +207,7 @@
     <p class="sg_description">Reports</p>
 
     <div class="relative btn-container">
-      <a href="">
+      <a href="https://www.npo-homepage.go.jp/npoportal/document/038000078/hokoku/202170/2021%E5%B9%B4%E5%BA%A6%E4%BA%8B%E6%A5%AD%E5%A0%B1%E5%91%8A%E6%9B%B8%E7%AD%89.pdf" target="_blank">
         <button class="main-button relative">
           詳しく見る
         </button>
