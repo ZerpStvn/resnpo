@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<?php landing_sdg_page_template('海外留学') ?>
+<?php landing_sdg_page_template('海外進学') ?>
 
 <!-- SECTION 1: FRONT -->
 <?php articlefront('RESのSDGs<br>甲子園とは
@@ -59,7 +59,7 @@
 <!-- SECTION: Info Session -->
 <section id="info-session" class="info-session flex">
   <div class="info-texts flex">
-    <h1 class="info-title sb_title">留学プログラム説明会</h1>
+    <h1 class="info-title sb_title scaleIn">留学プログラム説明会</h1>
     <p class="info-content sg_description">高校生ボランティア留学の詳しい内容を知りたい方を対象に説明会を行います。応募に迷っている方はもちろん、申し込みを済まされている方もご参加いただけます。
     </p>
     <div class="info-list">

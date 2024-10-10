@@ -35,15 +35,15 @@
 
 .ps-images-wrapper {
   flex-direction: row;
-  gap: 46px;
+  gap: 90px;
 }
 
 .ps-image {
   max-width: 500px;
-  width: 100px;
+  width: 200px;
   height: auto;
   object-fit: contain;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
 .ps-image:hover {

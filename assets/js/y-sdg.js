@@ -48,6 +48,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Attach event listeners to arrows
   document.querySelector(".arrow-left").addEventListener("click", prevSlide);
   document.querySelector(".arrow-right").addEventListener("click", nextSlide);
+
+  // Automatically change slides every 5 seconds
+  setInterval(nextSlide, 5000);
 });
 
 var swiperPG = new Swiper(".mySwiperpg", {
