@@ -2,11 +2,15 @@ nav {
   top: 32px;
   right: 68px;
   z-index: 888;
+  font-family: var(--notsansjp);
 }
 
 .nav-icon-container {
   width: 88.13px;
   height: 94.71px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-icon-container img {
@@ -42,6 +46,7 @@ nav {
 .nav-menu ul {
   list-style-type: none;
   /* padding: 20px; */
+  margin-top: 60px;
 }
 
 .nav-menu li {
@@ -101,6 +106,15 @@ nav {
   width: 250px;
 }
 
+/* Indent the sub-menu under SDGs */
+.sub-menu {
+  margin-left: 20px; /* Indent the sub-items */
+}
+
+.sub-menu li {
+  list-style-type: none; /* Use a different bullet style for the sub-items */
+}
+
 @media screen and (max-width: 768px) {
   .nav-icon-container {
     width: 11.475vw;
@@ -118,4 +132,26 @@ nav {
     width: 30px;
     height: 30px;
   }
+}
+
+/* Define keyframes for the bounce animation */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Apply the animation to the nav-icon class */
+.nav-icon {
+  animation: bounce 2s infinite; /* Adjust duration and iteration as needed */
 }

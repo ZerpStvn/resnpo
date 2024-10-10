@@ -35,20 +35,7 @@
 
 .ps-images-wrapper {
   flex-direction: row;
-  gap: 90px;
-}
-
-.ps-image {
-  max-width: 500px;
-  width: 200px;
-  height: auto;
-  object-fit: contain;
-  opacity: 0.3;
-}
-
-.ps-image:hover {
-  transform: scale(1.1);
-  opacity: 1;
+  gap: 46px;
 }
 
 #partner_schools svg {
@@ -200,7 +187,7 @@
   align-items: center;
   padding: 10px 15px;
   font-weight: bold;
-  /* min-width: 425px; */
+  min-width: 425px;
   color: #fff;
   border-radius: 5px;
   background-color: #4f7c91;
@@ -671,7 +658,7 @@ details.closing .detail-content {
     width: 100%;
     padding: 0 12px;
     opacity: 0;
-    filter: drop-shadow(0 2px 2px #555);
+    /* filter: drop-shadow(0 2px 2px #555); */
     will-change: transform, opacity;
     animation: carousel-animate-vertical 9s linear infinite;
     box-sizing: border-box;
@@ -754,7 +741,7 @@ details.closing .detail-content {
     font-size: 18px;
   }
 }
-/* 
+
 .border-advisor {
   background: #fff;
   padding: 25px;
@@ -762,18 +749,19 @@ details.closing .detail-content {
 
 .advisor-img-container {
   background: #2b4e64;
-  position: relative;
+  position: relative; /* Add this */
 }
 
 .advisor-img-container img {
   vertical-align: bottom;
   margin-top: -90px;
+  /* Remove width: 100%; to retain the original size of the image */
 }
 
 .text-container {
   color: white;
 }
-.advisor-txt-container {
+/* .advisor-txt-container {
   text-align: b;
   padding-top: 25px;
   position: absolute;
@@ -786,11 +774,11 @@ details.closing .detail-content {
 .advisor-txt-container p {
   color: white;
   text-align: right;
-}
+} */
 
 .img-col {
   margin-top: -60px;
 }
 #advisor_section .sg_description {
   font-weight: 700;
-} */
+}

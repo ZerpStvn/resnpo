@@ -66,7 +66,7 @@
           子どもたちに一つでも多くの機会を届けるため 皆様の寄付を私たちの活動に利用させていただきます。
         </p>
         <div class="relative btn-container">
-          <a href="">
+          <a href="<?php echo RESNPO_URI . '/donation' ?>">
             <button class="main-button relative">
               代表メッセージ
             </button>

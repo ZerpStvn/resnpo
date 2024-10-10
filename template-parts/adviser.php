@@ -2,7 +2,7 @@
 <section id="advisor_section" class="advisor-section white-blue ">
   <div class="as-container flex flex-row global-width">
     <div class="as-img-col flex-column flex">
-      <div class="img-col">
+      <div class="img-col slideup">
         <img src="<?php echo RESNPO_IMAGE . '/studyingabroad/maria.png' ?>" alt="">
       </div>
 
