@@ -8,7 +8,7 @@
     url("../image/about/landing-bg.png");
   background-repeat: no-repeat;
   position: relative;
-  height: 100vh;
+  height: 779px;
   background-size: cover;
 }
 
@@ -34,7 +34,7 @@
   height: auto;
   margin: 0 auto;
   padding: 0;
-  object-fit: contain;
+  object-fit: cover;
 }
 .landing-fg img {
   height: 100%;
@@ -292,18 +292,26 @@
   position: absolute;
   bottom: 0;
   left: 200px;
-  width: 100%;
+  width: 95%;
   height: 100%;
   overflow: hidden;
-  z-index: 2; /* Ensure the image has a higher z-index */
+  z-index: 2;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  top: 30px;
 }
+
 #action-section .section-content .image-placeholder img {
   width: 100%;
   height: 100%;
   max-width: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+#action-section .section-text {
+  flex: 0 0 50%;
+  padding: 0 50px;
+  z-index: 2;
 }
 
 #vision-section .section-content .image-placeholder {
