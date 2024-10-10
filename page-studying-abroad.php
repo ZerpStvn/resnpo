@@ -6,7 +6,7 @@
 
 <div class="wave-container">
   <!-- Placeholder SDG -->
-  <?php featurefront('sdg') ?>
+  <?php featurefront('studying-abroad') ?>
   <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 250" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
     <defs>
       <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">

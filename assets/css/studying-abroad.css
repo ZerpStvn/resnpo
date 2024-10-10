@@ -38,8 +38,17 @@
   gap: 46px;
 }
 
+.ps-image {
+  max-width: 500px;
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.2;
+}
+
 .ps-image:hover {
   transform: scale(1.1);
+  opacity: 1;
 }
 
 #partner_schools svg {
@@ -307,7 +316,7 @@ details.closing .detail-content {
   width: 100%;
   padding: 0 12px;
   opacity: 0;
-  filter: drop-shadow(0 2px 2px #555);
+  /* filter: drop-shadow(0 2px 2px #555); */
   will-change: transform, opacity;
   animation: carousel-animate-vertical 9s linear infinite;
   gap: 20px;

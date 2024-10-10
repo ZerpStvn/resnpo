@@ -2,11 +2,11 @@
 <section id="advisor_section" class="advisor-section white-blue ">
   <div class="as-container flex flex-row global-width">
     <div class="as-img-col flex-column flex">
-<div class="img-col">
-  
+      <div class="img-col">
+
         <img src="<?php echo RESNPO_IMAGE . '/studyingabroad/maria.png' ?>" alt="">
-  
-</div>
+
+      </div>
 
 
       <!-- <div class="av-img-col border-advisor">
@@ -115,7 +115,7 @@
             'フィリピン警察庁 (PNP) 「PNPへのカリキュラム提供の拡充に対する表彰状」　2001'
           ];
           echo generateHonorsDetails('栄誉/ 受賞', $honors);
-          echo generateHonorsDetails('リソーススピーカー/ 会議参加  ', $honors);
+          echo generateHonorsDetails('リソーススピーカー/ 会議参加', $honors);
           ?>
         </div>
       </div>
