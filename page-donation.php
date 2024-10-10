@@ -6,11 +6,11 @@
     <section class="donation-header">
       <div class="border relative">
           <div class="donation-container relative0" data-aos="fade-up">
-            <p>DONATION</p>
-            <div class="text-deco" data-aos="fade-up">
-              <p>DONATION</p>
-              <p>DONATION</p>
-              <p>DONATION</p>
+          <p class="wk-s-5">DONATION</p>
+            <div class="text-deco-donation"> <!--  data-aos="fade-up" -->
+              <p class="wk-s-5">DONATION</p>
+              <p class="wk-s-5">DONATION</p>
+              <p class="wk-s-5">DONATION</p>
             </div>
             <div class="header-txt-container absolute">
               <p>寄付</p>
@@ -66,12 +66,12 @@
         <div class="donation-bottom-text" data-aos="flip-left" data-aos-delay=400>
           <p class="w-700 p-40 head-clr">あなたの寄付が子どもたちの世界を拡げ輝かせます</p>
           <p class="w-500 p-20 head-clr">
-            刻一刻と変化する今の時代。子どもたちは、私たちがそうだった頃とは異なる環境に身を置き多種多様なスキルや能力を身につけることを求められています。
-            子どもたちに一つでも多くの機会を届けるため 皆様の寄付を私たちの活動に利用させていただきます
+            刻一刻と変化する今の時代。子どもたちは、私たちがそうだった頃とは異なる環境に身を置き多種多様なスキルや能力を身につけることを求められています。<br>
+            子どもたちに一つでも多くの機会を届けるため皆様の寄付を私たちの活動に利用させていただきます
           </p>
         </div>
         <div class="donation-bottom-donate" data-aos="fade-left">
-          <p class="w-900 p-100 section-head-clr">DONATION</p>
+          <p class="w-900 p-100 section-head-clr wk-s-5">DONATION</p>
         </div>
       </div>
     </section>
@@ -186,7 +186,7 @@
             <!-- TAB 1 -->
             <div class="detail-payment-container tab" id="A">
               <div class="text-center first-payment-section">
-                <p class="p-15">私たちと一緒に子どもたちの成長を見守りませんか？<br> 毎月1,000円～継続的にご寄付いただけます。</p>
+                <p class="p-15">私たちと一緒に子どもたちの成長を見守りませんか？<br>毎月1,000円～継続的にご寄付いただけます。</p>
                 <button><p>お使いいただけるカード</p></button>
                 <div>
                   <img src="<?php echo RESNPO_URI . '/assets/image/donation/last-section/img-1.png' ?>" alt="">
@@ -237,7 +237,7 @@
             <!-- TAB 2 -->
             <div class="detail-payment-container tab hidden" id="B">
               <div class="text-center first-payment-section">
-                <p class="p-15">私たちと一緒に子どもたちの成長を見守りませんか？<br> 毎月1,000円～継続的にご寄付いただけます。</p>
+                <p class="p-15">私たちと一緒に子どもたちの成長を見守りませんか？<br>毎月1,000円～継続的にご寄付いただけます。</p>
                 <a href=""><button><p>お使いいただけるカード</p></button></a>
                 <div>
                   <img src="<?php echo RESNPO_URI . '/assets/image/donation/last-section/img-1.png' ?>" alt="">

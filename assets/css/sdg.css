@@ -343,7 +343,7 @@
 /* Upcoming Section */
 .upcoming-events {
   height: 100vh;
-  background: rgba(46, 136, 170);
+  background: #005f8f;
   position: relative;
 }
 

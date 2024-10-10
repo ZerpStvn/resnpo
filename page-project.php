@@ -94,7 +94,7 @@
   <section class="section-project-sgds relative">
     <div class="relative project-sgds-container">
       
-      <p class="w-700 p-200 white-clr section-title relative">SGDS</p>
+      <p class="w-700 p-200 white-clr section-title relative">SDGS</p>
 
       <div class="overlay-arc relative">
         <img class="absolute arc-img-side" src="<?php echo RESNPO_URI . '/assets/image/project/section-one/people-img.png' ?>" alt="">
@@ -103,7 +103,7 @@
             <p class="w-700 p-60 sub-head-clr">「SDGs甲子園」<BR>の過去実績 をご <BR>紹介します。</p>
           </li>
           <li>
-            <p class="w-700 p-25 white-clr">SDGsの17の目標に沿って学校や地域社会の課題解決を考え、実際の行動に繋げます。SDGsの取り組み事例を学んだり、ゲームを通じてSDGsの理念について考えたりします。 学校同士の交流も図りながら、それぞれの課題を掘り下げていきます。</p>
+            <p class="w-700 p-25 white-clr">SDGsの17の目標に沿って学校や地域社会の課題解決を考え、実際の行動に繋げます。SDGsの取り組み事例を学んだり、ゲームを通じてSDGsの理念について考えたりします。学校同士の交流も図りながら、それぞれの課題を掘り下げていきます。</p>
             <div class="relative btn-container">
                   <a href="">
                     <button class="main-button relative"><p>詳しく見る</p></button>
@@ -161,7 +161,7 @@
             <p class="w-700 p-60 sub-head-clr">「海外進学サポー<br>ト」の過去実績<br>をご紹介します。</p>
           </li>
           <li>
-            <p class="w-700 p-25 white-clr">海外の大学への進学を徹底サポートします。 言語の違いや距離を理由に選択肢から外していませんか？ その挑戦がなりたい自分への近道かもしれません。</p>
+            <p class="w-700 p-25 white-clr">海外の大学への進学を徹底サポートします。言語の違いや距離を理由に選択肢から外していませんか？その挑戦がなりたい自分への近道かもしれません。</p>
             <div class="relative btn-container">
                   <a href="">
                     <button class="main-button relative"><p>詳しく見る</p></button>
