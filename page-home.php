@@ -78,10 +78,12 @@
           </li>
           <li>
             <p class="p-16 sub-head-clr">Activities</p>
-            <p class="p-40 w-700 mb-3 head-clr">SDGs甲子園</p>
-            <p class="p-16 head-clr">
+            <div class="activity-content-details">
+              <p class="p-40 w-700 mb-3 head-clr">SDGs甲子園</p>
+              <p class="p-16 head-clr">
               地域社会のSDGs課題に焦点を当て、その解決に向けて研究や活動を行う高校生たちが<br />その取り組みの経過や成果をプレゼンテーション等で競います。
-            </p>
+              </p>
+            </div>
           </li>
         </ul>
 
@@ -112,13 +114,13 @@
           </li>
         </ul>
 
-        <div class="side-text absolute">
-          <p class="inline-txt p-30 w-600 head-clr">ACTIVITIES</p>
+        <div class="side-text absolute ">
+          <p class="inline-txt p-30 w-600 head-clr ">ACTIVITIES</p>
           <img src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
         </div>
 
         <div class="absolute sect-head">
-          <p class="w-900 act-txt-section section-head-clr">ACTIVITIES</p>
+          <p class="w-900 act-txt-section section-head-clr slideright">ACTIVITIES</p>
         </div>
     </section>
 
