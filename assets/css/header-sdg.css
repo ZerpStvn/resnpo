@@ -48,10 +48,10 @@ header {
   /* padding: 10px; */
 }
 
-header img {
+/* header img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 .social {
   display: flex;

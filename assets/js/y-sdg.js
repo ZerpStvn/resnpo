@@ -163,7 +163,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Animation Slide Left and Right
 document.addEventListener("DOMContentLoaded", function () {
-  const elements = document.querySelectorAll(".slideleft, .slideright");
+  const elements = document.querySelectorAll(
+    ".slideleft, .slideright, .slideup, .slidedown"
+  );
 
   elements.forEach((element) => {
     const observer = new IntersectionObserver(
