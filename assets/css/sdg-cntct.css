@@ -68,11 +68,22 @@
 .contact-button:hover {
   transform: scale(1.1);
   transition: ease-in-out 0.2s;
+  background-color: rgba(249, 237, 235, 1);
+  border: 5px solid rgba(79, 124, 145, 1);
+  color: rgba(79, 124, 145, 1);
+}
+
+.contact-button:hover a {
+  color: rgba(79, 124, 145, 1);
 }
 
 .contact-button a {
   color: #fff;
   text-decoration: none;
+}
+
+.contact-button a:hover {
+  color: rgba(79, 124, 145, 1);
 }
 
 .scaleIn {
