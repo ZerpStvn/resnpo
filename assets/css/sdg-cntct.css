@@ -124,6 +124,34 @@
   opacity: 1 !important;
 }
 
+.slideup {
+  position: relative;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1),
+    opacity 1s ease-in-out;
+  will-change: transform, opacity;
+}
+
+.slideup.on {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+
+.slidedown {
+  position: relative;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1),
+    opacity 1s ease-in-out;
+  will-change: transform, opacity;
+}
+
+.slidedown.on {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+
 @media (max-width: 480px) {
   .contact-opp h1 {
     font-size: 30px;

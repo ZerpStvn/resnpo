@@ -34,24 +34,21 @@ function photogallerysection($gallery_title = null)
             'title' => $gallery_title
           )
         );
+
         if ($photogallerycontentquery->have_posts()) :
           try {
             while ($photogallerycontentquery->have_posts()) : $photogallerycontentquery->the_post();
-              $content = get_the_content();
-              $dom = new DOMDocument();
-              @$dom->loadHTML(mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8'));
-              $images = $dom->getElementsByTagName('img');
+              $images = get_post_meta(get_the_ID(), '_photo_gallery_images', true);
 
-              if ($images->length > 0) {
+              if (!empty($images)) {
                 foreach ($images as $image) {
-                  $src = $image->getAttribute('src');
-                  $alt = $image->getAttribute('alt');
+                  $src = esc_url($image);
                   echo '<div class="swiper-slide gallery-images">';
-                  echo '<img class="gallery-image"src="' . esc_url($src) . '" alt="' . esc_attr($alt) . '">';
+                  echo '<img class="gallery-image" src="' . $src . '" alt="">';
                   echo '</div>';
                 }
               } else {
-                echo '<div class="error-message">No images found in the post content: ' . esc_html(get_the_title()) . '</div>';
+                echo '<div class="error-message">No images found in the gallery: ' . esc_html(get_the_title()) . '</div>';
               }
             endwhile;
             wp_reset_postdata();
