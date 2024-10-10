@@ -37,7 +37,7 @@
     <h1>ひとりでも多くの子どもたちが、<br>未来の可能性を芸術で表現できる社会を目指して</h1>
   </div>
 
-  <section id="vision-section" class="diagonal-section">
+  <section id="vision-section" class="diagonal-section global-width">
     <div class="rotated-text outline">VISION</div>
     <div class="section-content head-clr flex-rr head-clr">
       <div class="image-placeholder slideleft">
@@ -71,7 +71,7 @@
     </div>
   </section>
 
-  <section id="mission-section" class="diagonal-section">
+  <section id="mission-section" class="diagonal-section global-width">
     <div class="rotated-text outline">MISSION</div>
     <div class="section-content head-clr flex-row">
       <div class="image-placeholder slideright">
@@ -95,7 +95,7 @@
     </div>
   </section>
 
-  <section id="action-section" class="diagonal-section">s
+  <section id="action-section" class="diagonal-section global-width">
     <div class="rotated-text outline">ACTION</div>
     <div class="section-content head-clr head-clr flex-rr">
       <div class="image-placeholder slideleft">
