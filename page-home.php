@@ -118,7 +118,7 @@
         </div>
 
         <div class="absolute sect-head">
-          <p class="w-900 act-txt-section section-head-clr">ACTIVITIES</p>
+          <p class="w-900 act-txt-section section-head-clr slideright">ACTIVITIES</p>
         </div>
     </section>
 

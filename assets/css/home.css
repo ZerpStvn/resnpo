@@ -425,7 +425,7 @@ hr {
   padding: 30px 0;
 }
 
-.main-button {
+#homeid .main-button {
   background: var(--buttoncolor);
   outline: none;
   border: none;
