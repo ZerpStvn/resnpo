@@ -79,3 +79,50 @@ jQuery(document).ready(function () {
     jQuery("#nav-menu").removeClass("active");
   });
 });
+
+// Select the necessary elements
+const subListItems = document.querySelectorAll(".sub-ul > li");
+const mainListItems = document.querySelector(".main-ul");
+const mainImg = mainListItems.querySelector(".img-container img");
+const mainHeadings = mainListItems.querySelectorAll("p");
+
+// Function to change the main content
+function changeMainContent(index) {
+  // Get the selected sub list item details
+  const selectedItem = subListItems[index];
+  const selectedImg = selectedItem.querySelector("img").src;
+  const selectedDetails =
+    selectedItem.querySelector(".sub-ul-details").innerHTML;
+
+  // Save old data
+  const oldImg = mainImg.src;
+  const oldDetails = Array.from(mainHeadings)
+    .map((p) => p.innerHTML)
+    .join("");
+
+  // Update main content
+  mainImg.src = selectedImg;
+
+  // Update headings in the main list
+  const mainTexts = selectedDetails.split("</p>");
+  mainHeadings[0].innerHTML = mainTexts[0] + "</p>"; // Update sub-head
+  mainHeadings[1].innerHTML = mainTexts[1] + "</p>"; // Update head
+  mainHeadings[2].innerHTML = mainTexts[2] + "</p>"; // Update content
+
+  // Move old data to sub list
+  const newSubItem = document.createElement("li");
+  newSubItem.innerHTML = `
+    <img src="${oldImg}" alt="" />
+    <div class="sub-ul-details">
+      ${oldDetails}
+    </div>
+  `;
+
+  const subUl = document.querySelector(".sub-ul");
+  subUl.appendChild(newSubItem);
+}
+
+// Attach click event listeners to each sub list item
+subListItems.forEach((item, index) => {
+  item.addEventListener("click", () => changeMainContent(index));
+});

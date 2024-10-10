@@ -254,6 +254,10 @@ hr {
   padding-top: 20px;
 }
 
+.activity-content-details p:first-child {
+  font-family: var(--kiak) !important;
+}
+
 /* SECTION ---- Slideshow */
 
 .section_slideshow {
