@@ -34,7 +34,7 @@
 
           </li>
           <li>
-            <div class="flex relative header-second">
+            <div class="flex relative header-second slideright">
               <img class="header-green-icon" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/header-green-icon.png' ?>" alt="">
               <img class="header-res-img" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/res-img-txt.png' ?>" alt="">
             </div>
