@@ -50,15 +50,21 @@
       <div class="social-icons absolute" data-aos="fade-down">
         <ul class="social-icons-ul flex align-items-center">
           <li>
-            <img
-              src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-line-icon.png' ?>"
-              alt="" />
+            <a href="https://line.me">
+              <img
+                src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-line-icon.png' ?>"
+                alt="Line" />
+            </a>
           </li>
           <li>
-            <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-fb-icon.png' ?>" alt="" />
+            <a href="https://facebook.com">
+              <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-fb-icon.png' ?>" alt="Facebook" />
+            </a>
           </li>
           <li>
-            <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-yt-icon.png' ?>" alt="" />
+            <a href="https://youtube.com">
+              <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-yt-icon.png' ?>" alt="YouTube" />
+            </a>
           </li>
         </ul>
       </div>

@@ -5,58 +5,64 @@
 
   <section class="donation-header">
     <div class="border relative">
+      <!-- data-aos="fade-up -->
+      <div class="donation-container">
+        <div class="donation-texts">
+          <p class="wk-s-5">DONATION</p>
+          <!--  data-aos="fade-up" -->
+          <div class="text-deco-donation">
+            <p class="wk-s-5 ">DONATION</p>
+            <p class="wk-s-5 ">DONATION</p>
+            <p class="wk-s-5 ">DONATION</p>
+          </div>
+        </div>
 
-      <div class="donation-container relative0" data-aos="fade-up">
-        <p class="wk-s-5">DONATION</p>
-        <div class="text-deco-donation"> <!--  data-aos="fade-up" -->
-          <p class="wk-s-5">DONATION</p>
-          <p class="wk-s-5">DONATION</p>
-          <p class="wk-s-5">DONATION</p>
-
-          <div class="social-icons absolute">
-            <ul class="social-icons-ul flex align-items-center">
-              <li>
+        <div class="social-icons absolute">
+          <ul class="social-icons-ul flex align-items-center">
+            <li>
+              <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=601qwusa">
                 <img
                   src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-line-icon.png' ?>"
-                  alt="" />
-              </li>
-              <li>
-                <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-fb-icon.png' ?>" alt="" />
-              </li>
-              <li>
-                <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-yt-icon.png' ?>" alt="" />
-              </li>
+                  alt="Line" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/ChiikiKyouiku/">
+                <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-fb-icon.png' ?>" alt="Facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCEJ3QcF3DZ9o_MYbhMxgV4Q">
+                <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-yt-icon.png' ?>" alt="YouTube" />
+              </a>
+            </li>
 
-              <li>
-                <div class="res-txt-container-side">
-                  <ul class="flex gap-15">
-                    <li>
-                      <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/resnpo-ico.png' ?>" alt="" />
-                    </li>
-                    <li>
-                      <p class="w-700 p-14 white-clr">NPO法人</p>
-                      <p class="w-700 p-14 white-clr">REGIONAL EDUCATION SUPPORT</p>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-
+          </ul>
         </div>
+
+        <div class="donation-title">
+          <div class="donation-title-cont">
+            <img class="side-logo" src="<?php echo RESNPO_IMAGE . '/logo.png' ?>" alt="">
+            <div class="side-title-text">
+              <h1>NPO法人</h1>
+              <h3>REGIONAL EDUCATION SUPPORT</h3>
+            </div>
+          </div>
+        </div>
+      </div>
   </section>
 
   <section class="section_1_don relative">
     <div class="donation-bottom-container absolute">
       <div class="donation-bottom-text">
-        <p class="w-700 p-40 head-clr">あなたの寄付が子どもたちの世界を拡げ輝かせます</p>
+        <p class="w-700 p-40 head-clr scaleIn">あなたの寄付が子どもたちの世界を拡げ輝かせます</p>
         <p class="w-500 p-20 head-clr">
           刻一刻と変化する今の時代。子どもたちは、私たちがそうだった頃とは異なる環境に身を置き多種多様なスキルや能力を身につけることを求められています。<br>
           子どもたちに一つでも多くの機会を届けるため皆様の寄付を私たちの活動に利用させていただきます
         </p>
       </div>
       <div class="donation-bottom-donate">
-        <p class="w-900 p-100 section-head-clr">DONATION</p>
+        <p class="w-900 p-100 section-head-clr slideup">DONATION</p>
       </div>
     </div>
   </section>
@@ -78,11 +84,11 @@
         </div>
       </div>
       <div class="text-column">
-        <p class="w-900 p-40 mb-5 white-clr text-center">
+        <p class="w-900 p-40 mb-5 white-clr text-center scalein">
           寄付によって
           子どもたちに与えることができる機会
         </p>
-        <div class="flex gap-35 donation-details">
+        <div class="flex gap-35 donation-details slideup">
           <div>
             <img src="<?php echo RESNPO_URI . '/assets/image/donation/section-two/icon-1.png' ?>" alt="">
           </div>
@@ -92,7 +98,7 @@
           </div>
         </div>
 
-        <div class="flex gap-25 donation-details">
+        <div class="flex gap-25 donation-details slideup">
           <div>
             <img src="<?php echo RESNPO_URI . '/assets/image/donation/section-two/icon-2.png' ?>" alt="">
           </div>
@@ -102,7 +108,7 @@
           </div>
         </div>
 
-        <div class="flex gap-25 donation-details">
+        <div class="flex gap-25 donation-details slideup">
           <div>
             <img src="<?php echo RESNPO_URI . '/assets/image/donation/section-two/icon-3.png' ?>" alt="">
           </div>
@@ -112,7 +118,7 @@
           </div>
         </div>
 
-        <div class="flex gap-25 donation-details">
+        <div class="flex gap-25 donation-details slideup">
           <div>
             <img src="<?php echo RESNPO_URI . '/assets/image/donation/section-two/icon-4.png' ?>" alt="">
           </div>
@@ -128,7 +134,7 @@
   <section class="section_3_don">
     <div class="title-top relative">
       <p class="w-500 p-250 text-center relative">BENEFITS</p>
-      <p class="w-900 p-100 light-blue absolute">ご寄付いただいた方には</p>
+      <p class="w-900 p-100 light-blue absolute scaleIn">ご寄付いただいた方には</p>
     </div>
 
     <div class="fieldset-container">
@@ -171,17 +177,17 @@
     <div class="payment-container">
       <div class="flex gap-15 btn-payment-container">
         <div>
-          <a href="#A" data-hash="A" class="hash-donation "><button class="">
+          <a href="#A" data-hash="A" class="hash-donation "><button class="tab-btn-donation">
               <p>毎月寄付をする</p>
             </button></a>
         </div>
         <div>
-          <a href="#B" data-hash="B" class="hash-donation"><button class="">
+          <a href="#B" data-hash="B" class="hash-donation"><button class="tab-btn-donation">
               <p>1回の寄付をする</p>
             </button></a>
         </div>
         <div>
-          <a href="#C" data-hash="C" class="hash-donation"><button class="">
+          <a href="#C" data-hash="C" class="hash-donation"><button class="tab-btn-donation">
               <p>物品の寄付をする</p>
             </button></a>
         </div>
@@ -258,7 +264,8 @@
       <div class="detail-payment-container tab hidden" id="B">
         <div class="text-center first-payment-section">
           <p class="p-15">私たちと一緒に子どもたちの成長を見守りませんか？<br>毎月1,000円～継続的にご寄付いただけます。</p>
-          <a href=""><button>
+          <a href="">
+            <button>
               <p>お使いいただけるカード</p>
             </button></a>
           <div>
@@ -269,8 +276,9 @@
         <div class="second-payment-section">
           <ul class="flex ul-first-payment gap-15">
             <li>
-              <a href=""><button>
-                  <p class="w-500 p-25">3,000円</p>
+              <a href="">
+                <button>
+                  <p class="w-500 p-25 price-button">3,000円</p>
                 </button></a>
             </li>
             <li>

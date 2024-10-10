@@ -47,7 +47,7 @@ jQuery(".hash-donation").on("click", function (e) {
   jQuery(this).parent().addClass("donation-link-active");
 
   // Reset background color for all buttons
-  jQuery("button").css({ "background-color": "", color: "#8c8c8c" });
+  jQuery(".tab-btn-donation").css({ "background-color": "", color: "#8c8c8c" });
 
   // Get the data-hash attribute value
   var hash = jQuery(this).data("hash");
