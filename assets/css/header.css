@@ -101,6 +101,15 @@ nav {
   width: 250px;
 }
 
+/* Indent the sub-menu under SDGs */
+.sub-menu {
+  margin-left: 20px; /* Indent the sub-items */
+}
+
+.sub-menu li {
+  list-style-type: disc; /* Use a different bullet style for the sub-items */
+}
+
 @media screen and (max-width: 768px) {
   .nav-icon-container {
     width: 11.475vw;

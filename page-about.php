@@ -1,55 +1,47 @@
 <?php get_header() ?>
 <div id="aboutid" class="aboutid">
 
-  <?php
-  function render_about_section($sectiontitle, $subtitle)
-  {
-  ?>
-    <section class="landing-about">
-      <div class="landing-fg">
-        <img src="<?php echo RESNPO_IMAGE . '/about/landing-fg.png' ?>" alt="">
-      </div>
+  <section class="landing-about">
+    <!-- <header class=au-header>
+      <a href="#">
+        <img src="<?php echo RESNPO_IMAGE . '/menu-button.png' ?>" alt="">
+      </a>
+    </header> -->
 
-      <div class="side-content">
-        <div class="social">
-          <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=601qwusa">
-            <img src="<?php echo RESNPO_IMAGE . '/line.png' ?>" alt="Line">
-          </a>
-          <a href="https://www.facebook.com/ChiikiKyouiku/">
-            <img src="<?php echo RESNPO_IMAGE . '/facebook.png' ?>" alt="Facebook">
-          </a>
-          <a href="https://www.youtube.com/channel/UCEJ3QcF3DZ9o_MYbhMxgV4Q">
-            <img src="<?php echo RESNPO_IMAGE . '/youtube.png' ?>" alt="YouTube">
-          </a>
-        </div>
-        <div class="about-title">
-          <div class="side-title">
-            <img class="side-logo" src="<?php echo RESNPO_IMAGE . '/logo.png' ?>" alt="">
-            <div class="side-title-text">
-              <h1>NPO法人</h1>
-              <h3>REGIONAL EDUCATION SUPPORT</h3>
-            </div>
+    <div class="landing-fg">
+      <img src="<?php echo RESNPO_IMAGE . '/about/landing-fg.png' ?>" alt="">
+    </div>
+
+    <div class="side-content">
+      <div class="social">
+        <img src="<?php echo RESNPO_IMAGE . '/line.png' ?>" alt="">
+        <img src="<?php echo RESNPO_IMAGE . '/facebook.png' ?>" alt="">
+        <img src="<?php echo RESNPO_IMAGE . '/youtube.png' ?>" alt="">
+      </div>
+      <div class="about-title">
+        <div class="side-title">
+          <img class="side-logo" src="<?php echo RESNPO_IMAGE . '/logo.png' ?>" alt="">
+          <div class="side-title-text">
+            <h1>NPO法人</h1>
+            <h3>REGIONAL EDUCATION SUPPORT</h3>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="au-title">
-        <h1 class="outline au-main-title scaleIn"><?php echo $sectiontitle; ?></h1>
-        <h3 class="au-sub-title sub-head-clr scaleIn"><?php echo $subtitle; ?></h3>
-      </div>
-    </section>
-  <?php
-  }
-  ?>
+    <div class="au-title">
+      <h1 class="outline au-main-title scaleIn">ABOUT US</h1>
+      <h3 class="au-sub-title sub-head-clr scaleIn">What is RES?</h3>
+    </div>
 
-  <?php render_about_section('ABOUT US', 'What is RES?'); ?>
+  </section>
 
 
   <div class="vma-title scaleIn">
     <h1>ひとりでも多くの子どもたちが、<br>未来の可能性を芸術で表現できる社会を目指して</h1>
   </div>
 
-  <section id="vision-section" class="diagonal-section global-width">
+  <section id="vision-section" class="diagonal-section">
     <div class="rotated-text outline">VISION</div>
     <div class="section-content head-clr flex-rr head-clr">
       <div class="image-placeholder slideleft">
@@ -83,7 +75,7 @@
     </div>
   </section>
 
-  <section id="mission-section" class="diagonal-section global-width">
+  <section id="mission-section" class="diagonal-section">
     <div class="rotated-text outline">MISSION</div>
     <div class="section-content head-clr flex-row">
       <div class="image-placeholder slideright">
@@ -92,9 +84,7 @@
       <div class="section-text">
         <h2 class="section-title scaleIn">私たちの使命</h2>
         <p>
-          あたり前のことをあたり前だからと思考停止するのではなく、なぜなんだろう？と考え、自分なりの答えを持つ。
-          <br>
-          間違っていてもいい
+          あたり前のことをあたり前だからと思考停止するのではなく、なぜなんだろう？と考え、自分なりの答えを持つ。間違っていてもいい
 
           <br><br>
 
@@ -107,7 +97,7 @@
     </div>
   </section>
 
-  <section id="action-section" class="diagonal-section global-width">
+  <section id="action-section" class="diagonal-section">s
     <div class="rotated-text outline">ACTION</div>
     <div class="section-content head-clr head-clr flex-rr">
       <div class="image-placeholder slideleft">
@@ -147,7 +137,7 @@
       <div class="rxl-lr flex">
         <img src="<?php echo RESNPO_IMAGE . '/about/mori.jpeg' ?>" alt="">
         <div class="rxl-lr-txt">
-          <h1 class="sb_title text-center white-clr slideup">新時代の学びのカタチ<br>「REAL✕LINK」</h1>
+          <h1 class="sb_title text-center white-clr">新時代の学びのカタチ<br>「REAL✕LINK」</h1>
           <p class="white-clr">
             新しい時代「令和」が始まりました。 新しい元号のもと、日本にとどまらず世界中から争いごとや飢えや難病が無くなっていくことを心から願っています。
             <br><br>
@@ -207,7 +197,7 @@
     <p class="sg_description">Reports</p>
 
     <div class="relative btn-container">
-      <a href="https://www.npo-homepage.go.jp/npoportal/document/038000078/hokoku/202170/2021%E5%B9%B4%E5%BA%A6%E4%BA%8B%E6%A5%AD%E5%A0%B1%E5%91%8A%E6%9B%B8%E7%AD%89.pdf" target="_blank">
+      <a href="">
         <button class="main-button relative">
           詳しく見る
         </button>

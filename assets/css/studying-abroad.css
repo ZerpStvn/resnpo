@@ -754,21 +754,23 @@ details.closing .detail-content {
     font-size: 18px;
   }
 }
+
+.advisor-img-container {
+  /* background: #2b4e64; */
+  position: relative;
+}
+
+.as-img-col img {
+  vertical-align: bottom;
+  margin-top: -90px;
+}
 /* 
 .border-advisor {
   background: #fff;
   padding: 25px;
 }
 
-.advisor-img-container {
-  background: #2b4e64;
-  position: relative;
-}
 
-.advisor-img-container img {
-  vertical-align: bottom;
-  margin-top: -90px;
-}
 
 .text-container {
   color: white;
