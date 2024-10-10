@@ -2,11 +2,7 @@
 <div id="aboutid" class="aboutid">
 
   <section class="landing-about">
-    <header class=au-header>
-      <a href="#">
-        <img src="<?php echo RESNPO_IMAGE . '/menu-button.png' ?>" alt="">
-      </a>
-    </header>
+
 
     <div class="landing-fg">
       <img src="<?php echo RESNPO_IMAGE . '/about/landing-fg.png' ?>" alt="">
@@ -84,7 +80,9 @@
       <div class="section-text">
         <h2 class="section-title scaleIn">私たちの使命</h2>
         <p>
-          あたり前のことをあたり前だからと思考停止するのではなく、なぜなんだろう？と考え、自分なりの答えを持つ。 間違っていてもいい
+          あたり前のことをあたり前だからと思考停止するのではなく、なぜなんだろう？と考え、自分なりの答えを持つ。
+          <br>
+           間違っていてもいい
 
           <br><br>
 
