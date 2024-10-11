@@ -173,8 +173,6 @@
   z-index: 1; /* Ensure the diagonal background has a lower z-index */
 }
 
-
-
 .background-image {
   position: absolute;
   top: 0;
@@ -427,8 +425,6 @@
   z-index: 1; /* Ensure the diagonal background has a lower z-index */
 }
 
-
-
 .background-image {
   position: absolute;
   top: 0;
@@ -544,7 +540,6 @@
   font-size: 16px;
 }
 
-
 #action-section .section-content .image-placeholder {
   position: absolute;
   bottom: 0;
@@ -554,9 +549,8 @@
   overflow: hidden;
   z-index: 2;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  top: 30px;
+  top: 50px;
 }
-
 
 #action-section .section-content .image-placeholder img {
   width: 100%;

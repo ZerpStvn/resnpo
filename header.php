@@ -29,6 +29,8 @@
             <div class="nav-company-details">
               <img class="logo-green" src="<?php echo RESNPO_IMAGE . '/green-logo.png' ?>" alt="">
               <img class="text-logo" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/res-img-txt.png' ?>" alt="">
+
+              <h1>1426 Hiraicho, Matsuyama City, Ehime Prefecture</h1>
             </div>
           </li>
           <li>
