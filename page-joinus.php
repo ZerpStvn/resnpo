@@ -220,7 +220,7 @@
     </div>
   </section>
 
-  <section class="section-inquire">
+  <?php get_template_part('template-parts/inquire') ?>
 
   </section>
   <svg version="1.1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" style="display:none;">

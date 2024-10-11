@@ -67,7 +67,7 @@
       <li class="sg_description">※定数に達し次第、予約を締め切ります。</li>
     </div>
     <div class="relative btn-container">
-      <a href="">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScBWhbvkQglfEUcERY7xinQC8e1GCvbG9JyUUowdsf4oOCGQw/viewform">
         <button class="main-button relative">
           参加申し込み
         </button>

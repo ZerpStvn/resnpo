@@ -8,12 +8,17 @@
       <!-- data-aos="fade-up -->
       <div class="donation-container">
         <div class="donation-texts">
-          <p class="wk-s-5">DONATION</p>
-          <!--  data-aos="fade-up" -->
-          <div class="text-deco-donation">
-            <p class="wk-s-5 ">DONATION</p>
-            <p class="wk-s-5 ">DONATION</p>
-            <p class="wk-s-5 ">DONATION</p>
+          <div class="slidedown">
+            <p class="wk-s-5">DONATION</p>
+            <!--  data-aos="fade-up" -->
+            <div class="text-deco-donation">
+              <p class="wk-s-5 ">DONATION</p>
+              <p class="wk-s-5 ">DONATION</p>
+              <p class="wk-s-5 ">DONATION</p>
+            </div>
+          </div>
+          <div class="header-txt-container absolute">
+            <p class="slideleft">寄付</p>
           </div>
         </div>
 
@@ -409,7 +414,6 @@
           </div>
 
         </div>
-
 
 
       </div>
