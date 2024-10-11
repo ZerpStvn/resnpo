@@ -73,10 +73,15 @@
                   <li><a href="<?php echo get_site_url() . '/studying-abroad' ?>">海外進学</a></li>
                 </ul>
               </li>
-              <li><a href="<?php echo get_site_url() . '/joinus' ?>">Join Us</a></li>
-              <li><a href="<?php echo get_site_url() . '/donation' ?>">Donation</a></li>
-              <li><a href="<?php echo get_site_url() . '/membership' ?>">Membership</a></li>
-              <li><a href="<?php echo get_site_url() . '/whatsnew' ?>">What's New</a></li>
+              <li class="joinus-toggle">
+                <a href="<?php echo get_site_url() . '/joinus' ?>">Join Us</a>
+                <ul class="sub-menu" style="display: flex; flex-direction: row;">
+                  <li><a href="<?php echo get_site_url() . '/donation' ?>">寄付</a></li>
+                  <li><a href="<?php echo get_site_url() . '/membership' ?>">メンバーシップ</a></li>
+                </ul>
+              </li>
+              <li><a href="#<?php //echo get_site_url() . '/whatsnew' 
+                            ?>">Corporate/School</a></li>
             </ul>
           </li>
         </ul>

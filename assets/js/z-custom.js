@@ -144,7 +144,6 @@ jQuery(document).ready(function ($) {
       autoplaySpeed: 2000,
       arrows: false,
       dots: false,
-      // Add more settings as needed
     });
   });
 });
