@@ -1,12 +1,12 @@
 jQuery.noConflict();
 
-// $(document).ready(function () {
-//   // Toggle the sub-menu when SDGs link is clicked
-//   $(".sdg-link").click(function (e) {
-//     e.preventDefault(); // Prevent the default link behavior
-//     $(this).siblings(".sub-menu").slideToggle(); // Toggle the visibility of the sub-menu
-//   });
-// });
+$(document).ready(function () {
+  // Toggle the sub-menu when SDGs link is clicked
+  $(".sdg-link").click(function (e) {
+    e.preventDefault(); // Prevent the default link behavior
+    $(this).siblings(".sub-menu").slideToggle(); // Toggle the visibility of the sub-menu
+  });
+});
 
 // START: AOS ANIMATION EFFECTS
 jQuery(document).ready(() => {
@@ -90,44 +90,33 @@ jQuery(document).ready(function () {
 
 // Select the necessary elements
 const subListItems = document.querySelectorAll(".sub-ul > li");
-const mainListItems = document.querySelector(".main-ul");
-const mainImg = mainListItems.querySelector(".img-container img");
-const mainHeadings = mainListItems.querySelectorAll("p");
+const mainImg = document.querySelector(".main-ul .img-container img");
+const mainTitle = document.querySelector(".main-ul .class-title");
+const mainContent = document.querySelector(".main-ul .class-content");
 
 // Function to change the main content
 function changeMainContent(index) {
   // Get the selected sub list item details
   const selectedItem = subListItems[index];
   const selectedImg = selectedItem.querySelector("img").src;
-  const selectedDetails =
-    selectedItem.querySelector(".sub-ul-details").innerHTML;
+  const selectedTitle = selectedItem.querySelector(".class-title").innerHTML;
+  const selectedContent =
+    selectedItem.querySelector(".class-content").innerHTML;
 
-  // Save old data
+  // Save the current main content (before change)
   const oldImg = mainImg.src;
-  const oldDetails = Array.from(mainHeadings)
-    .map((p) => p.innerHTML)
-    .join("");
+  const oldTitle = mainTitle.innerHTML;
+  const oldContent = mainContent.innerHTML;
 
-  // Update main content
+  // Update the main image, title, and content
   mainImg.src = selectedImg;
+  mainTitle.innerHTML = selectedTitle;
+  mainContent.innerHTML = selectedContent;
 
-  // Update headings in the main list
-  const mainTexts = selectedDetails.split("</p>");
-  mainHeadings[0].innerHTML = mainTexts[0] + "</p>"; // Update sub-head
-  mainHeadings[1].innerHTML = mainTexts[1] + "</p>"; // Update head
-  mainHeadings[2].innerHTML = mainTexts[2] + "</p>"; // Update content
-
-  // Move old data to sub list
-  const newSubItem = document.createElement("li");
-  newSubItem.innerHTML = `
-    <img src="${oldImg}" alt="" />
-    <div class="sub-ul-details">
-      ${oldDetails}
-    </div>
-  `;
-
-  const subUl = document.querySelector(".sub-ul");
-  subUl.appendChild(newSubItem);
+  // Update the clicked sub-list item's content with the old main content
+  selectedItem.querySelector("img").src = oldImg;
+  selectedItem.querySelector(".class-title").innerHTML = oldTitle;
+  selectedItem.querySelector(".class-content").innerHTML = oldContent;
 }
 
 // Attach click event listeners to each sub list item
@@ -136,14 +125,42 @@ subListItems.forEach((item, index) => {
 });
 
 jQuery(document).ready(function ($) {
-  $(document).ready(function () {
-    $(".slider").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      arrows: false,
-      dots: false,
-    });
+  $(".slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    speed: 10,
+    autoplaySpeed: 2500,
+    fade: true,
+    cssEase: "linear",
+    autoplay: true,
+    arrows: false,
+    dots: false,
+  });
+
+  $(".slider").on(
+    "beforeChange",
+    function (event, slick, currentSlide, nextSlide) {
+      $(".header-people").removeClass("shake-once");
+    }
+  );
+
+  $(".slider").on("afterChange", function (event, slick, currentSlide) {
+    $(".slick-active .header-people").addClass("shake-once");
+  });
+  $(".slider").on(
+    "beforeChange",
+    function (event, slick, currentSlide, nextSlide) {
+      $(".pg-flex-container").removeClass("pg-active");
+      $(".hr-pagination").removeClass("active");
+
+      $(".pg-flex-container").eq(nextSlide).addClass("pg-active");
+      $(".hr-pagination").eq(nextSlide).addClass("active");
+    }
+  );
+
+  $(".pg-flex-container").on("click", function () {
+    var index = $(this).parent().index();
+    $(".slider").slick("slickGoTo", index);
   });
 });

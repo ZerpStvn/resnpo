@@ -1,6 +1,6 @@
 // let $ = jQuery.noConflict();
 
-const slider = document.querySelector(".slider");
+const slider = document.querySelector(".sliderScreen");
 const slides = document.querySelectorAll(".slide");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
