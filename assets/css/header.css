@@ -113,18 +113,25 @@ nav {
 }
 
 .logo-green {
-  width: 20%;
-  height: 20%;
+  width: 40%;
+  height: 40%;
 }
 
 /* Indent the sub-menu under SDGs */
 .sub-menu {
   margin-left: 20px; /* Indent the sub-items */
 }
-
-/* .sub-menu li {
-  list-style-image: url("../image/carbon_play-filled.png");
-} */
+.projects-toggle .sub-menu li a:before,
+.joinus-toggle .sub-menu li a:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../image/arrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
 
 @media screen and (max-width: 768px) {
   .nav-icon-container {
@@ -172,6 +179,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .header-fcol-lc {
