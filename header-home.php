@@ -66,7 +66,7 @@
               <li><a href="<?php echo get_site_url() . '/about' ?>">About Us</a></li>
 
               <li class="projects-toggle">
-                <a href="<?php echo get_site_url() . '/project' ?>" class="sdg-link">Project</a>
+                <a href="<?php echo get_site_url() . '/project' ?>">Project</a>
                 <ul class="sub-menu" style="display: flex; flex-direction: row;">
                   <li><a href="<?php echo get_site_url() . '/sdg' ?>">SDGs</a></li>
                   <li><a href="<?php echo get_site_url() . '/study-abroad' ?>">海外留学</a></li>
