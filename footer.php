@@ -6,7 +6,7 @@
       <div class="upper-footer">
         <div class="uf-c1">
           <div class="footer-logo">
-            <img src="<?php echo RESNPO_IMAGE . '/green-logo.png' ?>" alt="green-logo">
+            <img src="<?php echo RESNPO_IMAGE . '/green-logo2.png' ?>" alt="green-logo">
             <img src="<?php echo RESNPO_IMAGE . '/res.png' ?>" alt="res">
           </div>
           <div class="tbl-col">
