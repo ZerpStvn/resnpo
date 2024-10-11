@@ -14,7 +14,8 @@
   <header class="relative">
     <nav class="absolute navbar "> <!--data-aos="fade-left" -->
       <div class="nav-icon-container-home nav-icon" id="nav-icon">
-        <img class="home-nav-ico" src="<?php echo RESNPO_URI .  '/assets/image/homepage/header/home-nav.png' ?>" alt="" />
+        <img class="home-nav-ico" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/home-nav.png' ?>"
+          alt="" />
       </div>
 
       <div class="nav-menu" id="nav-menu">
@@ -27,7 +28,8 @@
           <li>
             <div class="nav-company-details">
               <img class="logo-green" src="<?php echo RESNPO_IMAGE . '/green-logo.png' ?>" alt="">
-              <img class="text-logo" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/res-img-txt.png' ?>" alt="">
+              <img class="text-logo" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/res-img-txt.png' ?>"
+                alt="">
             </div>
           </li>
           <li>
