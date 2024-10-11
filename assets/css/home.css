@@ -13,7 +13,25 @@
 }
 
 /* SECTION ---- 1 */
-
+img.header-res-img {
+  width: 41vw;
+}
+img.header-green-icon {
+  width: 16vw;
+}
+.shake-once {
+  animation: shake 0.5s ease;
+}
+.dot-container ul li {
+  cursor: pointer;
+}
+.dot-container ul li div p {
+  font-size: 14px;
+}
+.dot-container ul li .pg-active p {
+  font-size: 20px;
+  font-weight: bold;
+}
 .section_1 {
   background: url("../image/homepage/header/header-bg-img.png");
   /* height: 100vh; */
@@ -172,12 +190,20 @@ hr {
 /* END: SLICK SLIDER STYLE */
 
 /* SECTION ----- 2 */
-
+p.inline-txt.p-30.w-600.head-clr,
+p.inline-txt.w-600.p-30.head-clr,
+p.inline-txt.w-600.p-30.head-clr,
+p.inline-txt.w-600.p-30.head-clr,
+p.inline-txt.p-30.w-600.head-clr {
+  font-family: var(--readex) !important;
+}
 .section_2 .main-ul {
   padding: 3% 5%;
   gap: 120px;
 }
-
+.section_2 .sub-ul li {
+  cursor: pointer;
+}
 .section_2 .main-ul > li img {
   height: 670px;
   width: 695px;
@@ -832,4 +858,40 @@ hr {
 
 #btn-logo {
   padding: 15px 80px;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }

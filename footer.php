@@ -1,5 +1,5 @@
 </main>
-<footer class="global-width">
+<footer class="">
   <div class="footer-container ">
     <div class="flex fns-col">
 
@@ -70,10 +70,7 @@
             <button class="main-button relative">
               代表メッセージ
             </button>
-            <img
-              class="icon-button absolute"
-              src="<?php echo RESNPO_IMAGE . '/leaves.png' ?>"
-              alt="" />
+            <img class="icon-button absolute" src="<?php echo RESNPO_IMAGE . '/leaves.png' ?>" alt="" />
           </a>
         </div>
       </div>
