@@ -19,7 +19,7 @@
       ５つの審査基準
     </div>
     <div class="slider-container">
-      <div class="slider">
+      <div class="sliderScreen">
 
         <!-- s1 -->
         <div class="slide slide-1">
