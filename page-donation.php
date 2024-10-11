@@ -168,7 +168,7 @@
     </div>
   </section>
 
-  <section class="section_4_don">
+  <section id="section_4_don" class="section_4_don">
     <div class="title-top relative">
       <p class="w-500 p-150 text-center relative">HOW TO HELP</p>
       <p class="w-900 p-60 light-blue absolute scaleIn">お気持ちにあった寄付をお選びください</p>

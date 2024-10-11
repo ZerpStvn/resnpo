@@ -165,7 +165,7 @@
               <p class="p-16 details excerpt-3-lines"><?php echo wp_trim_words(get_the_excerpt(), 30, '...'); ?></p>
 
               <div class="relative btn-container" id="btn-news">
-                <a href="<?php the_permalink(); ?>">
+                <a href="<?php echo RESNPO_URI . '/whatsnew'; ?>">
                   <button type="button" class="main-button-logo relative">支援者様</button>
                   <img class="home-icon-button absolute"
                     src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
@@ -425,7 +425,7 @@
             活動に賛同し、支持してくださる全ての皆様に厚く御礼申し上げます。
           </p>
           <div class="relative btn-container">
-            <a href="">
+            <a href="<?php echo RESNPO_URI . '/donation#section_4_don' ?>">
               <button class="main-button-logo relative" id="btn-logo">支援者様</button>
               <img class="home-icon-button absolute"
                 src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
