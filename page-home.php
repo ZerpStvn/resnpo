@@ -74,9 +74,11 @@
   <section class="section_2 relative global-width">
     <ul class="flex main-ul">
       <li>
-        <div class="img-container slideleft">
-          <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-third/main-img.png' ?>" alt="" />
-        </div>
+        <a href="<?php echo RESNPO_URI . '/sdg' ?>">
+          <div class="img-container slideleft">
+            <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-third/main-img.png' ?>" alt="" />
+          </div>
+        </a>
       </li>
       <li>
         <p class="p-16 sub-head-clr">Activities</p>
@@ -120,9 +122,26 @@
     </div>
   </section>
 
+
+
   <!-- SECTION: UPCOMING EVENTS -->
   <?php get_template_part('template-parts/upcoming-events') ?>
   <!-- END SECTION -->
+
+  <?php
+  function custom_excerpt($text, $num_sentences = 3)
+  {
+    $text = strip_tags($text); // Remove HTML tags
+    $sentences = preg_split('/(\.|\?|\!)(\s)/', $text, -1, PREG_SPLIT_DELIM_CAPTURE);
+    $excerpt = '';
+
+    for ($i = 0; $i < min(count($sentences), $num_sentences * 2); $i += 2) {
+      $excerpt .= $sentences[$i] . $sentences[$i + 1];
+    }
+
+    return $excerpt;
+  }
+  ?>
 
   <section class="section_3 relative global-width">
     <ul class="flex ul-news">
@@ -143,7 +162,7 @@
             <div class="news-detils">
               <p class="p-16 sub-head-clr"><?php echo esc_html($news_date); ?></p>
               <p class="p-40 head-clr scaleIn"><?php the_title(); ?></p>
-              <p class="p-16 details"><?php the_excerpt(); ?></p>
+              <p class="p-16 details excerpt-3-lines"><?php echo wp_trim_words(get_the_excerpt(), 30, '...'); ?></p>
 
               <div class="relative btn-container" id="btn-news">
                 <a href="<?php the_permalink(); ?>">
@@ -205,138 +224,127 @@
 
   <!-- SECTION: NEWS/RESPRESENTATIVE -->
 
-  <section class="section-representative">
-    <div class="top-title-news relative">
-      <p class="p-230 w-700 slideright">NEWS</p>
-    </div>
-    <div class="relative rep-container-main">
-      <img class="absolute" style="z-index:66; bottom:0"
-        src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/representative-img.png' ?>" alt="">
-
-      <div class="side-text absolute" id="side-text-rep">
-        <p class="inline-txt w-600 p-30 head-clr">REPRESENTATIVE</p>
-        <img src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
+  <a href="<?php echo RESNPO_URI . '/about#realxlink' ?>">
+    <section class="section-representative">
+      <div class="top-title-news relative">
+        <p class="p-230 w-700 slideright">NEWS</p>
       </div>
-
-      <div class="top-title-rep relative">
-        <p class="p-120 w-700  slideleft">RESPRESENTATIVE</p>
-      </div>
-      <div class="bot-content-rep relative">
-        <div class="bot-content-rep-container">
-          <ul class="flex bot-ul-rep">
-            <li>
-              <p class="p-16 w-500 white-clr">NPO法人 RESは、ひとりでも多くの子どもたちが、未来の国際社会で活躍できる社会を目指し、自ら考え行動できる人材を育成する活動をしています。
-              </p>
-              <div class="relative btn-container">
-                <a href="">
-                  <button class="main-button-logo relative" id="btn-logo">代表メッセージ</button>
-                  <img class="home-icon-button absolute"
-                    src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>"="" />
-                </a>
-              </div>
-            </li>
-            <li>
-              <div class="li-real-container scaleIn">
-                <p class="p-120 w-700">“</p>
-                <p class="p-40 w-700">新時代の学びのカタチ<br>「REAL✕LINK」</p>
-              </div>
-            </li>
-          </ul>
+      <div class="relative rep-container-main">
+        <img class="absolute" style="z-index:66; bottom:0"
+          src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/representative-img.png' ?>" alt="">
+        <div class="side-text absolute" id="side-text-rep">
+          <p class="inline-txt w-600 p-30 head-clr">REPRESENTATIVE</p>
+          <img src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
+        </div>
+        <div class="top-title-rep relative">
+          <p class="p-120 w-700  slideleft">RESPRESENTATIVE</p>
+        </div>
+        <div class="bot-content-rep relative">
+          <div class="bot-content-rep-container">
+            <ul class="flex bot-ul-rep">
+              <li>
+                <p class="p-16 w-500 white-clr">NPO法人 RESは、ひとりでも多くの子どもたちが、未来の国際社会で活躍できる社会を目指し、自ら考え行動できる人材を育成する活動をしています。
+                </p>
+                <div class="relative btn-container">
+                  <a href="<?php echo RESNPO_URI . '/about#realxlink' ?>">
+                    <button class="main-button-logo relative" id="btn-logo">代表メッセージ</button>
+                    <img class="home-icon-button absolute"
+                      src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>"="" />
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="li-real-container scaleIn">
+                  <p class="p-120 w-700">“</p>
+                  <p class="p-40 w-700">新時代の学びのカタチ<br>「REAL✕LINK」</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </a>
 
   <!-- END: SECTION: NEWS/RESPRESENTATIVE -->
 
   <!-- SECTION: ADVISOR -->
-  <section id="advisor_home" class="flex flex-column relative">
-    <h1 class="head-clr av-title slideright ">ADVISOR</h1>
-    <div class="av-container flex">
-      <div class="av-schools flex">
-        <div class="scl-col-1">
-
-          <div class="scl head-clr">
-            <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/ucam.png' ?>" alt="">
-            <div class="scl-cntnt">
-              <h1>ムルシア・カトリック大学（スペイン）</h1>
-              <h3>副学長-教務担当</h3>
+  <a href="<?php echo RESNPO_URI . '/about#advisor_section' ?>">
+    <section id="advisor_home" class="flex flex-column relative">
+      <h1 class="head-clr av-title slideright ">ADVISOR</h1>
+      <div class="av-container flex">
+        <div class="av-schools flex">
+          <div class="scl-col-1">
+            <div class="scl head-clr">
+              <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/ucam.png' ?>" alt="">
+              <div class="scl-cntnt">
+                <h1>ムルシア・カトリック大学（スペイン）</h1>
+                <h3>副学長-教務担当</h3>
+              </div>
+            </div>
+            <div class="scl head-clr">
+              <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/liverpool.png' ?>" alt="">
+              <div class="scl-cntnt">
+                <h1> 博士号（PhD）
+                </h1>
+                <h3> リバプール大学　 • 経営学/人事管理/情報学
+                </h3>
+              </div>
+            </div>
+            <div class="scl head-clr">
+              <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/iba.png' ?>" alt="">
+              <div class="scl-cntnt">
+                <h1>博士号（PhD）</h1>
+                <h3>国際経営学・経済学アカデミー　経営学</h3>
+              </div>
             </div>
           </div>
-
-          <div class="scl head-clr">
-            <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/liverpool.png' ?>" alt="">
-            <div class="scl-cntnt">
-              <h1> 博士号（PhD）
-              </h1>
-              <h3> リバプール大学　 • 経営学/人事管理/情報学
-              </h3>
+          <div class="scl-col-2">
+            <div class="scl head-clr">
+              <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/up.png' ?>" alt="">
+              <div class="scl-cntnt">
+                <h1>経営学修士</h1>
+                <h3>フィリピン大学　公共経営
+                </h3>
+              </div>
+            </div>
+            <div class="scl head-clr">
+              <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/up.png' ?>" alt="">
+              <div class="scl-cntnt">
+                <h1>経営学修士</h1>
+                <h3>フィリピン大学　マーケティング</h3>
+              </div>
+            </div>
+            <div class="scl head-clr">
+              <div class="relative btn-container" id="btn-advisor">
+                <a href="<?php echo RESNPO_URI . '/about#advisor_section' ?>">
+                  <button class="main-button relative">
+                    代表メッセージ
+                  </button>
+                  <img class="icon-button absolute"
+                    src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
+                </a>
+              </div>
             </div>
           </div>
-
-          <div class="scl head-clr">
-            <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/iba.png' ?>" alt="">
-            <div class="scl-cntnt">
-              <h1>博士号（PhD）</h1>
-              <h3>国際経営学・経済学アカデミー　経営学</h3>
+          <div class="av-img-col border-advisor">
+            <div class="advisor-img-container"> <!--Make container -->
+              <!-- <p>TEXT TRANSFORM HERE --Absolute</p> -->
+              <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/advisor-img.png' ?>" alt="">
+            </div>
+            <div class="advisor-txt-container">
+              <p class="p-16 w-500 head-clr">MARIA JADE CATALAN-OPULENCIA, PhD</p>
+              <p class="p-16 w-500 head-clr">特別顧問</p>
             </div>
           </div>
         </div>
-
-
-        <div class="scl-col-2">
-          <div class="scl head-clr">
-            <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/up.png' ?>" alt="">
-            <div class="scl-cntnt">
-              <h1>経営学修士</h1>
-              <h3>フィリピン大学　公共経営
-              </h3>
-            </div>
-          </div>
-
-
-          <div class="scl head-clr">
-            <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/up.png' ?>" alt="">
-            <div class="scl-cntnt">
-              <h1>経営学修士</h1>
-              <h3>フィリピン大学　マーケティング</h3>
-            </div>
-          </div>
-
-
-          <div class="scl head-clr">
-            <div class="relative btn-container" id="btn-advisor">
-              <a href="">
-                <button class="main-button relative">
-                  代表メッセージ
-                </button>
-                <img class="icon-button absolute"
-                  src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="av-img-col border-advisor">
-          <div class="advisor-img-container"> <!--Make container -->
-            <!-- <p>TEXT TRANSFORM HERE --Absolute</p> -->
-            <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/advisor-img.png' ?>" alt="">
-          </div>
-          <div class="advisor-txt-container">
-            <p class="p-16 w-500 head-clr">MARIA JADE CATALAN-OPULENCIA, PhD</p>
-            <p class="p-16 w-500 head-clr">特別顧問</p>
-          </div>
-        </div>
-
       </div>
-
-    </div>
-
-    <div class="side-text absolute" id="side-text-adv">
-      <p class="inline-txt w-600 p-30 head-clr">ADVISOR</p>
-      <img src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
-    </div>
-  </section>
+      <div class="side-text absolute" id="side-text-adv">
+        <p class="inline-txt w-600 p-30 head-clr">ADVISOR</p>
+        <img src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
+      </div>
+    </section>
+  </a>
   <!-- END: SECTION: ADVISOR -->
 
 

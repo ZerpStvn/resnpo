@@ -212,6 +212,9 @@
   width: 100%;
   padding: 0;
 }
+.pp-content-box {
+  justify-content: space-around;
+}
 
 @media (max-width: 480px) {
   /* Past Performance  */
@@ -228,6 +231,7 @@
   .pp-content-box {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
   }
   .pp-rows {
     gap: 0;

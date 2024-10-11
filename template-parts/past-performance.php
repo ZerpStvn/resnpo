@@ -10,11 +10,26 @@ function display_title()
     }
   }
 }
+
+// Get current page number
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+// Number of posts per page
+$posts_per_page = 1; // Adjust this number as needed
+
+$args = [
+  'post_type' => 'pastperformance',
+  'posts_per_page' => $posts_per_page,
+  'paged' => $paged,
+];
+
+$query = new WP_Query($args);
 ?>
+
 <section class="past-performance">
   <h1 class="past-performance-title">
     <span class="dark-blue">「</span>
-    <span class="pp-main-title"><?php echo display_title() ?></span>
+    <span class="pp-main-title"><?php display_title(); ?></span>
     <span class="dark-blue">」</span>
     <span class="sub-title head-clr">の過去実績をご紹介します。</span>
   </h1>
@@ -23,11 +38,6 @@ function display_title()
     <div class="pp-container">
       <div class="pp-content-box flex">
         <?php
-        $args = [
-          'post_type' => 'pastperformance',
-          'posts_per_page' => -1,
-        ];
-        $query = new WP_Query($args);
         if ($query->have_posts()) :
           while ($query->have_posts()) : $query->the_post();
         ?>
@@ -58,12 +68,10 @@ function display_title()
                     ?>
                   </p>
                 </div>
-
               </div>
             </div>
         <?php
           endwhile;
-          wp_reset_postdata();
         else :
           echo '<p>No past performances found.</p>';
         endif;
@@ -72,7 +80,6 @@ function display_title()
           <div class="scroll-container">
             <div class="scroll-content">
               <?php
-              $query = new WP_Query($args);
               if ($query->have_posts()) :
                 while ($query->have_posts()) : $query->the_post();
                   $images = get_post_meta(get_the_ID(), 'images', true) ?: [];
@@ -80,20 +87,31 @@ function display_title()
                     echo '<img src="' . esc_url($image) . '" alt="Image" class="slider-image">';
                   }
                 endwhile;
-                wp_reset_postdata();
               endif;
+              wp_reset_postdata();
               ?>
             </div>
           </div>
         </div>
       </div>
       <div class="pagination flex">
-        <a class="mr-r-87" href="#">&laquo;</a>
-        <a href="#" class="active">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">...</a>
-        <a class="mr-l-87" href="#">&raquo;</a>
+        <?php
+        $total_pages = $query->max_num_pages;
+        if ($total_pages > 1) :
+          $current_page = max(1, get_query_var('paged'));
+          echo paginate_links(array(
+            'base' => get_pagenum_link(1) . '%_%',
+            'format' => 'page/%#%',
+            'current' => $current_page,
+            'total' => $total_pages,
+            'prev_text'    => '&laquo;',
+            'next_text'    => '&raquo;',
+            'type'         => 'list',
+            'end_size'     => 3,
+            'mid_size'     => 3
+          ));
+        endif;
+        ?>
       </div>
     </div>
   </div>
