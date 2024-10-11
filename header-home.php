@@ -34,29 +34,32 @@
               <img class="text-logo" src="<?php echo RESNPO_IMAGE . '/res.png' ?>" alt="">
 
 
+
               <div class="header-fcol-lc">
                 <h1>1426 Hiraicho, Matsuyama City, Ehime Prefecture</h1>
 
-                <table>
-                  <tr>
-                    <td>
-                      <a href="https://www.youtube.com/channel/UCEJ3QcF3DZ9o_MYbhMxgV4Q" target="_blank">
-                        <img src="<?php echo RESNPO_IMAGE . '/yt-blue.png' ?>" alt="YouTube">
-                      </a>
-                    </td>
-                    <td>
-                      <a href="https://www.facebook.com/ChiikiKyouiku/" target="_blank">
-                        <img src="<?php echo RESNPO_IMAGE . '/fb-blue.png' ?>" alt="Facebook">
-                      </a>
-                    </td>
-                    <td>
-                      <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=601qwusa" target="_blank">
-                        <img class="line" src="<?php echo RESNPO_IMAGE . '/line-blue.png' ?>" alt="Line">
-                      </a>
-                    </td>
-                    <td class="contact-text">CONTACT</td>
-                  </tr>
-                </table>
+                <div id="tbl_col" class="tbl-col">
+                  <table>
+                    <tr>
+                      <td>
+                        <a href="https://www.youtube.com/channel/UCEJ3QcF3DZ9o_MYbhMxgV4Q" target="_blank">
+                          <img src="<?php echo RESNPO_IMAGE . '/yt-blue.png' ?>" alt="YouTube">
+                        </a>
+                      </td>
+                      <td>
+                        <a href="https://www.facebook.com/ChiikiKyouiku/" target="_blank">
+                          <img src="<?php echo RESNPO_IMAGE . '/fb-blue.png' ?>" alt="Facebook">
+                        </a>
+                      </td>
+                      <td>
+                        <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=601qwusa" target="_blank">
+                          <img class="line" src="<?php echo RESNPO_IMAGE . '/line-blue.png' ?>" alt="Line">
+                        </a>
+                      </td>
+                      <td class="contact-text">CONTACT</td>
+                    </tr>
+                  </table>
+                </div>
               </div>
             </div>
           </li>
