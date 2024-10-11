@@ -4,6 +4,49 @@
 
 /* Button Style Global */
 
+#homeid .maintop {
+  width: 100%;
+  min-height: 778px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../image/homepage/header/Front Section.png");
+  position: relative;
+}
+
+#homeid .maintopimage .imageiconsocial .slidercontainer .slick-track {
+  min-height: 278px;
+  height: 100%;
+}
+#homeid .toplinewrap {
+  border-bottom: 3px solid white;
+}
+#homeid .toplinewrap {
+  z-index: 2 !important;
+  padding-top: 69px;
+}
+#homeid .maintopwrap {
+  position: relative;
+}
+#homeid .maintopimage {
+  position: absolute;
+  top: 81px;
+  bottom: 0;
+}
+/* #homeid .maintopimage .imageiconsocial {
+  display: flex;
+} */
+#homeid .maintopimage .imageiconsocial ul {
+  border: 1px solid white;
+  min-height: 269.64px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+#homeid .maintopimage .imageiconsocial ul .white-clr {
+  transform: rotate(268deg);
+}
 #btn-news .main-button-logo:hover,
 .main-button:hover,
 .main-button-logo:hover {
@@ -160,14 +203,6 @@ hr {
 }
 
 /* START: SLICK SLIDER STYLE */
-#homeid .slick-slide {
-  margin: auto;
-  height: 680px;
-}
-
-#homeid .slick-track {
-  width: auto;
-}
 
 /* END: SLICK SLIDER STYLE */
 

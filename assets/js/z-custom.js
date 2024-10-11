@@ -1,5 +1,19 @@
 jQuery.noConflict();
 
+jQuery(document).ready(function ($) {
+  $(document).ready(function () {
+    $(".slidercontainer").slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      autoplaySpeed: 300,
+      autoplay: true,
+      fade: true,
+      cssEase: "linear",
+    });
+  });
+});
+
 // START: AOS ANIMATION EFFECTS
 jQuery(document).ready(() => {
   AOS.init({
