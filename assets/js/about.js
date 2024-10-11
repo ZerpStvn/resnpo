@@ -12,3 +12,23 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const detailCols = document.querySelectorAll(".detail-col-1, .detail-col-2");
+
+  detailCols.forEach((col) => {
+    const details = col.querySelectorAll("details");
+
+    details.forEach((detail) => {
+      detail.addEventListener("toggle", () => {
+        if (detail.open) {
+          details.forEach((otherDetail) => {
+            if (otherDetail !== detail) {
+              otherDetail.removeAttribute("open");
+            }
+          });
+        }
+      });
+    });
+  });
+});

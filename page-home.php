@@ -15,7 +15,7 @@
                     <img class="header-people relative"
                       src="<?php echo RESNPO_URI . '/assets/image/homepage/header/Group 322.png' ?>" alt="">
                     <img class="header-people relative"
-                      src="<?php echo RESNPO_URI . '/assets/image/homepage/header/Group 325.png' ?>" alt="">
+                      src="<?php echo RESNPO_URI . '/assets/image/homepage/header/Group 357.png' ?>" alt="">
                     <img class="header-people relative"
                       src="<?php echo RESNPO_URI . '/assets/image/homepage/header/Group 356.png' ?>" alt="">
                   </div>
@@ -101,7 +101,7 @@
           <p class="p-18 mt-15 w-700 class-title">海外留学/ツアー</p>
         </div>
       </li>
-      <li class="slideup">
+      <li class="slideup hide">
         <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-third/sub-img-2.png' ?>" alt="" />
         <div class="sub-ul-details">
           <p class="p-12 class-content">
@@ -166,7 +166,7 @@
 
               <div class="relative btn-container" id="btn-news">
                 <a href="<?php echo RESNPO_URI . '/whatsnew'; ?>">
-                  <button type="button" class="main-button-logo relative">支援者様</button>
+                  <button type="button" class="main-button relative">支援者様</button>
                   <img class="home-icon-button absolute"
                     src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
                 </a>
@@ -247,7 +247,7 @@
                 </p>
                 <div class="relative btn-container">
                   <a href="<?php echo RESNPO_URI . '/about#realxlink' ?>">
-                    <button class="main-button-logo relative" id="btn-logo">代表メッセージ</button>
+                    <button class="main-button relative" id="btn-logo">代表メッセージ</button>
                     <img class="home-icon-button absolute"
                       src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>"="" />
                   </a>
@@ -269,82 +269,83 @@
   <!-- END: SECTION: NEWS/RESPRESENTATIVE -->
 
   <!-- SECTION: ADVISOR -->
-  <a href="<?php echo RESNPO_URI . '/about#advisor_section' ?>">
-    <section id="advisor_home" class="flex flex-column relative">
-      <h1 class="head-clr av-title slideright ">ADVISOR</h1>
-      <div class="av-container flex">
-        <div class="av-schools flex">
-          <div class="scl-col-1">
-            <div class="scl head-clr">
-              <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/ucam.png' ?>" alt="">
-              <div class="scl-cntnt">
-                <h1>ムルシア・カトリック大学（スペイン）</h1>
-                <h3>副学長-教務担当</h3>
-              </div>
-            </div>
-            <div class="scl head-clr">
-              <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/liverpool.png' ?>" alt="">
-              <div class="scl-cntnt">
-                <h1> 博士号（PhD）
-                </h1>
-                <h3> リバプール大学　 • 経営学/人事管理/情報学
-                </h3>
-              </div>
-            </div>
-            <div class="scl head-clr">
-              <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/iba.png' ?>" alt="">
-              <div class="scl-cntnt">
-                <h1>博士号（PhD）</h1>
-                <h3>国際経営学・経済学アカデミー　経営学</h3>
-              </div>
+  <!-- <a href="<?php // echo RESNPO_URI . '/about#advisor_section' 
+                ?>"> -->
+  <section id="advisor_home" class="flex flex-column relative">
+    <h1 class="head-clr av-title slideright ">ADVISOR</h1>
+    <div class="av-container flex">
+      <div class="av-schools flex">
+        <div class="scl-col-1">
+          <div class="scl head-clr">
+            <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/ucam.png' ?>" alt="">
+            <div class="scl-cntnt">
+              <h1>ムルシア・カトリック大学（スペイン）</h1>
+              <h3>副学長-教務担当</h3>
             </div>
           </div>
-          <div class="scl-col-2">
-            <div class="scl head-clr">
-              <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/up.png' ?>" alt="">
-              <div class="scl-cntnt">
-                <h1>経営学修士</h1>
-                <h3>フィリピン大学　公共経営
-                </h3>
-              </div>
-            </div>
-            <div class="scl head-clr">
-              <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/up.png' ?>" alt="">
-              <div class="scl-cntnt">
-                <h1>経営学修士</h1>
-                <h3>フィリピン大学　マーケティング</h3>
-              </div>
-            </div>
-            <div class="scl head-clr">
-              <div class="relative btn-container" id="btn-advisor">
-                <a href="<?php echo RESNPO_URI . '/about#advisor_section' ?>">
-                  <button class="main-button relative">
-                    代表メッセージ
-                  </button>
-                  <img class="icon-button absolute"
-                    src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
-                </a>
-              </div>
+          <div class="scl head-clr">
+            <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/liverpool.png' ?>" alt="">
+            <div class="scl-cntnt">
+              <h1> 博士号（PhD）
+              </h1>
+              <h3> リバプール大学　 • 経営学/人事管理/情報学
+              </h3>
             </div>
           </div>
-          <div class="av-img-col border-advisor">
-            <div class="advisor-img-container"> <!--Make container -->
-              <!-- <p>TEXT TRANSFORM HERE --Absolute</p> -->
-              <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/advisor-img.png' ?>" alt="">
-            </div>
-            <div class="advisor-txt-container">
-              <p class="p-16 w-500 head-clr">MARIA JADE CATALAN-OPULENCIA, PhD</p>
-              <p class="p-16 w-500 head-clr">特別顧問</p>
+          <div class="scl head-clr">
+            <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/iba.png' ?>" alt="">
+            <div class="scl-cntnt">
+              <h1>博士号（PhD）</h1>
+              <h3>国際経営学・経済学アカデミー　経営学</h3>
             </div>
           </div>
         </div>
+        <div class="scl-col-2">
+          <div class="scl head-clr">
+            <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/up.png' ?>" alt="">
+            <div class="scl-cntnt">
+              <h1>経営学修士</h1>
+              <h3>フィリピン大学　公共経営</h3>
+            </div>
+          </div>
+
+          <div class="scl head-clr">
+            <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/up.png' ?>" alt="">
+            <div class="scl-cntnt">
+              <h1>経営学修士</h1>
+              <h3>フィリピン大学　マーケティング</h3>
+            </div>
+          </div>
+
+          <div class="scl head-clr">
+            <div class="relative btn-container">
+              <a href="<?php echo RESNPO_URI . '/about#advisor_section' ?>">
+                <button class="main-button relative">
+                  プロフィールを見る
+                </button>
+                <img class="icon-button absolute" src="<?php echo RESNPO_IMAGE . '/leaves.png' ?>" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="av-img-col border-advisor">
+          <div class="advisor-img-container"> <!--Make container -->
+            <!-- <p>TEXT TRANSFORM HERE --Absolute</p> -->
+            <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/advisor-img.png' ?>" alt="">
+          </div>
+          <div class="advisor-txt-container">
+            <p class="p-16 w-500 head-clr">MARIA JADE CATALAN-OPULENCIA, PhD</p>
+            <p class="p-16 w-500 head-clr">特別顧問</p>
+          </div>
+        </div>
       </div>
-      <div class="side-text absolute" id="side-text-adv">
-        <p class="inline-txt w-600 p-30 head-clr">ADVISOR</p>
-        <img src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
-      </div>
-    </section>
-  </a>
+    </div>
+    <div class="side-text absolute" id="side-text-adv">
+      <p class="inline-txt w-600 p-30 head-clr">ADVISOR</p>
+      <img src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
+    </div>
+  </section>
+  <!-- </a> -->
   <!-- END: SECTION: ADVISOR -->
 
 
@@ -426,7 +427,7 @@
           </p>
           <div class="relative btn-container">
             <a href="<?php echo RESNPO_URI . '/donation#section_4_don' ?>">
-              <button class="main-button-logo relative" id="btn-logo">支援者様</button>
+              <button class="main-button relative" id="btn-logo">支援者様</button>
               <img class="home-icon-button absolute"
                 src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
             </a>

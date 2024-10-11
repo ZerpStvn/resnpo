@@ -4,13 +4,13 @@
 
 /* Button Style Global */
 
-#btn-news .main-button-logo:hover,
+/* #btn-news .main-button-logo:hover,
 .main-button:hover,
 .main-button-logo:hover {
   color: #81bf24;
   background-color: #fff;
   border: 1px solid #81bf24;
-}
+} */
 
 /* SECTION ---- 1 */
 img.header-res-img {
@@ -493,9 +493,9 @@ p.inline-txt.p-30.w-600.head-clr {
   text-align: right;
 }
 
-#btn-news .main-button-logo {
+/* #btn-news .main-button-logo {
   padding: 15px 80px;
-}
+} */
 
 .btn-container {
   margin-top: 10%;
@@ -869,9 +869,9 @@ p.inline-txt.p-30.w-600.head-clr {
   top: 25%;
 }
 
-#btn-logo {
+/* #btn-logo {
   padding: 15px 80px;
-}
+} */
 
 @keyframes shake {
   0% {
@@ -926,4 +926,8 @@ p.inline-txt.p-30.w-600.head-clr {
 }
 #tbl_col .contact-text {
   text-align: center;
+}
+
+.hide {
+  visibility: hidden;
 }

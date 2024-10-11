@@ -1,11 +1,11 @@
 jQuery.noConflict();
 
-// $(document).ready(function () {
-//   $(".sdg-link").click(function (e) {
-//     e.preventDefault();
-//     $(this).siblings(".sub-menu").slideToggle();
-//   });
-// });
+$(document).ready(function () {
+  $(".sdg-link").click(function (e) {
+    e.preventDefault();
+    $(this).siblings(".sub-menu").slideToggle();
+  });
+});
 
 // START: AOS ANIMATION EFFECTS
 jQuery(document).ready(() => {

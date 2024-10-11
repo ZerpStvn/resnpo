@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<?php landing_sdg_page_template('海外進学') ?>
+<?php landing_sdg_page_template('海外進学', 'vid5', 'vid6', 'vid7', 'vid4') ?>
 
 <!-- SECTION 1: FRONT -->
 <?php articlefront('RESのSDGs<br>甲子園とは
