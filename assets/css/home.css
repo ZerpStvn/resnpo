@@ -195,7 +195,9 @@ hr {
   padding: 3% 5%;
   gap: 120px;
 }
-
+.section_2 .sub-ul li {
+  cursor: pointer;
+}
 .section_2 .main-ul > li img {
   height: 670px;
   width: 695px;
