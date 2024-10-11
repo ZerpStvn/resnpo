@@ -124,86 +124,75 @@
   <?php get_template_part('template-parts/upcoming-events') ?>
   <!-- END SECTION -->
 
-  <!-- SECTION: RECENT NEWS -->
   <section class="section_3 relative global-width">
     <ul class="flex ul-news">
-      <li>
-        <div class="img-container-news">
-          <img class="scaleIn" src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fourth/main-img.png' ?>"
-            alt="" />
-        </div>
-        <div class="news-detils">
-          <p class="p-16 sub-head-clr">August 8, 2024</p>
-          <p class="p-40 head-clr scaleIn">
-            【えひめSDGs甲子園2024】本選出場チームが決定しました。
-          </p>
-          <p class="p-16 details">
-            愛媛県内の高校から29のチームがエントリーした「えひめSDGs甲子園2024」の予選審査が終了し、本選出場チームが発表されました。・・・
-          </p>
+      <?php
+      $news_query = new WP_Query([
+        'post_type' => 'news',
+        'posts_per_page' => 1,
+      ]);
 
-          <div class="relative btn-container" id="btn-news">
-            <a href="">
-              <button type="button" class="main-button-logo relative">支援者様</button>
-              <img class="home-icon-button absolute"
-                src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
-            </a>
-          </div>
-        </div>
-      </li>
+      if ($news_query->have_posts()) :
+        while ($news_query->have_posts()) : $news_query->the_post();
+          $news_date = get_post_meta(get_the_ID(), '_news_date', true);
+      ?>
+          <li>
+            <div class="img-container-news">
+              <img class="scaleIn" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" />
+            </div>
+            <div class="news-detils">
+              <p class="p-16 sub-head-clr"><?php echo esc_html($news_date); ?></p>
+              <p class="p-40 head-clr scaleIn"><?php the_title(); ?></p>
+              <p class="p-16 details"><?php the_excerpt(); ?></p>
+
+              <div class="relative btn-container" id="btn-news">
+                <a href="<?php the_permalink(); ?>">
+                  <button type="button" class="main-button-logo relative">支援者様</button>
+                  <img class="home-icon-button absolute"
+                    src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
+                </a>
+              </div>
+            </div>
+          </li>
+      <?php
+        endwhile;
+        wp_reset_postdata();
+      endif;
+      ?>
       <li>
         <p class="p-20 mb-5 recents">RECENTS</p>
         <ul class="ul-recents slideup">
-          <li>
-            <div class="flex with-img">
-              <div class="img-container-news-recent">
-                <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fourth/sub-img-1.png' ?>" alt="" />
-              </div>
-              <div>
-                <p class="p-14 w-700 head-clr">
-                  小中学生が過去最少、大学生は過去最多…学校基本調査
-                </p>
-                <p class="p-14 read-more">
-                  READ MORE
-                  <img src="<?php echo RESNPO_URI . '/assets/images/homepage/section-fourth/Vector.png' ?>" alt="" />
-                </p>
-                <p class="p-12 text-clr">2024/09/02</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="flex with-img">
-              <div class="img-container-news-recent">
-                <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fourth/sub-img-2.png' ?>" alt="" />
-              </div>
-              <div>
-                <p class="p-14 w-700 head-clr">
-                  優勝は「くまもるず」（上浮穴高等学校）
-                </p>
-                <p class="p-14 read-more">
-                  READ MORE
-                  <img src="<?php echo RESNPO_URI . '/assets/images/homepage/section-fourth/Vector.png' ?>" alt="" />
-                </p>
-                <p class="p-12 text-clr">2024/08/27</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="flex with-img">
-              <div class="img-container-news-recent">
-                <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fourth/sub-img-3.png' ?>" alt="" />
-              </div>
-              <div>
-                <p class="p-14 w-700 head-clr">
-                  都道府県別・学習時間ランキング、都会が多い傾向
-                </p>
-                <p class="p-14 read-more">
-                  READ MORE
-                  <img src="<?php echo RESNPO_URI . 'assets/images/homepage/section-fourth/Vector.png' ?>" alt="" />
-                </p>
-                <p class="p-12 text-clr">2024/08/19</p>
-              </div>
-            </div>
-          </li>
+          <?php
+          $recent_news_query = new WP_Query([
+            'post_type' => 'news',
+            'posts_per_page' => 3,
+            'offset' => 1,
+          ]);
+
+          if ($recent_news_query->have_posts()) :
+            while ($recent_news_query->have_posts()) : $recent_news_query->the_post();
+              $recent_news_date = get_post_meta(get_the_ID(), '_news_date', true);
+          ?>
+              <li>
+                <div class="flex with-img">
+                  <div class="img-container-news-recent">
+                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" />
+                  </div>
+                  <div>
+                    <p class="p-14 w-700 head-clr"><?php the_title(); ?></p>
+                    <p class="p-14 read-more">
+                      READ MORE
+                      <img src="<?php echo RESNPO_URI . '/assets/images/homepage/section-fourth/Vector.png' ?>" alt="" />
+                    </p>
+                    <p class="p-12 text-clr"><?php echo esc_html($recent_news_date); ?></p>
+                  </div>
+                </div>
+              </li>
+          <?php
+            endwhile;
+            wp_reset_postdata();
+          endif;
+          ?>
         </ul>
       </li>
     </ul>

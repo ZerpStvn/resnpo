@@ -340,8 +340,9 @@ p.inline-txt.p-30.w-600.head-clr {
 }
 
 .img-container-news-recent img {
-  /* width: 100%; */
+  width: 84px;
   height: 100%;
+  max-height: 84px;
 }
 
 .details {

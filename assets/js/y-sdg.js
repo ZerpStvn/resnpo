@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
       loop: true,
       speed: 500,
       autoplay: {
-        delay: 5000,
+        delay: 0, // Slide immediately on load
         disableOnInteraction: false,
       },
       navigation: {
@@ -125,7 +125,13 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       },
       on: {
-        init: updateDetails,
+        init: function () {
+          updateDetails();
+          setTimeout(() => {
+            swiper.params.autoplay.delay = 5000;
+            swiper.autoplay.start();
+          }, 0);
+        },
         slideChange: updateDetails,
       },
     });
@@ -141,7 +147,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Animation Scale In
 document.addEventListener("DOMContentLoaded", function () {
   const elements = document.querySelectorAll(".scaleIn");
   elements.forEach((element) => {

@@ -442,8 +442,8 @@ fieldset legend p {
   padding-left: 35px;
 }
 
-#donationid fieldset:hover {
-  border: 1px solid var(--buttoncolor);
+fieldset:hover {
+  border: 3px solid var(--buttoncolor);
   padding: 30px 30px;
   border-radius: 10px;
   width: 300px;

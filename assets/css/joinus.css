@@ -21,7 +21,7 @@
   font-size: 70px;
   font-weight: 700;
   font-family: var(--readex);
-  margin-bottom: 80px;
+  margin-top: 80px;
   text-shadow: -1.5px -1.5px 0 #fff, 1.5px -1.5px 0 #fff, -1.5px 1.5px 0 #fff,
     1.5px 1px 0 #fff; /* Creates the outline effect */
 }
@@ -153,6 +153,10 @@
   width: 300px;
 }
 
+#joinusid fieldset:hover {
+  border: 2px solid var(--buttoncolor);
+}
+
 #joinusid .fieldset-container ul li:nth-child(2) {
   margin-top: 0;
 }
@@ -186,6 +190,8 @@
 
 .img-bg-membership {
   left: -25px;
+  width: 1097px;
+  height: 964px;
 }
 
 .section-join-membership > ul {
@@ -218,5 +224,6 @@
 
 /* SECTION ---- 5: INQUIRE */
 
-.section-inquire {
+.section_3_don {
+  padding-block-end: 70px;
 }
