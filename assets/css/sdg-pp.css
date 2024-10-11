@@ -109,6 +109,7 @@
 }
 
 .p-white-16 {
+  font-family: var(--notsansjp);
   font-size: 16px;
   font-weight: 500;
   line-height: 22.5px;
