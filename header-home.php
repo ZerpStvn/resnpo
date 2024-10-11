@@ -13,7 +13,7 @@
 
   <header class="relative">
     <nav class="absolute navbar "> <!--data-aos="fade-left" -->
-      <div class="nav-icon-container-home nav-icon" id="nav-icon">
+      <div class="nav-icon-container-home nav-icon global_width" id="nav-icon">
         <img class="home-nav-ico" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/home-nav.png' ?>"
           alt="" />
       </div>
