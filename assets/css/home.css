@@ -190,7 +190,13 @@ hr {
 /* END: SLICK SLIDER STYLE */
 
 /* SECTION ----- 2 */
-
+p.inline-txt.p-30.w-600.head-clr,
+p.inline-txt.w-600.p-30.head-clr,
+p.inline-txt.w-600.p-30.head-clr,
+p.inline-txt.w-600.p-30.head-clr,
+p.inline-txt.p-30.w-600.head-clr {
+  font-family: var(--readex) !important;
+}
 .section_2 .main-ul {
   padding: 3% 5%;
   gap: 120px;
