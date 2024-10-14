@@ -216,6 +216,30 @@
   justify-content: space-around;
 }
 
+.page-numbers {
+  display: flex;
+  font-family: var(--notsansjp);
+}
+
+.pagination .page-numbers.current {
+  background-color: var(--buttoncolor);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.pagination .page-numbers {
+  /* color: var(--buttoncolor); */
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.pagination .page-numbers a:hover {
+  background-color: var(--buttoncolor);
+  color: white;
+  border-radius: 5px;
+}
+
 @media (max-width: 480px) {
   /* Past Performance  */
   .sub-title {
