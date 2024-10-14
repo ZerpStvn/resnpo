@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let currentSlide = 1;
+  let currentSlide = 0;
   const videoPaths = document.getElementById("video-paths");
   const videos = [
     videoPaths.getAttribute("data-video1"),
@@ -26,13 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
     currentSlide = index;
     const videoElement = document.getElementById("background-video");
     videoElement.classList.remove("slide-in");
-    videoElement.classList.add("slide-out");
-    setTimeout(() => {
-      videoElement.querySelector("source").src = videos[currentSlide];
-      videoElement.load();
-      videoElement.classList.remove("slide-out");
-      videoElement.classList.add("slide-in");
-    }, 1000);
+    videoElement.querySelector("source").src = videos[currentSlide];
+    videoElement.load();
+    videoElement.classList.add("slide-in");
   }
 
   function prevSlide() {
@@ -105,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
       loop: true,
       speed: 500,
       autoplay: {
-        delay: 0, // Slide immediately on load
+        delay: 0, // No delay for the first slide
         disableOnInteraction: false,
       },
       navigation: {
@@ -128,9 +124,9 @@ document.addEventListener("DOMContentLoaded", function () {
         init: function () {
           updateDetails();
           setTimeout(() => {
-            swiper.params.autoplay.delay = 5000;
+            swiper.params.autoplay.delay = 5000; // Set delay to 5000ms for subsequent slides
             swiper.autoplay.start();
-          }, 0);
+          }, 0); // Start autoplay immediately
         },
         slideChange: updateDetails,
       },
@@ -147,6 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Animation Scale In
 document.addEventListener("DOMContentLoaded", function () {
   const elements = document.querySelectorAll(".scaleIn");
   elements.forEach((element) => {

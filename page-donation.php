@@ -8,12 +8,17 @@
       <!-- data-aos="fade-up -->
       <div class="donation-container">
         <div class="donation-texts">
-          <p class="wk-s-5">DONATION</p>
-          <!--  data-aos="fade-up" -->
-          <div class="text-deco-donation">
-            <p class="wk-s-5 ">DONATION</p>
-            <p class="wk-s-5 ">DONATION</p>
-            <p class="wk-s-5 ">DONATION</p>
+          <div class="slidedown">
+            <p class="wk-s-5">DONATION</p>
+            <!--  data-aos="fade-up" -->
+            <div class="text-deco-donation">
+              <p class="wk-s-5 ">DONATION</p>
+              <p class="wk-s-5 ">DONATION</p>
+              <p class="wk-s-5 ">DONATION</p>
+            </div>
+          </div>
+          <div class="header-txt-container absolute">
+            <p class="slideleft">寄付</p>
           </div>
         </div>
 
@@ -168,7 +173,7 @@
     </div>
   </section>
 
-  <section class="section_4_don">
+  <section id="section_4_don" class="section_4_don">
     <div class="title-top relative">
       <p class="w-500 p-150 text-center relative">HOW TO HELP</p>
       <p class="w-900 p-60 light-blue absolute scaleIn">お気持ちにあった寄付をお選びください</p>
@@ -409,7 +414,6 @@
           </div>
 
         </div>
-
 
 
       </div>

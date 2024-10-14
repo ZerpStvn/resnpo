@@ -1,10 +1,9 @@
 jQuery.noConflict();
 
 $(document).ready(function () {
-  // Toggle the sub-menu when SDGs link is clicked
   $(".sdg-link").click(function (e) {
-    e.preventDefault(); // Prevent the default link behavior
-    $(this).siblings(".sub-menu").slideToggle(); // Toggle the visibility of the sub-menu
+    e.preventDefault();
+    $(this).siblings(".sub-menu").slideToggle();
   });
 });
 

@@ -12,7 +12,7 @@
           <p class="p-membership wk-s-5">MEMBERSHIP</p>
         </div>
         <div class="header-txt-container absolute">
-          <p>メンバーシップ</p>
+          <p class="slideleft">メンバーシップ</p>
         </div>
         <div class="res-txt-container absolute">
           <ul class="flex gap-15">

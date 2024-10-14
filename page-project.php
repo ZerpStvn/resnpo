@@ -222,7 +222,7 @@
     </div>
   </section>
 
-  <section class="section-project-sgds relative">
+  <section class="section-project-sgds relative " style="display: none;">
     <div class="relative project-sgds-container">
 
       <p class="w-700 p-150 white-clr section-title relative slideright">海外進学</p>

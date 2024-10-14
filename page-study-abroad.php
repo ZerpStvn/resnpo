@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<?php landing_sdg_page_template('海外進学') ?>
+<?php landing_sdg_page_template('海外進学', 'vid5', 'vid6', 'vid7', 'vid4') ?>
 
 <!-- SECTION 1: FRONT -->
 <?php articlefront('RESのSDGs<br>甲子園とは
@@ -67,7 +67,7 @@
       <li class="sg_description">※定数に達し次第、予約を締め切ります。</li>
     </div>
     <div class="relative btn-container">
-      <a href="">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScBWhbvkQglfEUcERY7xinQC8e1GCvbG9JyUUowdsf4oOCGQw/viewform">
         <button class="main-button relative">
           参加申し込み
         </button>

@@ -6,7 +6,7 @@
       <div class="upper-footer">
         <div class="uf-c1">
           <div class="footer-logo">
-            <img src="<?php echo RESNPO_IMAGE . '/green-logo.png' ?>" alt="green-logo">
+            <img src="<?php echo RESNPO_IMAGE . '/green-logo2.png' ?>" alt="green-logo">
             <img src="<?php echo RESNPO_IMAGE . '/res.png' ?>" alt="res">
           </div>
           <div class="tbl-col">
@@ -66,10 +66,9 @@
           子どもたちに一つでも多くの機会を届けるため 皆様の寄付を私たちの活動に利用させていただきます。
         </p>
         <div class="relative btn-container">
-          <a href="<?php echo RESNPO_URI . '/donation' ?>">
+          <a href="<?php echo RESNPO_URI . '/donation#section_4_don' ?>">
             <button class="main-button relative">
-              代表メッセージ
-            </button>
+              詳しく見る </button>
             <img class="icon-button absolute" src="<?php echo RESNPO_IMAGE . '/leaves.png' ?>" alt="" />
           </a>
         </div>

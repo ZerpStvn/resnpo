@@ -23,18 +23,19 @@
 .landing-fg {
   position: absolute;
   bottom: 0;
-  left: 150px;
+  left: 400px;
   /* top: 50px; */
   height: 80%;
-  width: 90%;
+  width: 100%;
 }
 .landing-fg img {
-  display: block; /* Remove default inline spacing */
+  display: block;
   max-width: 100%;
   height: auto;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 0;
   object-fit: cover;
+  margin-left: 100px;
 }
 .landing-fg img {
   height: 100%;
@@ -554,7 +555,7 @@
 
 #action-section .section-content .image-placeholder img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   max-width: 100%;
   object-fit: cover;
   object-position: center;
