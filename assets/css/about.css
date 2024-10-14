@@ -19,7 +19,7 @@
   position: absolute;
   bottom: 0;
   left: 10px;
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
 }
 .landing-fg img {
@@ -32,7 +32,8 @@
   /* margin-left: 400px; */
 }
 
-#aboutid .side-content {
+#aboutid .side-content,
+#joinusid .side-content {
   display: flex;
   flex-direction: column;
   gap: 450px;
@@ -74,6 +75,7 @@
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
     1px 1px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
     2px 2px 0 #fff;
+  text-wrap: nowrap;
 }
 /* VISION MISSION ACTION */
 .vma-title {

@@ -913,3 +913,9 @@ p.inline-txt.p-30.w-600.head-clr {
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
+
+.home-lndg-sub {
+  font-family: var(--readex);
+  font-size: 30px;
+  text-align: center;
+}

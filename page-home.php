@@ -35,11 +35,15 @@
 
           </li>
           <li>
-            <div class="flex relative header-second slideright">
-              <img class="header-green-icon"
-                src="<?php echo RESNPO_URI . '/assets/image/homepage/header/header-green-icon.png' ?>" alt="">
-              <img class="header-res-img"
-                src="<?php echo RESNPO_URI . '/assets/image/homepage/header/res-img-txt.png' ?>" alt="">
+            <div class="flex gap-25 flex-column relative header-second slideright">
+              <div class="flex  ">
+                <img class="header-green-icon"
+                  src="<?php echo RESNPO_URI . '/assets/image/homepage/header/header-green-icon.png' ?>" alt="">
+                <img class="header-res-img"
+                  src="<?php echo RESNPO_URI . '/assets/image/homepage/header/res-img-txt.png' ?>" alt="">
+              </div>
+              <h1 class="outline home-lndg-sub">自ら考え行動できる人材を育成する活動を<br>しています。< /h1>
+
             </div>
           </li>
         </ul>

@@ -1,10 +1,10 @@
 <?php
-function render_about_section($sectiontitle, $subtitle)
+function render_about_section($sectiontitle, $subtitle, $img)
 {
 ?>
   <section class="landing-about">
     <div class="landing-fg">
-      <img src="<?php echo RESNPO_IMAGE . '/about/landing-fg5.png' ?>" alt="">
+      <img src="<?php echo RESNPO_IMAGE . $img ?>" alt="">
     </div>
 
     <div class="side-content">

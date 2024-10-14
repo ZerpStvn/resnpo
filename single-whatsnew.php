@@ -4,13 +4,27 @@
 
   <section class="donation-header">
     <div class="border relative">
-      <div class="donation-container relative">
-        <p class="wk-s-5">WHAT’S NEW</p>
+      <div class="donation-container relative slidedown">
+
+        <div class="b-titles text-centered">
+
+          <p class="b-title">WHAT’S NEW</p>
+          <p class="b-title">WHAT’S NEW</p>
+          <p class="b-title">WHAT’S NEW</p>
+          <p class="b-title">WHAT’S NEW</p>
+
+        </div>
+        <!-- <p class="wk-s-5">WHAT’S NEW</p>
         <div class="text-deco-donation">
           <p class="wk-s-5">WHAT’S NEW</p>
-          <p class="wk-s-5">WHAT’S NEW</p>
+        </div>
+        <div class="text-deco-donation">
           <p class="wk-s-5">WHAT’S NEW</p>
         </div>
+        <div class="text-deco-donation">
+          <p class="wk-s-5">WHAT’S NEW</p>
+        </div> -->
+
         <div class="header-txt-container absolute">
           <p>RESニュース</p>
         </div>

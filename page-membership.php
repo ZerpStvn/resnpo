@@ -5,12 +5,21 @@
   <section class="donation-header">
     <div class="border relative">
       <div class="donation-container slidedown relative">
-        <p class="p-membership wk-s-5">MEMBERSHIP</p>
+
+        <div class="b-titles text-centered">
+
+          <p class="b-title">MEMBERSHIP</p>
+          <p class="b-title">MEMBERSHIP</p>
+          <p class="b-title">MEMBERSHIP</p>
+          <p class="b-title">MEMBERSHIP</p>
+
+        </div>
+        <!-- <p class="p-membership wk-s-5">MEMBERSHIP</p>
         <div class="text-deco-donation">
           <p class="p-membership wk-s-5">MEMBERSHIP</p>
           <p class="p-membership wk-s-5">MEMBERSHIP</p>
           <p class="p-membership wk-s-5">MEMBERSHIP</p>
-        </div>
+        </div> -->
         <div class="header-txt-container absolute">
           <p class="slideleft">メンバーシップ</p>
         </div>

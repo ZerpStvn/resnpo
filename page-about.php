@@ -1,7 +1,7 @@
 <?php get_header() ?>
 <div id="aboutid" class="aboutid">
 
-  <?php render_about_section('ABOUT US', 'What is RES?'); ?>
+  <?php render_about_section('ABOUT US', 'What is RES?', '/about/landing-fg5.png'); ?>
 
 
   <div class="vma-title scaleIn">

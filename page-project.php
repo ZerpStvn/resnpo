@@ -168,7 +168,7 @@
       <p class="w-700 p-200 white-clr section-title relative slideright">SDGS</p>
 
       <div class="overlay-arc relative">
-        <a href="<?php echo RESNPO_URI . '/sdg' ?>">
+        <a href="<?php echo get_site_url() . '/sdg' ?>">
           <img class="absolute arc-img-side" src="<?php echo RESNPO_URI . '/assets/image/project/section-one/people-img.png' ?>" alt="">
           <ul class="flex">
             <li>
@@ -206,7 +206,7 @@
           <li>
             <p class="w-700 p-25 white-clr">様々な活動を通して日本と東南アジアの学生をつなぐ活動を主として行っています。同年代の仲間たちとの様々な活動や異文化体験を通じて、国内では経験できない多様性に触れ、自国や自分自身の新たな面に気づかされます。</p>
             <div class="relative btn-container">
-              <a href="<?php echo RESNPO_URI . '/study-abroad' ?>">
+              <a href="<?php echo get_site_url() . '/study-abroad' ?>">
                 <button class="main-button relative">
                   <p>詳しく見る</p>
                 </button>
@@ -237,7 +237,7 @@
           <li>
             <p class="w-700 p-25 white-clr">海外の大学への進学を徹底サポートします。言語の違いや距離を理由に選択肢から外していませんか？その挑戦がなりたい自分への近道かもしれません。</p>
             <div class="relative btn-container">
-              <a href="<?php echo RESNPO_URI . '/studying-abroad' ?>">
+              <a href="<?php echo get_site_url() . '/studying-abroad' ?>">
                 <button class="main-button relative">
                   <p>詳しく見る</p>
                 </button>

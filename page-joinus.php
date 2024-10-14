@@ -1,65 +1,10 @@
 <?php get_header() ?>
-<div id="joinusid">
 
-  <section class="section-project-header relative">
+<div id="joinusid" class="joinusid">
 
-    <div class="project-header-content relative">
-      <p class="outline header-text scaleIn">JOIN <br> US</p>
-    </div>
+  <?php render_about_section('JOIN US', 'Be Part of our Journey!', '/project/header/people-img.png');
+  ?>
 
-
-    <img class="absolute img-people" src="<?php echo RESNPO_URI . '/assets/image/project/header/people-img.png' ?>" alt="">
-
-
-    <div class="header-text-items relative">
-
-      <p class="header-item-text slideright">Be part of our journey!</p>
-      <!-- <ul class="ul-text-items">
-        <li>
-          <div class="header-text-item relative slideup">
-            <label>キフ</label>
-            <p>Sed ut perspiciatis unde
-              omnis iste natus error sit
-              voluptatem accusantium </p>
-            <img class="absolute front-img" src="<?php echo RESNPO_URI . '/assets/image/project/header/ellipse-1.png' ?>" alt="">
-            <img class="absolute back-img" src="<?php echo RESNPO_URI . '/assets/image/project/header/ellipse-bg.png' ?>" alt="">
-          </div>
-        </li>
-        <li>
-          <div class="header-text-item relative slideup">
-            <label>メンバーシップ</label>
-            <p>Sed ut perspiciatis unde
-              omnis iste natus error sit
-              voluptatem accusantium </p>
-            <img class="absolute front-img" src="<?php echo RESNPO_URI . '/assets/image/project/header/ellipse-2.png' ?>" alt="">
-            <img class="absolute back-img" src="<?php echo RESNPO_URI . '/assets/image/project/header/ellipse-bg.png' ?>" alt="">
-          </div>
-        </li>
-      </ul> -->
-      <!-- <div class="side-content">
-        <div class="social">
-          <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=601qwusa">
-            <img src="<?php echo RESNPO_IMAGE . '/line.png' ?>" alt="Line">
-          </a>
-          <a href="https://www.facebook.com/ChiikiKyouiku/">
-            <img src="<?php echo RESNPO_IMAGE . '/facebook.png' ?>" alt="Facebook">
-          </a>
-          <a href="https://www.youtube.com/channel/UCEJ3QcF3DZ9o_MYbhMxgV4Q">
-            <img src="<?php echo RESNPO_IMAGE . '/youtube.png' ?>" alt="YouTube">
-          </a>
-        </div>
-        <div class="about-title">
-          <div class="side-title">
-            <img class="side-logo" src="<?php echo RESNPO_IMAGE . '/logo.png' ?>" alt="">
-            <div class="side-title-text">
-              <h1>NPO法人</h1>
-              <h3>REGIONAL EDUCATION SUPPORT</h3>
-            </div>
-          </div>
-        </div>
-      </div> -->
-    </div>
-  </section>
 
   <div class="marquee-container">
     <div class="marquee">
