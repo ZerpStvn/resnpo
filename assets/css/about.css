@@ -33,7 +33,8 @@
 }
 
 #aboutid .side-content,
-#joinusid .side-content {
+#joinusid .side-content,
+#projectid .side-content {
   display: flex;
   flex-direction: column;
   gap: 450px;

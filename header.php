@@ -81,7 +81,7 @@
                       <img class="line" src="<?php echo RESNPO_IMAGE . '/line-blue.png' ?>" alt="Line">
                     </a>
                   </td>
-                  <td class="contact-text">CONTACT</td>
+                  <td class="contact-text"><a href="https://edu-npo.com/inquiry/">CONTACT</a></td>
                 </tr>
               </table>
             </div>
