@@ -91,6 +91,14 @@ header {
   color: #fff;
 }
 
+.side-title-text a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.side-title-text a:visited {
+  color: inherit;
+}
 .side-title h3 {
   font-family: var(--notsansjp);
   font-size: 14px;

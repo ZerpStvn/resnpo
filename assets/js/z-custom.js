@@ -163,3 +163,50 @@ jQuery(document).ready(function ($) {
     $(".slider").slick("slickGoTo", index);
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const recentArticles = document.querySelectorAll(".recent-article");
+  const mainArticle = document.getElementById("main-article");
+
+  recentArticles.forEach((article) => {
+    article.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      // Get data from the clicked recent article
+      const title = this.getAttribute("data-title");
+      const date = this.getAttribute("data-date");
+      const excerpt = this.getAttribute("data-excerpt");
+      const link = this.getAttribute("data-link");
+      const image = this.getAttribute("data-image");
+
+      // Get data from the main article
+      const mainTitle = mainArticle.querySelector(".head-clr").textContent;
+      const mainDate = mainArticle.querySelector(".sub-head-clr").textContent;
+      const mainExcerpt = mainArticle.querySelector(".details").textContent;
+      const mainLink = mainArticle.querySelector(".btn-container a").href;
+      const mainImage = mainArticle.querySelector(
+        ".img-container-news img"
+      ).src;
+
+      // Update the main article with the clicked recent article's data
+      mainArticle.querySelector(".img-container-news img").src = image;
+      mainArticle.querySelector(".sub-head-clr").textContent = date;
+      mainArticle.querySelector(".head-clr").textContent = title;
+      mainArticle.querySelector(".details").textContent = excerpt;
+      mainArticle.querySelector(".btn-container a").href = link;
+
+      // Update the clicked recent article with the main article's data
+      this.setAttribute("data-title", mainTitle);
+      this.setAttribute("data-date", mainDate);
+      this.setAttribute("data-excerpt", mainExcerpt);
+      this.setAttribute("data-link", mainLink);
+      this.setAttribute("data-image", mainImage);
+      this.textContent = mainTitle;
+      this.closest(".with-img").querySelector(
+        ".img-container-news-recent img"
+      ).src = mainImage;
+      this.closest(".with-img").querySelector(".text-clr").textContent =
+        mainDate;
+    });
+  });
+});

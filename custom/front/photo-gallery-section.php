@@ -8,8 +8,7 @@ function photogallerysection($gallery_title = null)
       <div class="photo-gallery-title slideleft">
         <!-- <img src="<?php //echo RESNPO_IMAGE . '/photo-gallery.png' 
                         ?>" alt="photogal"> -->
-        <h2 class="outline-blue">PHOTO</h2>
-        <h1 class="outline-blue">GALLERY</h1>
+        <h2 class="outline-blue">PHOTO<br> GALLERY</h2>
       </div>
       <div class="photo-gallery-content">
         <p class="p-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -18,7 +17,7 @@ function photogallerysection($gallery_title = null)
     <svg version="1.1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" style="display:none;">
       <defs>
         <filter id="stroke-text-svg-filter-blue">
-          <feMorphology operator="dilate" radius="2"></feMorphology>
+          <feMorphology operator="dilate" radius="1"></feMorphology>
           <feComposite operator="xor" in="SourceGraphic" />
         </filter>
       </defs>

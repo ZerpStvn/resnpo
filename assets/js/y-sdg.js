@@ -97,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
     swiper = new Swiper(".mySwiperue", {
       slidesPerView: 3,
       spaceBetween: 20,
+      // allowTouchMove: false,
       centeredSlides: true,
       loop: true,
       speed: 500,
@@ -127,6 +128,24 @@ document.addEventListener("DOMContentLoaded", function () {
             swiper.params.autoplay.delay = 5000; // Set delay to 5000ms for subsequent slides
             swiper.autoplay.start();
           }, 0); // Start autoplay immediately
+
+          // Add click event listeners to slide images
+          document
+            .querySelectorAll(".mySwiperue .swiper-slide img")
+            .forEach((img, index) => {
+              img.addEventListener("click", () => {
+                // Calculate the index to center the clicked slide minus one
+                let centerIndex =
+                  swiper.realIndex -
+                  Math.floor(swiper.params.slidesPerView / 2) -
+                  1;
+                // Ensure the index stays within valid bounds
+                if (centerIndex < 0) {
+                  centerIndex = 0;
+                }
+                swiper.slideTo(centerIndex);
+              });
+            });
         },
         slideChange: updateDetails,
       },

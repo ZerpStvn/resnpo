@@ -60,8 +60,9 @@ nav {
 .nav-menu .header-scol-links ul {
   list-style-type: none;
   gap: 40px;
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
+  padding: 0;
+  margin: 0;
+  margin-left: 40px;
 }
 
 .nav-menu .header-scol-links li {
@@ -196,4 +197,28 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 28px;
+}
+
+.header-fcol-lc {
+  font-family: var(-readex);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  /* text-align: left; */
+}
+
+#tbl_col table {
+  width: 100%;
+  margin-top: 50px;
+}
+#tbl_col tr {
+  text-align: center;
+}
+#tbl_col .contact-text {
+  text-align: center;
+}
+
+.hide {
+  visibility: hidden;
 }

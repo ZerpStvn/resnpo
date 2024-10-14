@@ -59,14 +59,14 @@ function add_custom_page()
       'post_type' => 'page',
       'post_name' => 'membership'
     ),
-    array(
-      'post_title' => 'What\'s New',
-      'post_content' => 'wahtsnew',
-      'post_status' => 'publish',
-      'post_author' => 1,
-      'post_type' => 'page',
-      'post_name' => 'whatsnew'
-    ),
+    // array(
+    //   'post_title' => 'What\'s New',
+    //   'post_content' => 'wahtsnew',
+    //   'post_status' => 'publish',
+    //   'post_author' => 1,
+    //   'post_type' => 'page',
+    //   'post_name' => 'whatsnew'
+    // ),
     array(
       'post_title' => 'Study Abroad',
       'post_content' => 'Study Abroad',
