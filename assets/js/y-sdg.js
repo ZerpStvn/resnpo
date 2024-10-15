@@ -117,9 +117,10 @@ document.addEventListener("DOMContentLoaded", function () {
         480: {
           centeredSlides: true,
           loop: true,
+          slidesPerView: 3,
         },
         768: {
-          slidesPerView: 2,
+          slidesPerView: 3,
         },
         1024: {
           slidesPerView: 3,

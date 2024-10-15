@@ -1,6 +1,5 @@
 #realxlink {
   background: rgba(0, 95, 143, 0.85);
-  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -8,6 +7,7 @@
   padding-block: 100px;
   gap: 30px;
 }
+
 .qt {
   font-family: var(--notsansjp);
   font-size: 300px;
@@ -68,9 +68,9 @@
 }
 
 .rxl-lr img {
-  width: 556px;
-  height: 516px;
-  object-fit: cover;
+  width: 100%; /* Fully occupy the width */
+  height: 516px; /* Specific height */
+  object-fit: cover; /* Crop the image to fit */
 }
 
 .rxl-lr p {
@@ -89,24 +89,30 @@
   text-align: center;
   font-family: var(--notsansjp);
 }
+
 .org_overview > p:first-child {
   margin-bottom: 10px;
 }
+
 .list-contact {
   margin-top: 5%;
   padding: 0 10%;
 }
+
 .list-contact div {
   border-top: 1px solid #6a6a6a;
   padding: 24px 0;
 }
+
 .list-contact div:last-child {
   border-bottom: 1px solid #6a6a6a;
   margin-bottom: 40px;
 }
+
 .list-contact div p:first-child {
   flex: 0 0 30%;
 }
+
 .list-contact div p:last-child {
   flex: 0 0 70%;
   text-align: left;
@@ -118,7 +124,6 @@
 
 #org_overview .icon-button {
   rotate: 52deg;
-  /* left: 260px; */
   top: -18px;
   position: absolute;
   right: unset;
@@ -127,4 +132,124 @@
 #org_overview .btn-container {
   margin-top: 45px;
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
+}
+
+.message-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left; /* Ensure text alignment is left */
+}
+
+.message-cont img {
+  width: 277.72px;
+  height: 334px;
+  margin-right: 20px; /* Space between image and text */
+}
+
+.message-cont h1 {
+  font-family: var(--notsansjp);
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 98.44px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #e4f6ff;
+  margin: 0;
+  transform: rotate(-90deg); /* Rotate the h1 element */
+}
+
+@media (max-width: 786px) {
+  .rxl-ur {
+    padding-inline: 20px;
+  }
+  .content {
+    flex-direction: column !important;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 20px;
+  }
+  .content p {
+    font-size: 25px;
+    width: unset;
+    text-align: center;
+    line-height: 35px;
+  }
+  .message-cont {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+  .message-cont img {
+    width: 330px;
+    height: auto;
+    margin-right: 10px;
+  }
+  .message-cont h1 {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    transform: rotate(-90deg);
+  }
+}
+
+@media (max-width: 480px) {
+  #realxlink {
+    padding-block: 0;
+  }
+  .rxl-container {
+    gap: 20px;
+  }
+
+  .message-cont {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+  .message-cont img {
+    width: 240px;
+    height: auto;
+    margin-right: 10px;
+  }
+  .message-cont h1 {
+    position: absolute;
+    font-size: 50px;
+    line-height: 28px;
+    margin: 0;
+    transform: rotate(-90deg);
+    right: 260px;
+  }
+
+  .rxl-lr {
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+  }
+  .rxl-lr-img {
+    height: 300px;
+    overflow: hidden;
+  }
+  .rxl-lr p {
+    position: unset;
+    width: unset;
+  }
+  .rxl-lr-txt h1 {
+    margin-top: -305px;
+    margin-bottom: 60px;
+  }
+
+  .list-contact div p:first-child {
+    flex: unset;
+    text-align: left;
+  }
+  .org_overview {
+    margin: unset;
+  }
+  .org-overview-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }

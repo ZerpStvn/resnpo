@@ -10,26 +10,20 @@
 .au-header {
   position: relative;
 }
-/* 
-.landing-fg img {
-  height: 100%;
-} */
 
 .landing-fg {
   position: absolute;
   bottom: 0;
   left: 10px;
-  /* height: 100%; */
   width: 100%;
 }
+
 .landing-fg img {
   display: block;
-  /* max-width: 100%; */
   height: auto;
   margin: 0 0 0 auto;
   padding: 0;
   object-fit: cover;
-  /* margin-left: 400px; */
 }
 
 #aboutid .side-content,
@@ -78,7 +72,7 @@
     2px 2px 0 #fff;
   text-wrap: nowrap;
 }
-/* VISION MISSION ACTION */
+
 .vma-title {
   position: relative;
   text-align: center;
@@ -165,7 +159,7 @@
 
 #action-section::before {
   background: radial-gradient(circle, #56b0d2 -1.46%, #2c5b6c 100%);
-  z-index: 1; /* Ensure the diagonal background has a lower z-index */
+  z-index: 1;
 }
 
 .background-image {
@@ -202,7 +196,6 @@
   line-height: 22.5px;
   letter-spacing: 0.05em;
   text-align: left;
-  /* width: 629px; */
   width: 582px;
 }
 
@@ -213,7 +206,7 @@
   width: 100%;
   height: auto;
   overflow: hidden;
-  z-index: 2; /* Ensure the image has a higher z-index */
+  z-index: 2;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
@@ -233,7 +226,7 @@
 
 .rotated-text {
   position: absolute;
-  left: 140px;
+  left: 40px;
   top: 50%;
   transform: rotate(90deg) translateX(-50%);
   transform-origin: left top;
@@ -298,7 +291,6 @@
 
 #action-section .section-content .image-placeholder img {
   width: 100%;
-  /* height: 100%; */
   max-width: 100%;
   object-fit: cover;
   object-position: center;
@@ -317,9 +309,10 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  z-index: 1;
+  z-index: -2;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
+
 #vision-section .section-content .image-placeholder img {
   width: 100%;
   height: 100%;
@@ -327,6 +320,7 @@
   object-fit: cover;
   object-position: center;
 }
+
 .section-title {
   font-family: var(--notsansjp);
   font-size: 60px;
@@ -335,10 +329,10 @@
   letter-spacing: 0.03em;
   text-align: left;
   margin-bottom: 20px;
-  color: #0d3046; /* Text color */
-  -webkit-text-stroke: 0.5px #0d3046; /* Outline for WebKit-based browsers */
+  color: #0d3046;
+  -webkit-text-stroke: 0.5px #0d3046;
   text-shadow: -0.5px -0.5px 0 #0d3046, 0.5px -0.5px 0 #0d3046,
-    -0.5px 0.5px 0 #0d3046, 0.5px 0.5px 0 #0d3046; /* Simulated outline for other browsers */
+    -0.5px 0.5px 0 #0d3046, 0.5px 0.5px 0 #0d3046;
 }
 
 .section-title p {
@@ -350,20 +344,97 @@
   text-align: left;
 }
 
-.message-cont {
-  position: relative;
+.mobile-content {
+  display: none;
 }
 
-.message-cont h1 {
-  position: absolute;
-  transform: rotate(-90deg);
-  top: 172px;
-  left: -229px;
-  font-family: var(--notsansjp);
-  font-size: 70px;
-  font-weight: 600;
-  line-height: 98.44px;
-  letter-spacing: 0.1em;
-  text-align: left;
-  color: #e4f6ff;
+@media (max-width: 480px) {
+  .au-main-title {
+    font-size: 90px;
+    line-height: unset;
+  }
+  .au-sub-title {
+    font-size: 50px;
+    text-align: left;
+    position: absolute;
+    top: unset;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+      1px 1px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+      2px 2px 0 #fff;
+    white-space: normal;
+  }
+  .vma-title {
+    padding-block: unset;
+  }
+
+  .vma-title h1 {
+    font-size: 25px;
+    text-align: center;
+    padding: 30px;
+  }
+  .vma-title::before {
+    display: none;
+  }
+
+  .mobile-content {
+    display: block;
+    transform: none;
+  }
+  .mobile-content * {
+    transform: none;
+  }
+  .rotated-text {
+    font-size: 100px;
+    margin-left: 126px;
+  }
+  .section-content {
+    margin-left: unset;
+  }
+  .desktop-content {
+    visibility: hidden;
+  }
+  #vision-section .section-content .image-placeholder {
+    width: 170%;
+    height: unset;
+    margin-left: -200px;
+  }
+
+  #mission-section .section-content .image-placeholder {
+    width: 110%;
+    height: unset;
+    margin-left: -200px;
+    left: 210px;
+  }
+  #mission-section::before {
+    background: radial-gradient(circle, #f9edeb 0.21%, #938c8b 100.91%);
+    z-index: -3;
+  }
+  #mission-section .rotated-text {
+    left: -275px;
+    right: 94px;
+    transform: rotate(-90deg) translateX(50%);
+    transform-origin: right top;
+  }
+
+  #action-section .section-content .image-placeholder {
+    width: 170%;
+    height: unset;
+    margin-left: -200px;
+    left: 210px;
+  }
+  #action-section::before {
+    background: radial-gradient(circle, #56b0d2 -1.46%, #2c5b6c 100%);
+    z-index: -3;
+  }
+
+  .diagonal-section::before {
+    z-index: -1;
+  }
+
+  .section-title {
+    font-size: 35px;
+  }
+  .section-text {
+    margin-bottom: 130px;
+  }
 }
