@@ -34,7 +34,8 @@ function render_about_section($sectiontitle, $subtitle, $img)
 
     <div class="au-title">
       <h1 class="outline au-main-title scaleIn"><?php echo $sectiontitle; ?></h1>
-      <h3 class="au-sub-title sub-head-clr scaleIn"><?php echo $subtitle; ?></h3>
+      <h3 class="au-sub-title sub-head-clr scaleIn">
+        <?php echo $subtitle; ?></h3>
     </div>
   </section>
 <?php

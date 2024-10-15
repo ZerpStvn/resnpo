@@ -437,4 +437,8 @@
   .section-text {
     margin-bottom: 130px;
   }
+  .au-sub-title {
+    max-width: 300px;
+    line-height: 2.05em;
+  }
 }
