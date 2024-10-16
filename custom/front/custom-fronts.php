@@ -14,6 +14,8 @@ function render_join_landing($pagetitle, $centertitle)
           <p class="b-title"><?php echo $pagetitle ?></p>
           <p class="b-title"><?php echo $pagetitle ?></p>
           <p class="b-title"><?php echo $pagetitle ?></p>
+          <p class="b-title"><?php echo $pagetitle ?></p>
+          <p class="b-title"><?php echo $pagetitle ?></p>
 
         </div>
         <div class="header-txt-container absolute">

@@ -18,7 +18,7 @@
   font-weight: 900;
   font-size: 150px;
   line-height: 130.94px;
-  letter-spacing: 10px;
+  /* letter-spacing: 10px; */
   color: #22637b; /* Set the text color */
 }
 
@@ -448,7 +448,7 @@ fieldset:hover {
   border: 3px solid var(--buttoncolor);
   padding: 30px 30px;
   border-radius: 10px;
-  width: 100%;
+  /* width: 100%; */
   animation: wiggle 0.2s ease-in-out;
 }
 @keyframes wiggle {
@@ -568,7 +568,7 @@ fieldset:hover {
 
 @media screen and (max-width: 375px) {
   .donation-container p {
-    font-size: 8.417vw;
+    font-size: 10.417vw;
     /* line-height: 8.093vw; */
   }
 
@@ -610,7 +610,7 @@ fieldset:hover {
   }
 
   .donation-container p {
-    font-size: 10.417vw;
+    font-size: 11.9vw;
   }
 
   .header-txt-container {
@@ -713,7 +713,7 @@ fieldset:hover {
   }
 
   .donation-container p {
-    font-size: 9.51vw;
+    font-size: 11.51vw;
     line-height: 13.093vw;
   }
 
@@ -766,6 +766,13 @@ fieldset:hover {
 }
 @media screen and (max-width: 630px) {
   .donation-container p {
-    font-size: 8.417vw;
+    font-size: 10.417vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .donation-container p {
+    font-size: 9vw; /* Adjust font size for smaller screens */
+    color: #22637b; /* Ensure text color is set */
   }
 }
