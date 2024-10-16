@@ -2,66 +2,16 @@
 <div id="whatsnewid">
   <!-- whatsnew page -->
 
-  <section class="donation-header">
-    <div class="border relative">
-      <div class="donation-container relative slidedown">
-
-        <div class="b-titles text-centered">
-
-          <p class="b-title">WHAT’S NEW</p>
-          <p class="b-title">WHAT’S NEW</p>
-          <p class="b-title">WHAT’S NEW</p>
-          <p class="b-title">WHAT’S NEW</p>
-
-        </div>
-        <!-- <p class="wk-s-5">WHAT’S NEW</p>
-        <div class="text-deco-donation">
-          <p class="wk-s-5">WHAT’S NEW</p>
-        </div>
-        <div class="text-deco-donation">
-          <p class="wk-s-5">WHAT’S NEW</p>
-        </div>
-        <div class="text-deco-donation">
-          <p class="wk-s-5">WHAT’S NEW</p>
-        </div> -->
-
-        <div class="header-txt-container absolute">
-          <p>RESニュース</p>
-        </div>
-        <div class="res-txt-container absolute">
-          <ul class="flex gap-15">
-            <li>
-              <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/resnpo-ico.png'; ?>" alt="" />
-            </li>
-            <li>
-              <p class="w-700 p-14 white-clr">NPO法人</p>
-              <p class="w-700 p-14 white-clr">REGIONAL EDUCATION SUPPORT</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="social-icons absolute">
-        <ul class="social-icons-ul flex align-items-center">
-          <li>
-            <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-line-icon.png'; ?>" alt="" />
-          </li>
-          <li>
-            <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-fb-icon.png'; ?>" alt="" />
-          </li>
-          <li>
-            <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-yt-icon.png'; ?>" alt="" />
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+  <?php render_join_landing("WHAT'S NEW", 'RESニュース') ?>
 
   <section class="section_news relative global-width">
     <div class="news-container">
-      <ul class="flex relative ul-main-news">
+      <div class="flex relative main-news-container">
 
-        <li class="relative" id="main-article">
-          <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+        <div class="relative main-article" id="main-article">
+          <div class="img-cover">
+            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+          </div>
 
           <div class="main-news-details">
             <p class="w-500 p-20 sub-head-clr"><?php
@@ -72,11 +22,11 @@
               <?php the_content(); ?>
             </div>
           </div>
-        </li>
-        <li>
+        </div>
+        <div class="recent-news">
           <p class="w-500 p-20 label-recents">RECENTS</p>
 
-          <ul class="ul-recent-news">
+          <div class="flex recent-news-container">
             <?php
             $recent_whatsnew_query = new WP_Query([
               'post_type' => 'whatsnew',
@@ -106,9 +56,9 @@
               wp_reset_postdata();
             endif;
             ?>
-          </ul>
-        </li>
-      </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </div>

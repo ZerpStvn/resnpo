@@ -8,6 +8,8 @@ require_once(custom_dir . "/front/photo-gallery-section.php");
 require_once(custom_dir . "/front/fsa-slide.php");
 require_once(custom_dir . "/front/sgd-landing.php");
 require_once(custom_dir . "/front/about-section.php");
+require_once(custom_dir . "/front/join-landing.php");
+require_once(custom_dir . "/front/custom-fronts.php");
 
 require_once(custom_dir . "/front/feature-posttype.php");
 require_once(custom_dir . "/front/photo-gallery-posttype.php");

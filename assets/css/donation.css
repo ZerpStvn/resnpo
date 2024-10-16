@@ -9,7 +9,7 @@
 }
 
 .donation-container {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   margin-left: 200px;
   width: 820px;
 }
@@ -109,7 +109,7 @@
   background-color: #fff;
   width: 100%;
   left: 0;
-  bottom: -250px;
+  margin-top: -250px;
   padding-top: 35px;
 }
 
@@ -140,8 +140,9 @@
 }
 
 .section_2_don {
-  padding: 315px 118px 65px;
+  padding: 73px 25px;
   background: #91adb1;
+  /* margin-top: 250px; */
 }
 
 .donation-video {
@@ -167,6 +168,7 @@
 
 .section_2_oppor {
   gap: 100px;
+  justify-content: center;
 }
 
 .video-container {
@@ -225,7 +227,7 @@
   white-space: nowrap;
 }
 
-#donationid fieldset {
+fieldset {
   border: 1px solid #56b0d2;
   padding: 30px 30px;
   border-radius: 10px;
@@ -481,193 +483,9 @@ fieldset:hover {
   display: none;
 }
 
-@media screen and (max-width: 1300px) {
-  .p-250 {
-    font-size: 19.231vw;
-  }
-
-  .p-150 {
-    font-size: 11.538vw;
-  }
-
-  .p-100 {
-    font-size: 7.692vw;
-  }
-
-  .donation-container {
-    margin-top: 50px;
-    margin-left: 13.889vw; /* 200px */
-    width: 58.077vw;
-  }
-
-  .donation-container p {
-    font-size: 10.417vw;
-    line-height: 9.093vw;
-  }
-
-  .header-txt-container {
-    top: 14.385vw;
-  }
-
-  .header-txt-container p {
-    font-size: 5.944vw;
-  }
-
-  .res-txt-container {
-    right: -16.154vw;
-    bottom: 5vw;
-  }
-
-  .res-txt-container p {
-    font-size: 14px;
-    line-height: 16px;
-  }
-
-  .social-icons {
-    top: 11.538vw;
-    /* left: -22.531vw; */
-    left: -1.923vw;
-  }
-
-  /* RESPO:1300 SECTION ----2: Donation */
-  .section_2_don {
-    padding: 315px 9.077vw 30px;
-  }
-
-  .donation-details {
-    padding-left: 6.154vw;
-  }
-
-  /* RESPO:1300 SECTION ----2: BENEFITS */
-
-  /* RESPO:1300 SECTION ----3: HOW TO HELP */
-  .title-top p:last-child {
-    font-size: 4.615vw;
-  }
-  .fieldset-container ul {
-    display: block;
-  }
-
-  .fieldset-container ul li:nth-child(2) {
-    margin-left: 20%;
-    margin-top: 10px;
-  }
-
-  .fieldset-container ul li:nth-child(3) {
-    margin-top: 10px;
-    margin-left: 40%;
-  }
-}
-
-@media screen and (max-width: 1330px) {
-  /* RESPO:1300 SECTION ----4: DONATION PAYMENT */
-  .payment-container {
-    margin: 3.759vw 10.308vw;
-  }
-
-  .btn-payment-container button {
-    padding: 25px 6.015vw;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  /* RESPO:1000 SECTION ----2: Donation */
-  .section_2_don > ul {
-    display: block;
-  }
-
-  .donation-video {
-    max-width: 100%;
-  }
-
-  .title-top p:first-child {
-    line-height: 20.769vw;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .btn-payment-container button {
-    padding: 25px 4.015vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #donationid .res-txt-container {
-    display: none;
-  }
-
-  #donationid .res-txt-container-side {
-    display: block;
-    transform: rotate(180deg);
-  }
-
-  .social-icons-ul > li:last-child {
-    width: auto;
-  }
-
-  .res-txt-container-side ul > li:last-child {
-    width: auto;
-  }
-
-  .social-icons {
-    top: 32.538vw;
-    left: -22.531vw;
-  }
-
-  .donation-container p {
-    line-height: 13.093vw;
-  }
-
-  .header-txt-container {
-    top: 19.385vw;
-  }
-
-  .donation-bottom-container {
-    bottom: -230px;
-  }
-
-  .donation-bottom-text {
-    width: auto;
-    padding-left: 10.229vw;
-  }
-
-  .social-icons-ul {
-    gap: 2.083vw;
-  }
-
-  .social-icons-ul li {
-    height: 3.906vw;
-    width: 3.906vw;
-  }
-
-  .social-icons-ul li img {
-    width: 100%;
-  }
-
-  .section_2_don {
-    padding: 240px 9.077vw 30px;
-  }
-
-  .payment-container {
-    margin: 3.759vw 5.308vw;
-  }
-
-  .fieldset-container {
-    text-align: -webkit-center;
-  }
-
-  .fieldset-container ul li:nth-child(2) {
-    margin-left: 0;
-  }
-
-  .fieldset-container ul li:nth-child(3) {
-    margin-left: 0;
-  }
-}
-
 @media screen and (max-width: 480px) {
   .donation-container {
-    margin-top: 30px;
+    margin-top: unset;
   }
 
   .res-txt-container {
@@ -676,19 +494,16 @@ fieldset:hover {
   }
 
   .social-icons {
+    top: 10px; /* Adjusted for small screens */
     left: -15px;
   }
 
-  #donationid fieldset {
+  /* #donationid {
     width: 62.5vw;
-  }
+  } */
 
   .fieldset-container {
     padding: 0 40px;
-  }
-
-  .donation-bottom-container {
-    bottom: -59.375vw;
   }
 
   #donationid .p-250 {
@@ -697,10 +512,6 @@ fieldset:hover {
 
   #donationid .p-150 {
     font-size: 9.538vw;
-  }
-
-  .section_2_don {
-    padding: 315px 9.077vw 30px;
   }
 
   .donation-video {
@@ -737,6 +548,9 @@ fieldset:hover {
     width: 25%;
     margin-right: 30px;
   }
+  /* .section_2_don {
+    padding-top: 315px;
+  } */
 
   /* COMMON FONT-SIZE VW ~~~~ */
   .p-40 {
@@ -755,15 +569,11 @@ fieldset:hover {
 @media screen and (max-width: 375px) {
   .donation-container p {
     font-size: 8.417vw;
-    line-height: 8.093vw;
+    /* line-height: 8.093vw; */
   }
 
   .header-txt-container {
     top: 7.385vw;
-  }
-
-  .section_2_don {
-    padding: 425px 9.077vw 30px;
   }
 
   .res-txt-container p {
@@ -773,5 +583,189 @@ fieldset:hover {
 
   .res-txt-container {
     right: -9.154vw;
+  }
+
+  .social-icons {
+    top: 20px; /* Adjusted for very small screens */
+  }
+}
+
+/* ************************************************************************************************************************** */
+
+@media screen and (max-width: 1300px) {
+  .p-250 {
+    font-size: 19.231vw;
+  }
+
+  .p-150 {
+    font-size: 11.538vw;
+  }
+
+  .p-100 {
+    font-size: 7.692vw;
+  }
+  .donation-container {
+    margin-left: 13.889vw;
+    width: 58.077vw;
+  }
+
+  .donation-container p {
+    font-size: 10.417vw;
+  }
+
+  .header-txt-container {
+    top: 14.385vw;
+  }
+
+  .header-txt-container p {
+    font-size: 5.944vw;
+  }
+
+  .res-txt-container {
+    right: -16.154vw;
+    bottom: 5vw;
+  }
+
+  .res-txt-container p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .social-icons {
+    top: 11.538vw;
+  }
+
+  .section_2_oppor {
+    flex-direction: column;
+  }
+
+  .donation-details {
+    padding-left: 6.154vw;
+  }
+
+  .title-top p:last-child {
+    font-size: 4.615vw;
+  }
+  .fieldset-container ul {
+    display: block;
+  }
+
+  .fieldset-container ul li:nth-child(2) {
+    margin-left: 20%;
+    margin-top: 10px;
+  }
+
+  .fieldset-container ul li:nth-child(3) {
+    margin-top: 10px;
+    margin-left: 40%;
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  .payment-container {
+    margin: 3.759vw 10.308vw;
+  }
+
+  .btn-payment-container button {
+    padding: 25px 6.015vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section_2_don > ul {
+    display: block;
+  }
+
+  .donation-video {
+    max-width: 100%;
+  }
+
+  .title-top p:first-child {
+    line-height: 20.769vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .btn-payment-container button {
+    padding: 25px 4.015vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .donation-container p {
+    line-height: 11.711vw;
+  }
+  .res-txt-container {
+    display: none;
+  }
+
+  .res-txt-container-side {
+    display: block;
+    transform: rotate(180deg);
+  }
+
+  .social-icons-ul > li:last-child {
+    width: auto;
+  }
+
+  .res-txt-container-side ul > li:last-child {
+    width: auto;
+  }
+
+  .donation-container p {
+    font-size: 9.51vw;
+    line-height: 13.093vw;
+  }
+
+  .header-txt-container {
+    top: 19.385vw;
+  }
+
+  .donation-bottom-text {
+    width: auto;
+    padding-left: 10.229vw;
+  }
+
+  .social-icons-ul {
+    gap: 2.083vw;
+  }
+
+  .social-icons-ul li {
+    height: 3.906vw;
+    width: 3.906vw;
+  }
+
+  .social-icons-ul li img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .payment-container {
+    margin: 3.759vw 5.308vw;
+  }
+
+  .fieldset-container {
+    text-align: -webkit-center;
+  }
+
+  .fieldset-container ul li:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .fieldset-container ul li:nth-child(3) {
+    margin-left: 0;
+  }
+
+  .video-column {
+    width: 100%;
+    height: auto;
+  }
+  .donation-bottom-container {
+    margin-top: unset;
+  }
+}
+@media screen and (max-width: 630px) {
+  .donation-container p {
+    font-size: 8.417vw;
   }
 }

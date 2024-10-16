@@ -156,7 +156,9 @@
   text-align: left;
   color: #e4f6ff;
   margin: 0;
-  transform: rotate(-90deg); /* Rotate the h1 element */
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -230px;
 }
 
 @media (max-width: 786px) {
