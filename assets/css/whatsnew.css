@@ -19,7 +19,7 @@
 
 .label-recents {
   color: #005f8f;
-  margin-top: 80px;
+  /* margin-top: 80px; */
 }
 
 .recent-news {
@@ -31,7 +31,8 @@
 .recent-news div:last-child {
   display: flex;
   /* flex-direction: column; */
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 20px;
 }
 
 .news-container {
@@ -51,7 +52,7 @@
 .main-news-container {
   display: flex;
   flex-wrap: wrap;
-  padding: 30px; /* Apply padding to the whole container */
+  padding: 55px; /* Apply padding to the whole container */
 }
 
 .main-article {
