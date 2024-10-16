@@ -17,8 +17,8 @@ img.header-res-img {
   width: 41vw;
 }
 img.header-green-icon {
-  width: 300px;
-  height: 300px;
+  width: 15vw;
+  height: 15vw;
 }
 .shake-once {
   animation: shake 0.5s ease;
@@ -874,9 +874,25 @@ p.inline-txt.p-30.w-600.head-clr {
 /* #btn-logo {
   padding: 15px 80px;
 } */
-
+.mobile_logo {
+  display: none;
+}
 .index-1 {
   z-index: 1;
+}
+.mobile-top-content {
+  display: none;
+  margin: 31px 0 0 0;
+  text-align: center;
+  font-size: 2.7rem;
+  letter-spacing: 1px;
+  color: #005f8fd9;
+  -webkit-text-fill-color: #005f8fd9;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+.desktop_logo {
+  display: block;
 }
 @keyframes shake {
   0% {
@@ -911,5 +927,74 @@ p.inline-txt.p-30.w-600.head-clr {
   }
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@media (max-width: 1107px) {
+  .flex.relative.header-second.slideright.on {
+    display: none;
+  }
+  ul.flex.absolute.home-side-sm {
+    display: none;
+  }
+  ul.flex.main-top-content {
+    flex-direction: column;
+  }
+  .header-first {
+    padding-left: 0px;
+  }
+  .header-people {
+    object-fit: contain;
+  }
+  .absolute.pg-main-container.dot-container {
+    display: none;
+  }
+  ul.header-scol-links {
+    display: none;
+  }
+  .header-fcol-lc {
+    display: none;
+  }
+  .mobile-top-content {
+    display: block;
+  }
+}
+@media (max-width: 488px) {
+  .desktop_logo {
+    display: none;
+  }
+  .mobile_logo {
+    display: block;
+    width: 141px;
+    margin: 0 0 13px 0;
+  }
+  img.home-nav-ico {
+    width: 58px;
+  }
+  .header-people {
+    object-fit: contain;
+  }
+  .header-first.relative .slick-list {
+    padding: 0 1% 0 1% !important;
+  }
+  .mobile-top-content {
+    font-size: 1.7rem;
+  }
+  /* #homeid .slick-slide {
+    height: 0px;
+  } */
+  .header-first.relative .slick-list.draggable {
+    height: 536px !important;
+  }
+  #homeid .slick-slide {
+    height: 541px;
+  }
+  #homeid nav {
+    top: 65px !important;
+  }
+  #homeid .header-container {
+    position: relative;
+    z-index: 12;
+    padding-top: 0px !important;
   }
 }
