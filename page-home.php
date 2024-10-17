@@ -78,13 +78,38 @@
 
   <section class="section_2 relative global-width">
     <ul class="flex main-ul">
-      <li>
+      <div class="side-activity ">
+        <p class="">ACTIVITIES</p>
+        <img src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
+      </div>
+      <li class="desktop">
         <a href="<?php echo RESNPO_URI . '/sdg' ?>">
           <div class="img-container slideleft">
             <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-third/main-img.png' ?>" alt="" />
           </div>
         </a>
+        <ul class=" sub-ul text-center mobile">
+          <li class="slideup">
+            <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-third/sub-img-1.png' ?>" alt="" />
+            <div class="sub-ul-details">
+              <p class="p-12 class-content">
+                同年代の仲間たちとの様々な活動や異文化体験を通じて、国内では経験できない多様性に触れ、自国や自分自身の新たな面に気づかされます。
+              </p>
+              <p class="p-18 mt-15 w-700 class-title">海外留学/ツアー</p>
+            </div>
+          </li>
+          <li class="slideup hide">
+            <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-third/sub-img-2.png' ?>" alt="" />
+            <div class="sub-ul-details">
+              <p class="p-12 class-content">
+                海外の大学への進学を徹底サポートします。言語の違いや距離を理由に選択肢から外していませんか？その挑戦がなりたい自分への近道かもしれません。
+              </p>
+              <p class="p-18 mt-15 w-700 class-title">海外進学サポート</p>
+            </div>
+          </li>
+        </ul>
       </li>
+
       <li>
         <p class="p-16 sub-head-clr">Activities</p>
         <div class="activity-content-details">
@@ -96,7 +121,7 @@
       </li>
     </ul>
 
-    <ul class="flex sub-ul absolute text-center">
+    <ul class="flex sub-ul text-center desktop">
       <li class="slideup">
         <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-third/sub-img-1.png' ?>" alt="" />
         <div class="sub-ul-details">
@@ -346,7 +371,7 @@
       <p class="w-800 loc-txt-section section-head-clr slideup">LOCATION</p>
     </div>
 
-    <ul class="flex">
+    <ul class="flex map-flex">
       <li style="position: relative">
         <p class="p-heading1">どこにあるの？</p>
 
