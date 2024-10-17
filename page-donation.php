@@ -76,7 +76,7 @@
 
   <section id="section_4_don" class="section_4_don">
     <div class="title-top relative">
-      <p class="w-500 p-150 text-center relative">HOW TO HELP</p>
+      <p class="w-600 p-150 text-center relative">HOW TO HELP</p>
       <p class="w-900 p-60 light-blue absolute scaleIn">お気持ちにあった寄付をお選びください</p>
     </div>
 
@@ -115,39 +115,39 @@
           <ul class="flex ul-first-payment gap-15">
             <li>
               <button>
-                <p class="w-500 p-25">3,000円/月</p>
+                <p class="w-600 p-25">3,000円/月</p>
               </button>
             </li>
             <li>
               <button>
-                <p class="w-500 p-25">10,000円/月</p>
+                <p class="w-600 p-25">10,000円/月</p>
               </button>
             </li>
           </ul>
           <ul class="flex ul-second-payment gap-15">
             <li>
               <button>
-                <p>1,000円/月</p>
+                <p class="w-600">1,000円/月</p>
               </button>
             </li>
             <li>
               <button>
-                <p>5,000円/月</p>
+                <p class="w-600">5,000円/月</p>
               </button>
             </li>
             <li>
               <button>
-                <p>30,000円/月</p>
+                <p class="w-600">30,000円/月</p>
               </button>
             </li>
             <li>
               <button>
-                <p>50,000円/月</p>
+                <p class="w-600">50,000円/月</p>
               </button>
             </li>
             <li>
               <button>
-                <p>100,000円/月</p>
+                <p class="w-600">100,000円/月</p>
               </button>
             </li>
           </ul>
@@ -161,7 +161,9 @@
           <p>
             銀行振込での毎月寄付をご検討の方は、お問い合わせフォームよりご相談ください。
           </p>
-          <p class="sub-head-clr">❯問合せフォーム</p>
+          <a href="<?php echo get_site_url() . '/contact' ?>">
+            <p class="sub-head-clr">❯ 問合せフォーム</p>
+          </a>
         </div>
 
       </div>
@@ -184,39 +186,39 @@
             <li>
               <a href="">
                 <button>
-                  <p class="w-500 p-25 price-button">3,000円</p>
+                  <p class="w-600 p-25 price-button">3,000円</p>
                 </button></a>
             </li>
             <li>
               <a href=""><button>
-                  <p class="w-500 p-25">10,000円</p>
+                  <p class="w-600 p-25">10,000円</p>
                 </button></a>
             </li>
           </ul>
           <ul class="flex ul-second-payment gap-15">
             <li>
               <a href=""><button>
-                  <p>1,000円</p>
+                  <p class="w-600">1,000円</p>
                 </button></a>
             </li>
             <li>
               <a href=""><button>
-                  <p>5,000円</p>
+                  <p class="w-600">5,000円</p>
                 </button></a>
             </li>
             <li>
               <a href=""><button>
-                  <p>30,000円</p>
+                  <p class="w-600">30,000円</p>
                 </button></a>
             </li>
             <li>
               <a href=""><button>
-                  <p>50,000円</p>
+                  <p class="w-600">50,000円</p>
                 </button></a>
             </li>
             <li>
               <a href=""><button>
-                  <p>100,000円</p>
+                  <p class="w-600">100,000円</p>
                 </button></a>
             </li>
           </ul>
@@ -230,7 +232,9 @@
           <p>
             銀行振込での毎月寄付をご検討の方は、お問い合わせフォームよりご相談ください。
           </p>
-          <p class="sub-head-clr">❯問合せフォーム</p>
+          <a href="<?php echo get_site_url() . '/contact' ?>">
+            <p class="sub-head-clr">❯ 問合せフォーム</p>
+          </a>
         </div>
 
       </div>

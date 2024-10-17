@@ -2,7 +2,7 @@
 
 <div id="joinusid" class="joinusid">
 
-  <?php render_about_section('JOIN US', 'Be Part of our Journey!', '/project/header/people-img.png');
+  <?php render_about_section('JOIN<br> US', 'Be Part of our Journey!', '/project/header/people-img.png');
   ?>
 
 
@@ -38,16 +38,20 @@
   </div>
 
   <section class="section-join-donation relative">
-    <img class="absolute" src="<?php echo RESNPO_URI . '/assets/image/joinus/section-one/main-img.png' ?>" alt="">
+    <li>
+      <p class="w-900 p-100 white-clr section2-side-title">寄付</p>
+    </li>
 
-    <ul class="flex">
-      <li>
-        <p class="w-900 p-100 white-clr">寄付</p>
+    <div class="flex section2-flex-cont">
+
+      <div class="section2-img"><img class="" src="<?php echo RESNPO_URI . '/assets/image/joinus/section-one/main-img.png' ?>" alt=""></div>
+
       </li>
-      <li class="scaleIn">
+
+      <div class="scaleIn section2-card">
         <p class="w-500 p-20 sub-head-clr">DONATE</p>
         <p class="w-700 p-40 head-clr donate-title">あなたの寄付が子どもたちの世界を拡げ輝かせます</p>
-        <p class="w-500 p-20 head-clr">
+        <p class="w-500 p-20 head-clr donate-contents">
           刻一刻と変化する今の時代。子どもたちは、私たちがそうだった頃とは異なる環境に身を置き多種多様なスキルや能力を身につけることを求められています。<br>
           子どもたちに一つでも多くの機会を届けるため皆様の寄付を私たちの活動に利用させていただきます
         </p>
@@ -60,8 +64,8 @@
             </a>
           </div>
         </div>
-      </li>
-    </ul>
+      </div>
+      </ul>
   </section>
 
   <section class="section_3_don">

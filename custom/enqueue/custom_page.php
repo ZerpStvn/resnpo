@@ -83,6 +83,22 @@ function add_custom_page()
       'post_type' => 'page',
       'post_name' => 'studying-abroad'
     ),
+    array(
+      'post_title' => 'Contact',
+      'post_content' => 'Contact',
+      'post_status' => 'publish',
+      'post_author' => 1,
+      'post_type' => 'page',
+      'post_name' => 'contact'
+    ),
+    array(
+      'post_title' => 'Privacy Policy',
+      'post_content' => 'Privacy Policy',
+      'post_status' => 'publish',
+      'post_author' => 1,
+      'post_type' => 'page',
+      'post_name' => 'privacy'
+    ),
   );
 
   foreach ($pages as $page) {

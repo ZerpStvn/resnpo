@@ -15,11 +15,12 @@
 }
 
 .donation-container p {
+  font-family: "NotoSansJP";
   font-weight: 900;
   font-size: 150px;
   line-height: 130.94px;
-  /* letter-spacing: 10px; */
   color: #22637b; /* Set the text color */
+  text-wrap: nowrap;
 }
 
 .donation-texts {
@@ -763,6 +764,30 @@ fieldset:hover {
   .donation-bottom-container {
     margin-top: unset;
   }
+  .section-payment-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .ul-first-payment {
+    display: flex;
+    flex-direction: column;
+  }
+  .ul-first-payment button {
+    background: #ffd966;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 0;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .p-25 {
+    font-size: unset;
+  }
+  .ul-second-payment {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 630px) {
   .donation-container p {
@@ -772,7 +797,6 @@ fieldset:hover {
 
 @media screen and (max-width: 480px) {
   .donation-container p {
-    font-size: 9vw; /* Adjust font size for smaller screens */
-    color: #22637b; /* Ensure text color is set */
+    font-size: 9vw;
   }
 }

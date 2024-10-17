@@ -4,7 +4,7 @@
 
 <div id="projectid">
 
-  <?php render_about_section('PROJECTS', 'Explore our Projects', '/joinus/joinus-landing-fg.png'); ?>
+  <?php render_about_section('PROJECTS<br> ', 'Explore our Projects', '/joinus/joinus-landing-fg.png'); ?>
 
   <div class="marquee-container">
     <div class="marquee">
