@@ -2,10 +2,15 @@
 <div id="homeid">
   <section class="section_1">
     <div class="header-container global-width">
-      <img src="<?php echo RESNPO_URI . '/assets/image/homepage/header/top_nav_txt.png' ?>" alt="">
+      <img class="desktop_logo" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/top_nav_txt.png' ?>"
+        alt="logo" loading="lazy">
+      <img class="mobile_logo" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/mobilelogo.png' ?>"
+        alt="logo" loading="lazy">
       <hr>
       <div>
-        <ul class="flex">
+        <ul class="flex main-top-content">
+          <h2 class="mobile-top-content">一人でも多くの子どもたちが、
+            未来の国際社会で活躍できる社会を目指し、</h2>
           <li>
             <div class="header-first relative">
 
@@ -73,13 +78,38 @@
 
   <section class="section_2 relative global-width">
     <ul class="flex main-ul">
-      <li>
+      <div class="side-activity ">
+        <p class="">ACTIVITIES</p>
+        <img src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
+      </div>
+      <li class="desktop">
         <a href="<?php echo RESNPO_URI . '/sdg' ?>">
           <div class="img-container slideleft">
             <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-third/main-img.png' ?>" alt="" />
           </div>
         </a>
+        <ul class=" sub-ul text-center mobile">
+          <li class="slideup">
+            <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-third/sub-img-1.png' ?>" alt="" />
+            <div class="sub-ul-details">
+              <p class="p-12 class-content">
+                同年代の仲間たちとの様々な活動や異文化体験を通じて、国内では経験できない多様性に触れ、自国や自分自身の新たな面に気づかされます。
+              </p>
+              <p class="p-18 mt-15 w-700 class-title">海外留学/ツアー</p>
+            </div>
+          </li>
+          <li class="slideup hide">
+            <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-third/sub-img-2.png' ?>" alt="" />
+            <div class="sub-ul-details">
+              <p class="p-12 class-content">
+                海外の大学への進学を徹底サポートします。言語の違いや距離を理由に選択肢から外していませんか？その挑戦がなりたい自分への近道かもしれません。
+              </p>
+              <p class="p-18 mt-15 w-700 class-title">海外進学サポート</p>
+            </div>
+          </li>
+        </ul>
       </li>
+
       <li>
         <p class="p-16 sub-head-clr">Activities</p>
         <div class="activity-content-details">
@@ -91,7 +121,7 @@
       </li>
     </ul>
 
-    <ul class="flex sub-ul absolute text-center">
+    <ul class="flex sub-ul text-center desktop">
       <li class="slideup">
         <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-third/sub-img-1.png' ?>" alt="" />
         <div class="sub-ul-details">
@@ -136,10 +166,11 @@
         'posts_per_page' => 1,
       ]);
 
-      if ($whatsnew_query->have_posts()) :
-        while ($whatsnew_query->have_posts()) : $whatsnew_query->the_post();
+      if ($whatsnew_query->have_posts()):
+        while ($whatsnew_query->have_posts()):
+          $whatsnew_query->the_post();
           $whatsnew_date = get_post_meta(get_the_ID(), '_whatsnew_date', true);
-      ?>
+          ?>
           <li>
             <a href="<?php echo get_permalink() ?>" id="main-article">
               <div class="img-container-news">
@@ -152,13 +183,14 @@
                 <div class="relative btn-container" id="btn-news">
                   <a href="<?php echo get_the_permalink() ?>">
                     <button type="button" class="main-button relative">もっと見る</button>
-                    <img class="home-icon-button absolute" src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
+                    <img class="home-icon-button absolute"
+                      src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
                   </a>
                 </div>
               </div>
             </a>
           </li>
-      <?php
+          <?php
         endwhile;
         wp_reset_postdata();
       endif;
@@ -173,10 +205,11 @@
             'offset' => 1,
           ]);
 
-          if ($recent_whatsnew_query->have_posts()) :
-            while ($recent_whatsnew_query->have_posts()) : $recent_whatsnew_query->the_post();
+          if ($recent_whatsnew_query->have_posts()):
+            while ($recent_whatsnew_query->have_posts()):
+              $recent_whatsnew_query->the_post();
               $recent_whatsnew_date = get_post_meta(get_the_ID(), '_whatsnew_date', true);
-          ?>
+              ?>
               <li>
                 <a href="<?php echo get_permalink() ?>">
                   <div class="flex with-img">
@@ -190,7 +223,7 @@
                   </div>
                 </a>
               </li>
-          <?php
+              <?php
             endwhile;
             wp_reset_postdata();
           endif;
@@ -208,7 +241,7 @@
   <!-- SECTION: NEWS/RESPRESENTATIVE -->
 
   <!-- <a href="<?php //echo get_site_url() . '/about#realxlink' 
-                ?>"> -->
+  ?>"> -->
   <section class="section-representative">
     <div class="top-title-news relative">
       <p class="p-230 w-700 slideright">NEWS</p>
@@ -254,7 +287,7 @@
 
   <!-- SECTION: ADVISOR -->
   <!-- <a href="<?php // echo RESNPO_URI . '/about#advisor_section' 
-                ?>"> -->
+  ?>"> -->
   <section id="advisor_home" class="flex flex-column relative">
     <h1 class="head-clr av-title slideright ">ADVISOR</h1>
     <div class="av-container flex">
@@ -338,7 +371,7 @@
       <p class="w-800 loc-txt-section section-head-clr slideup">LOCATION</p>
     </div>
 
-    <ul class="flex">
+    <ul class="flex map-flex">
       <li style="position: relative">
         <p class="p-heading1">どこにあるの？</p>
 
