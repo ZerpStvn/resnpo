@@ -135,6 +135,19 @@ jQuery(document).ready(function ($) {
     autoplay: true,
     arrows: false,
     dots: false,
+    responsive: [
+      {
+        breakpoint: 478,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: false,
+          centerMode: true,
+          adaptiveHeight: true,
+        },
+      },
+    ],
   });
 
   $(".slider").on(
