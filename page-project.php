@@ -85,66 +85,15 @@
     </div>
   </div>
 
-  <section class="section-project-sgds relative">
-    <div class="relative project-sgds-container">
 
-      <p class="w-700 p-200 white-clr section-title relative slideright">SDGS</p>
+  <?php render_projects_cards('SDGs', '「SDGs甲子園」の過去実績 をご 紹介します。', 'SDGsの17の目標に沿って学校や地域社会の課題解決を考え、実際の行動に繋げます。SDGsの取り組み事例を学んだり、ゲームを通じてSDGsの理念について考えたりします。学校同士の交流も図りながら、それぞれの課題を掘り下げていきます。', 'section-one/people-img.png', 'sdg') ?>
 
-      <div class="overlay-arc relative">
-        <a href="<?php //echo get_site_url() . '/sdg' 
-                  ?>">
-          <img class="absolute arc-img-side" src="<?php echo RESNPO_URI . '/assets/image/project/section-one/people-img.png' ?>" alt="">
-          <ul class="flex">
-            <li>
-              <p class="w-700 p-60 sub-head-clr scaleIn">「SDGs甲子園」<BR>の過去実績 をご <BR>紹介します。</p>
-            </li>
-            <li>
-              <p class="w-700 p-25 white-clr">SDGsの17の目標に沿って学校や地域社会の課題解決を考え、実際の行動に繋げます。SDGsの取り組み事例を学んだり、ゲームを通じてSDGsの理念について考えたりします。学校同士の交流も図りながら、それぞれの課題を掘り下げていきます。</p>
-              <div class="relative btn-container">
-                <button class="main-button relative">
-                  <p>詳しく見る</p>
-                </button>
-                <img
-                  class="icon-button absolute"
-                  src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>"
-                  alt="" />
-              </div>
-            </li>
-          </ul>
-        </a>
-      </div>
-    </div>
-  </section>
+  <?php render_projects_cards('海外留学', '「海外留学/ツ<br> アー」の過去実績<br>をご紹介します。', '様々な活動を通して日本と東南アジアの学生をつなぐ活動を主として行っています。同年代の仲間たちとの様々な活動や異文化体験を通じて、国内では経験できない多様性に触れ、自国や自分自身の新たな面に気づかされます。', 'section-two/people-img.png', 'study-abroad') ?>
 
-  <section class="section-project-study">
-    <div class="relative project-sgds-container">
 
-      <p class="w-700 p-150 section-head-clr section-title-study relative slideleft">海外留学</p>
 
-      <div class="overlay-arc-study relative">
-        <img class="absolute arc-img-side" src="<?php echo RESNPO_URI . '/assets/image/project/section-two/people-img.png' ?>" alt="">
-        <ul class="flex">
-          <li>
-            <p class="w-700 p-60 sub-head-clr scaleIn">「海外留学/ツ<br> アー」の過去実績<br>をご紹介します。</p>
-          </li>
-          <li>
-            <p class="w-700 p-25 white-clr">様々な活動を通して日本と東南アジアの学生をつなぐ活動を主として行っています。同年代の仲間たちとの様々な活動や異文化体験を通じて、国内では経験できない多様性に触れ、自国や自分自身の新たな面に気づかされます。</p>
-            <div class="relative btn-container">
-              <a href="<?php echo get_site_url() . '/study-abroad' ?>">
-                <button class="main-button relative">
-                  <p>詳しく見る</p>
-                </button>
-                <img
-                  class="icon-button absolute"
-                  src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>"
-                  alt="" />
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+
+
 
   <section class="section-project-sgds relative " style="display: none;">
     <div class="relative project-sgds-container">
@@ -154,7 +103,7 @@
       <div class="overlay-arc relative">
 
         <img class="absolute arc-img-side" src="<?php echo RESNPO_URI . '/assets/image/project/section-three/people-img.png' ?>" alt="">
-        <ul class="flex">
+        <ul class="flex flex-proj-cont">
           <li>
             <p class="w-700 p-60 sub-head-clr scaleIn">「海外進学サポー<br>ト」の過去実績<br>をご紹介します。</p>
           </li>

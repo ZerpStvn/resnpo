@@ -159,5 +159,43 @@ function render_join_section3($pagetitle, $overlaytitle, $fieldset1, $fieldset2,
       </ul>
 
     </div>
-  </section><?php
-          }
+  </section>
+
+<?php
+}
+
+function render_projects_cards($cardTitle, $artTitle, $description, $img, $link)
+{
+?>
+  <section class="section-projects relative">
+    <div class="relative projects-container">
+      <p class="w-700 p-200 white-clr section-title relative slideright"><?php echo $cardTitle ?></p>
+      <div class="overlay-arc relative">
+        <a href="<?php //echo get_site_url() . $link'
+                  ?>">
+          <div class="arc-img-side absolute">
+            <img class="" src="<?php echo RESNPO_URI . '/assets/image/project/' . $img ?>" alt="">
+          </div>
+          <ul class="flex flex-proj-cont">
+            <li>
+              <p class="w-700 p-60 sub-head-clr scaleIn proj-title"><?php echo $artTitle ?></p>
+            </li>
+            <li>
+              <p class="w-700 p-25 white-clr proj-desc"><?php echo $description ?></p>
+              <div class="relative btn-container">
+                <button class="main-button relative">
+                  <p>詳しく見る</p>
+                </button>
+                <img
+                  class="icon-button absolute"
+                  src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>"
+                  alt="" />
+              </div>
+            </li>
+          </ul>
+        </a>
+      </div>
+    </div>
+  </section>
+<?php
+}
