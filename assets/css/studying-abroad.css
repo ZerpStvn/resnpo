@@ -558,7 +558,7 @@ details.closing .detail-content {
   color: white;
 }
 
-@media (max-width: 786px) {
+@media (max-width: 480px) {
   .partner-schools {
     padding-block: 0 100px;
   }
@@ -740,21 +740,6 @@ details.closing .detail-content {
     height: unset;
   }
 
-  .inq-title {
-    line-height: 110px;
-    font-size: 80px;
-  }
-
-  .inq-title-overlay {
-    padding: 9%;
-  }
-
-  .inq-title-overlay h1 {
-    font-size: 40px;
-  }
-  .inq-title-overlay h4 {
-    font-size: 18px;
-  }
   #advisor_section .img-col {
     width: 233px;
     margin-top: unset;
@@ -783,4 +768,21 @@ details.closing .detail-content {
 }
 #advisor_section .sg_description {
   font-weight: 700;
+}
+@media (max-width: 768px) {
+  .inq-title {
+    line-height: 110px;
+    font-size: 80px;
+  }
+
+  .inq-title-overlay {
+    padding: 9%;
+  }
+
+  .inq-title-overlay h1 {
+    font-size: 40px;
+  }
+  .inq-title-overlay h4 {
+    font-size: 18px;
+  }
 }

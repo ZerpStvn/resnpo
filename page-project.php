@@ -91,7 +91,8 @@
       <p class="w-700 p-200 white-clr section-title relative slideright">SDGS</p>
 
       <div class="overlay-arc relative">
-        <a href="<?php echo get_site_url() . '/sdg' ?>">
+        <a href="<?php //echo get_site_url() . '/sdg' 
+                  ?>">
           <img class="absolute arc-img-side" src="<?php echo RESNPO_URI . '/assets/image/project/section-one/people-img.png' ?>" alt="">
           <ul class="flex">
             <li>

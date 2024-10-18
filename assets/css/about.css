@@ -331,9 +331,9 @@
   text-align: left;
   margin-bottom: 20px;
   color: #0d3046;
-  -webkit-text-stroke: 0.5px #0d3046;
+  /* -webkit-text-stroke: 0.5px #0d3046;
   text-shadow: -0.5px -0.5px 0 #0d3046, 0.5px -0.5px 0 #0d3046,
-    -0.5px 0.5px 0 #0d3046, 0.5px 0.5px 0 #0d3046;
+    -0.5px 0.5px 0 #0d3046, 0.5px 0.5px 0 #0d3046; */
 }
 
 .section-title p {
