@@ -1,0 +1,77 @@
+/* SECTION ------3: Membership */
+
+.section-join-membership {
+  background: url("../image/joinus/section-three/p2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  /* height: 964px; */
+  margin-top: 88px;
+  margin-bottom: 25px;
+}
+
+.section-join-membership::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(13, 48, 70, 0.8); /* This is the overlay color */
+  z-index: 0;
+}
+
+.img-bg-membership {
+  left: -25px;
+  width: 1097px;
+  height: 964px;
+}
+
+.section-join-membership > ul {
+  padding-top: 123px;
+  /* padding-right: 167px; */
+}
+
+.section-join-membership ul li {
+  flex: 1;
+}
+
+.section-join-membership ul li:first-child {
+  align-content: baseline;
+}
+
+.section-join-membership ul li:first-child p {
+  /* writing-mode: vertical-rl; */
+  transform: rotate(90deg);
+  white-space: nowrap;
+  width: 200px;
+}
+
+.section-join-membership ul li:last-child {
+  background-color: #fff;
+  padding: 60px;
+  position: relative;
+  margin-right: 167px;
+  margin-left: 120px;
+}
+
+.section-join-membership .section2-img img {
+  width: 107%;
+}
+
+@media screen and (max-width: 1000px) {
+  .section-join-membership::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background-color: rgba(13, 48, 70, 0.8);
+    z-index: 0;
+  }
+  #joinusid .section-join-membership .section2-side-title {
+    top: 370px;
+    z-index: 3;
+  }
+}
