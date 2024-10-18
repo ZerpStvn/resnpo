@@ -212,6 +212,25 @@
   line-height: 200px;
 }
 
+#proj-sa .section-title {
+  text-align: left;
+}
+
+#proj-sa .overlay-arc .arc-img-side {
+  right: 3px;
+  top: -324px;
+  z-index: -1;
+  height: 50%;
+}
+#proj-sa .section-projects::before {
+  background-color: #fff;
+}
+
+#proj-sa .section-title {
+  color: #d9d9d9;
+  font-size: 150px !important;
+}
+
 .overlay-arc .arc-img-side {
   right: 0;
   top: -150px;
