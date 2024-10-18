@@ -235,6 +235,7 @@ table tr img {
   }
   .footer-logo img {
     height: 54px;
+    width: 54px;
   }
   .footer-logo {
     display: flex;

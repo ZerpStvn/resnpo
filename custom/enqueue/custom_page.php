@@ -59,14 +59,14 @@ function add_custom_page()
       'post_type' => 'page',
       'post_name' => 'membership'
     ),
-    array(
-      'post_title' => 'What\'s New',
-      'post_content' => 'wahtsnew',
-      'post_status' => 'publish',
-      'post_author' => 1,
-      'post_type' => 'page',
-      'post_name' => 'whatsnew'
-    ),
+    // array(
+    //   'post_title' => 'What\'s New',
+    //   'post_content' => 'wahtsnew',
+    //   'post_status' => 'publish',
+    //   'post_author' => 1,
+    //   'post_type' => 'page',
+    //   'post_name' => 'whatsnew'
+    // ),
     array(
       'post_title' => 'Study Abroad',
       'post_content' => 'Study Abroad',
@@ -82,6 +82,22 @@ function add_custom_page()
       'post_author' => 1,
       'post_type' => 'page',
       'post_name' => 'studying-abroad'
+    ),
+    array(
+      'post_title' => 'Contact',
+      'post_content' => 'Contact',
+      'post_status' => 'publish',
+      'post_author' => 1,
+      'post_type' => 'page',
+      'post_name' => 'contact'
+    ),
+    array(
+      'post_title' => 'Privacy Policy',
+      'post_content' => 'Privacy Policy',
+      'post_status' => 'publish',
+      'post_author' => 1,
+      'post_type' => 'page',
+      'post_name' => 'privacy'
     ),
   );
 

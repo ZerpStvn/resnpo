@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<?php landing_sdg_page_template('海外進学') ?>
+<?php landing_sdg_page_template('海外進学', 'vid1', 'vid3', 'vid2', 'vid4',) ?>
 
 <?php articlefront('RESの海外進学サポートとは', '日本の高校で学ぶあなたが世界各地にあるRESの提携大学で学べるようにサポートします。<br>夢に近づける学校・学部・学科のアドバイス、英語力向上、入学方法や手続き書類、現地の生活や住居まで現地教授監修のもと最適なプランをご提案します。', '/studyingabroad/studying-front.jpeg') ?>
 
@@ -102,45 +102,17 @@
   </div>
 </section>
 
-
-<!-- SECTION: INQUIRE NOW -->
-<section id="inquire_section" class="white-blue">
-  <div class="inq-titles text-centered">
-
-    <h1 class="inq-title">INQUIRE</h1>
-    <h1 class="outline inq-title">INQUIRE</h1>
-    <h1 class="outline inq-title">INQUIRE</h1>
-    <h1 class="outline inq-title">INQUIRE</h1>
-    <h1 class="outline inq-title">INQUIRE</h1>
-    <h1 class="outline inq-title">INQUIRE</h1>
-    <h1 class="outline inq-title">INQUIRE</h1>
-  </div>
-
-  <div class="inq-title-overlay flex flex-column scaleIn">
-    <h1 class="p-60 head-clr">お問い合わせはコチラから！</h1>
-    <h4 class="p-30 head-clr ">サービス利用に関するご相談やご質問など、<br>お電話もしくはフォームよりお気軽にご連絡ください。
-    </h4>
-    <div class="relative btn-container">
-      <a href="">
-        <button class="main-button relative">
-          INQUIRE NOW </button>
-        <img
-          class="icon-button absolute"
-          src="<?php echo RESNPO_IMAGE . '/leaves.png' ?>"
-          alt="" />
-      </a>
-    </div>
-  </div>
+<?php get_template_part('template-parts/inquire') ?>
 
 
-  <svg version="1.1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" style="display:none;">
-    <defs>
-      <filter id="stroke-text-svg-filter">
-        <feMorphology operator="dilate" radius="4"></feMorphology>
-        <feComposite operator="xor" in="SourceGraphic" />
-      </filter>
-    </defs>
-  </svg>
+<svg version="1.1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" style="display:none;">
+  <defs>
+    <filter id="stroke-text-svg-filter">
+      <feMorphology operator="dilate" radius="4"></feMorphology>
+      <feComposite operator="xor" in="SourceGraphic" />
+    </filter>
+  </defs>
+</svg>
 </section>
 
 </main>

@@ -7,11 +7,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  min-height: 778px;
 }
 
 #joinusid .text-deco {
-  color: none; /* Set the text color */
+  color: none;
   -webkit-text-stroke: 2px black;
   font-size: 200px;
 }
@@ -23,7 +22,7 @@
   font-family: var(--readex);
   margin-top: 80px;
   text-shadow: -1.5px -1.5px 0 #fff, 1.5px -1.5px 0 #fff, -1.5px 1.5px 0 #fff,
-    1.5px 1px 0 #fff; /* Creates the outline effect */
+    1.5px 1px 0 #fff;
 }
 
 #joinusid .header-text {
@@ -54,17 +53,17 @@
 
 #joinusid .marquee-container {
   height: 118px;
-  width: 100%; /* Full width */
-  overflow: hidden; /* Hide the overflowing content */
-  background-color: #2e88aa; /* Background color for the marquee */
+  width: 100%;
+  overflow: hidden;
+  background-color: #2e88aa;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #joinusid .marquee {
-  display: inline-flex; /* Ensure that ul items flow horizontally */
-  white-space: nowrap; /* Prevent line breaks */
+  display: inline-flex;
+  white-space: nowrap;
   animation: marquee 25s linear infinite;
 }
 
@@ -75,41 +74,35 @@
 }
 
 #joinusid .marquee-container ul {
-  display: inline-flex; /* Change to inline-flex to avoid wrapping */
+  display: inline-flex;
   align-items: center;
   padding: 0;
   margin: 0;
 }
 
 #joinusid .marquee-container ul li {
-  list-style: none; /* Remove default bullet points */
-  margin: 0 25px; /* Adjust margin for spacing */
+  list-style: none;
+  margin: 0 25px;
 }
 
 @keyframes marquee {
   0% {
     transform: translateX(100%);
-  } /* Start off-screen to the right */
+  }
   100% {
     transform: translateX(-100%);
-  } /* End off-screen to the left */
+  }
 }
 
 /* SECTION ---- 1: JoinUs-Donate */
 
 .section-join-donation {
   background: #56b0d2;
-  min-height: 944px;
-}
-
-.section-join-donation img {
-  vertical-align: bottom;
-  bottom: 0;
+  position: relative;
 }
 
 .section-join-donation > ul {
   padding-top: 123px;
-  /* padding-right: 167px; */
 }
 
 .section-join-donation ul li {
@@ -120,110 +113,110 @@
   align-content: end;
 }
 
-.section-join-donation ul li:first-child p {
-  /* writing-mode: vertical-rl; */
+#joinusid .section2-side-title {
   transform: rotate(90deg);
   white-space: nowrap;
   width: 200px;
-}
-
-.section-join-donation ul li:last-child {
-  background-color: #fff;
-  padding: 60px;
-  position: relative;
-  margin-right: 167px;
-  margin-left: 120px;
+  transform-origin: left bottom;
+  position: absolute;
+  top: 300px;
+  left: 20px;
+  z-index: 2;
 }
 
 #joinusid .donate-title {
+  font-family: var(--kiak);
   margin-top: 2%;
   margin-bottom: 5%;
 }
 
 #joinusid .btn-container {
   text-align: center;
+  margin-top: unset;
 }
 
-/* SECTION -----2: Benefits */
-
-#joinusid fieldset {
-  border: 1px solid #56b0d2;
-  padding: 30px 30px;
-  border-radius: 10px;
-  width: 300px;
-}
-
-#joinusid fieldset:hover {
-  border: 2px solid var(--buttoncolor);
-}
-
-#joinusid .fieldset-container ul li:nth-child(2) {
-  margin-top: 0;
-}
-
-#joinusid .fieldset-container ul li:nth-child(3) {
-  margin-top: 0;
-}
-
-/* SECTION ------3: Membership */
-
-.section-join-membership {
-  background: url("../image/joinus/section-three/main-img.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  height: 964px;
-  margin-top: 88px;
-  margin-bottom: 25px;
-}
-
-.section-join-membership::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background-color: rgba(13, 48, 70, 0.8); /* This is the overlay color */
-  z-index: 0;
-}
-
-.img-bg-membership {
-  left: -25px;
-  width: 1097px;
-  height: 964px;
-}
-
-.section-join-membership > ul {
-  padding-top: 123px;
-  /* padding-right: 167px; */
-}
-
-.section-join-membership ul li {
-  flex: 1;
-}
-
-.section-join-membership ul li:first-child {
-  align-content: baseline;
-}
-
-.section-join-membership ul li:first-child p {
-  /* writing-mode: vertical-rl; */
-  transform: rotate(90deg);
-  white-space: nowrap;
-  width: 200px;
-}
-
-.section-join-membership ul li:last-child {
+.section2-card {
   background-color: #fff;
   padding: 60px;
+  position: absolute;
+  max-width: 800px;
+  margin: 20px;
+  left: 531px;
+  top: 178px;
+}
+
+.section2-img {
+  flex: 2;
+  width: 100%;
+  height: auto;
+}
+
+.section2-img img {
+  height: 100%;
+  object-fit: fill;
+  object-position: bottom;
+  display: block;
+}
+
+.section2-flex-cont {
   position: relative;
-  margin-right: 167px;
-  margin-left: 120px;
+  align-items: center;
 }
 
 /* SECTION ---- 5: INQUIRE */
 
 .section_3_don {
   padding-block-end: 70px;
+}
+
+@media screen and (max-width: 1000px) {
+  .section-join-donation {
+    max-height: unset;
+  }
+  .section2-flex-cont {
+    margin: 20px;
+    flex-direction: column-reverse;
+  }
+
+  .section2-img {
+    z-index: 2;
+  }
+  .section2-img img {
+    vertical-align: bottom;
+    bottom: 0;
+    margin-top: -50px;
+    z-index: 2;
+    width: 100%;
+  }
+  .section2-card {
+    padding: 60px;
+    position: relative;
+    left: unset;
+    top: unset;
+  }
+  #joinusid .section2-side-title {
+    top: 700px;
+    left: 20px;
+  }
+  #joinusid .donate-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28.13px;
+    letter-spacing: 0.05em;
+  }
+
+  .donate-contents {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section2-card {
+    padding: 20px;
+    font-size: 14px; /* Reduce the font size */
+  }
+
+  #joinusid .section2-side-title {
+    top: 500px;
+  }
 }

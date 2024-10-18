@@ -12,4 +12,5 @@
 <body>
 
   <main>
-    <?php landing_sdg_page_template('SDGs 甲子園') ?>
+    <?php //landing_sdg_page_template('SDGs 甲子園') 
+    ?>

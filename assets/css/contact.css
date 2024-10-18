@@ -1,0 +1,163 @@
+#contact_section {
+  background-color: #f1fbff;
+  padding: 146px;
+}
+
+.contact-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-row h2 {
+  font-family: var(--kiak);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 45px;
+  border-left: 3px solid var(--buttoncolor);
+  color: #22637b;
+  padding-left: 30px;
+}
+
+.contact-row h1 {
+  padding-left: 30px;
+  font-family: var(--readex);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 84.38px;
+  letter-spacing: 0.1em;
+  color: #22637b;
+}
+
+.contact-row ul li {
+  padding-left: 30px;
+  font-family: var(--notsansjp);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32.51px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #22637b;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+.edu-contact-form {
+  background-color: #fff;
+  padding: 118px;
+  font-family: Arial, sans-serif;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.form-group :nth-child(4) {
+  display: flex;
+  flex-direction: column;
+}
+
+.edu-contact-form label {
+  flex: 1;
+  font-family: var(--notsansjp);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28.13px;
+  letter-spacing: 0.1em;
+}
+
+.edu-contact-form input,
+.edu-contact-form textarea {
+  flex: 2;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.edu-contact-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.edu-contact-form ::placeholder {
+  color: #999;
+}
+
+.edu-contact-form .form-group:nth-child(5) {
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.submit-form {
+  display: flex;
+  justify-content: end;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #contact_section {
+    padding: 50px;
+  }
+
+  .contact-row h2 {
+    font-size: 24px;
+    line-height: 35px;
+    padding-left: 20px;
+  }
+
+  .contact-row h1 {
+    font-size: 40px;
+    line-height: 60px;
+    padding-left: 20px;
+  }
+
+  .contact-row ul li {
+    font-size: 16px;
+    line-height: 28px;
+    padding-left: 20px;
+  }
+
+  .edu-contact-form {
+    padding: 50px;
+  }
+
+  .edu-contact-form label {
+    font-size: 18px;
+  }
+
+  .edu-contact-form input,
+  .edu-contact-form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .form-group {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .submit-form {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact_section {
+    padding: 20px;
+  }
+  .edu-contact-form {
+    padding: 20px;
+  }
+}

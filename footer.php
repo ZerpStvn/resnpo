@@ -6,7 +6,7 @@
       <div class="upper-footer">
         <div class="uf-c1">
           <div class="footer-logo">
-            <img src="<?php echo RESNPO_IMAGE . '/green-logo.png' ?>" alt="green-logo">
+            <img src="<?php echo RESNPO_IMAGE . '/green-logo2.png' ?>" alt="green-logo">
             <img src="<?php echo RESNPO_IMAGE . '/res.png' ?>" alt="res">
           </div>
           <div class="tbl-col">
@@ -28,7 +28,7 @@
                     <img class="line" src="<?php echo RESNPO_IMAGE . '/line-blue.png' ?>" alt="Line">
                   </a>
                 </td>
-                <td class="contact-text">CONTACT</td>
+                <td class="contact-text"><a href="<?php get_site_URL() . '/contact' ?>">CONTACT</a></td>
               </tr>
             </table>
           </div>
@@ -39,10 +39,10 @@
               QUICK LINKS
             </h2>
             <ul class="footer-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Join Us</a></li>
+              <li><a href="<?php echo get_site_url() . '/ome' ?>">Home</a></li>
+              <li><a href="<?php echo get_site_url() . '/project' ?>">Projects</a></li>
+              <li><a href="<?php echo get_site_url() . '/about' ?>">About Us</a></li>
+              <li><a href="<?php echo get_site_url() . '/joinus' ?>">Join Us</a></li>
               <li><a href="#">Corporate/Schools</a></li>
           </div>
           <div class="uf-c3">
@@ -51,8 +51,8 @@
             </h2>
             <ul class="footer-links">
               <li><a href="#">SDG's</a></li>
-              <li><a href="#">海外留学</a></li>
-              <li><a href="#">海外進学</a></li>
+              <li><a href="<?php get_site_url() . '/sdg' ?>">海外留学</a></li>
+              <li><a href="<?php get_site_url() . '/study-abroad' ?>">海外進学</a></li>
             </ul>
           </div>
         </div>
@@ -66,10 +66,9 @@
           子どもたちに一つでも多くの機会を届けるため 皆様の寄付を私たちの活動に利用させていただきます。
         </p>
         <div class="relative btn-container">
-          <a href="<?php echo RESNPO_URI . '/donation' ?>">
+          <a href="<?php echo RESNPO_URI . '/donation#section_4_don' ?>">
             <button class="main-button relative">
-              代表メッセージ
-            </button>
+              詳しく見る </button>
             <img class="icon-button absolute" src="<?php echo RESNPO_IMAGE . '/leaves.png' ?>" alt="" />
           </a>
         </div>

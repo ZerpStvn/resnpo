@@ -1,71 +1,9 @@
 <?php get_header() ?>
 <div id="donationid">
   <!-- donation page -->
-
-
-  <section class="donation-header">
-    <div class="border relative">
-      <!-- data-aos="fade-up -->
-      <div class="donation-container">
-        <div class="donation-texts">
-          <p class="wk-s-5">DONATION</p>
-          <!--  data-aos="fade-up" -->
-          <div class="text-deco-donation">
-            <p class="wk-s-5 ">DONATION</p>
-            <p class="wk-s-5 ">DONATION</p>
-            <p class="wk-s-5 ">DONATION</p>
-          </div>
-        </div>
-
-        <div class="social-icons absolute">
-          <ul class="social-icons-ul flex align-items-center">
-            <li>
-              <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=601qwusa">
-                <img
-                  src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-line-icon.png' ?>"
-                  alt="Line" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/ChiikiKyouiku/">
-                <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-fb-icon.png' ?>" alt="Facebook" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/channel/UCEJ3QcF3DZ9o_MYbhMxgV4Q">
-                <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-yt-icon.png' ?>" alt="YouTube" />
-              </a>
-            </li>
-
-          </ul>
-        </div>
-
-        <div class="donation-title">
-          <div class="donation-title-cont">
-            <img class="side-logo" src="<?php echo RESNPO_IMAGE . '/logo.png' ?>" alt="">
-            <div class="side-title-text">
-              <h1>NPO法人</h1>
-              <h3>REGIONAL EDUCATION SUPPORT</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <section class="section_1_don relative">
-    <div class="donation-bottom-container absolute">
-      <div class="donation-bottom-text">
-        <p class="w-700 p-40 head-clr scaleIn">あなたの寄付が子どもたちの世界を拡げ輝かせます</p>
-        <p class="w-500 p-20 head-clr">
-          刻一刻と変化する今の時代。子どもたちは、私たちがそうだった頃とは異なる環境に身を置き多種多様なスキルや能力を身につけることを求められています。<br>
-          子どもたちに一つでも多くの機会を届けるため皆様の寄付を私たちの活動に利用させていただきます
-        </p>
-      </div>
-      <div class="donation-bottom-donate">
-        <p class="w-900 p-100 section-head-clr slideup">DONATION</p>
-      </div>
-    </div>
-  </section>
+  <?php render_join_landing('DONATION', '寄付') ?>
+  <?php render_join_section1('あなたの寄付が子どもたちの世界を拡げ輝かせます', '刻一刻と変化する今の時代。子どもたちは、私たちがそうだった頃とは異なる環境に身を置き多種多様なスキルや能力を身につけることを求められています。<br>
+          子どもたちに一つでも多くの機会を届けるため皆様の寄付を私たちの活動に利用させていただきます', 'DONATION') ?>
 
   <section class="section_2_don">
     <div class="flex section_2_oppor">
@@ -79,7 +17,8 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
+            allowfullscreen
+            style="border-radius: 10px;">
           </iframe>
         </div>
       </div>
@@ -131,46 +70,13 @@
     </div>
   </section>
 
-  <section class="section_3_don">
+
+  <?php render_join_section3('BENEFITS', 'ご寄付いただいた方には', '団体よりお礼のお手紙を郵送いたします', '毎年4月末ごろ、前年度の活動報告書をお送りいたします', '支援者ページにお名前を一定期間掲載させていただきます') ?>
+
+
+  <section id="section_4_don" class="section_4_don">
     <div class="title-top relative">
-      <p class="w-500 p-250 text-center relative">BENEFITS</p>
-      <p class="w-900 p-100 light-blue absolute scaleIn">ご寄付いただいた方には</p>
-    </div>
-
-    <div class="fieldset-container">
-      <ul class="flex">
-        <li>
-          <fieldset>
-            <legend>
-              <p class="w-900 p-50 head-clr">01</p>
-            </legend>
-            <p class="w-500 p-20 head-clr fieldset-text">団体よりお礼のお手紙を郵送いたします</p>
-          </fieldset>
-        </li>
-        <li>
-          <fieldset>
-            <legend>
-              <p class="w-900 p-50 head-clr">02</p>
-            </legend>
-            <p class="w-500 p-20 head-clr fieldset-text">毎年4月末ごろ、前年度の活動報告書をお送りいたします</p>
-          </fieldset>
-        </li>
-        <li>
-          <fieldset>
-            <legend>
-              <p class="w-900 p-50 head-clr">03</p>
-            </legend>
-            <p class="w-500 p-20 head-clr fieldset-text">支援者ページにお名前を一定期間掲載させていただきます</p>
-          </fieldset>
-        </li>
-      </ul>
-
-    </div>
-  </section>
-
-  <section class="section_4_don">
-    <div class="title-top relative">
-      <p class="w-500 p-150 text-center relative">HOW TO HELP</p>
+      <p class="w-600 p-150 text-center relative">HOW TO HELP</p>
       <p class="w-900 p-60 light-blue absolute scaleIn">お気持ちにあった寄付をお選びください</p>
     </div>
 
@@ -209,39 +115,39 @@
           <ul class="flex ul-first-payment gap-15">
             <li>
               <button>
-                <p class="w-500 p-25">3,000円/月</p>
+                <p class="w-600 p-25">3,000円/月</p>
               </button>
             </li>
             <li>
               <button>
-                <p class="w-500 p-25">10,000円/月</p>
+                <p class="w-600 p-25">10,000円/月</p>
               </button>
             </li>
           </ul>
           <ul class="flex ul-second-payment gap-15">
             <li>
               <button>
-                <p>1,000円/月</p>
+                <p class="w-600">1,000円/月</p>
               </button>
             </li>
             <li>
               <button>
-                <p>5,000円/月</p>
+                <p class="w-600">5,000円/月</p>
               </button>
             </li>
             <li>
               <button>
-                <p>30,000円/月</p>
+                <p class="w-600">30,000円/月</p>
               </button>
             </li>
             <li>
               <button>
-                <p>50,000円/月</p>
+                <p class="w-600">50,000円/月</p>
               </button>
             </li>
             <li>
               <button>
-                <p>100,000円/月</p>
+                <p class="w-600">100,000円/月</p>
               </button>
             </li>
           </ul>
@@ -255,7 +161,9 @@
           <p>
             銀行振込での毎月寄付をご検討の方は、お問い合わせフォームよりご相談ください。
           </p>
-          <p class="sub-head-clr">❯問合せフォーム</p>
+          <a href="<?php echo get_site_url() . '/contact' ?>">
+            <p class="sub-head-clr">❯ 問合せフォーム</p>
+          </a>
         </div>
 
       </div>
@@ -278,39 +186,39 @@
             <li>
               <a href="">
                 <button>
-                  <p class="w-500 p-25 price-button">3,000円</p>
+                  <p class="w-600 p-25 price-button">3,000円</p>
                 </button></a>
             </li>
             <li>
               <a href=""><button>
-                  <p class="w-500 p-25">10,000円</p>
+                  <p class="w-600 p-25">10,000円</p>
                 </button></a>
             </li>
           </ul>
           <ul class="flex ul-second-payment gap-15">
             <li>
               <a href=""><button>
-                  <p>1,000円</p>
+                  <p class="w-600">1,000円</p>
                 </button></a>
             </li>
             <li>
               <a href=""><button>
-                  <p>5,000円</p>
+                  <p class="w-600">5,000円</p>
                 </button></a>
             </li>
             <li>
               <a href=""><button>
-                  <p>30,000円</p>
+                  <p class="w-600">30,000円</p>
                 </button></a>
             </li>
             <li>
               <a href=""><button>
-                  <p>50,000円</p>
+                  <p class="w-600">50,000円</p>
                 </button></a>
             </li>
             <li>
               <a href=""><button>
-                  <p>100,000円</p>
+                  <p class="w-600">100,000円</p>
                 </button></a>
             </li>
           </ul>
@@ -324,7 +232,9 @@
           <p>
             銀行振込での毎月寄付をご検討の方は、お問い合わせフォームよりご相談ください。
           </p>
-          <p class="sub-head-clr">❯問合せフォーム</p>
+          <a href="<?php echo get_site_url() . '/contact' ?>">
+            <p class="sub-head-clr">❯ 問合せフォーム</p>
+          </a>
         </div>
 
       </div>
@@ -409,7 +319,6 @@
           </div>
 
         </div>
-
 
 
       </div>

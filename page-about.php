@@ -1,135 +1,134 @@
 <?php get_header() ?>
 <div id="aboutid" class="aboutid">
 
-  <?php
-  function render_about_section($sectiontitle, $subtitle)
-  {
-  ?>
-    <section class="landing-about">
-      <div class="landing-fg">
-        <img src="<?php echo RESNPO_IMAGE . '/about/landing-fg.png' ?>" alt="">
-      </div>
-
-      <div class="side-content">
-        <div class="social">
-          <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=601qwusa">
-            <img src="<?php echo RESNPO_IMAGE . '/line.png' ?>" alt="Line">
-          </a>
-          <a href="https://www.facebook.com/ChiikiKyouiku/">
-            <img src="<?php echo RESNPO_IMAGE . '/facebook.png' ?>" alt="Facebook">
-          </a>
-          <a href="https://www.youtube.com/channel/UCEJ3QcF3DZ9o_MYbhMxgV4Q">
-            <img src="<?php echo RESNPO_IMAGE . '/youtube.png' ?>" alt="YouTube">
-          </a>
-        </div>
-        <div class="about-title">
-          <div class="side-title">
-            <img class="side-logo" src="<?php echo RESNPO_IMAGE . '/logo.png' ?>" alt="">
-            <div class="side-title-text">
-              <h1>NPO法人</h1>
-              <h3>REGIONAL EDUCATION SUPPORT</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="au-title">
-        <h1 class="outline au-main-title scaleIn"><?php echo $sectiontitle; ?></h1>
-        <h3 class="au-sub-title sub-head-clr scaleIn"><?php echo $subtitle; ?></h3>
-      </div>
-    </section>
-  <?php
-  }
-  ?>
-
-  <?php render_about_section('ABOUT US', 'What is RES?'); ?>
+  <?php render_about_section('ABOUT <br>US', 'What is RES?', '/about/landing-fg5.png'); ?>
 
 
   <div class="vma-title scaleIn">
     <h1>ひとりでも多くの子どもたちが、<br>未来の可能性を芸術で表現できる社会を目指して</h1>
   </div>
 
+  <?php
+  $visionContent = <<<HTML
+<div class="section-text">
+    <h2 class="section-title scaleIn">実現したい社会</h2>
+    <p>
+        人の役に立ちたい！人に必要とされたい！そんな想いをきっかけに、ご縁があって2003年にこのNPO法人を立ち上げました。そして、フィリピンへ幼稚園の寄付、ボランティア活動などを行っていく中で湧いてきた新たな想い。
+
+        <br><br>
+
+        それは、「<span class="white-clr">このままではまずい…</span>」。
+
+        <br>
+
+        海外の若い人たちは、英語をコミュニケーションのツールとして使いこなし、国境や人種の壁を越えて活躍しています。その圧倒的な熱量と活発に動く姿をみていると、このままでは<span class="white-clr">日本は世界から取り残されてしまう</span>のではないか？そんな危機感を強く感じました
+
+        <br><br>
+
+        そんな時に現地で出会ったのがJICA（ジャイカ：青年海外協力隊）のメンバーとして活躍していた人たち、また、熱い想いを持って海外で活躍している人たち。
+
+        <br><br>
+
+        彼ら彼女らと交流することで、「日本人が活躍している社会」への希望を感じることができました。
+
+        <br><br>
+        今、私たちだけでできることには限りがあるかも知れない。だけど、無限の可能性を持つ子どもたちに、この先待ち受けるグローバル社会について一つでも多く伝えたい。また、その時代を生き抜く力を身につける、養うためのサポートをしたい。そう強く思っています。
+    </p>
+</div>
+HTML;
+
+  $missionContent = <<<HTML
+<div class="section-text">
+    <h2 class="section-title scaleIn">私たちの使命</h2>
+    <p>
+        あたり前のことをあたり前だからと思考停止するのではなく、なぜなんだろう？と考え、自分なりの答えを持つ。
+        <br><br>
+        間違っていてもいい
+        <br><br>
+        間違いに気づけば考えを改めればいい。そして、考えて終わりではなく、行動する。
+        <br><br>
+        私たちは3つのプロジェクトを通して、子供たちに自ら考えて行動することの大切さを伝えています。
+    </p>
+</div>
+HTML;
+
+  $actionContent = <<<HTML
+<div class="section-text">
+    <h2 class="section-title scaleIn">私たちの行動</h2>
+    <p>
+        あたり前のことをあたり前だからと思考停止するのではなく、なぜなんだろう？と考え、自分なりの答えを持つ。
+        <br><br>
+        間違っていてもいい
+        <br><br>
+        間違いに気づけば考えを改めればいい。そして、考えて終わりではなく、行動する。
+        <br><br>
+        私たちは3つのプロジェクトを通して、子供たちに自ら考えて行動することの大切さを伝えています。
+    </p>
+</div>
+HTML;
+  ?>
+
   <section id="vision-section" class="diagonal-section global-width">
-    <div class="rotated-text outline">VISION</div>
+
     <div class="section-content head-clr flex-rr head-clr">
+      <div class="rotated-text outline">VISION</div>
+
       <div class="image-placeholder slideleft">
-        <img src=" <?php echo RESNPO_IMAGE . '/about/vision1.png' ?>" alt="">
+        <img src="<?php echo RESNPO_IMAGE . '/about/vision1.png' ?>" alt="">
       </div>
-      <div class="section-text">
-        <h2 class="section-title scaleIn">実現したい社会</h2>
-        <p>
-          人の役に立ちたい！人に必要とされたい！そんな想いをきっかけに、ご縁があって2003年にこのNPO法人を立ち上げました。そして、フィリピンへ幼稚園の寄付、ボランティア活動などを行っていく中で湧いてきた新たな想い。
-
-          <br><br>
-
-          それは、「<span class="white-clr">このままではまずい…</span>」。
-
-          <br>
-
-          海外の若い人たちは、英語をコミュニケーションのツールとして使いこなし、国境や人種の壁を越えて活躍しています。その圧倒的な熱量と活発に動く姿をみていると、このままでは<span class="white-clr">日本は世界から取り残されてしまう</span>のではないか？そんな危機感を強く感じました
-
-          <br><br>
-
-          そんな時に現地で出会ったのがJICA（ジャイカ：青年海外協力隊）のメンバーとして活躍していた人たち、また、熱い想いを持って海外で活躍している人たち。
-
-          <br><br>
-
-          彼ら彼女らと交流することで、「日本人が活躍している社会」への希望を感じることができました。
-
-          <br><br>
-          今、私たちだけでできることには限りがあるかも知れない。だけど、無限の可能性を持つ子どもたちに、この先待ち受けるグローバル社会について一つでも多く伝えたい。また、その時代を生き抜く力を身につける、養うためのサポートをしたい。そう強く思っています。
-        </p>
+      <div class="desktop-content">
+        <?php echo $visionContent; ?>
+      </div>
+    </div>
+    <!-- New div for mobile layout -->
+    <div class="mobile-content">
+      <div class="section-text-wrapper">
+        <?php echo $visionContent; ?>
       </div>
     </div>
   </section>
 
+
   <section id="mission-section" class="diagonal-section global-width">
-    <div class="rotated-text outline">MISSION</div>
     <div class="section-content head-clr flex-row">
+      <div class="rotated-text outline">MISSION</div>
+
       <div class="image-placeholder slideright">
         <img src="<?php echo RESNPO_IMAGE . '/about/mission1.png' ?>" alt="">
       </div>
-      <div class="section-text">
-        <h2 class="section-title scaleIn">私たちの使命</h2>
-        <p>
-          あたり前のことをあたり前だからと思考停止するのではなく、なぜなんだろう？と考え、自分なりの答えを持つ。
-          <br>
-          間違っていてもいい
-
-          <br><br>
-
-          間違いに気づけば考えを改めればいい。そして、考えて終わりではなく、行動する。
-          <br><br>
-
-          私たちは3つのプロジェクトを通して、子供たちに自ら考えて行動することの大切さを伝えています。
-        </p>
+      <div class="desktop-content">
+        <?php echo $missionContent; ?>
+      </div>
+    </div>
+    <!-- New div for mobile layout -->
+    <div class="mobile-content">
+      <div class="section-text-wrapper">
+        <?php echo $missionContent; ?>
       </div>
     </div>
   </section>
 
   <section id="action-section" class="diagonal-section global-width">
-    <div class="rotated-text outline">ACTION</div>
     <div class="section-content head-clr head-clr flex-rr">
+      <div class="rotated-text outline">ACTION</div>
+
       <div class="image-placeholder slideleft">
         <img src="<?php echo RESNPO_IMAGE . '/about/action1.png' ?>" alt="">
       </div>
-      <div class="section-text">
-        <h2 class="section-title scaleIn">私たちの行動</h2>
-        <p>
-          あたり前のことをあたり前だからと思考停止するのではなく、なぜなんだろう？と考え、自分なりの答えを持つ。
-          <br><br>
-          間違っていてもいい
-          <br><br>
-          間違いに気づけば考えを改めればいい。そして、考えて終わりではなく、行動する。
-          <br><br>
-          私たちは3つのプロジェクトを通して、子供たちに自ら考えて行動することの大切さを伝えています。
-        </p>
+      <div class="desktop-content">
+        <?php echo $actionContent; ?>
+      </div>
+    </div>
+    <!-- New div for mobile layout -->
+    <div class="mobile-content">
+      <div class="section-text-wrapper">
+        <?php echo $actionContent; ?>
       </div>
     </div>
   </section>
 
   <section id="realxlink" class="">
-    <div class="rxl-container global-width">
+    <div class="rxl-container flex flex-column gap_20 global-width">
       <div class="rxl-ur">
         <h1 class="qt flex">“</h1>
         <div class="content flex flex-row">
@@ -145,7 +144,7 @@
         </div>
       </div>
       <div class="rxl-lr flex">
-        <img src="<?php echo RESNPO_IMAGE . '/about/mori.jpeg' ?>" alt="">
+        <div class="rxl-lr-img"><img src="<?php echo RESNPO_IMAGE . '/about/mori.jpeg' ?>" alt=""></div>
         <div class="rxl-lr-txt">
           <h1 class="sb_title text-center white-clr slideup">新時代の学びのカタチ<br>「REAL✕LINK」</h1>
           <p class="white-clr">
@@ -161,43 +160,39 @@
         </div>
       </div>
     </div>
-
-
   </section>
 
   <?php get_template_part('template-parts/adviser') ?>
-
-
 
   <section id="org_overview" class="org_overview">
     <p class="p-30 w-700 head-clr">団体概要</p>
     <p class="p-20 sub-head-clr">Outline</p>
     <div class="list-contact">
-      <div class="flex gap-15">
+      <div class="flex gap-15 org-overview-items">
         <p class="p-16 sub-head-clr">団体名</p>
         <p class="p-16 head-clr">NPO法人 RES(旧名：地域教育サポートの会)</p>
       </div>
-      <div class="flex gap-15">
+      <div class="flex gap-15 org-overview-items">
         <p class="p-16 sub-head-clr">代表者</p>
         <p class="p-16 head-clr">森章</p>
       </div>
-      <div class="flex gap-15">
+      <div class="flex gap-15 org-overview-items">
         <p class="p-16 sub-head-clr">設立年</p>
         <p class="p-16 head-clr">2003年02月18日</p>
       </div>
-      <div class="flex gap-15">
+      <div class="flex gap-15 org-overview-items">
         <p class="p-16 sub-head-clr">所在地</p>
         <p class="p-16 head-clr">〒791-0243 愛媛県松山市平井町1426番地2</p>
       </div>
-      <div class="flex gap-15">
+      <div class="flex gap-15 org-overview-items">
         <p class="p-16 sub-head-clr">連絡先</p>
         <p class="p-16 head-clr">TEL:089-970-9210　FAX:089-970-9210</p>
       </div>
-      <div class="flex gap-15">
+      <div class="flex gap-15 org-overview-items">
         <p class="p-16 sub-head-clr">法人番号</p>
         <p class="p-16 head-clr">1500005001859 （※内閣府Webサイトが開きます）</p>
       </div>
-      <div class="flex gap-15">
+      <div class="flex gap-15 org-overview-items">
         <p class="p-16 sub-head-clr">目的</p>
         <p class="p-16 head-clr">自ら考え、行動できる人材を育てる</p>
       </div>

@@ -2,10 +2,16 @@
 <div id="homeid">
   <section class="section_1">
     <div class="header-container global-width">
-      <img src="<?php echo RESNPO_URI . '/assets/image/homepage/header/top_nav_txt.png' ?>" alt="">
+
+      <img class="desktop_logo" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/top_nav_txt.png' ?>"
+        alt="logo" loading="lazy">
+      <img class="mobile_logo" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/mobilelogo.png' ?>"
+        alt="logo" loading="lazy">
       <hr>
       <div>
-        <ul class="flex">
+        <ul class="flex main-top-content">
+          <h2 class="mobile-top-content">一人でも多くの子どもたちが、
+            未来の国際社会で活躍できる社会を目指し、</h2>
           <li>
             <div class="header-first relative">
 
@@ -15,7 +21,7 @@
                     <img class="header-people relative"
                       src="<?php echo RESNPO_URI . '/assets/image/homepage/header/Group 322.png' ?>" alt="">
                     <img class="header-people relative"
-                      src="<?php echo RESNPO_URI . '/assets/image/homepage/header/Group 325.png' ?>" alt="">
+                      src="<?php echo RESNPO_URI . '/assets/image/homepage/header/Group 323.png' ?>" alt="">
                     <img class="header-people relative"
                       src="<?php echo RESNPO_URI . '/assets/image/homepage/header/Group 356.png' ?>" alt="">
                   </div>
@@ -25,7 +31,9 @@
 
               <ul class="flex absolute home-side-sm">
                 <li>
-                  <p class="p-16 w-700 white-clr">CONTACT</p>
+                  <a href="https://edu-npo.com/inquiry/">
+                    <p class="p-16 w-700 white-clr">CONTACT</p>
+                  </a>
                 </li>
                 <li><img src="<?php echo RESNPO_URI . '/assets/image/homepage/header/sm-line-icon.png' ?>" alt=""></li>
                 <li><img src="<?php echo RESNPO_URI . '/assets/image/homepage/header/sm-fb-icon.png' ?>" alt=""></li>
@@ -35,11 +43,15 @@
 
           </li>
           <li>
-            <div class="flex relative header-second slideright">
-              <img class="header-green-icon"
-                src="<?php echo RESNPO_URI . '/assets/image/homepage/header/header-green-icon.png' ?>" alt="">
-              <img class="header-res-img"
-                src="<?php echo RESNPO_URI . '/assets/image/homepage/header/res-img-txt.png' ?>" alt="">
+            <div class="flex gap-25 flex-column relative header-second slideright">
+              <div class="flex  ">
+                <img class="header-green-icon"
+                  src="<?php echo RESNPO_URI . '/assets/image/homepage/header/header-green-icon.png' ?>" alt="">
+                <img class="header-res-img"
+                  src="<?php echo RESNPO_URI . '/assets/image/homepage/header/res-img-txt.png' ?>" alt="">
+              </div>
+              <!-- <h1 class="outline home-lndg-sub">自ら考え行動できる人材を育成する活動を<br>しています。< /h1> -->
+
             </div>
           </li>
         </ul>
@@ -73,11 +85,38 @@
 
   <section class="section_2 relative global-width">
     <ul class="flex main-ul">
-      <li>
-        <div class="img-container slideleft">
-          <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-third/main-img.png' ?>" alt="" />
-        </div>
+      <div class="side-activity ">
+        <p class="">ACTIVITIES</p>
+        <img src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
+      </div>
+      <li class="desktop">
+        <a href="<?php echo RESNPO_URI . '/sdg' ?>">
+          <div class="img-container slideleft">
+            <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-third/main-img.png' ?>" alt="" />
+          </div>
+        </a>
+        <ul class=" sub-ul text-center mobile">
+          <li class="slideup">
+            <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-third/sub-img-1.png' ?>" alt="" />
+            <div class="sub-ul-details">
+              <p class="p-12 class-content">
+                同年代の仲間たちとの様々な活動や異文化体験を通じて、国内では経験できない多様性に触れ、自国や自分自身の新たな面に気づかされます。
+              </p>
+              <p class="p-18 mt-15 w-700 class-title">海外留学/ツアー</p>
+            </div>
+          </li>
+          <li class="slideup hide">
+            <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-third/sub-img-2.png' ?>" alt="" />
+            <div class="sub-ul-details">
+              <p class="p-12 class-content">
+                海外の大学への進学を徹底サポートします。言語の違いや距離を理由に選択肢から外していませんか？その挑戦がなりたい自分への近道かもしれません。
+              </p>
+              <p class="p-18 mt-15 w-700 class-title">海外進学サポート</p>
+            </div>
+          </li>
+        </ul>
       </li>
+
       <li>
         <p class="p-16 sub-head-clr">Activities</p>
         <div class="activity-content-details">
@@ -89,7 +128,7 @@
       </li>
     </ul>
 
-    <ul class="flex sub-ul absolute text-center">
+    <ul class="flex sub-ul text-center desktop">
       <li class="slideup">
         <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-third/sub-img-1.png' ?>" alt="" />
         <div class="sub-ul-details">
@@ -99,7 +138,7 @@
           <p class="p-18 mt-15 w-700 class-title">海外留学/ツアー</p>
         </div>
       </li>
-      <li class="slideup">
+      <li class="slideup hide">
         <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-third/sub-img-2.png' ?>" alt="" />
         <div class="sub-ul-details">
           <p class="p-12 class-content">
@@ -120,6 +159,8 @@
     </div>
   </section>
 
+
+
   <!-- SECTION: UPCOMING EVENTS -->
   <?php get_template_part('template-parts/upcoming-events') ?>
   <!-- END SECTION -->
@@ -127,34 +168,36 @@
   <section class="section_3 relative global-width">
     <ul class="flex ul-news">
       <?php
-      $news_query = new WP_Query([
-        'post_type' => 'news',
+      $whatsnew_query = new WP_Query([
+        'post_type' => 'whatsnew',
         'posts_per_page' => 1,
       ]);
 
-      if ($news_query->have_posts()) :
-        while ($news_query->have_posts()) : $news_query->the_post();
-          $news_date = get_post_meta(get_the_ID(), '_news_date', true);
-      ?>
+      if ($whatsnew_query->have_posts()):
+        while ($whatsnew_query->have_posts()):
+          $whatsnew_query->the_post();
+          $whatsnew_date = get_post_meta(get_the_ID(), '_whatsnew_date', true);
+          ?>
           <li>
-            <div class="img-container-news">
-              <img class="scaleIn" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" />
-            </div>
-            <div class="news-detils">
-              <p class="p-16 sub-head-clr"><?php echo esc_html($news_date); ?></p>
-              <p class="p-40 head-clr scaleIn"><?php the_title(); ?></p>
-              <p class="p-16 details"><?php the_excerpt(); ?></p>
-
-              <div class="relative btn-container" id="btn-news">
-                <a href="<?php the_permalink(); ?>">
-                  <button type="button" class="main-button-logo relative">支援者様</button>
-                  <img class="home-icon-button absolute"
-                    src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
-                </a>
+            <a href="<?php echo get_permalink() ?>" id="main-article">
+              <div class="img-container-news">
+                <img class="scaleIn" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" />
               </div>
-            </div>
+              <div class="news-detils">
+                <p class="p-16 sub-head-clr"><?php echo esc_html($whatsnew_date); ?></p>
+                <p class="p-40 head-clr scaleIn"><?php the_title(); ?></p>
+                <p class="p-16 details excerpt-3-lines"><?php echo wp_trim_words(get_the_excerpt(), 30, '...'); ?></p>
+                <div class="relative btn-container" id="btn-news">
+                  <a href="<?php echo get_the_permalink() ?>">
+                    <button type="button" class="main-button relative">もっと見る</button>
+                    <img class="home-icon-button absolute"
+                      src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
+                  </a>
+                </div>
+              </div>
+            </a>
           </li>
-      <?php
+          <?php
         endwhile;
         wp_reset_postdata();
       endif;
@@ -163,32 +206,31 @@
         <p class="p-20 mb-5 recents">RECENTS</p>
         <ul class="ul-recents slideup">
           <?php
-          $recent_news_query = new WP_Query([
-            'post_type' => 'news',
+          $recent_whatsnew_query = new WP_Query([
+            'post_type' => 'whatsnew',
             'posts_per_page' => 3,
             'offset' => 1,
           ]);
 
-          if ($recent_news_query->have_posts()) :
-            while ($recent_news_query->have_posts()) : $recent_news_query->the_post();
-              $recent_news_date = get_post_meta(get_the_ID(), '_news_date', true);
-          ?>
+          if ($recent_whatsnew_query->have_posts()):
+            while ($recent_whatsnew_query->have_posts()):
+              $recent_whatsnew_query->the_post();
+              $recent_whatsnew_date = get_post_meta(get_the_ID(), '_whatsnew_date', true);
+              ?>
               <li>
-                <div class="flex with-img">
-                  <div class="img-container-news-recent">
-                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" />
+                <a href="<?php echo get_permalink() ?>">
+                  <div class="flex with-img">
+                    <div class="img-container-news-recent">
+                      <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" />
+                    </div>
+                    <div>
+                      <p class="p-14 w-700 head-clr"><?php echo get_the_title() ?></p>
+                      <p class="p-12 text-clr"><?php echo esc_html($recent_whatsnew_date); ?></p>
+                    </div>
                   </div>
-                  <div>
-                    <p class="p-14 w-700 head-clr"><?php the_title(); ?></p>
-                    <p class="p-14 read-more">
-                      READ MORE
-                      <img src="<?php echo RESNPO_URI . '/assets/images/homepage/section-fourth/Vector.png' ?>" alt="" />
-                    </p>
-                    <p class="p-12 text-clr"><?php echo esc_html($recent_news_date); ?></p>
-                  </div>
-                </div>
+                </a>
               </li>
-          <?php
+              <?php
             endwhile;
             wp_reset_postdata();
           endif;
@@ -198,13 +240,15 @@
     </ul>
 
     <div class="side-text absolute" id="side-text-news">
-      <p class="inline-txt w-600 p-30 head-clr">NEWS</p>
+      <p class="inline-txt w-600 p-30 head-clr index-1">NEWS</p>
       <img src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
     </div>
   </section>
 
   <!-- SECTION: NEWS/RESPRESENTATIVE -->
 
+  <!-- <a href="<?php //echo get_site_url() . '/about#realxlink' 
+  ?>"> -->
   <section class="section-representative">
     <div class="top-title-news relative">
       <p class="p-230 w-700 slideright">NEWS</p>
@@ -212,12 +256,10 @@
     <div class="relative rep-container-main">
       <img class="absolute" style="z-index:66; bottom:0"
         src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/representative-img.png' ?>" alt="">
-
       <div class="side-text absolute" id="side-text-rep">
         <p class="inline-txt w-600 p-30 head-clr">REPRESENTATIVE</p>
         <img src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
       </div>
-
       <div class="top-title-rep relative">
         <p class="p-120 w-700  slideleft">RESPRESENTATIVE</p>
       </div>
@@ -228,8 +270,8 @@
               <p class="p-16 w-500 white-clr">NPO法人 RESは、ひとりでも多くの子どもたちが、未来の国際社会で活躍できる社会を目指し、自ら考え行動できる人材を育成する活動をしています。
               </p>
               <div class="relative btn-container">
-                <a href="">
-                  <button class="main-button-logo relative" id="btn-logo">代表メッセージ</button>
+                <a href="<?php echo get_site_url() . '/about#realxlink' ?>">
+                  <button class="main-button relative" id="btn-logo">代表メッセージ</button>
                   <img class="home-icon-button absolute"
                     src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>"="" />
                 </a>
@@ -246,16 +288,18 @@
       </div>
     </div>
   </section>
+  <!-- </a> -->
 
   <!-- END: SECTION: NEWS/RESPRESENTATIVE -->
 
   <!-- SECTION: ADVISOR -->
+  <!-- <a href="<?php // echo RESNPO_URI . '/about#advisor_section' 
+  ?>"> -->
   <section id="advisor_home" class="flex flex-column relative">
     <h1 class="head-clr av-title slideright ">ADVISOR</h1>
     <div class="av-container flex">
       <div class="av-schools flex">
         <div class="scl-col-1">
-
           <div class="scl head-clr">
             <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/ucam.png' ?>" alt="">
             <div class="scl-cntnt">
@@ -263,7 +307,6 @@
               <h3>副学長-教務担当</h3>
             </div>
           </div>
-
           <div class="scl head-clr">
             <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/liverpool.png' ?>" alt="">
             <div class="scl-cntnt">
@@ -273,7 +316,6 @@
               </h3>
             </div>
           </div>
-
           <div class="scl head-clr">
             <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/iba.png' ?>" alt="">
             <div class="scl-cntnt">
@@ -282,18 +324,14 @@
             </div>
           </div>
         </div>
-
-
         <div class="scl-col-2">
           <div class="scl head-clr">
             <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/up.png' ?>" alt="">
             <div class="scl-cntnt">
               <h1>経営学修士</h1>
-              <h3>フィリピン大学　公共経営
-              </h3>
+              <h3>フィリピン大学　公共経営</h3>
             </div>
           </div>
-
 
           <div class="scl head-clr">
             <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/up.png' ?>" alt="">
@@ -303,20 +341,17 @@
             </div>
           </div>
 
-
           <div class="scl head-clr">
-            <div class="relative btn-container" id="btn-advisor">
-              <a href="">
+            <div class="relative btn-container">
+              <a href="<?php echo RESNPO_URI . '/about#advisor_section' ?>">
                 <button class="main-button relative">
-                  代表メッセージ
+                  プロフィールを見る
                 </button>
-                <img class="icon-button absolute"
-                  src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
+                <img class="icon-button absolute" src="<?php echo RESNPO_IMAGE . '/leaves.png' ?>" alt="" />
               </a>
             </div>
           </div>
         </div>
-
         <div class="av-img-col border-advisor">
           <div class="advisor-img-container"> <!--Make container -->
             <!-- <p>TEXT TRANSFORM HERE --Absolute</p> -->
@@ -327,16 +362,14 @@
             <p class="p-16 w-500 head-clr">特別顧問</p>
           </div>
         </div>
-
       </div>
-
     </div>
-
     <div class="side-text absolute" id="side-text-adv">
       <p class="inline-txt w-600 p-30 head-clr">ADVISOR</p>
       <img src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
     </div>
   </section>
+  <!-- </a> -->
   <!-- END: SECTION: ADVISOR -->
 
 
@@ -345,7 +378,7 @@
       <p class="w-800 loc-txt-section section-head-clr slideup">LOCATION</p>
     </div>
 
-    <ul class="flex">
+    <ul class="flex map-flex">
       <li style="position: relative">
         <p class="p-heading1">どこにあるの？</p>
 
@@ -417,8 +450,8 @@
             活動に賛同し、支持してくださる全ての皆様に厚く御礼申し上げます。
           </p>
           <div class="relative btn-container">
-            <a href="">
-              <button class="main-button-logo relative" id="btn-logo">支援者様</button>
+            <a href="<?php echo RESNPO_URI . '/donation#section_4_don' ?>">
+              <button class="main-button relative" id="btn-logo"> 詳しく見る</button>
               <img class="home-icon-button absolute"
                 src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
             </a>
@@ -426,7 +459,7 @@
         </div>
       </li>
       <li>
-        <div class="flex flex-wrap text-center logo-images">
+        <div class="flex flex-wrap  logo-images">
           <div>
             <a href="https://www.leben.co.jp/">
               <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-seventh/logo-1.png' ?>" alt="" />

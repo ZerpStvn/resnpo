@@ -1,6 +1,6 @@
 nav {
-  top: 70px;
-  right: 68px;
+  top: 10vh; /* Adjusted to be responsive */
+  right: 5vw; /* Adjusted to be responsive */
   z-index: 888;
   font-family: var(--notsansjp);
   display: flex;
@@ -10,11 +10,16 @@ nav {
 }
 
 .nav-icon-container {
-  width: 88.13px;
-  height: 94.71px;
+  width: 8vw;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 9vh;
+  left: auto;
+  z-index: 999;
+  right: 40px;
 }
 
 .nav-icon-container img {
@@ -22,9 +27,16 @@ nav {
   cursor: pointer;
 }
 
-.nav-icon-container-home .home-nav-icon {
-  height: 50px;
-  width: 50px;
+.nav-icon-container-home {
+  height: 5vh; /* Adjusted to be responsive */
+  width: 5vh; /* Adjusted to be responsive */
+}
+
+.btn-close {
+  position: absolute;
+  top: 5vh; /* Adjusted to be responsive */
+  right: 2vw; /* Adjusted to be responsive */
+  cursor: pointer;
 }
 
 /* NAVBAR SECTION */
@@ -37,37 +49,40 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  width: 100%; /* Adjust width as needed */
+  width: 40%; /* Adjust width to 50% */
   height: 100%;
   background: #fff;
   color: black;
-  transform: translateY(-100%);
+  transform: translateX(100%);
   transition: transform 0.3s ease;
   z-index: 1000; /* Ensure menu is above other elements */
-  /* margin-top: -100px; */
   justify-content: center;
   display: flex;
+  flex-direction: column; /* Ensure contents are stacked vertically */
+  align-items: center; /* Center contents horizontally */
 }
 
 .nav-menu .header-scol-links ul {
   list-style-type: none;
-  /* padding: 20px; */
-  /* margin-top: 60px; */
-  gap: 40px;
+  gap: 4vh; /* Adjusted to be responsive */
+  padding: 0;
+  margin: 0;
+  margin-left: 4vh; /* Adjusted to be responsive */
 }
 
 .nav-menu .header-scol-links li {
-  margin-top: 30px;
+  margin-top: 3vh; /* Adjusted to be responsive */
 }
+
 .nav-menu .header-scol-links a {
   color: black;
   text-decoration: none;
-  padding-left: 30px;
+  padding-left: 3vh; /* Adjusted to be responsive */
   position: relative;
   font-family: var(--readez);
-  font-size: 20px;
+  font-size: 2vh; /* Adjusted to be responsive */
   font-weight: 700;
-  line-height: 16px;
+  line-height: 1.6vh; /* Adjusted to be responsive */
   text-align: left;
 }
 
@@ -75,8 +90,8 @@ nav {
   content: "";
   background: url(../image/carbon_play-filled.png) no-repeat center;
   background-size: 100%;
-  width: 20px;
-  height: 20px;
+  width: 2vh; /* Adjusted to be responsive */
+  height: 2vh; /* Adjusted to be responsive */
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -84,7 +99,7 @@ nav {
 }
 
 .nav-menu.active {
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 .nav-icon {
@@ -92,20 +107,20 @@ nav {
 }
 
 .btn-close {
-  margin-top: 40px;
+  margin-top: 4vh; /* Adjusted to be responsive */
   left: 90%;
 }
 
 .btn-close p {
-  right: 50px;
+  right: 5vh; /* Adjusted to be responsive */
 }
 
 .nav-container {
-  /* padding: 50px; */
   align-items: center;
   justify-content: center;
-  gap: 50px;
-  margin-left: -70px;
+  gap: 2vh; /* Adjusted to be responsive */
+  display: flex;
+  flex-direction: column;
 }
 
 .text-logo {
@@ -114,23 +129,24 @@ nav {
 
 .logo-green {
   width: 40%;
-  height: 40%;
+  /* height: 40%; */
 }
 
 /* Indent the sub-menu under SDGs */
 .sub-menu {
-  margin-left: 20px; /* Indent the sub-items */
+  margin-left: 2vh; /* Adjusted to be responsive */
 }
+
 .projects-toggle .sub-menu li a:before,
 .joinus-toggle .sub-menu li a:before {
   content: "";
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 1.6vh; /* Adjusted to be responsive */
+  height: 1.6vh; /* Adjusted to be responsive */
   background-image: url("../image/arrow.png");
   background-size: contain;
   background-repeat: no-repeat;
-  margin-right: 8px;
+  margin-right: 0.8vh; /* Adjusted to be responsive */
 }
 
 @media screen and (max-width: 768px) {
@@ -140,15 +156,49 @@ nav {
   }
 
   nav {
-    top: 33px;
-    right: 40px;
+    top: 4vh; /* Adjusted to be responsive */
+    right: 5vw; /* Adjusted to be responsive */
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1000px) {
   .nav-icon-container {
-    width: 30px;
-    height: 30px;
+    width: 8vw; /* Adjusted to be responsive */
+    height: 8vh; /* Adjusted to be responsive */
+  }
+
+  nav {
+    top: 2vh; /* Adjusted to be responsive */
+    right: 2vw; /* Adjusted to be responsive */
+  }
+
+  .nav-menu {
+    width: 100%; /* Make the nav menu take full width */
+    padding: 2vh; /* Adjusted to be responsive */
+  }
+
+  .nav-menu .header-scol-links ul {
+    gap: 2vh; /* Adjusted to be responsive */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .nav-menu .header-scol-links li {
+    margin-top: 2vh; /* Adjusted to be responsive */
+  }
+
+  .nav-menu .header-scol-links a {
+    font-size: 1.6vh; /* Adjusted to be responsive */
+    padding-left: 2vh; /* Adjusted to be responsive */
+  }
+
+  .nav-menu .header-scol-links a:before {
+    width: 1.6vh; /* Adjusted to be responsive */
+    height: 1.6vh; /* Adjusted to be responsive */
+  }
+
+  .btn-close {
+    top: 2vh; /* Adjusted to be responsive */
+    right: 2vw; /* Adjusted to be responsive */
   }
 }
 
@@ -162,10 +212,10 @@ nav {
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-30px);
+    transform: translateY(-3vh); /* Adjusted to be responsive */
   }
   60% {
-    transform: translateY(-15px);
+    transform: translateY(-1.5vh); /* Adjusted to be responsive */
   }
 }
 
@@ -179,11 +229,37 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 1vh; /* Adjusted to be responsive */
 }
 
 .header-fcol-lc {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 2.8vh; /* Adjusted to be responsive */
+}
+
+.header-fcol-lc {
+  font-family: var(-readex);
+  font-size: 1.4vh; /* Adjusted to be responsive */
+  font-weight: 500;
+  line-height: 1.6vh; /* Adjusted to be responsive */
+  letter-spacing: 0.05em;
+  /* text-align: left; */
+}
+
+#tbl_col table {
+  width: 100%;
+  margin-top: 5vh; /* Adjusted to be responsive */
+}
+
+#tbl_col tr {
+  text-align: center;
+}
+
+#tbl_col .contact-text {
+  text-align: center;
+}
+
+.hide {
+  visibility: hidden;
 }

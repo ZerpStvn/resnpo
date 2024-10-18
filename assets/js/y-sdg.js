@@ -1,5 +1,6 @@
+// SDG Landing Slider
 document.addEventListener("DOMContentLoaded", () => {
-  let currentSlide = 1;
+  let currentSlide = 0;
   const videoPaths = document.getElementById("video-paths");
   const videos = [
     videoPaths.getAttribute("data-video1"),
@@ -26,13 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
     currentSlide = index;
     const videoElement = document.getElementById("background-video");
     videoElement.classList.remove("slide-in");
-    videoElement.classList.add("slide-out");
-    setTimeout(() => {
-      videoElement.querySelector("source").src = videos[currentSlide];
-      videoElement.load();
-      videoElement.classList.remove("slide-out");
-      videoElement.classList.add("slide-in");
-    }, 1000);
+    videoElement.querySelector("source").src = videos[currentSlide];
+    videoElement.load();
+    videoElement.classList.add("slide-in");
   }
 
   function prevSlide() {
@@ -52,7 +49,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Automatically change slides every 5 seconds
   setInterval(nextSlide, 5000);
 });
+// SDG Landing Slide
 
+// Photo Gallery
 var swiperPG = new Swiper(".mySwiperpg", {
   effect: "slide",
   loop: true,
@@ -67,6 +66,7 @@ var swiperPG = new Swiper(".mySwiperpg", {
     stopOnLastSlide: false,
   },
 });
+//End Photo Gallery
 
 // Upcoming Events Slider
 document.addEventListener("DOMContentLoaded", function () {
@@ -101,11 +101,12 @@ document.addEventListener("DOMContentLoaded", function () {
     swiper = new Swiper(".mySwiperue", {
       slidesPerView: 3,
       spaceBetween: 20,
+      // allowTouchMove: false,
       centeredSlides: true,
       loop: true,
       speed: 500,
       autoplay: {
-        delay: 0, // Slide immediately on load
+        delay: 0, // No delay for the first slide
         disableOnInteraction: false,
       },
       navigation: {
@@ -116,9 +117,10 @@ document.addEventListener("DOMContentLoaded", function () {
         480: {
           centeredSlides: true,
           loop: true,
+          slidesPerView: 3,
         },
         768: {
-          slidesPerView: 2,
+          slidesPerView: 3,
         },
         1024: {
           slidesPerView: 3,
@@ -128,9 +130,27 @@ document.addEventListener("DOMContentLoaded", function () {
         init: function () {
           updateDetails();
           setTimeout(() => {
-            swiper.params.autoplay.delay = 5000;
+            swiper.params.autoplay.delay = 5000; // Set delay to 5000ms for subsequent slides
             swiper.autoplay.start();
-          }, 0);
+          }, 0); // Start autoplay immediately
+
+          // Add click event listeners to slide images
+          document
+            .querySelectorAll(".mySwiperue .swiper-slide img")
+            .forEach((img, index) => {
+              img.addEventListener("click", () => {
+                // Calculate the index to center the clicked slide minus one
+                let centerIndex =
+                  swiper.realIndex -
+                  Math.floor(swiper.params.slidesPerView / 2) -
+                  1;
+                // Ensure the index stays within valid bounds
+                if (centerIndex < 0) {
+                  centerIndex = 0;
+                }
+                swiper.slideTo(centerIndex);
+              });
+            });
         },
         slideChange: updateDetails,
       },
@@ -147,6 +167,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// End of UE SLider
+
+// Animation Scale In
 document.addEventListener("DOMContentLoaded", function () {
   const elements = document.querySelectorAll(".scaleIn");
   elements.forEach((element) => {
@@ -169,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Animation Slide Left and Right
+// Animation Slide Left and Right, Up and Down
 document.addEventListener("DOMContentLoaded", function () {
   const elements = document.querySelectorAll(
     ".slideleft, .slideright, .slideup, .slidedown"
@@ -198,6 +221,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Feature Card Slider
 jQuery(document).ready(function ($) {
   var $slider = $(".feature-card-container");
 
@@ -230,4 +254,22 @@ jQuery(document).ready(function ($) {
   $(window).on("resize", function () {
     $slider.slick("setPosition");
   });
+});
+
+// Past Performance Pagination
+document.addEventListener("DOMContentLoaded", function () {
+  const paginationLinks = document.querySelectorAll(".pagination a");
+
+  paginationLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      const url = new URL(this.href);
+      url.hash = "past-performance-section";
+      window.location.href = url;
+    });
+  });
+
+  if (window.location.hash === "#past-performance-section") {
+    document.getElementById("past-performance-section").scrollIntoView();
+  }
 });

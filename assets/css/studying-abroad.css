@@ -375,7 +375,7 @@ details.closing .detail-content {
   height: 300px;
   justify-content: center;
   flex-direction: column;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 @keyframes carousel-animate-vertical {
@@ -558,7 +558,7 @@ details.closing .detail-content {
   color: white;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 786px) {
   .partner-schools {
     padding-block: 0 100px;
   }
@@ -675,13 +675,15 @@ details.closing .detail-content {
     will-change: transform, opacity;
     animation: carousel-animate-vertical 9s linear infinite;
     box-sizing: border-box;
-    padding-block: 15px;
+    padding-block: 2px;
   }
   .as-text-col {
     flex: 1;
     min-width: 0;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    margin-left: unset;
+    padding: 10px;
   }
   .summary-title {
     width: 100%;
@@ -752,6 +754,13 @@ details.closing .detail-content {
   }
   .inq-title-overlay h4 {
     font-size: 18px;
+  }
+  #advisor_section .img-col {
+    width: 233px;
+    margin-top: unset;
+  }
+  #advisor_section .img-col img {
+    width: 100%;
   }
 }
 /* .advisor-txt-container {

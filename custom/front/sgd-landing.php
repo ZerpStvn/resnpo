@@ -1,6 +1,6 @@
 <?php
 
-function landing_sdg_page_template($page_title = null)
+function landing_sdg_page_template($page_title = null, $vid1, $vid2, $vid3, $vid4)
 {
 ?>
   <section class="sdg-home">
@@ -24,10 +24,12 @@ function landing_sdg_page_template($page_title = null)
 
       <div class="sdg-title">
         <div class="side-title">
-          <img class="side-logo" src="<?php echo RESNPO_IMAGE . '/logo.png' ?>" alt="">
+          <a href="<?php echo get_site_url() .  '/home' ?>"><img class="side-logo" src="<?php echo RESNPO_IMAGE . '/logo.png' ?>" alt=""></a>
           <div class="side-title-text">
-            <h1>NPO法人</h1>
-            <h3>REGIONAL EDUCATION SUPPORT</h3>
+            <a href="<?php echo get_site_url() .  '/home' ?>">
+              <h1>NPO法人</h1>
+              <h3>REGIONAL EDUCATION SUPPORT</h3>
+            </a>
           </div>
         </div>
         <div class="main-title">
@@ -69,11 +71,11 @@ function landing_sdg_page_template($page_title = null)
     </div>
     <div class="video-container">
       <video id="background-video" autoplay muted loop>
-        <source src="<?php echo RESNPO_IMAGE . '/vid1.mp4' ?>" type="video/mp4">
+        <source src="<?php echo RESNPO_IMAGE . '/' . $vid1 . '.mp4' ?>" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
-    <div id="video-paths" data-video1="<?php echo RESNPO_IMAGE . '/vid1.mp4' ?>" data-video2="<?php echo RESNPO_IMAGE . '/vid2.mp4' ?>" data-video3="<?php echo RESNPO_IMAGE . '/vid3.mp4' ?>" data-video4="<?php echo RESNPO_IMAGE . '/vid4.mp4' ?>"></div>
+    <div id="video-paths" data-video1="<?php echo RESNPO_IMAGE . '/' . $vid1 . '.mp4' ?>" data-video2="<?php echo RESNPO_IMAGE . '/' . $vid2 . '.mp4'  ?>" data-video3="<?php echo RESNPO_IMAGE . '/' . $vid3 . '.mp4'  ?>" data-video4="<?php echo RESNPO_IMAGE . '/' . $vid4 . '.mp4'  ?>"></div>
   </section>
 <?php
 }
