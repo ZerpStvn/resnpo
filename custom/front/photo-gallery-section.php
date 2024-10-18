@@ -14,14 +14,7 @@ function photogallerysection($gallery_title = null)
         <p class="p-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
       </div>
     </div>
-    <svg version="1.1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" style="display:none;">
-      <defs>
-        <filter id="stroke-text-svg-filter-blue">
-          <feMorphology operator="dilate" radius="1"></feMorphology>
-          <feComposite operator="xor" in="SourceGraphic" />
-        </filter>
-      </defs>
-    </svg>
+
 
     <div class="photo-gallery-images swiper-pg mySwiperpg">
       <div class="gallery-images swiper-wrapper">

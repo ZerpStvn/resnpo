@@ -1,6 +1,6 @@
 <!-- SECTION: UPCOMING EVENTS -->
 <section id="upcoming_event" class="upcoming-events">
-  <div class="ue-container">
+  <main class="ue-container global-width">
     <div class="ue-title">
       <h1 class="upcoming-events-title outline">UPCOMING EVENTS</h1>
     </div>
@@ -61,6 +61,6 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
-  </div>
+  </main>
 </section>
 <!-- END SECTION 4 -->

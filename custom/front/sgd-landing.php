@@ -24,10 +24,12 @@ function landing_sdg_page_template($page_title = null, $vid1, $vid2, $vid3, $vid
 
       <div class="sdg-title">
         <div class="side-title">
-          <img class="side-logo" src="<?php echo RESNPO_IMAGE . '/logo.png' ?>" alt="">
+          <a href="<?php echo get_site_url() .  '/home' ?>"><img class="side-logo" src="<?php echo RESNPO_IMAGE . '/logo.png' ?>" alt=""></a>
           <div class="side-title-text">
-            <h1>NPO法人</h1>
-            <h3>REGIONAL EDUCATION SUPPORT</h3>
+            <a href="<?php echo get_site_url() .  '/home' ?>">
+              <h1>NPO法人</h1>
+              <h3>REGIONAL EDUCATION SUPPORT</h3>
+            </a>
           </div>
         </div>
         <div class="main-title">

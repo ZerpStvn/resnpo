@@ -10,6 +10,17 @@
   min-height: 778px;
 }
 
+#projectid .landing-fg img {
+  display: block;
+  /* max-width: 100%; */
+  height: auto;
+  margin: 0 0 0 auto;
+  padding: 0;
+  object-fit: cover;
+  /* margin-left: 400px; */
+  width: 80%;
+}
+
 .section-project-header::before {
   content: "";
   position: absolute;

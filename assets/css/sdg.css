@@ -316,10 +316,16 @@
     padding-bottom: unset;
   }
   .gallery-images {
-    gap: 300px;
+    gap: 480px;
   }
   .gallery-image {
     /* width: 213.74px; */
-    height: 162px;
+    /* height: 162px; */
+  }
+}
+
+@media (max-width: 1220px) {
+  .gallery-images {
+    gap: 480px;
   }
 }

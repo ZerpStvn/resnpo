@@ -9,12 +9,17 @@
   <?php wp_head() ?>
 </head>
 
-<body>
+<!-- <body> -->
+
+<body <?php body_class();
+      ?>>
+
+  <!-- <div class="page-transition"></div> -->
 
   <header class="relative">
 
     <nav class="absolute navbar"> <!--data-aos="fade-left" -->
-      <div class="nav-icon-container-home nav-icon flex" id="nav-icon">
+      <div class="nav-icon-container nav-icon flex" id="nav-icon">
         <img class="home-nav-ico" src="<?php echo RESNPO_URI .  '/assets/image/donation/header/nav-icon.png' ?>" alt="" />
       </div>
 
@@ -76,7 +81,7 @@
                       <img class="line" src="<?php echo RESNPO_IMAGE . '/line-blue.png' ?>" alt="Line">
                     </a>
                   </td>
-                  <td class="contact-text">CONTACT</td>
+                  <td class="contact-text"><a href="https://edu-npo.com/inquiry/">CONTACT</a></td>
                 </tr>
               </table>
             </div>
@@ -86,5 +91,24 @@
       </div>
     </nav>
   </header>
+
+  <!-- JOIN US PAGES -->
+  <svg version="1.1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" style="display:none;">
+    <defs>
+      <filter id="stroke-text-svg-filter">
+        <feMorphology operator="dilate" radius="1"></feMorphology>
+        <feComposite operator="xor" in="SourceGraphic" />
+      </filter>
+    </defs>
+  </svg>
+
+  <svg version="1.1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" style="display:none;">
+    <defs>
+      <filter id="stroke-text-svg-filter-blue">
+        <feMorphology operator="dilate" radius="1"></feMorphology>
+        <feComposite operator="xor" in="SourceGraphic" />
+      </filter>
+    </defs>
+  </svg>
 
   <main>

@@ -4,84 +4,7 @@
 
 <div id="projectid">
 
-  <section class="section-project-header relative">
-    <div class="project-header-content relative">
-      <p class="header-text outline">PRO<br class="br-display">JECTS</p>
-    </div>
-    <img class="absolute img-people" src="<?php echo RESNPO_URI . '/assets/image/project/header/people-img.png' ?>" alt="">
-
-    <div class="header-text-items relative">
-      <p class="header-item-text">Explore our projects</p>
-      <ul class="ul-text-items" style="display:none;">
-        <li>
-          <div class="header-text-item relative">
-            <p>SGDs</p>
-            <p>Sed ut perspiciatis unde
-              omnis iste natus error sit
-              voluptatem accusantium </p>
-            <img class="absolute front-img" src="<?php echo RESNPO_URI . '/assets/image/project/header/ellipse-1.png' ?>" alt="">
-            <img class="absolute back-img" src="<?php echo RESNPO_URI . '/assets/image/project/header/ellipse-bg.png' ?>" alt="">
-          </div>
-        </li>
-        <li>
-          <div class="header-text-item relative">
-            <p>海外留学</p>
-            <p>Sed ut perspiciatis unde
-              omnis iste natus error sit
-              voluptatem accusantium </p>
-            <img class="absolute front-img" src="<?php echo RESNPO_URI . '/assets/image/project/header/ellipse-2.png' ?>" alt="">
-            <img class="absolute back-img" src="<?php echo RESNPO_URI . '/assets/image/project/header/ellipse-bg.png' ?>" alt="">
-          </div>
-        </li>
-        <li>
-          <div class="header-text-item relative">
-            <p>海外進学</p>
-            <p>Sed ut perspiciatis unde
-              omnis iste natus error sit
-              voluptatem accusantium </p>
-            <img class="absolute front-img" src="<?php echo RESNPO_URI . '/assets/image/project/header/ellipse-3.png' ?>" alt="">
-            <img class="absolute back-img" src="<?php echo RESNPO_URI . '/assets/image/project/header/ellipse-bg.png' ?>" alt="">
-          </div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="flex">
-      <div class="social-icons absolute" data-aos="fade-down">
-        <ul class="social-icons-ul flex align-items-center">
-          <li>
-            <a href="https://line.me">
-              <img
-                src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-line-icon.png' ?>"
-                alt="Line" />
-            </a>
-          </li>
-          <li>
-            <a href="https://facebook.com">
-              <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-fb-icon.png' ?>" alt="Facebook" />
-            </a>
-          </li>
-          <li>
-            <a href="https://youtube.com">
-              <img src="<?php echo RESNPO_URI . '/assets/image/donation/header/sm-yt-icon.png' ?>" alt="YouTube" />
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="about-title">
-        <div class="side-title">
-          <img class="side-logo" src="<?php echo RESNPO_IMAGE . '/logo.png' ?>" alt="">
-          <div class="side-title-text">
-            <h1>NPO法人</h1>
-            <h3>REGIONAL EDUCATION SUPPORT</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-  </section>
+  <?php render_about_section('PROJECTS<br> ', 'Explore our Projects', '/joinus/joinus-landing-fg.png'); ?>
 
   <div class="marquee-container">
     <div class="marquee">
@@ -168,7 +91,7 @@
       <p class="w-700 p-200 white-clr section-title relative slideright">SDGS</p>
 
       <div class="overlay-arc relative">
-        <a href="<?php echo RESNPO_URI . '/sdg' ?>">
+        <a href="<?php echo get_site_url() . '/sdg' ?>">
           <img class="absolute arc-img-side" src="<?php echo RESNPO_URI . '/assets/image/project/section-one/people-img.png' ?>" alt="">
           <ul class="flex">
             <li>
@@ -206,7 +129,7 @@
           <li>
             <p class="w-700 p-25 white-clr">様々な活動を通して日本と東南アジアの学生をつなぐ活動を主として行っています。同年代の仲間たちとの様々な活動や異文化体験を通じて、国内では経験できない多様性に触れ、自国や自分自身の新たな面に気づかされます。</p>
             <div class="relative btn-container">
-              <a href="<?php echo RESNPO_URI . '/study-abroad' ?>">
+              <a href="<?php echo get_site_url() . '/study-abroad' ?>">
                 <button class="main-button relative">
                   <p>詳しく見る</p>
                 </button>
@@ -237,7 +160,7 @@
           <li>
             <p class="w-700 p-25 white-clr">海外の大学への進学を徹底サポートします。言語の違いや距離を理由に選択肢から外していませんか？その挑戦がなりたい自分への近道かもしれません。</p>
             <div class="relative btn-container">
-              <a href="<?php echo RESNPO_URI . '/studying-abroad' ?>">
+              <a href="<?php echo get_site_url() . '/studying-abroad' ?>">
                 <button class="main-button relative">
                   <p>詳しく見る</p>
                 </button>
