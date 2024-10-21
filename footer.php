@@ -6,8 +6,8 @@
       <div class="upper-footer">
         <div class="uf-c1">
           <div class="footer-logo">
-            <img src="<?php echo RESNPO_IMAGE . '/green-logo2.png' ?>" alt="green-logo">
-            <img src="<?php echo RESNPO_IMAGE . '/res.png' ?>" alt="res">
+            <img class="green-logo" src="<?php echo RESNPO_IMAGE . '/green-logo2.png' ?>" alt="green-logo">
+            <img class="res-text" src="<?php echo RESNPO_IMAGE . '/res.png' ?>" alt="res">
           </div>
           <div class="tbl-col">
             <h1 class="p-blue-16">愛媛県松山市平井町1426番地2</h1>
@@ -56,23 +56,24 @@
             </ul>
           </div>
         </div>
-      </div>
-
-      <div class="uf-c4">
-        <h1 class="footer-col-title-huge">
-          サポートする
-        </h1>
-        <p class="p-blue-16 w-369">
-          子どもたちに一つでも多くの機会を届けるため 皆様の寄付を私たちの活動に利用させていただきます。
-        </p>
-        <div class="relative btn-container">
-          <a href="<?php echo RESNPO_URI . '/donation#section_4_don' ?>">
-            <button class="main-button relative">
-              詳しく見る </button>
-            <img class="icon-button absolute" src="<?php echo RESNPO_IMAGE . '/leaves.png' ?>" alt="" />
-          </a>
+        <div class="uf-c4">
+          <h1 class="footer-col-title-huge">
+            サポートする
+          </h1>
+          <p class="p-blue-16 c4-p">
+            子どもたちに一つでも多くの機会を届けるため 皆様の寄付を私たちの活動に利用させていただきます。
+          </p>
+          <div class="relative btn-container">
+            <a href="<?php echo RESNPO_URI . '/donation#section_4_don' ?>">
+              <button class="main-button relative">
+                詳しく見る </button>
+              <img class="icon-button absolute" src="<?php echo RESNPO_IMAGE . '/leaves.png' ?>" alt="" />
+            </a>
+          </div>
         </div>
       </div>
+
+
     </div>
   </div>
   <hr class="hr-footer">

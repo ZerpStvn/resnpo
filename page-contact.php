@@ -5,11 +5,11 @@ get_header();
 
 
 
-<div id="donationid">
+<div id="contactid">
   <!-- donation page -->
   <?php render_join_landing('CONTACT', '寄付') ?>
 
-  <section id="contact_section">
+  <section id="contact_section" class="relative">
     <main class="contact-cont global-width">
       <div class="contact-row">
         <h2 class="">電話からのお問い合わせ</h2>

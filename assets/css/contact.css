@@ -1,6 +1,8 @@
 #contact_section {
   background-color: #f1fbff;
   padding: 146px;
+  margin-top: -250px;
+  z-index: 2;
 }
 
 .contact-cont {
