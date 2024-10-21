@@ -72,14 +72,16 @@
   height: 516px; /* Specific height */
   object-fit: cover; /* Crop the image to fit */
 }
+.rxl-lr h1 {
+  text-wrap: nowrap;
+}
 
 .rxl-lr p {
   background-color: #2b4e64;
   padding: 68px;
   position: absolute;
-  width: 760px;
-  left: 400px;
-  opacity: 0px;
+  width: 55vw;
+  left: 412px;
   font-weight: 700;
   text-align: justify;
 }
@@ -161,42 +163,7 @@
   left: -230px;
 }
 
-@media (max-width: 786px) {
-  .rxl-ur {
-    padding-inline: 20px;
-  }
-  .content {
-    flex-direction: column !important;
-    box-sizing: border-box;
-    justify-content: center;
-    gap: 20px;
-  }
-  .content p {
-    font-size: 25px;
-    width: unset;
-    text-align: center;
-    line-height: 35px;
-  }
-  .message-cont {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-  }
-  .message-cont img {
-    width: 330px;
-    height: auto;
-    margin-right: 10px;
-  }
-  .message-cont h1 {
-    font-size: 20px;
-    line-height: 30px;
-    margin: 0;
-    transform: rotate(-90deg);
-  }
-}
-
-@media (max-width: 480px) {
+@media (max-width: 1220px) {
   #realxlink {
     padding-block: 0;
   }
@@ -221,7 +188,11 @@
     line-height: 28px;
     margin: 0;
     transform: rotate(-90deg);
-    right: 260px;
+    left: 0;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    transform: rotate(-90deg);
   }
 
   .rxl-lr {
@@ -253,5 +224,32 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+
+  .rxl-ur {
+    padding-inline: 20px;
+  }
+  .content {
+    flex-direction: column !important;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 20px;
+  }
+  .content p {
+    font-size: 25px;
+    width: unset;
+    text-align: center;
+    line-height: 35px;
+  }
+  .message-cont {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+  .message-cont img {
+    width: 330px;
+    height: auto;
+    margin-right: 10px;
   }
 }

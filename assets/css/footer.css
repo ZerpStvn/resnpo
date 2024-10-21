@@ -295,11 +295,10 @@ table tr img {
 
   .icon-button {
     left: auto;
-    right: -15px;
+    right: -27px;
     top: -15px;
     transform: scale(0.8);
   }
-
   .w-369 {
     width: 100%;
   }

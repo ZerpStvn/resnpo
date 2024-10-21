@@ -138,8 +138,10 @@ HTML;
             自ら考え行動できる人材を育成する活動をしています。
           </p>
           <div class="message-cont slideright">
-            <h1 class="outline">MESSAGE</h1>
-            <img src="<?php echo RESNPO_IMAGE . '/about/message.png' ?>" alt="">
+            <div class="relative">
+              <img src="<?php echo RESNPO_IMAGE . '/about/message2.png' ?>" alt="">
+            </div>
+            <!-- <h1 class="outline">MESSAGE</h1> -->
           </div>
         </div>
       </div>

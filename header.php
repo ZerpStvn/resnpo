@@ -28,7 +28,7 @@
 
         <ul class="nav-container">
           <div class="btn-close">
-            <p class="p-25 ">X</p>
+            <img src="<?= RESNPO_IMAGE . '/tabler_xbox-x.png' ?>" alt="exit-logo">
           </div>
           <div class="nav-company-details">
             <img class="logo-green" src="<?php echo RESNPO_IMAGE . '/res-logo.png' ?>" alt="">

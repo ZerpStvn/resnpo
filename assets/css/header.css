@@ -16,14 +16,14 @@ nav {
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 9vh;
+  top: 2vh;
   left: auto;
   z-index: 999;
   right: 40px;
 }
 
 .nav-icon-container img {
-  width: 100%;
+  width: 70px;
   cursor: pointer;
 }
 
@@ -107,12 +107,9 @@ nav {
 }
 
 .btn-close {
-  margin-top: 4vh; /* Adjusted to be responsive */
-  left: 90%;
-}
-
-.btn-close p {
-  right: 5vh; /* Adjusted to be responsive */
+  margin-top: 2vh;
+  left: 83%;
+  width: 50px;
 }
 
 .nav-container {

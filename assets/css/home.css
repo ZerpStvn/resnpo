@@ -500,7 +500,7 @@ p.inline-txt.p-30.w-600.head-clr {
   padding: 15px 80px;
 } */
 
-.btn-container {
+#homeid .btn-container {
   margin-top: 10%;
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
 }
@@ -1107,7 +1107,7 @@ ul.sub-ul.text-center.mobile {
   p.p-20.w-500.head-clr.logo-text {
     text-align: center;
   }
-  .btn-container {
+  #homeid.btn-container {
     margin-top: 1%;
   }
   .map-flex {
