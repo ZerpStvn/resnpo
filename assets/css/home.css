@@ -1180,6 +1180,10 @@ ul.sub-ul.text-center.mobile {
   img.home-nav-ico {
     width: 58px;
   }
+  .loc-link-container {
+    padding: 0 05px;
+  }
+
   .header-people {
     object-fit: contain;
   }
