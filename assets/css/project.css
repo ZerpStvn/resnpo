@@ -10,67 +10,6 @@
   /* min-height: 778px; */
 }
 
-.section-project-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(13, 48, 70, 0.8);
-  z-index: 0;
-}
-
-.project-header-content {
-  z-index: 1;
-  color: #fff;
-  padding-top: 50px;
-  padding-left: 100px;
-}
-
-#projectid .text-deco {
-  color: none;
-  -webkit-text-stroke: 2px black;
-  font-size: 200px;
-}
-
-.header-text {
-  margin: auto;
-  -webkit-text-stroke: 2px white;
-  color: transparent;
-  font-size: 200px;
-  font-family: var(--readex) !important;
-}
-
-.br-display {
-  display: none;
-}
-
-.section-project-header .img-people {
-  bottom: 0;
-  right: 50px;
-  z-index: 2;
-}
-
-.header-text-items {
-  z-index: 3;
-  padding-left: 100px;
-  padding-right: 80px;
-  padding-top: 100px;
-}
-
-#projectid .header-text-items .header-item-text {
-  color: var(--buttoncolor);
-  font-size: 70px;
-  font-weight: 700;
-  font-family: var(--readex);
-  margin-bottom: 80px;
-  text-shadow: -1.5px -1.5px 0 #fff, 1.5px -1.5px 0 #fff, -1.5px 1.5px 0 #fff,
-    1.5px 1px 0 #fff;
-}
-
-/* SECTION ------ 1 */
-
 .section-projects {
   background: url("../image/project/section-one/bg-img.png");
   background-repeat: no-repeat;
@@ -107,13 +46,26 @@
   height: 821px;
 }
 
+/* ARCS */
+
 .overlay-arc {
-  background: url("../image/project/section-one/arc-img.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top right;
   height: 73.4%;
-  /* background: rgba(255, 255, 255, 0.5); */
+  background: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Ensure the background is semi-transparent */
+}
+
+.masked-image {
+  clip-path: circle(50% at 50% 50%); /* Example: circular mask */
+  width: 100%;
+  height: auto;
+  background-color: transparent; /* Ensure the background is transparent */
 }
 
 .projects-container .section-title {
