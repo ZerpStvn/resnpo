@@ -1162,6 +1162,9 @@ ul.sub-ul.text-center.mobile {
   #homeid.btn-container {
     margin-top: 1%;
   }
+  #homeid .news-detils .btn-container {
+    justify-content: start;
+  }
   .map-flex {
     flex-direction: column;
   }
@@ -1176,6 +1179,10 @@ ul.sub-ul.text-center.mobile {
   }
   .scl.head-clr.desktop-view {
     display: none;
+  }
+  #homeid section#upcoming_event {
+    min-height: 868px;
+    height: 100%;
   }
 }
 
@@ -1321,7 +1328,7 @@ ul.sub-ul.text-center.mobile {
     font-size: 11px;
   }
   .av-schools {
-    gap: 20px;
+    gap: 0px;
     padding: 20px 10px 20px 10px;
     margin-right: 0;
   }

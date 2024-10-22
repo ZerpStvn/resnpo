@@ -161,6 +161,10 @@ nav {
     top: 4vh;
     right: 5vw;
   }
+  #homeid .nav-icon-container {
+    top: 60px;
+    left: 83%;
+  }
 }
 
 @media screen and (max-width: 1000px) {
