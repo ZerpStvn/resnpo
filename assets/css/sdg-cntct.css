@@ -175,3 +175,9 @@
     margin: 32px;
   }
 }
+@media (max-width: 380px) {
+  .contact-button {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+}

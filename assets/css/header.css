@@ -155,8 +155,8 @@ nav {
   .nav-icon-container {
     width: 11.475vw;
     height: 12.332vw;
+    right: 55px;
   }
-
   nav {
     top: 4vh;
     right: 5vw;
