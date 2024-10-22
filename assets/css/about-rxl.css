@@ -253,3 +253,8 @@
     margin-right: 10px;
   }
 }
+@media (max-width: 380px) {
+  .sb_title {
+    font-size: 30px !important;
+  }
+}

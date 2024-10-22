@@ -756,7 +756,7 @@ details.closing .detail-content {
     font-size: 18px;
   }
   #advisor_section .img-col {
-    width: 233px;
+    width: 104.167vw;
     margin-top: unset;
   }
   #advisor_section .img-col img {
@@ -783,4 +783,14 @@ details.closing .detail-content {
 }
 #advisor_section .sg_description {
   font-weight: 700;
+}
+
+@media (max-width: 380px) {
+  .as-img-col {
+    flex-direction: column;
+  }
+  #advisor_section .img-col {
+    width: unset;
+    margin-top: unset;
+  }
 }
