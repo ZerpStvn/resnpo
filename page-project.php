@@ -7,7 +7,7 @@
   <main class="global-width">
     <div class="marquee-container">
       <div class="marquee">
-        <ul class="flex space-between">
+        <ul class="flex space-between marquee-item-list">
           <?php
           $items = ['実学', '文化交流', '海外支援'];
           $imagePath = RESNPO_URI . '/assets/image/project/leaves.png';
