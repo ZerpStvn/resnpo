@@ -48,5 +48,13 @@ function theme_add_elementor_support()
 add_action('init', 'theme_add_elementor_support');
 
 
+function truncate_text($text, $limit)
+{
+  if (mb_strlen($text) > $limit) {
+    return mb_substr($text, 0, $limit) . '...';
+  } else {
+    return $text;
+  }
+}
 // Include custom main.php file
 require_once(RESNPO_DIR . '/custom/main.php');
