@@ -212,16 +212,17 @@ table tr img {
   }
   .footer-mobilewrap {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
   }
   .upper-footer {
     flex-direction: column;
     display: flex;
   }
   .footer-mobilewrap .uf-c1 {
+    margin-top: 39px;
     display: flex;
     flex-direction: column;
-    align-items: self-start;
+    align-items: center;
   }
   .desktop-footer {
     display: none !important;
@@ -240,8 +241,12 @@ table tr img {
     flex-direction: column;
   }
   .footer-mobilewrap {
+    align-items: center;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+  }
+  p.p-blue-16.w-369 {
+    max-width: 75%;
   }
   .uf-c1 {
     order: 2;
@@ -265,8 +270,9 @@ table tr img {
     align-items: center;
   }
   .footer-logo img {
-    height: 54px;
-    width: 54px;
+    height: 64px;
+    width: 93px;
+    object-fit: contain;
   }
   .footer-logo {
     display: flex;
