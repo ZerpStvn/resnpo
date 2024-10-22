@@ -22,7 +22,7 @@ nav {
   align-items: center;
   position: fixed;
   top: 37px;
-  left: 90%;
+  left: auto;
   z-index: 999;
   right: 40px;
 }
@@ -155,8 +155,8 @@ nav {
   .nav-icon-container {
     width: 11.475vw;
     height: 12.332vw;
+    right: 55px;
   }
-
   nav {
     top: 4vh;
     right: 5vw;
@@ -181,7 +181,7 @@ nav {
 
   .nav-menu .header-scol-links ul {
     gap: 2vh;
-    margin-left: 0; /* Remove left margin */
+    margin-left: 20px;
   }
 
   .nav-menu .header-scol-links li {
