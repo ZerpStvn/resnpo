@@ -16,7 +16,7 @@ get_header();
         <h1 class="">089 - 999 - 999</h1>
         <ul>
           <li>※ご返信には3営業日程度いただくことがございます。ご了承ください。 </li>
-          <li>※入力いただいた情報は、<span class="sub-head-clr">個人情報保護指針に</span>もとづいて適正に管理
+          <li>※入力いただいた情報は、<span class="sub-head-clr"><a href="<?php echo get_site_url() . '/privacy' ?>">個人情報保護指針に</a></span>もとづいて適正に管理
             <br>・取り扱いをさせていただきます。
           </li>
         </ul>

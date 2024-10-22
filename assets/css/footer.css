@@ -171,12 +171,12 @@ table tr img {
   font-size: 18px;
 }
 
-.icon-button {
+/* .icon-button {
   rotate: 52deg;
   left: 260px;
   top: -18px;
   position: absolute;
-}
+} */
 
 .btn-container {
   margin-top: 5%;
@@ -195,6 +195,15 @@ table tr img {
 .c4-p {
   padding-right: 20px;
   max-width: 369px;
+}
+
+.icon-button {
+  rotate: 52deg;
+
+  left: auto;
+  right: -27px;
+  top: -15px;
+  transform: scale(0.8);
 }
 
 @media (max-width: 480px) {
@@ -293,12 +302,6 @@ table tr img {
     justify-content: center;
   }
 
-  .icon-button {
-    left: auto;
-    right: -27px;
-    top: -15px;
-    transform: scale(0.8);
-  }
   .w-369 {
     width: 100%;
   }
@@ -322,7 +325,7 @@ table tr img {
 }
 
 /* Tablet styles */
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .upper-footer {
     flex-direction: column;
     gap: 50px;
@@ -381,11 +384,10 @@ table tr img {
     font-size: 2.5vw; /* Responsive text size */
   }
   .icon-button {
-    left: unset;
+    /* left: unset; */
   }
 }
 
-/* Large Desktop styles */
 @media (min-width: 1250px) {
   .upper-footer {
     flex-direction: row;
@@ -445,6 +447,6 @@ table tr img {
     font-size: 1rem; /* Responsive text size */
   }
   .icon-button {
-    left: unset;
+    /* left: unset; */
   }
 }

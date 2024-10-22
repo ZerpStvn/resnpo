@@ -521,7 +521,7 @@
   }
 
   #mission-section .section-content .image-placeholder {
-    width: 200%;
+    width: 100%;
     height: unset;
     margin-left: -200px;
     left: 210px;

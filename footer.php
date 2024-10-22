@@ -28,7 +28,7 @@
                     <img class="line" src="<?php echo RESNPO_IMAGE . '/line-blue.png' ?>" alt="Line">
                   </a>
                 </td>
-                <td class="contact-text"><a href="<?php get_site_URL() . '/contact' ?>">CONTACT</a></td>
+                <td class="contact-text"><a href="<?php echo get_site_URL() . '/contact' ?>">CONTACT</a></td>
               </tr>
             </table>
           </div>
