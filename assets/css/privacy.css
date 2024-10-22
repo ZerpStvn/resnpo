@@ -26,10 +26,20 @@
   border-bottom: none;
 }
 
-/* Responsive Styles */
+#privacyid .donation-container p {
+  font-size: 10.417vw;
+}
+
+@media (max-width: 1220px) {
+  #privacyid .donation-container p {
+    font-size: 8.197vw;
+  }
+}
+
 @media (max-width: 768px) {
   .privacy-policy {
     padding: 8vw 10vw;
+    margin-top: unset;
   }
   .privacy-policy h2 {
     font-size: 1em;

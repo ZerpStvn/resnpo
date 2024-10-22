@@ -7,7 +7,7 @@ get_header();
 
 <div id="contactid">
   <!-- donation page -->
-  <?php render_join_landing('CONTACT', '寄付') ?>
+  <?php render_join_landing('CONTACT', 'お問い合わせ') ?>
 
   <section id="contact_section" class="relative">
     <main class="contact-cont global-width">
