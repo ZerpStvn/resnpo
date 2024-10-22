@@ -214,3 +214,9 @@
     display: none;
   }
 }
+
+@media (max-width: 480px) {
+  .upcoming-events-title {
+    font-size: 50px;
+  }
+}
