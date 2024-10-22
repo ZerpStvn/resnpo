@@ -1,5 +1,6 @@
-<?php get_header() ?>
 <div id="homeid">
+  <?php get_header() ?>
+
   <section class="section_1">
     <div class="header-container global-width">
 
