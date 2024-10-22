@@ -28,7 +28,7 @@
 
         <ul class="nav-container">
           <div class="btn-close">
-            <p class="p-25 ">X</p>
+            <img src="<?= RESNPO_IMAGE . '/tabler_xbox-x.png' ?>" alt="exit-logo">
           </div>
           <div class="nav-company-details">
             <img class="logo-green" src="<?php echo RESNPO_IMAGE . '/res-logo.png' ?>" alt="">
@@ -81,7 +81,7 @@
                       <img class="line" src="<?php echo RESNPO_IMAGE . '/line-blue.png' ?>" alt="Line">
                     </a>
                   </td>
-                  <td class="contact-text"><a href="https://edu-npo.com/inquiry/">CONTACT</a></td>
+                  <td class="contact-text"><a href="<?php echo get_site_url() . '/contact' ?>">CONTACT</a></td>
                 </tr>
               </table>
             </div>

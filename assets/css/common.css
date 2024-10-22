@@ -402,6 +402,56 @@ button {
   cursor: pointer;
 }
 
+a{
+  color:inherit;
+}
+}
 a:visited {
   color: inherit;
 }
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   MARQUEE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+.marquee-container {
+  height: 118px;
+  width: 100%; /* Full width */
+  overflow: hidden; /* Hide the overflowing content */
+  background-color: #2e88aa; /* Background color for the marquee */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marquee {
+  display: inline-flex; /* Ensure that ul items flow horizontally */
+  white-space: nowrap; /* Prevent line breaks */
+  animation: marquee 25s linear infinite;
+}
+
+.marquee-container p {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.marquee-container ul {
+  display: inline-flex; /* Change to inline-flex to avoid wrapping */
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.marquee-container ul li {
+  list-style: none; /* Remove default bullet points */
+  margin: 0 25px; /* Adjust margin for spacing */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  } /* Start off-screen to the right */
+  100% {
+    transform: translateX(-100%);
+  } /* End off-screen to the left */
+}
+
+/* ^^^^^^^^^^^^^^^^^^^^ END MARQUEE ^^^^^^^^^^^^^^^^^^^^^^^^^ */

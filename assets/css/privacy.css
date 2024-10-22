@@ -1,7 +1,8 @@
 .privacy-policy {
   font-family: var(--notsansjp);
-  margin: 0 auto;
+  margin-top: -250px;
   padding: 10vw 20vw;
+  background-color: #fff;
 }
 .privacy-policy h2 {
   font-size: 1.2em;
@@ -12,11 +13,9 @@
   margin-bottom: 10px;
   line-height: 1.5;
 }
-.privacy-policy ol {
-  padding-left: 20px;
-}
 .privacy-policy li {
   margin-bottom: 5px;
+  padding-left: 15px;
 }
 .privacy-policy-item {
   border-bottom: 1px dotted #000;
