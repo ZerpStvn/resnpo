@@ -121,6 +121,7 @@ function render_join_section1($title, $description, $nextpage)
 <?php
 }
 
+// JOIN US SECTION 3 fieldset
 function render_join_section3($pagetitle, $overlaytitle, $fieldset1, $fieldset2, $fieldset3)
 {
 ?>
@@ -164,6 +165,7 @@ function render_join_section3($pagetitle, $overlaytitle, $fieldset1, $fieldset2,
 <?php
 }
 
+// Project Cards
 function render_projects_cards($cardTitle, $artTitle, $description, $img, $link)
 {
 ?>
@@ -171,7 +173,7 @@ function render_projects_cards($cardTitle, $artTitle, $description, $img, $link)
     <div class="relative projects-container">
       <p class="w-700 white-clr section-title relative slideright"><?php echo $cardTitle ?></p>
       <div class="overlay-arc relative">
-        <a href="<?php //echo get_site_url() . $link'
+        <a href="<?php echo get_site_url() . $link
                   ?>">
           <div class="arc-img-side absolute">
             <img class="" src="<?php echo RESNPO_URI . '/assets/image/project/' . $img ?>" alt="">
