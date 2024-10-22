@@ -181,7 +181,7 @@ nav {
 
   .nav-menu .header-scol-links ul {
     gap: 2vh;
-    margin-left: 0; /* Remove left margin */
+    margin-left: 20px;
   }
 
   .nav-menu .header-scol-links li {

@@ -192,8 +192,9 @@
     padding-inline: 20px;
   }
   .section-2-img img {
-    margin-top: -138px;
+    margin-top: -126px;
     z-index: 2;
+    width: 90%;
   }
   .benefits-grid {
     padding-inline: unset;
