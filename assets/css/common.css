@@ -263,15 +263,9 @@ html {
   margin-bottom: 25%;
 }
 
-.ml-10 {
-}
 .ml-8 {
   margin-left: 8%;
 }
-
-/* Padding  */
-
-/* Display */
 
 .flex {
   display: flex;
@@ -402,10 +396,10 @@ button {
   cursor: pointer;
 }
 
-a{
-  color:inherit;
+a {
+  color: inherit;
 }
-}
+
 a:visited {
   color: inherit;
 }
@@ -413,18 +407,27 @@ a:visited {
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   MARQUEE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 .marquee-container {
   height: 118px;
-  width: 100%; /* Full width */
-  overflow: hidden; /* Hide the overflowing content */
-  background-color: #2e88aa; /* Background color for the marquee */
+  width: 100%;
+  overflow: hidden;
+  background-color: #2e88aa;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .marquee {
-  display: inline-flex; /* Ensure that ul items flow horizontally */
-  white-space: nowrap; /* Prevent line breaks */
-  animation: marquee 25s linear infinite;
+  display: inline-flex;
+  white-space: nowrap;
+  position: relative;
+  display: flex;
+  width: 100%;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  justify-content: space-between;
+}
+.marquee-item-list {
+  display: inline-flex;
 }
 
 .marquee-container p {
@@ -434,24 +437,41 @@ a:visited {
 }
 
 .marquee-container ul {
-  display: inline-flex; /* Change to inline-flex to avoid wrapping */
+  display: inline-flex;
   align-items: center;
   padding: 0;
   margin: 0;
 }
 
 .marquee-container ul li {
-  list-style: none; /* Remove default bullet points */
-  margin: 0 25px; /* Adjust margin for spacing */
+  list-style: none;
+  margin: 0 25px;
 }
-
+.marquee1 {
+  animation-name: marquee1;
+}
+.marquee2 {
+  animation-name: marquee2;
+}
+@keyframes marquee1 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
 @keyframes marquee {
   0% {
     transform: translateX(100%);
-  } /* Start off-screen to the right */
+  }
   100% {
     transform: translateX(-100%);
   } /* End off-screen to the left */
 }
 
 /* ^^^^^^^^^^^^^^^^^^^^ END MARQUEE ^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+.no-display {
+  display: none;
+}

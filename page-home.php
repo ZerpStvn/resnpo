@@ -100,9 +100,23 @@
           <li class="slideup">
             <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-third/sub-img-1.png' ?>" alt="" />
             <div class="sub-ul-details">
-              <p class="p-12 class-content">
-                同年代の仲間たちとの様々な活動や異文化体験を通じて、国内では経験できない多様性に触れ、自国や自分自身の新たな面に気づかされます。
-              </p>
+              <?php
+              function truncate_text($text, $limit)
+              {
+                if (mb_strlen($text) > $limit) {
+                  return mb_substr($text, 0, $limit) . '...';
+                } else {
+                  return $text;
+                }
+              }
+
+              // Example usage
+              $text = '同年代の仲間たちとの様々な活動や異文化体験を通じて、国内では経験できない多様性に触れ、自国や自分自身の新たな面に気づかされます。';
+              $truncated_text = truncate_text($text, mb_strpos($text, '国内')); // Truncate at '国内'
+              echo "<p class='p-12 class-content'>" . $truncated_text . "</p>";
+              ?>
+
+
               <p class="p-18 mt-15 w-700 class-title">海外留学/ツアー</p>
             </div>
           </li>
@@ -297,6 +311,14 @@
   <!-- <a href="<?php // echo RESNPO_URI . '/about#advisor_section' 
                 ?>"> -->
   <section id="advisor_home" class="flex flex-column relative">
+    <div class="contenttitletop advisor">
+      <div class="contenttoptitlewrap">
+
+        <img src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
+        <p>ADVISOR</p>
+
+      </div>
+    </div>
     <h1 class="head-clr av-title slideright ">ADVISOR</h1>
     <div class="av-container flex">
       <div class="av-schools flex">
@@ -326,7 +348,7 @@
           </div>
         </div>
         <div class="scl-col-2">
-          <div class="scl head-clr">
+          <div class="scl head-clr desktop-view">
             <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/up.png' ?>" alt="">
             <div class="scl-cntnt">
               <h1>経営学修士</h1>
@@ -334,7 +356,7 @@
             </div>
           </div>
 
-          <div class="scl head-clr">
+          <div class="scl head-clr desktop-view">
             <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/up.png' ?>" alt="">
             <div class="scl-cntnt">
               <h1>経営学修士</h1>
@@ -375,11 +397,20 @@
 
 
   <section class="section_5 relative">
+
     <div class="absolute sect-location">
       <p class="w-800 loc-txt-section section-head-clr slideup">LOCATION</p>
     </div>
+    <div class="contenttitletop location">
+      <div class="contenttoptitlewrap">
 
+        <img src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
+        <p>LOCATION</p>
+
+      </div>
+    </div>
     <ul class="flex map-flex">
+
       <li style="position: relative">
         <p class="p-heading1">どこにあるの？</p>
 
@@ -443,6 +474,14 @@
 
 
   <section class="section_6 relative">
+    <div class="contenttitletop supporter">
+      <div class="contenttoptitlewrap">
+
+        <img src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
+        <p>SUPPORTER</p>
+
+      </div>
+    </div>
     <ul class="flex ul-logo">
       <li>
         <div class="logo-details">
