@@ -22,7 +22,7 @@ nav {
   align-items: center;
   position: fixed;
   top: 37px;
-  left: 90%;
+  left: auto;
   z-index: 999;
   right: 40px;
 }

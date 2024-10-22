@@ -110,6 +110,7 @@
 @media (max-width: 768px) {
   #contact_section {
     padding: 50px;
+    margin-top: unset;
   }
 
   .contact-row h2 {
