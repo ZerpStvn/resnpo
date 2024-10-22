@@ -93,8 +93,8 @@ HTML;
     <div class="section-content head-clr flex-row">
       <div class="rotated-text outline">MISSION</div>
 
-      <div class="image-placeholder slideright">
-        <img src="<?php echo RESNPO_IMAGE . '/about/mission1.png' ?>" alt="">
+      <div class="image-placeholder ">
+        <img class="slideright" src="<?php echo RESNPO_IMAGE . '/about/mission1.png' ?>" alt="">
       </div>
       <div class="desktop-content">
         <?php echo $missionContent; ?>

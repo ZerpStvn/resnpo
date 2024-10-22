@@ -267,6 +267,10 @@ html {
   margin-left: 8%;
 }
 
+/* Padding  */
+
+/* Display */
+
 .flex {
   display: flex;
 }
@@ -405,7 +409,24 @@ a:visited {
 }
 
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   MARQUEE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
 .marquee-container {
+  background-color: #2e88aa;
+}
+.marquee-container p {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  text-wrap: nowrap;
+}
+
+#projectid .slick-slide {
+  text-align: unset;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+/* .marquee-container {
   height: 118px;
   width: 100%;
   overflow: hidden;
@@ -418,16 +439,7 @@ a:visited {
 .marquee {
   display: inline-flex;
   white-space: nowrap;
-  position: relative;
-  display: flex;
-  width: 100%;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  justify-content: space-between;
-}
-.marquee-item-list {
-  display: inline-flex;
+  animation: marquee 45s linear infinite;
 }
 
 .marquee-container p {
@@ -446,29 +458,16 @@ a:visited {
 .marquee-container ul li {
   list-style: none;
   margin: 0 25px;
-}
-.marquee1 {
-  animation-name: marquee1;
-}
-.marquee2 {
-  animation-name: marquee2;
-}
-@keyframes marquee1 {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: -100%;
-  }
-}
-@keyframes marquee {
+} */
+
+/* @keyframes marquee {
   0% {
     transform: translateX(100%);
   }
   100% {
     transform: translateX(-100%);
-  } /* End off-screen to the left */
-}
+  }
+} */
 
 /* ^^^^^^^^^^^^^^^^^^^^ END MARQUEE ^^^^^^^^^^^^^^^^^^^^^^^^^ */
 

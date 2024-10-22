@@ -122,11 +122,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle at 0% 50.07%,
     rgba(86, 176, 210, 0.823529) 0%,
     rgba(44, 91, 108, 0.823529) 100%
-  );
+  ); */
   transform: skewY(5deg);
   transform-origin: 0;
   z-index: 1;
@@ -242,6 +242,7 @@
   text-align: left;
 }
 
+/* MISSION ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 #mission-section .rotated-text {
   left: 794px;
   right: 120px;
@@ -253,6 +254,8 @@
 #mission-section .section-content {
   justify-content: flex-end;
   width: 89%;
+  display: block;
+  /* padding-block: unset; */
 }
 
 #mission-section .section-content .image-placeholder {
@@ -260,12 +263,11 @@
   bottom: -20px;
   right: 0;
   width: 58%;
-  height: auto;
+  /* height: 100%; */
   overflow: hidden;
-  z-index: 1;
+  z-index: -1;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  height: 100%;
-  left: -70px;
+  left: auto;
 }
 
 #mission-section .section-content .image-placeholder img {
@@ -301,24 +303,23 @@
 
 #action-section .section-text {
   flex: 0 0 50%;
-  padding: 0 50px;
+  /* padding: 0 50px; */
   z-index: 2;
 }
 
 #vision-section .section-content .image-placeholder {
   position: absolute;
   bottom: 0;
-  left: 200px;
+  left: 589px;
   width: 100%;
   height: 100%;
   overflow: hidden;
   z-index: -2;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
-
 #vision-section .section-content .image-placeholder img {
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  /* height: 100%; */
   max-width: 100%;
   object-fit: cover;
   object-position: center;
@@ -387,14 +388,61 @@
   .vma-title::before {
     display: none;
   }
+  /* MOBILEE _>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
   .mobile-content {
     display: block;
-    transform: none;
+    position: relative;
+    z-index: 10;
+    isolation: isolate;
+    transform: skewY(-4deg);
+    margin-top: -20px;
   }
+  #vision-section .mobile-content {
+    background: radial-gradient(
+        194.61% 549.58% at 3.53% 49.92%,
+        rgba(86, 176, 210, 0.823529) 0%,
+        rgba(44, 91, 108, 0.823529) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  }
+  #mission-section .mobile-content {
+    background: linear-gradient(89.24deg, #f9edeb 0.62%, #938c8b 301.04%);
+  }
+  #action-section .mobile-content {
+    background: radial-gradient(
+        194.61% 502.18% at 3.53% 54.24%,
+        rgba(86, 176, 210, 0.823529) 0%,
+        rgba(44, 91, 108, 0.823529) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  }
+
   .mobile-content * {
     transform: none;
   }
+
+  .diagonal-section {
+    padding-block: 60px;
+  }
+
+  .diagonal-section::before {
+    z-index: 1;
+  }
+
+  .section-content {
+    position: relative;
+    z-index: 5;
+  }
+
+  .mobile-content > * {
+    transform: skewY(
+      4deg
+    ); /* Use the opposite angle to counter the parent's skew */
+  }
+
+  /* END */
+
   .rotated-text {
     font-size: 120px;
     margin-left: 126px;
@@ -449,7 +497,7 @@
     font-size: 45px;
   }
   .section-text {
-    margin-bottom: 130px;
+    padding-bottom: 130px;
   }
 
   .au-main-title {
@@ -497,13 +545,7 @@
     display: none;
   }
 
-  .mobile-content {
-    display: block;
-    transform: none;
-  }
-  .mobile-content * {
-    transform: none;
-  }
+  /* MOBILE */
   .rotated-text {
     font-size: 100px;
     margin-left: 126px;
@@ -517,14 +559,15 @@
   #vision-section .section-content .image-placeholder {
     width: 170%;
     height: unset;
-    margin-left: -200px;
+    /* margin-left: -54px; */
+    left: 224px;
   }
 
   #mission-section .section-content .image-placeholder {
-    width: 100%;
+    width: 155%;
     height: unset;
     margin-left: -200px;
-    left: 210px;
+    left: 152px;
   }
   #mission-section::before {
     background: radial-gradient(circle, #f9edeb 0.21%, #938c8b 100.91%);
@@ -535,6 +578,11 @@
     right: 94px;
     transform: rotate(-90deg) translateX(50%);
     transform-origin: right top;
+  }
+  #mission-section .slideright {
+    transform: scale(1);
+    transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1),
+      opacity 1s ease-in-out;
   }
 
   #action-section .section-content .image-placeholder {
@@ -556,7 +604,7 @@
     font-size: 35px;
   }
   .section-text {
-    margin-bottom: 130px;
+    padding-bottom: 130px;
   }
   .au-sub-title {
     /* max-width: 50; */

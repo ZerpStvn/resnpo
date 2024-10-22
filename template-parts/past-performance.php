@@ -84,7 +84,7 @@ $query = new WP_Query($args);
                 while ($query->have_posts()) : $query->the_post();
                   $images = get_post_meta(get_the_ID(), 'images', true) ?: [];
                   foreach ($images as $image) {
-                    echo '<img src="' . esc_url($image) . '" alt="Image" class="slider-image">';
+                    echo '<img class="marquee-carousels" src="' . esc_url($image) . '" alt="Image" class="slider-image">';
                   }
                 endwhile;
               endif;
