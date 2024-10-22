@@ -39,7 +39,7 @@
               QUICK LINKS
             </h2>
             <ul class="footer-links">
-              <li><a href="<?php echo get_site_url() . '/ome' ?>">Home</a></li>
+              <li><a href="<?php echo get_site_url() . '/home' ?>">Home</a></li>
               <li><a href="<?php echo get_site_url() . '/project' ?>">Projects</a></li>
               <li><a href="<?php echo get_site_url() . '/about' ?>">About Us</a></li>
               <li><a href="<?php echo get_site_url() . '/joinus' ?>">Join Us</a></li>
@@ -64,7 +64,7 @@
             子どもたちに一つでも多くの機会を届けるため 皆様の寄付を私たちの活動に利用させていただきます。
           </p>
           <div class="relative btn-container">
-            <a href="<?php echo RESNPO_URI . '/donation#section_4_don' ?>">
+            <a href="<?php echo get_site_url() . '/donation#section_4_don' ?>">
               <button class="main-button relative">
                 詳しく見る </button>
               <img class="icon-button absolute" src="<?php echo RESNPO_IMAGE . '/leaves.png' ?>" alt="" />
