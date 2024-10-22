@@ -26,7 +26,7 @@ $args = [
 $query = new WP_Query($args);
 ?>
 
-<section class="past-performance">
+<section id="past-performance-section" class="past-performance">
   <h1 class="past-performance-title">
     <span class="dark-blue">「</span>
     <span class="pp-main-title"><?php display_title(); ?></span>
@@ -108,7 +108,9 @@ $query = new WP_Query($args);
             'next_text'    => '&raquo;',
             'type'         => 'list',
             'end_size'     => 3,
-            'mid_size'     => 3
+            'mid_size'     => 3,
+            'before_page_number' => '<span class="page-number">',
+            'after_page_number' => '</span>',
           ));
         endif;
         ?>

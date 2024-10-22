@@ -104,21 +104,39 @@ function animateInquire() {
   InqcurrentIndex = (InqcurrentIndex + 1) % inquireTitles.length;
 }
 
-// Initial animation
 animateInquire();
 
-// Set interval for continuous animation
 setInterval(animateInquire, 200);
 
-document.querySelectorAll('details').forEach((details) => {
-  details.addEventListener('click', (e) => {
+document.querySelectorAll("details").forEach((details) => {
+  details.addEventListener("click", (e) => {
     if (details.open) {
       e.preventDefault();
-      details.classList.add('closing');
+      details.classList.add("closing");
       setTimeout(() => {
         details.open = false;
-        details.classList.remove('closing');
+        details.classList.remove("closing");
       }, 300); // This should match the transition duration in your CSS
     }
   });
 });
+
+// FOR PAGES DONATION MEMBERSHIP
+const bTitle = document.querySelectorAll(".b-title");
+let bTitleCurrentIndex = 0;
+
+function animateInquireB() {
+  bTitle.forEach((title, index) => {
+    if (index === bTitleCurrentIndex) {
+      title.classList.remove("outline");
+    } else {
+      title.classList.add("outline");
+    }
+  });
+
+  bTitleCurrentIndex = (bTitleCurrentIndex + 1) % bTitle.length;
+}
+
+animateInquireB();
+
+setInterval(animateInquireB, 200);

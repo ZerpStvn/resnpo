@@ -1,7 +1,9 @@
-<?php get_header('home') ?>
 <div id="homeid">
+  <?php get_header() ?>
+
   <section class="section_1">
     <div class="header-container global-width">
+
       <img class="desktop_logo" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/top_nav_txt.png' ?>"
         alt="logo" loading="lazy">
       <img class="mobile_logo" src="<?php echo RESNPO_URI . '/assets/image/homepage/header/mobilelogo.png' ?>"
@@ -30,7 +32,9 @@
 
               <ul class="flex absolute home-side-sm">
                 <li>
-                  <p class="p-16 w-700 white-clr">CONTACT</p>
+                  <a href="https://edu-npo.com/inquiry/">
+                    <p class="p-16 w-700 white-clr">CONTACT</p>
+                  </a>
                 </li>
                 <li><img src="<?php echo RESNPO_URI . '/assets/image/homepage/header/sm-line-icon.png' ?>" alt=""></li>
                 <li><img src="<?php echo RESNPO_URI . '/assets/image/homepage/header/sm-fb-icon.png' ?>" alt=""></li>
@@ -40,11 +44,15 @@
 
           </li>
           <li>
-            <div class="flex relative header-second slideright">
-              <img class="header-green-icon"
-                src="<?php echo RESNPO_URI . '/assets/image/homepage/header/header-green-icon.png' ?>" alt="">
-              <img class="header-res-img"
-                src="<?php echo RESNPO_URI . '/assets/image/homepage/header/res-img-txt.png' ?>" alt="">
+            <div class="flex gap-25 flex-column relative header-second slideright">
+              <div class="flex  ">
+                <img class="header-green-icon"
+                  src="<?php echo RESNPO_URI . '/assets/image/homepage/header/header-green-icon.png' ?>" alt="">
+                <img class="header-res-img"
+                  src="<?php echo RESNPO_URI . '/assets/image/homepage/header/res-img-txt.png' ?>" alt="">
+              </div>
+              <!-- <h1 class="outline home-lndg-sub">自ら考え行動できる人材を育成する活動を<br>しています。< /h1> -->
+
             </div>
           </li>
         </ul>
@@ -184,7 +192,7 @@
         while ($whatsnew_query->have_posts()):
           $whatsnew_query->the_post();
           $whatsnew_date = get_post_meta(get_the_ID(), '_whatsnew_date', true);
-          ?>
+      ?>
           <li>
             <a href="<?php echo get_permalink() ?>" id="main-article">
               <div class="img-container-news">
@@ -204,7 +212,7 @@
               </div>
             </a>
           </li>
-          <?php
+      <?php
         endwhile;
         wp_reset_postdata();
       endif;
@@ -223,7 +231,7 @@
             while ($recent_whatsnew_query->have_posts()):
               $recent_whatsnew_query->the_post();
               $recent_whatsnew_date = get_post_meta(get_the_ID(), '_whatsnew_date', true);
-              ?>
+          ?>
               <li>
                 <a href="<?php echo get_permalink() ?>">
                   <div class="flex with-img">
@@ -237,7 +245,7 @@
                   </div>
                 </a>
               </li>
-              <?php
+          <?php
             endwhile;
             wp_reset_postdata();
           endif;
@@ -255,7 +263,7 @@
   <!-- SECTION: NEWS/RESPRESENTATIVE -->
 
   <!-- <a href="<?php //echo get_site_url() . '/about#realxlink' 
-  ?>"> -->
+                ?>"> -->
   <section class="section-representative">
     <div class="top-title-news relative">
       <p class="p-230 w-700 slideright">NEWS</p>
@@ -301,7 +309,7 @@
 
   <!-- SECTION: ADVISOR -->
   <!-- <a href="<?php // echo RESNPO_URI . '/about#advisor_section' 
-  ?>"> -->
+                ?>"> -->
   <section id="advisor_home" class="flex flex-column relative">
     <div class="contenttitletop advisor">
       <div class="contenttoptitlewrap">
@@ -483,7 +491,7 @@
           </p>
           <div class="relative btn-container">
             <a href="<?php echo RESNPO_URI . '/donation#section_4_don' ?>">
-              <button class="main-button relative" id="btn-logo">支援者様</button>
+              <button class="main-button relative" id="btn-logo"> 詳しく見る</button>
               <img class="home-icon-button absolute"
                 src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
             </a>

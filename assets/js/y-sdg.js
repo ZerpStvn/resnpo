@@ -1,3 +1,4 @@
+// SDG Landing Slider
 document.addEventListener("DOMContentLoaded", () => {
   let currentSlide = 0;
   const videoPaths = document.getElementById("video-paths");
@@ -48,7 +49,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Automatically change slides every 5 seconds
   setInterval(nextSlide, 5000);
 });
+// SDG Landing Slide
 
+// Photo Gallery
 var swiperPG = new Swiper(".mySwiperpg", {
   effect: "slide",
   loop: true,
@@ -63,6 +66,7 @@ var swiperPG = new Swiper(".mySwiperpg", {
     stopOnLastSlide: false,
   },
 });
+//End Photo Gallery
 
 // Upcoming Events Slider
 document.addEventListener("DOMContentLoaded", function () {
@@ -113,9 +117,10 @@ document.addEventListener("DOMContentLoaded", function () {
         480: {
           centeredSlides: true,
           loop: true,
+          slidesPerView: 3,
         },
         768: {
-          slidesPerView: 2,
+          slidesPerView: 3,
         },
         1024: {
           slidesPerView: 3,
@@ -162,6 +167,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// End of UE SLider
+
 // Animation Scale In
 document.addEventListener("DOMContentLoaded", function () {
   const elements = document.querySelectorAll(".scaleIn");
@@ -185,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Animation Slide Left and Right
+// Animation Slide Left and Right, Up and Down
 document.addEventListener("DOMContentLoaded", function () {
   const elements = document.querySelectorAll(
     ".slideleft, .slideright, .slideup, .slidedown"
@@ -214,6 +221,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Feature Card Slider
 jQuery(document).ready(function ($) {
   var $slider = $(".feature-card-container");
 
@@ -246,4 +254,22 @@ jQuery(document).ready(function ($) {
   $(window).on("resize", function () {
     $slider.slick("setPosition");
   });
+});
+
+// Past Performance Pagination
+document.addEventListener("DOMContentLoaded", function () {
+  const paginationLinks = document.querySelectorAll(".pagination a");
+
+  paginationLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      const url = new URL(this.href);
+      url.hash = "past-performance-section";
+      window.location.href = url;
+    });
+  });
+
+  if (window.location.hash === "#past-performance-section") {
+    document.getElementById("past-performance-section").scrollIntoView();
+  }
 });
