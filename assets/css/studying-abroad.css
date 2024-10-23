@@ -309,17 +309,8 @@ details.closing .detail-content {
   justify-content: center;
   align-items: center;
 }
-
-.as-cred {
-  align-items: center;
-  position: absolute;
-  width: 100%;
-  padding: 0 12px;
-  opacity: 0;
-  /* filter: drop-shadow(0 2px 2px #555); */
-  will-change: transform, opacity;
-  animation: carousel-animate-vertical 9s linear infinite;
-  gap: 20px;
+.as-cred-wrapper .slick-slide {
+  display: flex !important;
 }
 
 .as-cred-details {
@@ -596,7 +587,7 @@ details.closing .detail-content {
     text-align: center; /* Center text content */
   }
 
-  /* ADVISOR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  /* ADVISOR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
   #advisor_section {
     padding: 30px;
   }
@@ -613,21 +604,21 @@ details.closing .detail-content {
     flex-direction: row;
   }
   .as-cred img {
-    width: 40px;
-    height: 40px;
+    /* width: 40px;
+    height: 40px; */
   }
   .as-cred-texts .detail-title {
     font-size: 12px;
     text-wrap: balance;
   }
   .as-cred-texts .as-cred-details {
-    font-size: 9px;
+    font-size: 14px;
   }
-  @keyframes carousel-animate-vertical {
+  /* @keyframes carousel-animate-vertical {
     0% {
       transform: translateY(100%);
       opacity: 0;
-      visibility: hidden;
+      display: none;
     }
     3%,
     33.33% {
@@ -655,9 +646,9 @@ details.closing .detail-content {
     100% {
       transform: translateY(-100%);
       opacity: 0;
-      visibility: hidden;
+      display: none;
     }
-  }
+  } */
 
   .carousel-container {
     position: relative;
@@ -665,18 +656,6 @@ details.closing .detail-content {
     overflow: hidden;
   }
 
-  .as-cred {
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    padding: 0 12px;
-    opacity: 0;
-    filter: drop-shadow(0 2px 2px #555);
-    will-change: transform, opacity;
-    animation: carousel-animate-vertical 9s linear infinite;
-    box-sizing: border-box;
-    padding-block: 2px;
-  }
   .as-text-col {
     flex: 1;
     min-width: 0;
@@ -694,6 +673,46 @@ details.closing .detail-content {
   .as-details {
     flex-direction: column;
   }
+
+  .as-carousel {
+    position: relative;
+    /* height: 180px; */
+    overflow: hidden;
+  }
+
+  /* .as-cred {
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 12px;
+    opacity: 0;
+    will-change: transform, opacity;
+    animation: carousel-animate-vertical 15s linear infinite;
+    box-sizing: border-box;
+    padding-block: 2px;
+  } */
+
+  /* Stagger animations */
+  .as-cred:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .as-cred:nth-child(2) {
+    animation-delay: -3s;
+  }
+
+  .as-cred:nth-child(3) {
+    animation-delay: -6s;
+  }
+
+  .as-cred:nth-child(4) {
+    animation-delay: -9s;
+  }
+
+  .as-cred:nth-child(5) {
+    animation-delay: -12s;
+  }
+  /* END ADVISER ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
   #recruiting_partner {
     flex-direction: column;
@@ -739,6 +758,9 @@ details.closing .detail-content {
   .rp-card img {
     height: unset;
   }
+  #inquire_section {
+    height: 500px;
+  }
 
   .inq-title {
     line-height: 110px;
@@ -747,6 +769,7 @@ details.closing .detail-content {
 
   .inq-title-overlay {
     padding: 9%;
+    gap: 21px;
   }
 
   .inq-title-overlay h1 {
@@ -754,6 +777,8 @@ details.closing .detail-content {
   }
   .inq-title-overlay h4 {
     font-size: 18px;
+    max-width: 350px;
+    line-height: unset;
   }
   #advisor_section .img-col {
     width: 104.167vw;
@@ -785,7 +810,7 @@ details.closing .detail-content {
   font-weight: 700;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   .as-img-col {
     flex-direction: column;
   }

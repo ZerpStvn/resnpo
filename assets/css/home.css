@@ -967,6 +967,11 @@ ul.sub-ul.text-center.mobile {
 .contenttitletop.location .contenttoptitlewrap p {
   color: white;
 }
+
+#home-advisor-mobile {
+  display: none;
+}
+
 @media (max-width: 1107px) {
   .section_6 {
     padding: 10% 1%;
@@ -1018,7 +1023,7 @@ ul.sub-ul.text-center.mobile {
     /* display: none; */
   }
   .header-fcol-lc {
-    display: none;
+    /* display: none; */
   }
   .mobile-top-content {
     display: block;
@@ -1218,6 +1223,12 @@ ul.sub-ul.text-center.mobile {
     max-width: 387.09px;
     width: 80%;
   }
+  .scl-col-1 {
+    display: none;
+  }
+  #home-advisor-mobile {
+    display: flex;
+  }
 }
 
 @media (max-width: 488px) {
@@ -1356,3 +1367,5 @@ ul.sub-ul.text-center.mobile {
 h2.mobile-top-content {
   display: none;
 }
+
+/*  */

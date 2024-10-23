@@ -102,7 +102,7 @@
       <!-- TAB 1 -->
       <div class="detail-payment-container tab" id="A">
         <div class="text-center first-payment-section">
-          <p class="p-15">私たちと一緒に子どもたちの成長を見守りませんか？<br>毎月1,000円～継続的にご寄付いただけます。</p>
+          <p class="p-15 payment_p">私たちと一緒に子どもたちの成長を見守りませんか？<br>毎月1,000円～継続的にご寄付いただけます。</p>
           <button>
             <p>お使いいただけるカード</p>
           </button>
@@ -154,14 +154,14 @@
         </div>
 
         <div class="third-payment-section">
-          <p>
+          <p class="payment_p">
             ※経費を削減し、皆様のお気持ちを少しでも多く子どもたちのための活動に使用させていただく
             ために、カードでのお手続きにご協力をお願いいたします。。
           </p>
-          <p>
+          <p class="payment_p">
             銀行振込での毎月寄付をご検討の方は、お問い合わせフォームよりご相談ください。
           </p>
-          <a href="<?php echo get_site_url() . '/contact' ?>">
+          <a href=" <?php echo get_site_url() . '/contact' ?>">
             <p class="sub-head-clr">❯ 問合せフォーム</p>
           </a>
         </div>

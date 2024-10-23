@@ -56,7 +56,7 @@ var swiperPG = new Swiper(".mySwiperpg", {
   effect: "slide",
   loop: true,
   freeMode: true,
-  slidesPerView: "3",
+  slidesPerView: 3,
   speed: 5000,
   autoplay: {
     delay: 1,
@@ -64,6 +64,13 @@ var swiperPG = new Swiper(".mySwiperpg", {
     disableOnInteraction: false,
     waitForTransition: true,
     stopOnLastSlide: false,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      speed: 3000,
+    },
   },
 });
 //End Photo Gallery
@@ -228,6 +235,8 @@ jQuery(document).ready(function ($) {
   $slider.slick({
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 768,
@@ -246,6 +255,8 @@ jQuery(document).ready(function ($) {
           centerMode: true,
           centerPadding: "20%",
           arrows: false,
+          autoplay: true,
+          autoplaySpeed: 3000,
         },
       },
     ],

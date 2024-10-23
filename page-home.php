@@ -189,16 +189,16 @@
         while ($whatsnew_query->have_posts()):
           $whatsnew_query->the_post();
           $whatsnew_date = get_post_meta(get_the_ID(), '_whatsnew_date', true);
-          ?>
+      ?>
           <li>
             <a href="<?php echo get_permalink() ?>" id="main-article">
               <div class="img-container-news">
                 <img class="scaleIn" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" />
               </div>
               <div class="news-detils">
-                <p class="p-16 sub-head-clr"><?php echo esc_html($whatsnew_date); ?></p>
-                <p class="p-40 head-clr scaleIn"><?php the_title(); ?></p>
-                <p class="p-16 details excerpt-3-lines"><?php echo wp_trim_words(get_the_excerpt(), 30, '...'); ?></p>
+                <p class="p-16 sub-head-clr mt-20"><?php echo esc_html($whatsnew_date); ?></p>
+                <p class="p-40 head-clr scaleIn article-title mt-20"><?php the_title(); ?></p>
+                <p class="p-16 details excerpt-3-lines mt-20"><?php echo wp_trim_words(get_the_excerpt(), 30, '...'); ?></p>
                 <div class="relative btn-container" id="btn-news">
                   <a href="<?php echo get_the_permalink() ?>">
                     <button type="button" class="main-button relative">もっと見る</button>
@@ -206,10 +206,13 @@
                       src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
                   </a>
                 </div>
+                <div class="mobile-news-title">
+                  <p class="p-230 w-700 news-title-p">NEWS</p>
+                </div>
               </div>
             </a>
           </li>
-          <?php
+      <?php
         endwhile;
         wp_reset_postdata();
       endif;
@@ -228,7 +231,7 @@
             while ($recent_whatsnew_query->have_posts()):
               $recent_whatsnew_query->the_post();
               $recent_whatsnew_date = get_post_meta(get_the_ID(), '_whatsnew_date', true);
-              ?>
+          ?>
               <li>
                 <a href="<?php echo get_permalink() ?>">
                   <div class="flex with-img">
@@ -242,7 +245,7 @@
                   </div>
                 </a>
               </li>
-              <?php
+          <?php
             endwhile;
             wp_reset_postdata();
           endif;
@@ -260,7 +263,7 @@
   <!-- SECTION: NEWS/RESPRESENTATIVE -->
 
   <!-- <a href="<?php //echo get_site_url() . '/about#realxlink' 
-  ?>"> -->
+                ?>"> -->
   <section class="section-representative">
     <div class="top-title-news relative">
       <p class="p-230 w-700 slideright">NEWS</p>
@@ -306,7 +309,7 @@
 
   <!-- SECTION: ADVISOR -->
   <!-- <a href="<?php // echo RESNPO_URI . '/about#advisor_section' 
-  ?>"> -->
+                ?>"> -->
   <section id="advisor_home" class="flex flex-column relative">
     <div class="contenttitletop advisor">
       <div class="contenttoptitlewrap">
@@ -344,6 +347,49 @@
             </div>
           </div>
         </div>
+
+        <div id="home-advisor-mobile" class="as-cred-wrapper">
+          <div class="as-carousel">
+            <div class="as-cred flex flex-row head-clr">
+              <img src="<?php echo RESNPO_IMAGE . '/studyingabroad/ucam.png' ?>" alt="UCAM logo">
+              <div class="as-cred-texts">
+                <h4 class="detail-title">ムルシア・カトリック大学（スペイン）</h4>
+                <h5 class="as-cred-details">副学長-教務担当</h5>
+              </div>
+            </div>
+            <div class="as-cred flex flex-row head-clr">
+              <img src="<?php echo RESNPO_IMAGE . '/studyingabroad/liverpool.png' ?>" alt="Liverpool University logo">
+              <div class="as-cred-texts">
+                <h4 class="detail-title">ムルシア・カトリック大学（スペイン）</h4>
+                <h5 class="as-cred-details">副学長-教務担当</h5>
+              </div>
+            </div>
+            <div class="as-cred flex flex-row head-clr">
+              <img src="<?php echo RESNPO_IMAGE . '/studyingabroad/iba.png' ?>" alt="IBA logo">
+              <div class="as-cred-texts">
+                <h4 class="detail-title">博士号（PhD）</h4>
+                <h5 class="as-cred-details">国際経営学・経済学アカデミー　経営学</h5>
+              </div>
+            </div>
+
+            <div class="as-cred flex flex-row head-clr">
+              <img src="<?php echo RESNPO_IMAGE . '/homepage/section-fifth/up.png' ?>" alt="IBA logo">
+              <div class="as-cred-texts">
+                <h4 class="detail-title">経営学修士</h4>
+                <h5 class="as-cred-details">フィリピン大学　公共経営</h5>
+              </div>
+            </div>
+
+            <div class="as-cred flex flex-row head-clr">
+              <img src="<?php echo RESNPO_IMAGE . '/homepage/section-fifth/up.png' ?>" alt="IBA logo">
+              <div class="as-cred-texts">
+                <h4 class="detail-title">経営学修士</h4>
+                <h5 class="as-cred-details">フィリピン大学　マーケティング</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="scl-col-2">
           <div class="scl head-clr desktop-view">
             <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-fifth/up.png' ?>" alt="">

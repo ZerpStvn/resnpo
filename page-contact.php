@@ -12,9 +12,9 @@ get_header();
   <section id="contact_section" class="relative">
     <main class="contact-cont global-width">
       <div class="contact-row">
-        <h2 class="">電話からのお問い合わせ</h2>
-        <h1 class="">089 - 999 - 999</h1>
-        <ul>
+        <h2 class="scaleIn">電話からのお問い合わせ</h2>
+        <h1 class="slideup">089 - 999 - 999</h1>
+        <ul class="slideup">
           <li>※ご返信には3営業日程度いただくことがございます。ご了承ください。 </li>
           <li>※入力いただいた情報は、<span class="sub-head-clr"><a href="<?php echo get_site_url() . '/privacy' ?>">個人情報保護指針に</a></span>もとづいて適正に管理
             <br>・取り扱いをさせていただきます。
@@ -22,8 +22,8 @@ get_header();
         </ul>
       </div>
       <div class="contact-row">
-        <h2 class="">フォームからのお問い合わせ</h2>
-        <ul>
+        <h2 class="scaleIn">フォームからのお問い合わせ</h2>
+        <ul class="slideup">
           <li>下記のフォームに入力いただき、お問い合わせください。</li>
           <li> <a href="">※全て必須入力です。</a></li>
         </ul>

@@ -75,3 +75,26 @@
     z-index: 3;
   }
 }
+
+/* NEWS */
+
+.mobile-news-title {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .mobile-news-title {
+    display: block;
+  }
+
+  .mobile-news-title p {
+    font-family: var(--notsansjp);
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 98.44px;
+    letter-spacing: 0.05em;
+    text-align: right;
+    color: #d9d9d980;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+  }
+}

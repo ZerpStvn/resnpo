@@ -6,8 +6,8 @@
       <div class="upper-footer">
         <div class="uf-c1">
           <div class="footer-logo">
-            <img class="green-logo" src="<?php echo RESNPO_IMAGE . '/green-logo2.png' ?>" alt="green-logo">
-            <img class="res-text" src="<?php echo RESNPO_IMAGE . '/res.png' ?>" alt="res">
+            <!-- <img class="green-logo" src="<?php echo RESNPO_IMAGE . '/green-logo2.png' ?>" alt="green-logo"> -->
+            <img class="res-text" src="<?php echo RESNPO_IMAGE . '/res-logo.png' ?>" alt="res">
           </div>
           <div class="tbl-col">
             <h1 class="p-blue-16">愛媛県松山市平井町1426番地2</h1>

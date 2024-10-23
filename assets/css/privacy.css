@@ -4,6 +4,11 @@
   padding: 10vw 20vw;
   background-color: #fff;
 }
+
+.privacy-p {
+  font-family: var(--notsansjp) !important;
+  font-size: 16px;
+}
 .privacy-policy h2 {
   font-size: 1.2em;
   margin-top: 20px;
@@ -32,7 +37,7 @@
 
 @media (max-width: 1220px) {
   #privacyid .donation-container p {
-    font-size: 8.197vw;
+    font-size: 7.197vw;
   }
 }
 

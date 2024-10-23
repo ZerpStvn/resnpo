@@ -155,6 +155,9 @@
 }
 
 @media (max-width: 768px) {
+  .contact-opp {
+    height: 559px;
+  }
   .contact-opp h1 {
     font-size: 30px;
     line-height: 35px;

@@ -13,7 +13,7 @@
       <div class="section-2-grid">
         <div class="grid benefits-grid slideright">
           <div class="benefits-container">
-            <img src="<?php echo RESNPO_IMAGE . '/svg/book.svg' ?>" alt="">
+            <img class="benefits-icon" src="<?php echo RESNPO_IMAGE . '/svg/book.svg' ?>" alt="">
             <p class="w-700 p-20 head-clr benefits-title">Personal Growth & Learning</p>
             <p class="w-400 p-12 head-clr">
               Gain valuable skills such as communication, leadership, and problem-solving through hands-on experiences.
@@ -21,7 +21,7 @@
           </div>
 
           <div class="benefits-container">
-            <img src="<?php echo RESNPO_IMAGE . '/svg/hand.svg' ?>" alt="">
+            <img class="benefits-icon" src="<?php echo RESNPO_IMAGE . '/svg/hand.svg' ?>" alt="">
             <p class="w-700 p-20 head-clr benefits-title">Contribution to Meaningful Causes</p>
             <p class="w-400 p-12 head-clr">
               Experience the satisfaction of making a positive difference in the lives of others and supporting causes you’re passionate about.
@@ -29,7 +29,7 @@
           </div>
 
           <div class="benefits-container">
-            <img src="<?php echo RESNPO_IMAGE . '/svg/networking.svg' ?>" alt="">
+            <img class="benefits-icon" src="<?php echo RESNPO_IMAGE . '/svg/networking.svg' ?>" alt="">
             <p class="w-700 p-20 head-clr benefits-title">Networking Opportunities</p>
             <p class="w-400 p-12 head-clr">
               Build relationships with people who share similar values and interests, leading to potential collaborations or friendships.
@@ -37,7 +37,7 @@
           </div>
 
           <div class="benefits-container">
-            <img src="<?php echo RESNPO_IMAGE . '/svg/airplane.svg' ?>" alt="">
+            <img class="benefits-icon" src="<?php echo RESNPO_IMAGE . '/svg/airplane.svg' ?>" alt="">
             <p class="w-700 p-20 head-clr benefits-title">Travel and Exploration</p>
             <p class="w-400 p-12 head-clr">
               Enjoy immersive experiences that go beyond typical tourist activities, such as participating in local traditions or volunteer work.
@@ -50,4 +50,13 @@
 
   <?php render_join_section3('PROCESS', 'メンバーになりたい方へ', '団体よりお礼のお手紙を郵送いたします', '毎年4月末ごろ、前年度の活動報告書をお送りいたします', '支援者ページにお名前を一定期間掲載させていただきます') ?>
 </div>
+
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
+  <defs>
+    <filter id="color-change-filter">
+      <feColorMatrix type="matrix" values="0 0 0 1 1  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" />
+    </filter>
+  </defs>
+</svg>
 <?php get_footer() ?>

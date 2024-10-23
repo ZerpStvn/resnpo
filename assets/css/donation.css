@@ -1,5 +1,9 @@
-#donationid p {
-  font-family: "NotoSansJP";
+#donationid p,
+#membershipid p,
+#whatsnewid p,
+#contactid p,
+#privacyid p {
+  font-family: var(--readex);
 }
 
 .border {
@@ -18,8 +22,8 @@
   font-family: "NotoSansJP";
   font-weight: 900;
   font-size: 150px;
-  line-height: 130.94px;
-  color: #22637b; /* Set the text color */
+  line-height: 138.94px;
+  color: #22637b;
   text-wrap: nowrap;
 }
 
@@ -86,7 +90,7 @@
 }
 
 .header-txt-container {
-  top: 200px;
+  top: 22vh;
 }
 
 .header-txt-container p {
@@ -96,7 +100,7 @@
 
 .res-txt-container {
   right: -210px;
-  bottom: 65px;
+  bottom: 121px;
 }
 
 .res-txt-container p {
@@ -111,7 +115,7 @@
   width: 100%;
   left: 0;
   margin-top: -250px;
-  padding-top: 35px;
+  padding-block: 35px;
 }
 
 .donation-bottom-text {
@@ -264,6 +268,7 @@ fieldset legend p {
 
 .payment-container {
   margin: 50px 225px;
+  max-width: 990px;
 }
 
 .btn-payment-container {
@@ -272,7 +277,7 @@ fieldset legend p {
 
 .btn-payment-container button {
   background: #f5f5f5;
-  padding: 25px 80px;
+  padding: 28px 97px;
   border: none;
   color: #8c8c8c;
 }
@@ -463,7 +468,7 @@ fieldset:hover {
 }
 
 .hl-red {
-  color: #f85d62;
+  /* color: #f85d62; */
 }
 
 .payment-link-active {
@@ -481,16 +486,19 @@ fieldset:hover {
 
 /* Hidden Containers */
 .res-txt-container-side {
-  display: none;
+  /* display: none; */
 }
 
+.payment_p {
+  font-family: var(--notsansjp) !important;
+}
 @media screen and (max-width: 480px) {
   .donation-container {
     margin-top: unset;
   }
 
   .res-txt-container {
-    right: -14.154vw;
+    right: -12.154vw;
     bottom: 3vw;
   }
 
@@ -507,7 +515,9 @@ fieldset:hover {
     padding: 0 40px;
   }
 
-  #donationid .p-250 {
+  #donationid .p-250,
+  #joinusid .p-250,
+  #membershipid .p-250 {
     font-size: 15.231vw;
   }
 
@@ -555,7 +565,9 @@ fieldset:hover {
 
   /* COMMON FONT-SIZE VW ~~~~ */
   .p-40 {
-    font-size: 8.333vw;
+    font-size: 6.25vw;
+    /* width: 300px; */
+    margin-inline: 30px;
   }
 
   .p-20 {
@@ -564,6 +576,9 @@ fieldset:hover {
 
   .p-50 {
     font-size: 10.417vw;
+  }
+  .section_2_oppor {
+    gap: 55px;
   }
 }
 
@@ -603,7 +618,7 @@ fieldset:hover {
   }
 
   .p-100 {
-    font-size: 7.692vw;
+    font-size: 13.692vw;
   }
   .donation-container {
     margin-left: 13.889vw;
@@ -621,12 +636,11 @@ fieldset:hover {
   .header-txt-container p {
     font-size: 5.944vw;
   }
-
+  /* 
   .res-txt-container {
-    right: -16.154vw;
-    bottom: 5vw;
-  }
-
+    right: -9.154vw;
+    bottom: 0vw;
+  } */
   .res-txt-container p {
     font-size: 14px;
     line-height: 16px;
@@ -690,14 +704,35 @@ fieldset:hover {
   .btn-payment-container button {
     padding: 25px 4.015vw;
   }
+
+  .first-payment-section button {
+    color: #f5f5f5 !important;
+    background-color: #53b9b5;
+    border: none;
+    padding: 15px 108px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .res-txt-container li p {
+    letter-spacing: 1px;
+    font-size: 14px !important;
+    line-height: 16px;
+    color: #fff;
+  }
+
   .donation-container p {
     line-height: 11.711vw;
   }
-  .res-txt-container {
+  /* .res-txt-container {
     display: none;
+  } */
+  .res-txt-container {
+    right: -56px;
+    left: auto;
+    bottom: 9px;
   }
 
   .res-txt-container-side {
@@ -719,7 +754,7 @@ fieldset:hover {
   }
 
   .header-txt-container {
-    top: 19.385vw;
+    top: 32.385vw;
   }
 
   .donation-bottom-text {

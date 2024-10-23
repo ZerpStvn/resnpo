@@ -13,13 +13,15 @@
             <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
           </div>
 
-          <div class="main-news-details">
-            <p class="w-500 p-20 sub-head-clr"><?php
-                                                $whatsnew_date = get_post_meta(get_the_ID(), '_whatsnew_date', true);
-                                                echo esc_html($whatsnew_date); ?></p>
-            <p class="w-700 p-50 head-clr text-center"><?php the_title(); ?></p>
-            <div class="news-content w-500 p-20 head-clr">
-              <?php the_content(); ?>
+          <div class="flex flex-column news-contents">
+            <div class="main-news-details">
+              <p class="w-500 p-20 sub-head-clr"><?php
+                                                  $whatsnew_date = get_post_meta(get_the_ID(), '_whatsnew_date', true);
+                                                  echo esc_html($whatsnew_date); ?></p>
+              <p class="w-700 p-50 head-clr text-center article-title"><?php the_title(); ?></p>
+              <div class="news-content w-500 p-20 head-clr">
+                <?php the_content(); ?>
+              </div>
             </div>
           </div>
         </div>
@@ -40,14 +42,18 @@
             ?>
                 <a href="<?php echo get_permalink() ?>">
                   <div class="flex with-img">
-                    <div class="img-container-news-recent">
+                    <div class="img-recent">
                       <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" />
                     </div>
-                    <div>
-                      <p class="p-14 w-700 head-clr">
+
+                    <div class="flex flex-column">
+                      <p class="p-16 w-700 head-clr">
                         <?php echo get_the_title() ?>
                       </p>
+                      <p class="p-14 read-more">READ MORE &raquo;</p>
+
                       <p class="p-12 text-clr"><?php echo esc_html($recent_whatsnew_date); ?></p>
+
                     </div>
                   </div>
                 </a>

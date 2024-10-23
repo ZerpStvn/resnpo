@@ -352,13 +352,13 @@
   display: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1220px) {
   .au-sub-title {
     font-size: 3.25rem;
   }
-}
-
-@media (max-width: 1200px) {
+  .section-content {
+    padding-block: unset;
+  }
   .au-main-title {
     font-size: 7.5rem; /* Updated to use rem */
     line-height: unset;
@@ -398,24 +398,16 @@
     transform: skewY(-4deg);
     margin-top: -20px;
   }
-  #vision-section .mobile-content {
+  #vision-section .mobile-content,
+  #action-section .mobile-content {
     background: radial-gradient(
-        194.61% 549.58% at 3.53% 49.92%,
-        rgba(86, 176, 210, 0.823529) 0%,
-        rgba(44, 91, 108, 0.823529) 100%
-      )
-      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+      194.61% 549.58% at 3.53% 49.92%,
+      rgb(86, 176, 210) 0%,
+      rgb(44, 91, 108) 100%
+    );
   }
   #mission-section .mobile-content {
     background: linear-gradient(89.24deg, #f9edeb 0.62%, #938c8b 301.04%);
-  }
-  #action-section .mobile-content {
-    background: radial-gradient(
-        194.61% 502.18% at 3.53% 54.24%,
-        rgba(86, 176, 210, 0.823529) 0%,
-        rgba(44, 91, 108, 0.823529) 100%
-      )
-      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   }
 
   .mobile-content * {
@@ -452,11 +444,12 @@
   }
   .desktop-content {
     visibility: hidden;
+    max-height: 500px;
   }
   #vision-section .section-content .image-placeholder {
-    width: 150%;
+    width: 61%;
     height: unset;
-    margin-left: -200px;
+    margin-left: -38px;
     max-height: 100%;
   }
 
@@ -479,10 +472,10 @@
   }
 
   #action-section .section-content .image-placeholder {
-    width: 150%;
+    width: 80%;
     height: unset;
-    margin-left: -200px;
-    left: 210px;
+    /* margin-left: -200px; */
+    left: 369px;
   }
   #action-section::before {
     background: radial-gradient(circle, #56b0d2 -1.46%, #2c5b6c 100%);
@@ -505,11 +498,32 @@
   }
 }
 
+@media (max-width: 768px) {
+  #vision-section .section-content .image-placeholder {
+    width: 95%;
+    height: unset;
+    margin-left: -474px;
+    max-height: 100%;
+  }
+  #action-section .section-content .image-placeholder {
+    width: 95%;
+    height: unset;
+    margin-left: -252px;
+    max-height: 100%;
+  }
+}
+
 @media (max-width: 480px) {
+  #aboutid .social,
+  #joinusid .social,
+  #projectid .social {
+    margin-left: unset;
+  }
+
   #aboutid .side-content,
   #joinusid .side-content,
   #projectid .side-content {
-    left: unset;
+    left: 16px;
   }
 
   .au-title {
@@ -526,8 +540,8 @@
     position: absolute;
     top: unset;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
-      1px 1px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
-      2px 2px 0 #fff;
+      1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+      1px 0px 0 #fff;
     white-space: normal;
     max-width: 30%;
     text-wrap: wrap;
@@ -545,7 +559,6 @@
     display: none;
   }
 
-  /* MOBILE */
   .rotated-text {
     font-size: 100px;
     margin-left: 126px;
@@ -553,14 +566,11 @@
   .section-content {
     margin-left: unset;
   }
-  .desktop-content {
-    visibility: hidden;
-  }
+
   #vision-section .section-content .image-placeholder {
     width: 170%;
     height: unset;
-    /* margin-left: -54px; */
-    left: 224px;
+    left: 482px;
   }
 
   #mission-section .section-content .image-placeholder {
@@ -574,9 +584,9 @@
     z-index: -3;
   }
   #mission-section .rotated-text {
-    left: -275px;
-    right: 94px;
-    transform: rotate(-90deg) translateX(50%);
+    left: -203px;
+    right: -90px;
+    transform: rotate(90deg) translateX(50%);
     transform-origin: right top;
   }
   #mission-section .slideright {
@@ -588,12 +598,18 @@
   #action-section .section-content .image-placeholder {
     width: 170%;
     height: unset;
-    margin-left: -200px;
+    margin-left: -321px;
     left: 210px;
   }
   #action-section::before {
     background: radial-gradient(circle, #56b0d2 -1.46%, #2c5b6c 100%);
     z-index: -3;
+  }
+  #vision-section .slideleft,
+  #action-section .slideleft {
+    transform: scale(1);
+    transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1),
+      opacity 1s ease-in-out;
   }
 
   .diagonal-section::before {
@@ -607,8 +623,8 @@
     padding-bottom: 130px;
   }
   .au-sub-title {
-    /* max-width: 50; */
     line-height: 2.05em;
+    margin-top: 80px;
   }
   .au-main-title {
     max-width: 50%;

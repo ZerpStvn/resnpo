@@ -30,7 +30,7 @@
   line-height: 28.13px;
   letter-spacing: 0.1em;
   text-align: left;
-  color: #fff;
+  color: var(--buttoncolor);
 }
 
 .schools {
@@ -53,6 +53,11 @@
     height: auto;
     padding: 20px 0;
     gap: 40px;
+  }
+
+  .joined-schools-title h1 {
+    font-size: 35px;
+    text-align: center;
   }
 
   .schools {

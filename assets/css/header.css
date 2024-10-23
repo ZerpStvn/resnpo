@@ -151,22 +151,6 @@ nav {
   margin-right: 0.8vh;
 }
 
-@media screen and (max-width: 768px) {
-  .nav-icon-container {
-    width: 11.475vw;
-    height: 12.332vw;
-    right: 55px;
-  }
-  nav {
-    top: 4vh;
-    right: 5vw;
-  }
-  #homeid .nav-icon-container {
-    top: 60px;
-    left: 83%;
-  }
-}
-
 @media screen and (max-width: 1000px) {
   .nav-icon-container {
     width: 8vw;
@@ -193,7 +177,7 @@ nav {
   }
 
   .nav-menu .header-scol-links a {
-    font-size: 1.6vh;
+    font-size: 2vh;
     padding-left: 2vh;
   }
 
@@ -268,4 +252,27 @@ nav {
 
 .hide {
   visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-icon-container {
+    width: 11.475vw;
+    height: 12.332vw;
+    right: 55px;
+  }
+  nav {
+    top: 4vh;
+    right: 5vw;
+  }
+  #homeid .nav-icon-container {
+    top: 60px;
+    left: 83%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo-green {
+    width: 67%;
+    margin-bottom: 20px;
+  }
 }

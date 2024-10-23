@@ -29,6 +29,25 @@
               <h5 class="as-cred-details">国際経営学・経済学アカデミー　経営学</h5>
             </div>
           </div>
+
+          <div class="as-cred flex flex-row head-clr">
+            <img src="<?php echo RESNPO_IMAGE . '/homepage/section-fifth/up.png' ?>" alt="IBA logo">
+            <div class="as-cred-texts">
+              <h4 class="detail-title">経営学修士</h4>
+              <h5 class="as-cred-details">フィリピン大学公共経営</h5>
+            </div>
+          </div>
+
+          <div class="as-cred flex flex-row head-clr">
+            <img src="<?php echo RESNPO_IMAGE . '/homepage/section-fifth/up.png' ?>" alt="IBA logo">
+            <div class="as-cred-texts">
+              <h4 class="detail-title">経営学修士</h4>
+              <h5 class="as-cred-details">フィリピン大学　マーケティング</h5>
+            </div>
+          </div>
+
+
+
         </div>
       </div>
     </div>
