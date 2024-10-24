@@ -690,6 +690,7 @@ details.closing .detail-content {
 
   .as-details {
     flex-direction: column;
+    gap: 20px;
   }
 
   .as-carousel {

@@ -22,8 +22,8 @@
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
+            slidesToShow: 4,
+            slidesToScroll: 4,
             speed: 3000,
           },
         },

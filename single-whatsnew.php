@@ -34,33 +34,25 @@
               'post_type' => 'whatsnew',
               'posts_per_page' => 3,
               'post__not_in' => [get_the_ID()],
-            ]);
+            ]); ?>
 
-            if ($recent_whatsnew_query->have_posts()) :
-              while ($recent_whatsnew_query->have_posts()) : $recent_whatsnew_query->the_post();
-                $recent_whatsnew_date = get_post_meta(get_the_ID(), '_whatsnew_date', true);
-            ?>
-                <a href="<?php echo get_permalink() ?>">
-                  <div class="flex with-img">
-                    <div class="img-recent">
-                      <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" />
-                    </div>
+            <a href="<?php echo get_permalink() ?>">
+              <div class="flex with-img">
+                <div class="img-recent">
+                  <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" />
+                </div>
 
-                    <div class="flex flex-column">
-                      <p class="p-16 w-700 head-clr">
-                        <?php echo get_the_title() ?>
-                      </p>
-                      <p class="p-14 read-more">READ MORE &raquo;</p>
-                      <p class="p-12 text-clr"><?php echo esc_html($get_the_date()); ?></p>
+                <div class="flex flex-column">
+                  <p class="p-16 w-700 head-clr">
+                    <?php echo get_the_title() ?>
+                  </p>
+                  <p class="p-14 read-more">READ MORE &raquo;</p>
+                  <p class="p-12 text-clr"><?php echo esc_html(get_the_date()); ?></p>
 
-                    </div>
-                  </div>
-                </a>
-            <?php
-              endwhile;
-              wp_reset_postdata();
-            endif;
-            ?>
+                </div>
+              </div>
+            </a>
+
           </div>
         </div>
       </div>

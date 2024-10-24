@@ -70,8 +70,8 @@ var swiperPG = new Swiper(".mySwiperpg", {
   },
   breakpoints: {
     768: {
-      slidesPerView: 1,
-      spaceBetween: 20,
+      slidesPerView: 3,
+      // spaceBetween: 20,
     },
   },
   on: {
@@ -108,8 +108,12 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector(".ue-details-content").textContent = content;
         document.querySelector(".ue-details-subdescription").textContent =
           subdescription;
-        document.querySelector(".monthyear").textContent = monthyear;
-        document.querySelector(".monthday").textContent = monthday;
+        document.querySelectorAll(".monthyear").forEach((element) => {
+          element.textContent = monthyear;
+        });
+        document.querySelectorAll(".monthday").forEach((element) => {
+          element.textContent = monthday;
+        });
       }
     } else {
       console.error("activeIndex is out of bounds");

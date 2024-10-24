@@ -219,4 +219,11 @@
   #joinusid .section2-side-title {
     top: 500px;
   }
+
+  #joinusid .landing-fg {
+    position: absolute;
+    bottom: 0;
+    left: -93px;
+    width: 100%;
+  }
 }

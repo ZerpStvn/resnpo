@@ -54,7 +54,7 @@
           </p>
           <div>
             <div class="relative btn-container">
-              <a href="">
+              <a href="<?php echo get_site_url() . '/donation/#section_4_don' ?>">
                 <button class="main-button relative">
                   <p>詳しく見る</p><img class="icon-button absolute" src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
                 </button>
@@ -88,7 +88,7 @@
           </p>
           <div>
             <div class="relative btn-container">
-              <a href="">
+              <a href="<?php echo get_site_url() . '/membership' ?>">
                 <button class="main-button relative">
                   <p>詳しく見る</p><img class="icon-button absolute" src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
                 </button>
