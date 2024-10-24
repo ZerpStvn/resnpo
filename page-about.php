@@ -167,7 +167,7 @@ HTML;
   <?php get_template_part('template-parts/adviser') ?>
 
   <section id="org_overview" class="org_overview">
-    <p class="p-30 w-700 head-clr">団体概要</p>
+    <p class="p-30 w-700 head-clr org-title">団体概要</p>
     <p class="p-20 sub-head-clr">Outline</p>
     <div class="list-contact">
       <div class="flex gap-15 org-overview-items">

@@ -168,11 +168,12 @@
 
 @media (max-width: 960px) {
   .ue-swiper {
+    /* width: unset; */
     position: relative;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 200%; /* Make the container wider than the viewport */
+    /* width: 200%; */
   }
 
   .ue-details {
@@ -237,9 +238,15 @@
     margin: 0 0;
     padding: unset;
   }
+  .ue-swiper {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
+  .ue-swiper {
+    width: 100%;
+  }
   /* .swiper-navs {
     top: 451px;
     gap: 60vw;
@@ -249,5 +256,8 @@
 @media (max-width: 480px) {
   .upcoming-events-title {
     font-size: 50px;
+  }
+  .ue-swiper {
+    width: 200%;
   }
 }

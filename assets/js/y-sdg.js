@@ -70,8 +70,8 @@ var swiperPG = new Swiper(".mySwiperpg", {
   },
   breakpoints: {
     768: {
-      slidesPerView: 1,
-      spaceBetween: 20,
+      slidesPerView: 3,
+      // spaceBetween: 20,
     },
   },
   on: {

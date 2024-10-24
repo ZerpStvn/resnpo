@@ -156,6 +156,9 @@
   animation: scroll-vertical 12s linear infinite;
   gap: 20px;
 }
+.scroll-content img {
+  width: 100%;
+}
 
 .slider-image {
   width: 100%;

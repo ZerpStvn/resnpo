@@ -972,6 +972,10 @@ ul.sub-ul.text-center.mobile {
   display: none;
 }
 
+.map-link img {
+  padding: 5px;
+}
+
 @media (max-width: 1107px) {
   .section_6 {
     padding: 10% 1%;
@@ -1325,6 +1329,10 @@ ul.sub-ul.text-center.mobile {
   }
   #home_representative .icon-button {
     right: unset;
+  }
+  #homeid .sg_description {
+    font-size: 16px;
+    letter-spacing: unset;
   }
 }
 /*  */

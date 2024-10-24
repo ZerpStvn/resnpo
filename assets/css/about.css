@@ -496,6 +496,10 @@
   .au-main-title {
     max-width: 50%;
   }
+  .au-sub-title {
+    line-height: 2.05em;
+    margin-top: 80px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -632,5 +636,12 @@
   }
   .au-main-title {
     max-width: 50%;
+  }
+  /* .org-title {
+    padding-top: 10%;
+  } */
+
+  #org_overview {
+    padding: 10%;
   }
 }

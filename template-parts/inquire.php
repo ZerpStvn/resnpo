@@ -16,7 +16,7 @@
     <h4 class="p-30 head-clr ">サービス利用に関するご相談やご質問など、お電話もしくはフォームよりお気軽にご連絡ください。
     </h4>
     <div class="relative btn-container">
-      <a href="">
+      <a href="<?php echo get_site_url() . '/contact' ?>">
         <button class="main-button relative">
           INQUIRE NOW </button>
         <img
