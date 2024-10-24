@@ -30,12 +30,12 @@
           <div class="btn-close">
             <img src="<?= RESNPO_IMAGE . '/tabler_xbox-x.png' ?>" alt="exit-logo">
           </div>
-          <div class="nav-company-details">
-            <img class="logo-green" src="<?php echo RESNPO_IMAGE . '/res-logo.png' ?>" alt="">
 
-
-
-          </div>
+          <a href="<?php echo get_site_url() . '/home' ?>">
+            <div class="nav-company-details">
+              <img class="logo-green" src="<?php echo RESNPO_IMAGE . '/res-logo.png' ?>" alt="">
+            </div>
+          </a>
 
           <li>
             <ul class="header-scol-links">

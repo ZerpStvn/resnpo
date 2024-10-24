@@ -25,6 +25,14 @@
             <p class="monthyear"></p>
             <p class="monthday"></p>
           </div>
+          <div class="ue-date-mobile">
+            <div class="swiper-button-prev"></div>
+            <div class="ue-date">
+              <p class="monthyear"></p>
+              <p class="monthday"></p>
+            </div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
       </div>
     </div>
