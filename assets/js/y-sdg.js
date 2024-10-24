@@ -56,17 +56,13 @@ var swiperPG = new Swiper(".mySwiperpg", {
   effect: "slide",
   loop: true,
   freeMode: true,
-  loopAdditionalSlides: 1, // Add this
-
-  slidesPerView: 3,
+  slidesPerView: 4,
   speed: 5000,
   allowTouchMove: true,
   autoplay: {
     delay: 1,
     pauseOnMouseEnter: true,
     disableOnInteraction: false,
-    // waitForTransition: false,
-    // stopOnLastSlide: false,
   },
   breakpoints: {
     768: {
@@ -78,13 +74,33 @@ var swiperPG = new Swiper(".mySwiperpg", {
     breakpoint: function (swiper) {
       if (window.innerWidth <= 768) {
         swiper.params.speed = 1500;
+        swiper.params.autoplay.delay = 0; // Remove delay on mobile
       } else {
         swiper.params.speed = 5000;
+        swiper.params.autoplay.delay = 1; // Keep minimal delay for desktop
       }
       swiper.update();
+      if (swiper.autoplay) {
+        swiper.autoplay.start(); // Ensure autoplay restarts after update
+      }
+    },
+    init: function (swiper) {
+      // Check width on initial load
+      if (window.innerWidth <= 768) {
+        swiper.params.speed = 1500;
+        swiper.params.autoplay.delay = 0;
+      }
+      swiper.update();
+      if (swiper.autoplay) {
+        swiper.autoplay.start(); // Ensure autoplay starts on init
+      }
     },
   },
 });
+
+// Start autoplay after initialization
+swiperPG.autoplay.start();
+
 //End Photo Gallery
 
 // Upcoming Events Slider

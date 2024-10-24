@@ -478,3 +478,33 @@ a:visited {
 .no-display {
   display: none;
 }
+
+.redcolor {
+  color: #e4011e;
+}
+
+.global-width {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.txt-shadow {
+  font-family: var(--mainFont);
+  color: #fff;
+  text-shadow: -2px -2px 0 #083f75, 2px -2px 0 #083f75, -2px 2px 0 #083f75,
+    2px 2px 0 #083f75, -3px -3px 0 #083f75, 3px -3px 0 #083f75,
+    -3px 3px 0 #083f75, 3px 3px 0 #083f75;
+}
+
+.dark-blue {
+  color: var(--darkblue);
+}
+
+.mr-r-87 {
+  margin-right: 87px;
+}
+
+.mr-l-87 {
+  margin-left: 87px;
+}
