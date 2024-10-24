@@ -1327,6 +1327,7 @@ ul.sub-ul.text-center.mobile {
     right: unset;
   }
 }
+/*  */
 @media (max-width: 390px) {
   .relative.rep-container-main img {
     width: 103%;
