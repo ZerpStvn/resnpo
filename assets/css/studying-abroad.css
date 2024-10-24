@@ -311,6 +311,8 @@ details.closing .detail-content {
 }
 .as-cred-wrapper .slick-slide {
   display: flex !important;
+  align-items: center;
+  margin: 0;
 }
 
 .as-cred-details {
@@ -363,7 +365,7 @@ details.closing .detail-content {
   position: relative;
   width: 100%;
   max-width: 500px;
-  height: 300px;
+  height: 312px;
   justify-content: center;
   flex-direction: column;
   /* overflow: hidden; */

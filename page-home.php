@@ -349,43 +349,48 @@
         </div>
 
         <div id="home-advisor-mobile" class="as-cred-wrapper">
-          <div class="as-carousel">
-            <div class="as-cred flex flex-row head-clr">
-              <img src="<?php echo RESNPO_IMAGE . '/studyingabroad/ucam.png' ?>" alt="UCAM logo">
-              <div class="as-cred-texts">
-                <h4 class="detail-title">ムルシア・カトリック大学（スペイン）</h4>
-                <h5 class="as-cred-details">副学長-教務担当</h5>
+          <div class="as-cred-wrapper">
+            <div class="as-carousel flex">
+              <div class="as-cred flex flex-row head-clr">
+                <img src="<?php echo RESNPO_IMAGE . '/studyingabroad/ucam.png' ?>" alt="UCAM logo">
+                <div class="as-cred-texts">
+                  <h4 class="detail-title">ムルシア・カトリック大学（スペイン）</h4>
+                  <h5 class="as-cred-details">副学長-教務担当</h5>
+                </div>
               </div>
-            </div>
-            <div class="as-cred flex flex-row head-clr">
-              <img src="<?php echo RESNPO_IMAGE . '/studyingabroad/liverpool.png' ?>" alt="Liverpool University logo">
-              <div class="as-cred-texts">
-                <h4 class="detail-title">ムルシア・カトリック大学（スペイン）</h4>
-                <h5 class="as-cred-details">副学長-教務担当</h5>
+              <div class="as-cred flex flex-row head-clr">
+                <img src="<?php echo RESNPO_IMAGE . '/studyingabroad/liverpool.png' ?>" alt="Liverpool University logo">
+                <div class="as-cred-texts">
+                  <h4 class="detail-title">ムルシア・カトリック大学（スペイン）</h4>
+                  <h5 class="as-cred-details">副学長-教務担当</h5>
+                </div>
               </div>
-            </div>
-            <div class="as-cred flex flex-row head-clr">
-              <img src="<?php echo RESNPO_IMAGE . '/studyingabroad/iba.png' ?>" alt="IBA logo">
-              <div class="as-cred-texts">
-                <h4 class="detail-title">博士号（PhD）</h4>
-                <h5 class="as-cred-details">国際経営学・経済学アカデミー　経営学</h5>
+              <div class="as-cred flex flex-row head-clr">
+                <img src="<?php echo RESNPO_IMAGE . '/studyingabroad/iba.png' ?>" alt="IBA logo">
+                <div class="as-cred-texts">
+                  <h4 class="detail-title">博士号（PhD）</h4>
+                  <h5 class="as-cred-details">国際経営学・経済学アカデミー　経営学</h5>
+                </div>
               </div>
-            </div>
 
-            <div class="as-cred flex flex-row head-clr">
-              <img src="<?php echo RESNPO_IMAGE . '/homepage/section-fifth/up.png' ?>" alt="IBA logo">
-              <div class="as-cred-texts">
-                <h4 class="detail-title">経営学修士</h4>
-                <h5 class="as-cred-details">フィリピン大学　公共経営</h5>
+              <div class="as-cred flex flex-row head-clr">
+                <img src="<?php echo RESNPO_IMAGE . '/homepage/section-fifth/up.png' ?>" alt="IBA logo">
+                <div class="as-cred-texts">
+                  <h4 class="detail-title">経営学修士</h4>
+                  <h5 class="as-cred-details">フィリピン大学公共経営</h5>
+                </div>
               </div>
-            </div>
 
-            <div class="as-cred flex flex-row head-clr">
-              <img src="<?php echo RESNPO_IMAGE . '/homepage/section-fifth/up.png' ?>" alt="IBA logo">
-              <div class="as-cred-texts">
-                <h4 class="detail-title">経営学修士</h4>
-                <h5 class="as-cred-details">フィリピン大学　マーケティング</h5>
+              <div class="as-cred flex flex-row head-clr">
+                <img src="<?php echo RESNPO_IMAGE . '/homepage/section-fifth/up.png' ?>" alt="IBA logo">
+                <div class="as-cred-texts">
+                  <h4 class="detail-title">経営学修士</h4>
+                  <h5 class="as-cred-details">フィリピン大学　マーケティング</h5>
+                </div>
               </div>
+
+
+
             </div>
           </div>
         </div>

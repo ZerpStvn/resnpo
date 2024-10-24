@@ -55,7 +55,7 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
   <defs>
     <filter id="color-change-filter">
-      <feColorMatrix type="matrix" values="0 0 0 1 1  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" />
+      <feColorMatrix type="matrix" values=" 0 0 0 0 1  0 0 0 0 0.85  0 0 0 0 0.4  0 0 0 1 0" />
     </filter>
   </defs>
 </svg>

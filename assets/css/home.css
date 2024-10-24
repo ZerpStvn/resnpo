@@ -1317,6 +1317,9 @@ ul.sub-ul.text-center.mobile {
   .section_2 .main-ul > li a .img-container img {
     min-height: 272px;
   }
+  #home-advisor-mobile .slick-slide {
+    height: unset;
+  }
 }
 @media (max-width: 390px) {
   .relative.rep-container-main img {

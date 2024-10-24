@@ -278,6 +278,10 @@
     display: unset;
   }
 
+  .main-title {
+    margin-right: unset;
+  }
+
   .main-title h1 {
     display: none;
   }
