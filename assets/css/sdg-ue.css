@@ -207,15 +207,38 @@
   }
 }
 
+@media (max-width: 768px) {
+  .swiper-navs {
+    top: 451px;
+    gap: 60vw;
+  }
+}
+
 @media (max-width: 480px) {
   .swiper-navs {
     margin-left: -3px;
     position: absolute;
     top: 402px;
-    gap: 298px;
+    /* gap: 298px; */
     /* display: none; */
   }
   .upcoming-events-title {
     font-size: 50px;
+  }
+
+  .ue-date,
+  .swiper-navs {
+    display: none;
+  }
+
+  .ue-date-mobile {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 425px) {
+  .swiper-navs {
+    top: 428px;
+    /* gap: 237px; */
   }
 }
