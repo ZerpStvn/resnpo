@@ -1285,7 +1285,10 @@ ul.sub-ul.text-center.mobile {
     width: 58px;
   } */
   .loc-link-container {
-    padding: 0 05px;
+    padding: 0 43px;
+  }
+  .logo-text {
+    padding: 5% 53px;
   }
 
   .header-people {
@@ -1327,6 +1330,12 @@ ul.sub-ul.text-center.mobile {
 @media (max-width: 390px) {
   .relative.rep-container-main img {
     width: 103%;
+  }
+  .relative.rep-container-main img {
+    width: 100%;
+  }
+  p.p-16.w-500.head-clr {
+    font-size: 11px;
   }
   .logo-images img {
     width: 110px;
