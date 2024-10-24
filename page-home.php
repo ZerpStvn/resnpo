@@ -189,7 +189,7 @@
         while ($whatsnew_query->have_posts()):
           $whatsnew_query->the_post();
           $whatsnew_date = get_post_meta(get_the_ID(), '_whatsnew_date', true);
-      ?>
+          ?>
           <li>
             <a href="<?php echo get_permalink() ?>" id="main-article">
               <div class="img-container-news">
@@ -212,7 +212,7 @@
               </div>
             </a>
           </li>
-      <?php
+          <?php
         endwhile;
         wp_reset_postdata();
       endif;
@@ -231,7 +231,7 @@
             while ($recent_whatsnew_query->have_posts()):
               $recent_whatsnew_query->the_post();
               $recent_whatsnew_date = get_post_meta(get_the_ID(), '_whatsnew_date', true);
-          ?>
+              ?>
               <li>
                 <a href="<?php echo get_permalink() ?>">
                   <div class="flex with-img">
@@ -240,12 +240,13 @@
                     </div>
                     <div>
                       <p class="p-14 w-700 head-clr"><?php echo get_the_title() ?></p>
+                      <p class="p-14 read-more">READ MORE »</p>
                       <p class="p-12 text-clr"><?php echo esc_html($recent_whatsnew_date); ?></p>
                     </div>
                   </div>
                 </a>
               </li>
-          <?php
+              <?php
             endwhile;
             wp_reset_postdata();
           endif;
@@ -263,7 +264,7 @@
   <!-- SECTION: NEWS/RESPRESENTATIVE -->
 
   <!-- <a href="<?php //echo get_site_url() . '/about#realxlink' 
-                ?>"> -->
+  ?>"> -->
   <section id="home_representative" class="section-representative">
     <div class="top-title-news relative">
       <p class="p-230 w-700 slideright">NEWS</p>
@@ -290,7 +291,8 @@
                 <a href="<?php echo get_site_url() . '/about#realxlink' ?>">
                   <button class="main-button relative">
                     代表メッセージ </button>
-                  <img style="width:unset;" class="icon-button absolute" src="<?php echo RESNPO_IMAGE . '/leaves.png' ?>" alt="" />
+                  <img style="width:unset;" class="icon-button absolute"
+                    src="<?php echo RESNPO_IMAGE . '/leaves.png' ?>" alt="" />
                 </a>
               </div>
             </li>
@@ -311,7 +313,7 @@
 
   <!-- SECTION: ADVISOR -->
   <!-- <a href="<?php // echo RESNPO_URI . '/about#advisor_section' 
-                ?>"> -->
+  ?>"> -->
   <section id="advisor_home" class="flex flex-column relative">
     <div class="contenttitletop advisor">
       <div class="contenttoptitlewrap">
