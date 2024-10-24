@@ -1,6 +1,5 @@
+<?php get_header() ?>
 <div id="homeid">
-  <?php get_header() ?>
-
   <section class="section_1">
     <div class="header-container global-width">
 
@@ -84,6 +83,7 @@
     </div>
   </section>
 
+
   <section class="section_2 relative global-width">
     <ul class="flex main-ul">
       <div class="side-activity ">
@@ -100,22 +100,11 @@
           <li class="slideup">
             <img src="<?php echo RESNPO_URI . '/assets/image/homepage/section-third/sub-img-1.png' ?>" alt="" />
             <div class="sub-ul-details">
-              <?php
-              function truncate_text($text, $limit)
-              {
-                if (mb_strlen($text) > $limit) {
-                  return mb_substr($text, 0, $limit) . '...';
-                } else {
-                  return $text;
-                }
-              }
 
-              // Example usage
-              $text = '同年代の仲間たちとの様々な活動や異文化体験を通じて、国内では経験できない多様性に触れ、自国や自分自身の新たな面に気づかされます。';
-              $truncated_text = truncate_text($text, mb_strpos($text, '国内')); // Truncate at '国内'
-              echo "<p class='p-12 class-content'>" . $truncated_text . "</p>";
-              ?>
 
+              <p class="p-12 class-content">
+                <?php echo truncate_text('同年代の仲間たちとの様々な活動や異文化体験を通じて、国内では経験できない多様性に触れ、自国や自分自身の新たな面に気づかされます。', 20) ?>
+              </p>
 
               <p class="p-18 mt-15 w-700 class-title">海外留学/ツアー</p>
             </div>
@@ -552,5 +541,6 @@
       <img src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>" alt="" />
     </div>
   </section>
+
 </div>
 <?php get_footer() ?>
