@@ -21,18 +21,25 @@
           <h1 class="ue-details-title"></h1>
           <p class="ue-details-content"></p>
           <p class="ue-details-subdescription"></p>
-          <div class="ue-date">
-            <p class="monthyear"></p>
-            <p class="monthday"></p>
-          </div>
-          <div class="ue-date-mobile">
-            <div class="swiper-button-prev"></div>
-            <div class="ue-date">
-              <p class="monthyear"></p>
-              <p class="monthday"></p>
+
+          <div class="ue-date-container">
+            <div class="ue-date-desktop">
+              <div class="ue-date">
+                <p class="monthyear"></p>
+                <p class="monthday"></p>
+              </div>
             </div>
-            <div class="swiper-button-next"></div>
+
+            <div class="ue-date-mobile">
+              <div class="swiper-button-prev"></div>
+              <div class="ue-date">
+                <p class="monthyear"></p>
+                <p class="monthday"></p>
+              </div>
+              <div class="swiper-button-next"></div>
+            </div>
           </div>
+
         </div>
       </div>
     </div>
