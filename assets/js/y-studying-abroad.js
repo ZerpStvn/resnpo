@@ -140,3 +140,19 @@ function animateInquireB() {
 animateInquireB();
 
 setInterval(animateInquireB, 200);
+
+jQuery(document).ready(function ($) {
+  $(".as-carousel").slick({
+    vertical: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    speed: 1000,
+    arrows: false,
+    dots: false,
+    // pauseOnHover: true,
+    infinite: true,
+    centerMode: true,
+  });
+});

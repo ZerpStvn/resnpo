@@ -169,6 +169,7 @@ table tr img {
   transition: transform 0.2s;
   font-family: var(--notsansjp);
   font-size: 18px;
+  font-weight: 600;
 }
 
 /* .icon-button {
@@ -297,8 +298,8 @@ table tr img {
     align-items: center;
   }
   .footer-logo img {
-    height: 60px;
-    width: 130px;
+    height: 54px;
+    width: unset;
   }
   .footer-logo .green-logo {
     height: 60px;
@@ -320,6 +321,8 @@ table tr img {
   }
   .uf-c4 p {
     text-align: center;
+
+    max-width: 300px;
   }
   .main-button {
     width: 240px;
@@ -328,9 +331,6 @@ table tr img {
     border-radius: 0px 10px 0px 0px;
     font-size: 2.5vw; /* Responsive text size */
   }
-  .icon-button {
-    /* left: unset; */
-  }
 }
 
 @media (max-width: 480px) {
@@ -338,6 +338,9 @@ table tr img {
     padding: 50px 0;
     font-size: 16px;
     margin-top: 20px;
+  }
+  .icon-button {
+    right: -27px;
   }
 
   .upper-footer {
@@ -361,12 +364,13 @@ table tr img {
     /* flex-direction: column; */
     align-items: center;
     width: 100%;
+    gap: 40px;
   }
 
   .center-columns {
     order: 3;
     justify-content: center;
-    gap: 30px;
+    gap: 63px;
     width: 100%;
   }
 
@@ -383,7 +387,7 @@ table tr img {
   }
 
   .footer-links {
-    text-align: center;
+    text-align: left;
     padding: 0;
   }
 

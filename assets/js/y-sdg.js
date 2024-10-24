@@ -56,14 +56,33 @@ var swiperPG = new Swiper(".mySwiperpg", {
   effect: "slide",
   loop: true,
   freeMode: true,
-  slidesPerView: "3",
+  loopAdditionalSlides: 1, // Add this
+
+  slidesPerView: 3,
   speed: 5000,
+  allowTouchMove: true,
   autoplay: {
     delay: 1,
     pauseOnMouseEnter: true,
     disableOnInteraction: false,
-    waitForTransition: true,
-    stopOnLastSlide: false,
+    // waitForTransition: false,
+    // stopOnLastSlide: false,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+  },
+  on: {
+    breakpoint: function (swiper) {
+      if (window.innerWidth <= 768) {
+        swiper.params.speed = 1500;
+      } else {
+        swiper.params.speed = 5000;
+      }
+      swiper.update();
+    },
   },
 });
 //End Photo Gallery
@@ -228,6 +247,8 @@ jQuery(document).ready(function ($) {
   $slider.slick({
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 768,
@@ -246,6 +267,8 @@ jQuery(document).ready(function ($) {
           centerMode: true,
           centerPadding: "20%",
           arrows: false,
+          autoplay: true,
+          autoplaySpeed: 3000,
         },
       },
     ],

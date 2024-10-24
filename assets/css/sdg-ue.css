@@ -205,18 +205,16 @@
   .mySwiperue {
     overflow: visible;
   }
-
-  .swiper-navs {
-    margin-left: 50px;
-    position: absolute;
-    top: 490px;
-    gap: 180px;
-    display: none;
-  }
 }
 
-
 @media (max-width: 480px) {
+  .swiper-navs {
+    margin-left: -3px;
+    position: absolute;
+    top: 402px;
+    gap: 298px;
+    /* display: none; */
+  }
   .upcoming-events-title {
     font-size: 50px;
   }

@@ -13,8 +13,8 @@
           $imagePath = RESNPO_URI . '/assets/image/project/leaves.png';
           for ($i = 0; $i < 12; $i++) {
             foreach ($items as $item) {
-              echo '<li><img src="' . $imagePath . '" alt=""></li>';
-              echo '<li><p>' . $item . '</p></li>';
+              echo '<li class="marquee-carousel"><img src="' . $imagePath . '" alt=""></li>';
+              echo '<li class="marquee-carousel"><p>' . $item . '</p></li>';
             }
           }
           ?>

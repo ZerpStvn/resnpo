@@ -212,8 +212,8 @@
 
 @media (max-width: 480px) {
   .section2-card {
-    padding: 20px;
-    font-size: 14px; /* Reduce the font size */
+    padding: 29px;
+    font-size: 14px;
   }
 
   #joinusid .section2-side-title {

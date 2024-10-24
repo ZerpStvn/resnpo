@@ -8,7 +8,7 @@ body {
 .sdg-home {
   padding: 30px;
   /* height: calc(100vh); */
-  height: 779px;
+  height: 100vh;
   box-sizing: border-box;
   background: linear-gradient(rgba(46, 136, 170, 0.5), rgba(46, 136, 170, 0.5));
   position: relative;
@@ -83,6 +83,7 @@ header {
   gap: 11px;
   width: 400px;
   margin-top: auto;
+  margin-left: 10px;
 }
 .side-title-text {
   display: flex;

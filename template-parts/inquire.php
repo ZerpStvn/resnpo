@@ -13,7 +13,7 @@
 
   <div class="inq-title-overlay flex flex-column scaleIn">
     <h1 class="p-60 head-clr">お問い合わせはコチラから！</h1>
-    <h4 class="p-30 head-clr ">サービス利用に関するご相談やご質問など、<br>お電話もしくはフォームよりお気軽にご連絡ください。
+    <h4 class="p-30 head-clr ">サービス利用に関するご相談やご質問など、お電話もしくはフォームよりお気軽にご連絡ください。
     </h4>
     <div class="relative btn-container">
       <a href="">
