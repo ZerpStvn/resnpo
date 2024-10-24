@@ -153,5 +153,6 @@ jQuery(document).ready(function ($) {
     dots: false,
     // pauseOnHover: true,
     infinite: true,
+    centerMode: true,
   });
 });

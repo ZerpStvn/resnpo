@@ -264,7 +264,7 @@
 
   <!-- <a href="<?php //echo get_site_url() . '/about#realxlink' 
                 ?>"> -->
-  <section class="section-representative">
+  <section id="home_representative" class="section-representative">
     <div class="top-title-news relative">
       <p class="p-230 w-700 slideright">NEWS</p>
     </div>
@@ -284,11 +284,13 @@
             <li>
               <p class="p-16 w-500 white-clr">NPO法人 RESは、ひとりでも多くの子どもたちが、未来の国際社会で活躍できる社会を目指し、自ら考え行動できる人材を育成する活動をしています。
               </p>
+
+
               <div class="relative btn-container">
                 <a href="<?php echo get_site_url() . '/about#realxlink' ?>">
-                  <button class="main-button relative" id="btn-logo">代表メッセージ</button>
-                  <img class="home-icon-button absolute"
-                    src="<?php echo RESNPO_URI . '/assets/image/homepage/side-section-img.png' ?>"="" />
+                  <button class="main-button relative">
+                    代表メッセージ </button>
+                  <img style="width:unset;" class="icon-button absolute" src="<?php echo RESNPO_IMAGE . '/leaves.png' ?>" alt="" />
                 </a>
               </div>
             </li>

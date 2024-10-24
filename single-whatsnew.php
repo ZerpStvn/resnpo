@@ -51,7 +51,6 @@
                         <?php echo get_the_title() ?>
                       </p>
                       <p class="p-14 read-more">READ MORE &raquo;</p>
-
                       <p class="p-12 text-clr"><?php echo esc_html($recent_whatsnew_date); ?></p>
 
                     </div>

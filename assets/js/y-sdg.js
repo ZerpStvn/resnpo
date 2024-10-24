@@ -56,20 +56,32 @@ var swiperPG = new Swiper(".mySwiperpg", {
   effect: "slide",
   loop: true,
   freeMode: true,
+  loopAdditionalSlides: 1, // Add this
+
   slidesPerView: 3,
   speed: 5000,
+  allowTouchMove: true,
   autoplay: {
     delay: 1,
     pauseOnMouseEnter: true,
     disableOnInteraction: false,
-    waitForTransition: true,
-    stopOnLastSlide: false,
+    // waitForTransition: false,
+    // stopOnLastSlide: false,
   },
   breakpoints: {
     768: {
       slidesPerView: 1,
       spaceBetween: 20,
-      speed: 3000,
+    },
+  },
+  on: {
+    breakpoint: function (swiper) {
+      if (window.innerWidth <= 768) {
+        swiper.params.speed = 1500;
+      } else {
+        swiper.params.speed = 5000;
+      }
+      swiper.update();
     },
   },
 });

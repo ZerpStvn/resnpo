@@ -174,7 +174,7 @@
 
 @media (max-width: 768px) {
   #projectid .landing-fg {
-    left: -130px;
+    left: -275px;
   }
   .proj-title {
     font-family: var(--readex);

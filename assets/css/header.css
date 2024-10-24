@@ -255,6 +255,15 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+  #homeid .nav-icon-container {
+    top: 60px;
+    left: 83%;
+  }
+
+  #homeid .nav-icon-container img {
+    width: 45px;
+  }
+
   .nav-icon-container {
     width: 11.475vw;
     height: 12.332vw;
@@ -263,10 +272,6 @@ nav {
   nav {
     top: 4vh;
     right: 5vw;
-  }
-  #homeid .nav-icon-container {
-    top: 60px;
-    left: 83%;
   }
 }
 
