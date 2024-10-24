@@ -5,7 +5,7 @@
 #projectid .landing-fg {
   position: absolute;
   bottom: 0;
-  left: -276px;
+  /* left: -276px; */
   width: 100%;
 }
 
@@ -449,6 +449,15 @@
   }
 }
 
+@media (max-width: 425px) {
+  #proj-sa .overlay-arc .arc-img-side {
+    top: -106px;
+    left: 128px;
+    width: 100%;
+    transform: rotate(-1deg);
+  }
+}
+
 @media (max-width: 375px) {
   .overlay-arc .arc-img-side {
     top: -132px;
@@ -467,5 +476,23 @@
   .overlay-arc li:last-child,
   .overlay-arc-study li:last-child {
     padding-top: 20px;
+  }
+}
+
+@media (max-width: 390px) {
+  .overlay-arc .arc-img-side {
+    left: -42px;
+  }
+
+  #proj-sa .overlay-arc .arc-img-side {
+    top: -108px;
+    left: 107px;
+  }
+  .overlay-arc li:last-child,
+  .overlay-arc-study li:last-child {
+    padding-top: 20px;
+  }
+  #projectid .icon-button {
+    left: 243px;
   }
 }
